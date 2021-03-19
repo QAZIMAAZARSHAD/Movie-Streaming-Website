@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<script>
+		function displayMessageReset()
+		{
+			alert("Alert! You Have Clicked On Reset Button, Please Fill Your Data Again");
+		}
+		function displayMessageSuccessfully()
+		{	
+			var x;
+			x=confirm("Do You Want To Sumbit Your Data, Please Fill All Fields");
+			if(x==1)
+{document.write("<b>Thankyou! You Have Successfully Signed Up<b>");}
+}</script>
+
+<style>
+	body{
+	background-image: url("./Images/logo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+	.details{
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: red;
+		font-size: 25px;
+		font-family: cursive;
+		}
+input[type=text],input[type=radio],input[type=number],input[type=password]{
+	border-radius: 100px;
+	color: red;
+	width: 250px;
+	height: 25px;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 20px;
+	background-color: white;
+	color: black;
+	text-transform: uppercase;
+}
+input[type=submit], input[type=reset]
+{
+	border-radius: 100px;
+	text-align: center;
+	width:125px;
+	height:30px;
+	line-height: 20px;
+	color:red;
+	background-color: black;
+	margin-left: 10px;
+}
+#signup{
+	color: red;
+	font-size: 90px;
+	font-family: Arial;
+	font-weight: bold;
+	position: absolute;
+	left:0;
+	top: 0;
+	transform: translateY(250px);
+	margin-left:50px;
+	}
+form{
+	height: 100px;
+}
+	</style>
+</head>
+<body>
+		<div id="signup">SIGN UP</div>
+<form >
+	<div class="details">
+<div>
+<input type="text" name="Fname" required placeholder="First Name">
+</div>
+	<div>
+<input type="text" name="Mename" required placeholder="Middle Name">
+	</div>
+	<div>
+		<input type="text" name="Lname" required placeholder="Last Name">
+	</div>
+	<div>
+	<input type="text" name="number" required placeholder="Email">
+	</div>
+<div>
+<input type="password" name="password" required placeholder="Password">
+</div>
+<input class="btn" type="submit" value="Sign Up" 
+onclick="displayMessageSuccessfully()" required>
+<input class="btn" type="reset" value="Reset" 
+onclick="displayMessageReset()" required>
+</div>
+</form>
+</body>
+</html>
