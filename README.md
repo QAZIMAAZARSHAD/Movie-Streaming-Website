@@ -122,7 +122,7 @@ git push -u origin <your_branch_name>
 </p>
 
 <a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
-<h5 align="center"><b>Qazi Maaz Arshad</b></a>;
+<h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
 
