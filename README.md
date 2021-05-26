@@ -26,13 +26,24 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ### Seperate Page for All Genres:
 <p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
 
+## About
+
+This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
+
+## Link to the website
+https://qazimaazarshad.github.io/Movie-Streaming-Website/
+
+## Tech Stack
+
+<img src="https://i.postimg.cc/fWKwrRhL/download.png">
+
 ## Contribution Guidelines🏗
 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
 
 To start contributing, follow the below guidelines: 
 
-**1.**  Fork [this](https://github.com/smaranjitghose/awesome-portfolio-websites) repository.
+**1.**  Fork [this](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website) repository.
 
 **2.**  Clone your forked copy of the project.
 
