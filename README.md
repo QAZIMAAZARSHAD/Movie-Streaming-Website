@@ -121,13 +121,13 @@ git push -u origin <your_branch_name>
 <img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">&ensp;&ensp;&ensp;
 </p>
 
-<a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
+<a href="https://www.linkedin.com/in/qazi-maaz-arshad/" target="_black">
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
 
 <p align="center">
-<a href="https://letsgrowmore.in/soc/"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
+<a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
 </p>
 
 ## Code of Conduct
