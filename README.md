@@ -28,7 +28,7 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 
 ## About
 
-This is a web development project with a vision to create a platform for people especially girls listing various scholarship opportunities and programs. Our main motive is to reach greater audience and help them to know about the programs according to their eligibility.
+ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows and web series from multiple genres like crime, comedy, drama, kids etc. 
 
 ## Link to the website
 https://qazimaazarshad.github.io/Movie-Streaming-Website/
