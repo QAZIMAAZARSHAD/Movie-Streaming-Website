@@ -21,23 +21,10 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ## A sneek peek into what we have here🙈 :
 
 ### Home Page:
-<p align="center"><img src="./readme_assets/Home_Page.gif"></p>
+<p align="center"><img src="https://i.postimg.cc/g0vsH5LC/Home-Page.jpg"></p>
 
-### Experience Page:
-<p align="center"><img src="./readme_assets/Experience_Page.gif"></p>
-
-### Project Page:
-<p align="center"><img src="./readme_assets/Project_Page.gif"></p>
-
-### Research Page:
-<p align="center"><img src="./readme_assets/Research_Page.gif"></p>
-
-### Education Page:
-<p align="center"><img src="./readme_assets/Education_Page.gif"></p>
-
-## How to use this?🛠
-
-[Check out our awesome Documentation](https://smaranjitghose.github.io/awesome-portfolio-websites/)
+### Seperate Page for All Genres:
+<p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
 
 ## Contribution Guidelines🏗
 
