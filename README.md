@@ -118,11 +118,11 @@ git push -u origin <your_branch_name>
 ## Project Admin👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/65knWMFm/images.jpg">&ensp;&ensp;&ensp;
+<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">&ensp;&ensp;&ensp;
 </p>
 
 <a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
-<h5 align="center"><b>Qazi Maaz Arshad</b></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<h5 align="center"><b>Qazi Maaz Arshad</b></a>;
 
 ## Open Source Programs we have been associated with: 
 
