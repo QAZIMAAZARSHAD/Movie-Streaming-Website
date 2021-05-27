@@ -111,17 +111,17 @@ git push -u origin <your_branch_name>
 
 **14.** Click on `Create Pull Request`.
 
-**15** Voila :exclamation: You have made a PR to the Apna Theatre project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
+**15.** Voila :exclamation: You have made a PR to the Apna Theatre project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
 
 <p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=30%></p>
 
 ## Project Admin👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">&ensp;&ensp;&ensp;
+<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
 </p>
 
-<a href="https://www.linkedin.com/in/qazi-maaz-arshad/" target="_black">
+<a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
