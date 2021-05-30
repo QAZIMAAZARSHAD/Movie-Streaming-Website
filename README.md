@@ -37,13 +37,25 @@ https://qazimaazarshad.github.io/Movie-Streaming-Website/
 
 <img src="https://i.postimg.cc/fWKwrRhL/download.png">
 
-## Contribution Guidelines🏗
+## How to get started❓
+
+You can refer to the following articles on the basics of Git and Github and also contact the Project Mentors, in case you are stuck:
+
+- If you don't have git on your machine, [install](https://help.github.com/articles/set-up-git/) it.
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SL5KKdmvJ1U)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
+- [How to create an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+
+## Contribution Guidelines 🏗
 
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
 
 To start contributing, follow the below guidelines: 
 
-**0.**  If you don't have git on your machine, [install](https://help.github.com/articles/set-up-git/) it.
+**0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Income-Tax-Calcultor/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
 **1.**  Fork [this](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website) repository.
 
