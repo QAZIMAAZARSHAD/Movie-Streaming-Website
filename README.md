@@ -149,3 +149,4 @@ git push -u origin <your_branch_name>
 
 ## License 
 <p align="center"><img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
+<p align="center">MIT License</p>
