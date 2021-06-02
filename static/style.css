@@ -115,7 +115,7 @@ marquee{
 
 .slider-holder
         {
-            width: 10000px;
+            width: 10000vw;
             height: 400px;
             margin-left: auto;
             margin-right: auto;
@@ -125,7 +125,7 @@ marquee{
         }
         .image-holder
         {
-            width: 2400px;
+            width: 2500vw;
             background-color:black;
             height: 400px;
             clear: both;
@@ -136,6 +136,7 @@ marquee{
             -o-transition: left 2s;
             transition: left 2s ;
             animation: moveSlideshow 12s linear infinite;
+            /* animation: scrolling 12s linear infinite; */
         }
         .slider-image
         {
@@ -146,10 +147,14 @@ marquee{
             transform: translate3d(0, 0, 0);
             animation: moveSlideshow 12s linear infinite;
         }
-        @keyframes moveSlideshow {
+        /* @keyframes moveSlideshow {
   100% { 
-    transform: translateX(-66.6666%);  
-  }
+    transform: translateX(-66.6666%);
+  } */
+
+  @keyframes moveSlideshow {
+    0% {transform: translateX(50vw);}
+    100% { transform: translateX(-100vw);}
 }
  
       container{
