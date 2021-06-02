@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Sign Up</title>
-	<script>
-		function displayMessageReset()
-		{
-			alert("Alert! You Have Clicked On Reset Button, Please Fill Your Data Again");
-		}
-		function displayMessageSuccessfully()
-		{	
-			var x;
-			x=confirm("Do You Want To Sumbit Your Data, Please Fill All Fields");
-			if(x==1)
-{document.write("<b>Thankyou! You Have Successfully Signed Up<b>");}
-}</script>
+  <head>
+    <title>Sign Up</title>
+    <script>
+      function DisplayResults() {
+        alert("Registration successful");
+      }
+    </script>
 
-<style>
-	body{
-	background-image: url("./Images/logo.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-}
-	.details{
-		text-align: center;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		color: red;
-		font-size: 25px;
-		font-family: cursive;
-		}
-input[type=text],input[type=radio],input[type=number],input[type=password]{
-	border-radius: 100px;
-	color: red;
-	width: 250px;
-	height: 25px;
-	margin-left: 10px;
-	text-align: center;
-	line-height: 20px;
-	background-color: white;
-	color: black;
-	text-transform: uppercase;
-}
-input[type=submit], input[type=reset]
-{
-	border-radius: 100px;
-	text-align: center;
-	width:125px;
-	height:30px;
-	line-height: 20px;
-	color:red;
-	background-color: black;
-	margin-left: 10px;
-}
-#signup{
-	color: red;
-	font-size: 90px;
-	font-family: Arial;
-	font-weight: bold;
-	position: absolute;
-	left:0;
-	top: 0;
-	transform: translateY(250px);
-	margin-left:50px;
-	}
-form{
-	height: 100px;
-}
-	</style>
-</head>
-<body>
-		<div id="signup">SIGN UP</div>
-<form >
-	<div class="details">
-<div>
-<input type="text" name="Fname" required placeholder="First Name">
-</div>
-	<div>
-<input type="text" name="Mename" required placeholder="Middle Name">
-	</div>
-	<div>
-		<input type="text" name="Lname" required placeholder="Last Name">
-	</div>
-	<div>
-	<input type="text" name="number" required placeholder="Email">
-	</div>
-<div>
-<input type="password" name="password" required placeholder="Password">
-</div>
-<input class="btn" type="submit" value="Sign Up" 
-onclick="displayMessageSuccessfully()" required>
-<input class="btn" type="reset" value="Reset" 
-onclick="displayMessageReset()" required>
-</div>
-</form>
-</body>
+    <style>
+      h1 {
+        margin: auto;
+        width: max-content;
+        color: brown;
+      }
+      span {
+        display: inline-block;
+        padding: 5px;
+      }
+      .seperator {
+        height: 6px;
+        display: block;
+      }
+      .main {
+        padding: 20px;
+        width: 300px;
+        height: 450px;
+        border: 1.5px grey solid;
+        border-radius: 5px;
+        margin: -4.5px auto;
+      }
+      label {
+        font-weight: bold;
+        color: brown;
+        font-size: 1.25em;
+      }
+      input {
+        width: 280px;
+        border-radius: 5px;
+        border: 2px grey solid;
+        padding: 8px;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 300px;
+        background-color: cadetblue;
+        font-weight: bold;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+        border: 2px gray solid;
+        background-color: darkcyan;
+      }
+      input:hover {
+        border: 2px solid peru;
+        outline: none;
+      }
+      body {
+        background-color: black;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        color: white;
+      }
+      .brand {
+        margin-bottom: 13px;
+        color: red;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <h1 class="brand">Apna Theatre</h1>
+    </div>
+    <div class="main">
+      <h1>Sign up for free</h1>
+      <span class="seperator"></span>
+      <form onsubmit="DisplayResults()">
+        <label for="name">Name </label>
+        <span class="seperator"></span>
+        <input type="text" placeholder="Enter your name" required />
+        <span class="seperator"></span>
+        <label for="email">Email </label>
+        <span class="seperator"></span>
+        <input type="email" placeholder="Enter your Email" required />
+        <span class="seperator"></span>
+        <label for="password"> Password </label>
+        <span class="seperator"></span>
+        <input type="password" placeholder="Enter your password" required />
+        <span class="seperator"></span>
+        <label for="confirm password"> Re-type Password</label>
+        <span class="seperator"></span>
+        <input type="password" placeholder="Confirm password" required />
+        <span class="seperator"></span>
+        <input type="submit" value="Sign Up" />
+      </form>
+    </div>
+  </body>
 </html>
