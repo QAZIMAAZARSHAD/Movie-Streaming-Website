@@ -3,8 +3,40 @@
   <head>
     <title>Sign Up</title>
     <script>
-      function DisplayResults() {
-        alert("Registration successful");
+      function DisplayResults(e) {
+        var name = document.forms["regform"]["name"].value;
+        var email = document.forms["regform"]["email"].value;
+        var password = document.forms["regform"]["password"].value;
+        var confirmpassword = document.forms["regform"]["retypepassword"].value;
+        var error = document.getElementById("errormessage");
+        var errorcontent = document.getElementById("error");
+        console.log(name);
+        if (name.length == 0) {
+          error.style.display = "block";
+          errorcontent.innerHTML = "Name should not be empty";
+        } else if (name.length > 0 && name.length < 4) {
+          error.style.display = "block";
+          errorcontent.innerHTML = "Name should not be less than 4 characters";
+        } else if (email.length == 0) {
+          error.style.display = "block";
+          errorcontent.innerHTML = "Email should not be empty";
+        } else if (password.length == 0) {
+          error.style.display = "block";
+          errorcontent.innerHTML = "Password should not be empty";
+        } else if (password.length < 6) {
+          error.style.display = "block";
+          errorcontent.innerHTML =
+            "Password should contain atleast 6 characters";
+        } else if (password != confirmpassword) {
+          error.style.display = "block";
+          errorcontent.innerHTML = "Password does not match";
+        } else {
+          alert("Registration successful");
+          setTimeout(function () {
+            document.location.href = "index.html";
+          }, 100);
+        }
+        return false;
       }
     </script>
 
@@ -25,7 +57,7 @@
       .main {
         padding: 20px;
         width: 300px;
-        height: 450px;
+        height: 500px;
         border: 1.5px grey solid;
         border-radius: 5px;
         margin: -4.5px auto;
@@ -69,6 +101,11 @@
         color: red;
         padding-top: 15px;
       }
+      #errormessage {
+        text-align: center;
+        color: red;
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -77,23 +114,34 @@
     </div>
     <div class="main">
       <h1>Sign up for free</h1>
+      <div id="errormessage">
+        <p id="error"></p>
+      </div>
       <span class="seperator"></span>
-      <form onsubmit="DisplayResults()">
+      <form onsubmit="return DisplayResults()" name="regform">
         <label for="name">Name </label>
         <span class="seperator"></span>
-        <input type="text" placeholder="Enter your name" required />
+        <input type="text" name="name" placeholder="Enter your name" />
         <span class="seperator"></span>
         <label for="email">Email </label>
         <span class="seperator"></span>
-        <input type="email" placeholder="Enter your Email" required />
+        <input type="email" name="email" placeholder="Enter your Email" />
         <span class="seperator"></span>
         <label for="password"> Password </label>
         <span class="seperator"></span>
-        <input type="password" placeholder="Enter your password" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
         <span class="seperator"></span>
         <label for="confirm password"> Re-type Password</label>
         <span class="seperator"></span>
-        <input type="password" placeholder="Confirm password" required />
+        <input
+          type="password"
+          name="retypepassword"
+          placeholder="Confirm password"
+        />
         <span class="seperator"></span>
         <input type="submit" value="Sign Up" />
       </form>
