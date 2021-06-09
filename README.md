@@ -12,7 +12,7 @@ So, what else do you need?🤔.
 Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
 <p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 40%></p>
 
-We already have Netflix, Prime and Hotstar but they might be expenive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
+We already have Netflix, Prime and Hotstar but they might be expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
 <p align="center"><img src="https://i.pinimg.com/originals/a1/55/93/a1559307185334cb66fb0ccf5e787bd0.gif" width = 40%></p>
 
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre Website__ is here for the rescue!
