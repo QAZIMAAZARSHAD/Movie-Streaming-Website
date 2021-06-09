@@ -60,10 +60,10 @@ marquee{
 }
 .logo{
 	width:200px;
-	height:100px;
-	padding:20px;
+	height:120px;
+	padding:0;
 	float:left;
-  background: black;
+  background:black;
 	transform:scale(1);
 	transition-property:width;
 	transform:translateY(0px);
@@ -71,7 +71,8 @@ marquee{
 	transition:transform 4s,4s;
 }
 .logo:hover{
-	width:300px;
+	width:250px;
+  
 	transform:translateY(-30px);
 }
 .online{
