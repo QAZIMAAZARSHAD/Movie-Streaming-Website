@@ -12,7 +12,7 @@ So, what else do you need?🤔.
 Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
 <p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 40%></p>
 
-We already have Netflix, Prime and Hotstar but they might be expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
+We already have Netflix, Prime and Hotstar but they might be expenive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
 <p align="center"><img src="https://i.pinimg.com/originals/a1/55/93/a1559307185334cb66fb0ccf5e787bd0.gif" width = 40%></p>
 
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre Website__ is here for the rescue!
@@ -54,8 +54,6 @@ You can refer to the following articles on the basics of Git and Github and also
 Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and improve it further
 
 To start contributing, follow the below guidelines: 
-
-**🌟.**  Star🌟 the project to bookmark and appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
@@ -146,10 +144,6 @@ git push -u origin <your_branch_name>
 
 ## Code of Conduct
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
-<a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/CODE_OF_CONDUCT.md">
-<h5 align="center"><b>Click to read</b></a>
-  
+
 ## License 
 <p align="center"><img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
-<a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/LICENSE">
-<h5 align="center"><b>MIT License</b></a>  
