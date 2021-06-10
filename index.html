@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -326,6 +337,29 @@
 	Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</span>
         </div>
     </footer>
-    <script src="./static/script.js"></script>
+
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true" style="color: white;font-weight: bolder; font-size: 40px;"></i>
+    </button>
+    
+
+    <script>
+      $(document).ready(function(){
+
+var scrollTopButton = document.getElementById("scrollToTopButton");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+    } else {
+        scrollTopButton.style.display = "none";
+    }
+}
+$("#scrollToTopButton").click(function(){
+    $('html ,body').animate({scrollTop : 0},800)
+});
+}); 
+    </script>
+        <script src="./static/script.js"></script>
   </body>
 </html>
