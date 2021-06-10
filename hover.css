@@ -1,0 +1,10 @@
+/* Hover Images */
+.poster {
+    overflow: hidden; 
+  }
+  .poster img {
+    transition: transform .5s ease;
+  }
+  .poster:hover img {
+    transform: scale(1.2);
+  }
