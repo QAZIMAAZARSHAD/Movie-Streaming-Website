@@ -90,22 +90,20 @@ marquee{
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 80px;
+  line-height: 60px;
 }
 .menu2 li{
   float: left;
-  margin: 0px;
 }
 .menu2 ul li a{
   background:black;
   text-decoration: none;
-  width: 120px;
-  display:inline-block;
-  text-align:center;
+  width: 150px;
+  display:block;
+  text-align: center;
   color: whitesmoke;
   font-size: 18px;
-  letter-spacing: 0px;
-  margin-right: 0px;
+  letter-spacing: 0.5px;
 }
 .menu2 li a:hover{
   color:red;
@@ -149,11 +147,11 @@ marquee{
             animation: moveSlideshow 12s linear infinite;
         }
         @keyframes moveSlideshow {
-  100% {
-    transform: translateX(-66.6666%);
+  100% { 
+    transform: translateX(-66.6666%);  
   }
 }
-
+ 
       container{
     background-color:black;
             width: 100%;
@@ -165,8 +163,8 @@ marquee{
     display: inline-block;
     position: relative;
     margin-left: 30px;
-
-
+    
+    
 }
 .flim{
     text-align: center;
@@ -176,7 +174,7 @@ marquee{
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
-}
+}  
 .hr{
     width: 95%;
     height: 2px;
@@ -201,17 +199,17 @@ maincontainer{
     padding: 20px 20px 20px 0px;
 }
 .modal {
-  display: none;
+  display: none; 
   position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 .modal-content {
   background-color: #fefefe;
