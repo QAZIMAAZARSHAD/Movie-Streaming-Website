@@ -1,11 +1,14 @@
 body{
-  background: black;
+  /* background: black; */
   margin: 0;
 }
 .menu{
   width: 100%;
-  background: black;
-  overflow: auto;
+  background: royalblue;
+  /* overflow: auto; */
+  position:fixed;
+  z-index: 1;
+
 }
 .menu ul{
   margin: 0;
@@ -15,22 +18,28 @@ body{
 }
 .menu li{
   float: left;
+  margin: 5px;
+ 
 }
 .menu ul li a{
-  background:black;
+  /* background:black; */
   text-decoration: none;
   width: 130px;
   display:block;
   text-align: center;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   letter-spacing: 0.5px;
+  /* border: 2px solid red;
+  border-radius: 50px; */
 }
 .menu li a:hover{
   color:red;
   opacity:0.5;
   font-size: 20px;
+
 }
+
 .search-form{
   margin-top:15px;
   float:right;
@@ -63,7 +72,7 @@ marquee{
 	height:100px;
 	padding:20px;
 	float:left;
-  background: black;
+  /* background: black; */
 	transform:scale(1);
 	transition-property:width;
 	transform:translateY(0px);
@@ -75,33 +84,37 @@ marquee{
 	transform:translateY(-30px);
 }
 .online{
-	color:red;
+
+	color:rgb(255, 0, 0);
 	font-size: 50px;
+ 
 	padding: 40px;
 	float:center;
-  background: black;
+  /* background: black; */
 }
 .menu2{
   width: 100%;
-  background: black;
+  /* background: black; */
   overflow: auto;
+  background: royalblue;
 }
 .menu2 ul{
   margin: 0;
   padding: 0;
   list-style: none;
   line-height: 60px;
+
 }
 .menu2 li{
   float: left;
 }
 .menu2 ul li a{
-  background:black;
+  /* background:black; */
   text-decoration: none;
   width: 150px;
   display:block;
   text-align: center;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   letter-spacing: 0.5px;
 }
@@ -191,12 +204,16 @@ maincontainer{
 }
 .foot{
     text-align: center;
-    background-color: black;
-    color:red;
-    height: 50px;
-    margin: -36px 31px 23px 2px;
+    background-color:royalblue;
+    color:rgb(255, 255, 255);
+    height: 20px;
+    /* margin: -36px 31px 23px 2px; */
     width: 100%;
     padding: 20px 20px 20px 0px;
+}
+#f{
+  text-decoration: none;
+  color:rgb(0, 255, 115);
 }
 .modal {
   display: none; 
@@ -230,10 +247,10 @@ maincontainer{
   cursor: pointer;
 }
 .buttonmodal button{
-  margin-left: 50%;
+  /* margin-left: 100%;
   margin-top: 10%;
-  margin-right: 50%;
-  margin-bottom: 50%;
+
+  margin-bottom: 50%; */
   background:red;
   color: white;
   border-radius: 5px 5px 5px 5px;
@@ -241,4 +258,95 @@ maincontainer{
   padding:7px;
   border: none;
   font-size: 25px;
+  width: 50%;
+  margin-right: 25%;
+}
+.mode {
+  float:right;
+color: white;
+}
+.change {
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 10%;
+  width: 10px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+  background-color: yellowgreen;
+}
+.dark{
+  background-color: #222;
+ 
+
+}
+
+
+
+#container1 {
+  max-width: 50%;
+  margin: auto;
+}
+
+#monitor {
+	background: #000; 
+	position: relative;
+	border-top: 3px solid #888; 
+	margin: 5%;
+	padding: 2% 2% 4% 2%; 
+	border-radius: 10px; 
+	border-bottom-left-radius: 50% 2%; 
+	border-bottom-right-radius: 50% 2%; 
+	transition: margin-right 1s;
+}
+
+#monitor:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 3%;
+	left: 36%;
+	height: .5%; 
+	width: 28%;
+	background: #ddd; 
+	border-radius: 50%; 
+	box-shadow: 0 0 3px 0 white; 
+}
+
+#monitorscreen {
+	position: relative;
+  background-color: #777;
+	background-size: cover; 
+	background-position: top center;
+	height: 0; 
+	padding-bottom: 56.25%; 
+	position: relative;
+	overflow: hidden;
+}
+
+
+@media all and (min-width: 960px) {
+	#monitor {
+		-webkit-animation: tvflicker .2s infinite alternate; 
+		-moz-animation:    tvflicker .5s infinite alternate; 
+		-o-animation:      tvflicker .5s infinite alternate; 
+		animation:         tvflicker .5s infinite alternate; 
+	}
+
+	@-webkit-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+	  100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+	}
+	@-moz-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@-o-keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
+	@keyframes tvflicker {
+	  0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+	}
 }

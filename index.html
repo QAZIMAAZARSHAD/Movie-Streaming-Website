@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
+
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -19,23 +20,35 @@
       </ul>
       <form class="search-form">
         <input type="text" placeholder="Search">
+        
+        <div class="mode">
+            Dark mode:			
+            <span class="change">OFF</span>
+        </div>
         <button>Search</button>
     </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
+ <div>
+     
+     <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
+     <img src="./Images/logo.jpg" class="logo">
+     <label class="online">Stream Latest Movies Now!</label>
+ </div>
     <nav class="menu2">
      <ul>
-	         <li><a href="popular.html">Popular</a> </li>
-          <li><a href="crime.html">Crime</a></li>
-          <li><a href="suspense.html">Suspense & Thriller</a></li>
-          <li><a href="action.html">Action</a></li>
-          <li><a href="fantasy.html">Sci-Fi & Fantasy</a></li>
-         <li><a href="documentary.html">Documentary</a></li>
-          <li><a href="horror.html">Horror</a></li>
-          <li><a href="drama.html">Drama</a></li>
-          <li><a href="war.html">War & Politics</a></li>
-          <li><a href="comedy.html">Comedy</a></li>
+
+            <li><a href="popular.html">Popular</a> </li>
+            <li><a href="crime.html">Crime</a></li>
+            <li><a href="suspense.html">Suspense & Thriller</a></li>
+            <li><a href="action.html">Action</a></li>
+            <li><a href="fantasy.html">Sci-Fi & Fantasy</a></li>
+           <li><a href="documentary.html">Documentary</a></li>
+            <li><a href="horror.html">Horror</a></li>
+            <li><a href="drama.html">Drama</a></li>
+            <li><a href="war.html">War & Politics</a></li>
+            <li><a href="comedy.html">Comedy</a></li>
+         
+
+	 
       </ul>
     </nav>
     <div class="slider-holder">
@@ -322,9 +335,24 @@
     <footer>
         <div class="foot">
             <span><b style="background-color:black; padding: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 ">AT</b>&nbsp; &nbsp;  Copyright &copy; and &reg; Since 2020
-	Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</span>
+	Under <a id="f" href="index.html">ApnaTheatre.com</a> : (Project Is Done By Qazi Maaz Arshad)</span>
         </div>
     </footer>
+    
     <script src="./static/script.js"></script>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+        <script>
+            $( ".change" ).on("click", function() {
+  if( $( "body" ).hasClass( "dark" )) {
+    $( "body" ).removeClass( "dark" );
+    $( ".change" ).text( "OFF" );
+  } else {
+    $( "body" ).addClass( "dark" );
+    $( ".change" ).text( "ON" );
+  }
+});
+        </script>
   </body>
 </html>
