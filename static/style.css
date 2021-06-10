@@ -1,5 +1,5 @@
 body{
-  background: black;
+  background-color: black  !important;
   margin: 0;
 }
 .menu{
@@ -242,3 +242,51 @@ maincontainer{
   border: none;
   font-size: 25px;
 }
+
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  }
+  
+  img {
+    pointer-events: none;
+  }
+  .movie_card{
+    padding: 0 !important;
+    width: 14rem;     
+    margin:5px;  
+    border-radius: 20px;
+    background-color:rgb(15, 15, 73) !important;
+    color:white;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  }
+  .movie_card img{
+      height:16rem;
+  }
+  .movie_info{
+    color: red;
+  }
+
+  .movie_info i{
+    font-size: 10px;
+  }
+  .card-title{
+    width: 80%;
+    font-size:15px;
+    height: 2rem;
+  }
+  
+  .section-title{
+    color: red;
+    font-size:25px;
+    margin-bottom:40px;
+  }
+  .movie_info_rating{
+    color:goldenrod;
+    float:right;
+  }
+  body {
+    overflow-x: hidden; /* Hide scrollbars */
+  }
