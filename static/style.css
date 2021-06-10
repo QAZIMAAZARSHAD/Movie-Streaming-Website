@@ -151,6 +151,7 @@ marquee{
     transform: translateX(-66.6666%);  
   }
 }
+
  
       container{
     background-color:black;
@@ -241,4 +242,41 @@ maincontainer{
   padding:7px;
   border: none;
   font-size: 25px;
+}
+.poster{
+  padding: 30px;
+  transform: translate(-50%,-50%) ;
+  border-radius: 30px;
+  transition: .5s;
+  cursor: pointer;
+}
+.poster img{
+  border-radius: 30px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: .5s; 
+
+}
+.poster:hover img{
+  transform: perspective(1000px) rotateY(180deg);
+  background-color: #000 ;
+  opacity: 0.3;
+}
+.poster .flim{
+  border-radius: 30px;
+  backface-visibility: hidden;  
+  transform: perspective(1000px) rotateY(-180deg);
+  transition: .5s;
+  position: absolute;
+  color: #fff;
+
+}
+.poster:hover .flim{
+  top:60%;
+  transform: perspective(1000px) rotateY(0);
+} 
+
+.container{
+  padding-top: 200px;
+  padding-left: 200px;
+  overflow: hidden;
 }
