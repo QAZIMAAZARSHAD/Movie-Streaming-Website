@@ -6,6 +6,7 @@ body{
   width: 100%;
   background: black;
   overflow: auto;
+  margin-left: 90px;
 }
 .menu ul{
   margin: 0;
@@ -32,9 +33,9 @@ body{
   font-size: 20px;
 }
 .search-form{
-  margin-top:15px;
+  margin-top:20px;
   float:right;
-  margin-right: 100px;
+  margin-right: 200px;
 }
 input[type=text]{
   padding: 7px;
@@ -59,9 +60,9 @@ marquee{
   background: black;
 }
 .logo{
-	width:200px;
-	height:100px;
-	padding:20px;
+  width:150px;
+  height:100px;
+  padding:30px;
 	float:left;
   background: black;
 	transform:scale(1);
@@ -75,16 +76,19 @@ marquee{
 	transform:translateY(-30px);
 }
 .online{
-	color:red;
-	font-size: 50px;
-	padding: 40px;
-	float:center;
-  background: black;
+  color:red;
+  font-size: 60px;
+  padding: 16px;
+float: center;
+background: black;
+margin-left: 70px;
+margin-top: 100px;
 }
 .menu2{
   width: 100%;
   background: black;
   overflow: auto;
+  margin-left: 50px;
 }
 .menu2 ul{
   margin: 0;
@@ -115,7 +119,7 @@ marquee{
 
 .slider-holder
         {
-            width: 10000px;
+            width: 1000px;
             height: 400px;
             margin-left: auto;
             margin-right: auto;
@@ -144,22 +148,22 @@ marquee{
             padding: 0px;
             position: relative;
             transform: translate3d(0, 0, 0);
-            animation: moveSlideshow 12s linear infinite;
+            animation: moveSlideshow 5s linear infinite;
         }
         @keyframes moveSlideshow {
   100% { 
-    transform: translateX(-66.6666%);  
+    transform: translateX(-48.6666%);  
   }
 }
  
-      container{
-    background-color:black;
-            width: 100%;
-            height: 100%;
-            margin-left: 50px;
+container{
+background-color:black;
+width: 100%;
+height: 100%;
+margin-left: 50px;
 }
 .poster{
-    margin: 10px 10px 10px 10px ;
+    margin: 30px ;
     display: inline-block;
     position: relative;
     margin-left: 30px;
@@ -184,20 +188,58 @@ maincontainer{
     background-color: black;
     margin: -40px 35px 36px 1px;
     width: 100%;
+    margin: auto;
 }
    .maincontainer  h2{
     color: red;
     margin-left: 50px;
+    font-size: 50px;
 }
-.foot{
-    text-align: center;
-    background-color: black;
-    color:red;
-    height: 50px;
-    margin: -36px 31px 23px 2px;
-    width: 100%;
-    padding: 20px 20px 20px 0px;
+.footer-distributed{
+  background: #444;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
 }
+
+.footer-distributed .footer-left{
+  float: left;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Roboto', cursive;
+  margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+  color:  #e70d0d;
+}
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
 .modal {
   display: none; 
   position: fixed;
