@@ -55,6 +55,8 @@ Are we missing any of your favorite features, which you think you can add to it�
 
 To start contributing, follow the below guidelines: 
 
+**🌟.**  Star🌟 the project to bookmark and appreciate the work.
+
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
 **1.**  Fork [this](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website) repository.
@@ -144,6 +146,10 @@ git push -u origin <your_branch_name>
 
 ## Code of Conduct
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
-
+<a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/CODE_OF_CONDUCT.md">
+<h5 align="center"><b>Click to read</b></a>
+  
 ## License 
 <p align="center"><img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
+<a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/LICENSE">
+<h5 align="center"><b>MIT License</b></a>  
