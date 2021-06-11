@@ -34,7 +34,6 @@ body{
 .search-form{
   margin-top:15px;
   float:right;
-  margin-right: 100px;
 }
 input[type=text]{
   padding: 7px;
@@ -77,7 +76,7 @@ marquee{
 .online{
 	color:red;
 	font-size: 50px;
-	padding: 40px;
+	padding-left: 40px;
 	float:center;
   background: black;
 }
