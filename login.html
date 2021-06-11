@@ -1,100 +1,207 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Sign Up</title>
-	<script>
-		function displayMessageReset()
-		{
-			alert("Alert! You Have Clicked On Reset Button, Please Fill Your Data Again");
-		}
-		function displayMessageSuccessfully()
-		{	
-			var x;
-			x=confirm("Do You Want To Sumbit Your Data, Please Fill All Fields");
-			if(x==1)
-{document.write("<b>Thankyou! You Have Successfully Signed Up<b>");}
-}</script>
+  <head>
+    <title>Sign Up</title>
+    <script>
+      var namerror = false;
+      var emailerror = false;
+      var passworderror = false;
+      var confirmerror = false;
+      function DisplayResults(e) {
+        var name = document.forms["regform"]["name"].value;
+        var email = document.forms["regform"]["email"].value;
+        var password = document.forms["regform"]["password"].value;
+        var confirmpassword = document.forms["regform"]["retypepassword"].value;
+        var error = document.getElementById("errormessage");
+        if (name.length == 0) {
+          namerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+						</svg><span class="error">Name should not be empty</span></p>`;
+        } else if (email.length == 0) {
+          emailerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+						</svg><span class="error">Email should not be empty</span></p>`;
+        } else if (password.length == 0) {
+          passworderror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+						</svg><span class="error">Password should not be empty</span></p>`;
+        } else if (password != confirmpassword) {
+          confirmerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+						</svg><span class="error">Passwords doesn't match</span></p>`;
+        } else {
+          alert("Registration successful");
+          setTimeout(function () {
+            document.location.href = "index.html";
+          }, 100);
+        }
+        return false;
+      }
 
-<style>
-	body{
-	background-image: url("./Images/logo.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-}
-	.details{
-		text-align: center;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		color: red;
-		font-size: 25px;
-		font-family: cursive;
-		}
-input[type=text],input[type=radio],input[type=number],input[type=password]{
-	border-radius: 100px;
-	color: red;
-	width: 250px;
-	height: 25px;
-	margin-left: 10px;
-	text-align: center;
-	line-height: 20px;
-	background-color: white;
-	color: black;
-	text-transform: uppercase;
-}
-input[type=submit], input[type=reset]
-{
-	border-radius: 100px;
-	text-align: center;
-	width:125px;
-	height:30px;
-	line-height: 20px;
-	color:red;
-	background-color: black;
-	margin-left: 10px;
-}
-#signup{
-	color: red;
-	font-size: 90px;
-	font-family: Arial;
-	font-weight: bold;
-	position: absolute;
-	left:0;
-	top: 0;
-	transform: translateY(250px);
-	margin-left:50px;
-	}
-form{
-	height: 100px;
-}
-	</style>
-</head>
-<body>
-		<div id="signup">SIGN UP</div>
-<form >
-	<div class="details">
-<div>
-<input type="text" name="Fname" required placeholder="First Name">
-</div>
-	<div>
-<input type="text" name="Mename" required placeholder="Middle Name">
-	</div>
-	<div>
-		<input type="text" name="Lname" required placeholder="Last Name">
-	</div>
-	<div>
-	<input type="text" name="number" required placeholder="Email">
-	</div>
-<div>
-<input type="password" name="password" required placeholder="Password">
-</div>
-<input class="btn" type="submit" value="Sign Up" 
-onclick="displayMessageSuccessfully()" required>
-<input class="btn" type="reset" value="Reset" 
-onclick="displayMessageReset()" required>
-</div>
-</form>
-</body>
+      function change(e) {
+        var name = document.forms["regform"]["name"].value;
+        var error = document.getElementById("errormessage");
+        var email = document.forms["regform"]["email"].value;
+        var password = document.forms["regform"]["password"].value;
+        var confirmpassword = document.forms["regform"]["retypepassword"].value;
+        if (namerror == true) {
+          if (name.length > 0) {
+            namerror = false;
+            error.style.display = "none";
+          }
+        } else if (emailerror == true) {
+          if (email.length > 0) {
+            emailerror = false;
+            error.style.display = "none";
+          }
+        } else if (passworderror == true) {
+          if (password.length > 0) {
+            passworderror = true;
+            error.style.display = "none";
+          }
+        } else if (confirmerror == true) {
+          if (confirmpassword == password) {
+            confirmerror = false;
+            error.style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <style>
+      h1 {
+        margin: auto;
+        width: max-content;
+        color: brown;
+      }
+      span {
+        display: inline-block;
+        padding: 5px;
+      }
+      .seperator {
+        height: 6px;
+        display: block;
+      }
+      .main {
+        padding: 20px;
+        width: 300px;
+        height: 500px;
+        border: 1.5px grey solid;
+        border-radius: 5px;
+        margin: -4.5px auto;
+      }
+      label {
+        font-weight: bold;
+        color: brown;
+        font-size: 1.25em;
+      }
+      input {
+        width: 280px;
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 300px;
+        background-color: cadetblue;
+        font-weight: bold;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+        border: 2px gray solid;
+        background-color: darkcyan;
+        transform: scale(0.95);
+      }
+      body {
+        background-color: black;
+      }
+      .brand {
+        margin-bottom: 13px;
+        color: red;
+        padding-top: 15px;
+      }
+      #errormessage {
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+      }
+      p {
+        display: inline-flex;
+        font-size: 1em;
+        align-items: center;
+        background: rgb(220, 53, 69);
+        padding: 0.5em;
+        color: white;
+        font-family: sans-serif;
+      }
+      p svg {
+        width: 2em;
+        height: 2em;
+        margin-right: 0.5em;
+        fill: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <h1 class="brand">Apna Theatre</h1>
+    </div>
+    <div class="main">
+      <h1 class="sign">Sign up for free</h1>
+      <div id="errormessage"></div>
+      <span class="seperator"></span>
+      <form
+        onsubmit="return DisplayResults()"
+        name="regform"
+        autocomplete="off"
+      >
+        <label for="name">Name </label>
+        <span class="seperator"></span>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          oninput="change()"
+        />
+        <span class="seperator"></span>
+        <label for="email">Email </label>
+        <span class="seperator"></span>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          oninput="change()"
+        />
+        <span class="seperator"></span>
+        <label for="password"> Password </label>
+        <span class="seperator"></span>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          oninput="change()"
+        />
+        <span class="seperator"></span>
+        <label for="confirm password"> Re-type Password</label>
+        <span class="seperator"></span>
+        <input
+          type="password"
+          name="retypepassword"
+          placeholder="Confirm password"
+          oninput="change()"
+        />
+        <span class="seperator"></span>
+        <input type="submit" value="Sign Up" />
+      </form>
+    </div>
+  </body>
 </html>

@@ -153,3 +153,8 @@ git push -u origin <your_branch_name>
 <p align="center"><img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/LICENSE">
 <h5 align="center"><b>MIT License</b></a>  
+  
+## Contributors
+<a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Movie-Streaming-Website" />
+</a>
