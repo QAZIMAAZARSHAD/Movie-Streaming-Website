@@ -245,7 +245,6 @@ maincontainer{
 
 /* Contact Us CSS starts*/
 .box{
-  /* background: url("https://image.ibb.co/nJHGgk/about_us1.jpg"); */
   background: url("https://cdn.pixabay.com/photo/2017/09/17/08/39/curtain-2757815_960_720.png");
   color: white;
   text-align:center;
@@ -293,7 +292,7 @@ h3{
 }
 .address p{
   font-weight:bold;
-  color: #aca9a9;
+  color: #afadad;
   margin:3px;
 }
 .phone-e{
