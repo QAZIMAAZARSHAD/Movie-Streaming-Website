@@ -19,11 +19,17 @@
       </div>
       <div class="login-div">
           <form class="login">
-              <h1>Sign In</h1>
+              <h1>Sign Up for free</h1>
               <div class="input-text">
-                  <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                  <input type="text" id="inputName" name="name" placeholder="Name" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                  <div class="warning-input" id="warningName">
+                      Enter your name.
+                  </div>
+              </div>
+              <div class="input-text">
+                  <input type="email" id="inputEmail" name="email" placeholder="Email" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
                   <div class="warning-input" id="warningEmail">
-                      Please enter a valid email or phone number.
+                      Enter your email id.
                   </div>
               </div>
 
@@ -33,9 +39,15 @@
                       Your password must contain between 4 and 60 characters.
                   </div>
               </div>
+              <div class="input-text">
+                  <input type="password" id="inputRePassword" name="Repassword" placeholder="Renter Password" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)"/>
+                  <div class="warning-input" id="warningRePassword">
+                      Please type the same password as above
+                  </div>
+              </div>
 
               <div>
-                  <button class="signin-button">Sign In</button>
+                  <button class="signin-button" type="submit">Sign In</button>
               </div>
               <div class="remember-flex">
                   <div>
@@ -46,15 +58,9 @@
                       <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
                   </div>
               </div>
-              <div class="login-face">
+      
 
-              </div>
-              <div class="new-members">
-                  New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
-              </div>
-              <div class="protection color_link help">
-                  This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
-              </div>
+
           </form>
       </div>
   </div>
