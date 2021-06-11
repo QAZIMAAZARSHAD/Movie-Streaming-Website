@@ -1,12 +1,13 @@
 body{
-  background: black;
+  background: #000000;
   margin: 0;
 }
 .menu{
   width: 100%;
-  background: black;
-  overflow: auto;
+  background: #000000;
+  overflow: auto; 
 }
+
 .menu ul{
   margin: 0;
   padding: 0;
@@ -14,15 +15,15 @@ body{
   line-height: 60px;
 }
 .menu li{
-  float: left;
+  float: left; 
 }
 .menu ul li a{
-  background:black;
+  background:#000000;
   text-decoration: none;
   width: 130px;
   display:block;
   text-align: center;
-  color: whitesmoke;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
@@ -31,10 +32,35 @@ body{
   opacity:0.5;
   font-size: 20px;
 }
+.toggle{
+  width: 40px;
+  height: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; 
+}
+.toggle-icon{
+  color: red;
+}
+.toggle-container{
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
 .search-form{
-  margin-top:15px;
+  margin-top:-44px;
   float:right;
-  margin-right: 100px;
+  margin-right: 50px;
+
 }
 input[type=text]{
   padding: 7px;
@@ -44,26 +70,26 @@ input[type=text]{
 button{
   float:right;
   background:red;
-  color: white;
+  color: #ffffff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   position:relative;
   padding:7px;
-  border: none;
+  border: 1px solid #ffffff;
   font-size: 16px;
 }
 marquee{
 	color:red;
 	font-size: 25px;
 	font-family:Arial;
-  background: black;
+  background: #000000;
 }
 .logo{
 	width:200px;
 	height:100px;
 	padding:20px;
 	float:left;
-  background: black;
+  background: #000000;
 	transform:scale(1);
 	transition-property:width;
 	transform:translateY(0px);
@@ -79,11 +105,11 @@ marquee{
 	font-size: 50px;
 	padding: 40px;
 	float:center;
-  background: black;
+  background: #000;
 }
 .menu2{
   width: 100%;
-  background: black;
+  background: #000000;
   overflow: auto;
 }
 .menu2 ul{
@@ -96,12 +122,12 @@ marquee{
   float: left;
 }
 .menu2 ul li a{
-  background:black;
+  background:#000000;
   text-decoration: none;
   width: 150px;
   display:block;
   text-align: center;
-  color: whitesmoke;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
@@ -111,92 +137,89 @@ marquee{
   font-size: 20px;
 }
 
-
-
 .slider-holder
-        {
-            width: 10000px;
-            height: 400px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            text-align: center;
-            overflow: hidden;
-        }
-        .image-holder
-        {
-            width: 2400px;
-            background-color:black;
-            height: 400px;
-            clear: both;
-            position: relative;
-            transform: translate3d(0, 0, 0);
-            -webkit-transition: left 2s;
-            -moz-transition: left 2s;
-            -o-transition: left 2s;
-            transition: left 2s ;
-            animation: moveSlideshow 12s linear infinite;
-        }
-        .slider-image
-        {
-            float: left;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-            transform: translate3d(0, 0, 0);
-            animation: moveSlideshow 12s linear infinite;
-        }
-        @keyframes moveSlideshow {
+{
+   width: 10000px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   text-align: center;
+   overflow: hidden;
+}
+.image-holder
+{
+  width: 2400px;
+  background-color: #000000;
+  height: 400px;
+  clear: both;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s ;
+  animation: moveSlideshow 12s linear infinite;
+}
+        
+.slider-image
+{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 12s linear infinite;
+}
+@keyframes moveSlideshow {
   100% { 
     transform: translateX(-66.6666%);  
   }
 }
  
-      container{
-    background-color:black;
-            width: 100%;
-            height: 100%;
-            margin-left: 50px;
+container{
+  background: #000000;
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
 }
 .poster{
-    margin: 10px 10px 10px 10px ;
-    display: inline-block;
-    position: relative;
-    margin-left: 30px;
-    
-    
+  margin: 10px 10px 10px 10px ;
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;   
 }
 .flim{
-    text-align: center;
-    position: absolute;
-    bottom: 0%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0%;
+  background: #000000;
+  background: #00000080;
+  color: #ffffff;
+  width: 100%;
 }  
 .hr{
-    width: 95%;
-    height: 2px;
-    color: black;
+  width: 95%;
+  height: 2px;
+  color: #000000;
 }
 maincontainer{
-    background-color: black;
-    margin: -40px 35px 36px 1px;
-    width: 100%;
+  background: #000000;
+  margin: -40px 35px 36px 1px;
+  width: 100%;
 }
-   .maincontainer  h2{
-    color: red;
-    margin-left: 50px;
+.maincontainer  h2{
+ color: red;
+ margin-left: 50px;
 }
 .foot{
-    text-align: center;
-    background-color: black;
-    color:red;
-    height: 50px;
-    margin: -36px 31px 23px 2px;
-    width: 100%;
-    padding: 20px 20px 20px 0px;
+  text-align: center;
+  background-color: #000000;
+  color:red;
+  height: 50px;
+  margin: -36px 31px 23px 2px;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
 }
 .modal {
   display: none; 
@@ -208,24 +231,24 @@ maincontainer{
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  background-color: #000000; 
+  background-color:  #00000066; 
 }
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
 .close {
-  color: #aaaaaa;
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 .close:hover,.close:focus {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -235,10 +258,82 @@ maincontainer{
   margin-right: 50%;
   margin-bottom: 50%;
   background:red;
-  color: white;
+  color: #ffffff;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
   padding:7px;
   border: none;
   font-size: 25px;
+}
+body.active{
+  background: #ffffff;
+}
+.menu.active{
+  background: #ffffff;
+}
+.menu ul li a.active{
+  background: #ffffff;
+  color: #000;
+}
+.toggle.active{
+  background: #000;
+}
+.toggle-container.active{
+  background: #fff;
+  transform: translateX(-20px);
+}
+button.active{
+  color: #000;
+}
+marquee.active{
+  background: #ffffff;
+}
+.logo.active{
+  background: #ffffff;
+}
+
+.menu2.active{
+  background: #ffffff;
+}
+.menu2 ul li a.active{
+  background: #ffffff;
+  color: #000;
+}
+.image-holder.active{
+  background: #ffffff;
+}
+.container.active{
+  background: #ffffff;
+}
+.flim.active{
+  background: #ffffff;
+  background: #ffffff;
+  color: #000; 
+}
+.hr.active{
+  color: #000; 
+}
+.maincontainer.active{
+  background: #ffffff;
+}
+.foot.active{
+  background-color: #ffffff;
+}
+.close.active{
+  color: #000;
+}
+.close:hover,.close:focus.active {
+  color: #000; 
+}
+.modal.active{
+  background-color: #ffffff;
+}
+.modal-content.active {
+  background-color: #000;
+}
+.buttonmodal button.active{
+  color: #000;
+}
+.online.active{
+  background-color: #ffffff;
 }
