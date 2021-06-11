@@ -373,14 +373,12 @@ textarea.ng-valid {
 	border-radius: 10px;
 }
 
-
-
 /* CSS FOR FOOTER */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 
 .footer-distributed {
-  background-color: #292c2f;
+  /* background-color: #292c2f; */
+  background-color: red;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -390,7 +388,9 @@ textarea.ng-valid {
 }
 
 .footer-distributed .footer-left p {
-  color: #8f9296;
+  /* color: #8f9296; */
+  /* color:rgb(219, 219, 219); */
+  color:black
   font-size: 14px;
   margin: 0;
 }
@@ -399,7 +399,8 @@ textarea.ng-valid {
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color:black;
   margin: 0 0 10px;
   padding: 0;
   transition: ease .25s;
@@ -418,7 +419,8 @@ textarea.ng-valid {
   content: "·";
   font-size: 20px;
   left: 0;
-  color: #fff;
+  /* color: #fff; */
+  color:black;
   display: inline-block;
   padding-right: 5px;
 }
@@ -437,10 +439,12 @@ textarea.ng-valid {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #33383b;
+  /* background-color: #33383b; */
+  background-color:rgb(197, 5, 5);
   border-radius: 2px;
   font-size: 20px;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color:black;
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
@@ -473,8 +477,3 @@ textarea.ng-valid {
 #waterdrop canvas {
     bottom: -70px !important;
 }
-
-
-
-=======
-
