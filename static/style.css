@@ -77,7 +77,7 @@ marquee{
 .online{
 	color:red;
 	font-size: 50px;
-	padding: 40px;
+	padding-left: 40px;
 	float:center;
   background: black;
 }
