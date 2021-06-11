@@ -204,12 +204,19 @@ maincontainer{
 }
 .foot{
     text-align: center;
+
     background-color:royalblue;
     color:rgb(255, 255, 255);
     height: 20px;
     /* margin: -36px 31px 23px 2px; */
     width: 100%;
     padding: 20px 20px 20px 0px;
+
+    background-color: black;
+    color: red;
+    height: 50px;
+    margin: 30px;
+
 }
 #f{
   text-decoration: none;
@@ -258,6 +265,7 @@ maincontainer{
   padding:7px;
   border: none;
   font-size: 25px;
+
   width: 50%;
   margin-right: 25%;
 }
@@ -350,3 +358,35 @@ color: white;
 	  100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
 	}
 }
+
+}
+
+.scroll-bar {
+	height: auto;
+	width: auto;
+	margin: auto;
+  overflow-y:auto;
+  overflow-x: hidden;
+	max-width: 95%;
+}
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid #2c2f30;
+	// border color does not support transparent on scrollbar
+	// border-color: transparent;
+	background-color:black;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #2c2f30;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color:red;
+	border-radius: 10px;
+}
+
