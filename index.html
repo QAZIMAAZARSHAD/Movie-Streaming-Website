@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
-	<script src="./static/pre.js"></script>
+
+    <!--prealoder-->
+    
+	<link rel="stylesheet" href="static/normalize.css">
+	<link rel="stylesheet" href="static/main.css">
+	<script src="static/js/vendor/modernizr-2.6.2.min.js"></script>
+	<style type="text/css">
+
+
+	</style>
+	<!--prealoder endl-->
   </head>
-  <body>
-	  <div id="animationWindow">
-</div>
+  <body>  
+         
+
     <nav class="menu" id="Home">
       <ul>
         <li><a href="#Home">Home</a></li>
@@ -41,6 +51,7 @@
           <li><a href="comedy.html">Comedy</a></li>
       </ul>
     </nav>
+  
     <div class="slider-holder">
         
         <div class="image-holder">
@@ -322,13 +333,23 @@
             </div>
         </div>
     </div>
+    
     <footer>
         <div class="foot">
             <span><b style="background-color:black; padding: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 ">AT</b>&nbsp; &nbsp;  Copyright &copy; and &reg; Since 2020
 	Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</span>
         </div>
     </footer>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+
     <script src="./static/script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="static/js/main.js"></script>
+
 	
   </body>
 </html>
