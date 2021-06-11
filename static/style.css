@@ -2,21 +2,21 @@ body{
   background: black;
   margin: 0;
 }
-.menu{
+.{
   width: 100%;
   background: black;
   overflow: auto;
 }
-.menu ul{
+. ul{
   margin: 0;
   padding: 0;
   list-style: none;
   line-height: 60px;
 }
-.menu li{
+. li{
   float: left;
 }
-.menu ul li a{
+. ul li a{
   background:black;
   text-decoration: none;
   width: 110px;
@@ -26,7 +26,7 @@ body{
   font-size: 18px;
   letter-spacing: 0.5px;
 }
-.menu li a:hover{
+. li a:hover{
   color:red;
   opacity:0.5;
   font-size: 20px;
@@ -46,7 +46,7 @@ button{
   background:red;
   color: white;
   border-radius: 0 5px 5px 0;
-  cursor: pointer;
+  cursor: ;
   position:relative;
   padding:7px;
   border: none;
@@ -199,7 +199,7 @@ maincontainer{
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  background: linear-gradient(90deg, rgb(250, 12, 3) 0%, rgb(129, 16, 221) 35%, rgb(0, 255, 13) 100%);
+  background: linear-gradient(90deg, rgb(250, 12, 3) 0%, rgb(5, 1, 8) 50%, rgb(250, 12, 3) 100%);
   font-size: large;
 }
 .modal {
@@ -231,7 +231,7 @@ maincontainer{
 .close:hover,.close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
+  cursor: ;
 }
 .buttonmodal button{
   margin-left: 50%;
@@ -241,7 +241,7 @@ maincontainer{
   background:red;
   color: white;
   border-radius: 5px 5px 5px 5px;
-  cursor: pointer;
+  cursor: ;
   padding:7px;
   border: none;
   font-size: 25px;
