@@ -276,6 +276,9 @@ marquee{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: red;
+    height: 50px;
+    margin: 30px;
 }
 
 
