@@ -145,13 +145,15 @@ git push -u origin <your_branch_name>
 </p>
 
 ## Code of Conduct
-<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+<p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/CODE_OF_CONDUCT.md">
+<img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 <h5 align="center"><b>Click to read</b></a>
   
 ## License 
-<p align="center"><img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
+<p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/LICENSE">
+<img width=35% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
 <h5 align="center"><b>MIT License</b></a>  
   
 ## Contributors
