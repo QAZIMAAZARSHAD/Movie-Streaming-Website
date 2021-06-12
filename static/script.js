@@ -13,7 +13,7 @@ window.onclick = function(event) {
   }
 }
 //code of automatic year change
-var today = new Date();
-var year = today.getFullYear();
+const today = new Date();
+const year = today.getFullYear();
 
 document.querySelector(".year").innerText=year;
