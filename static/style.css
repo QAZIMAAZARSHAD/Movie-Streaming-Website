@@ -542,3 +542,25 @@ textarea.ng-valid {
     bottom: -70px !important;
 }
 
+
+/* Cursor Added */
+
+#Movies img:hover{
+  cursor: pointer;
+}
+#Movies b:hover{
+  cursor: pointer;
+}
+
+#WebSeries img:hover{
+  cursor: pointer;
+}
+#WebSeries b:hover{
+  cursor: pointer;
+}
+#Kids img:hover{
+  cursor: pointer;
+}
+#Kids b:hover{
+  cursor: pointer;
+}
