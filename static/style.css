@@ -441,3 +441,22 @@ textarea.ng-valid {
   background-color: red;
   border-radius: 10px;
 }
+#Movies img:hover{
+  cursor: pointer;
+}
+#Movies b:hover{
+  cursor: pointer;
+}
+
+#WebSeries img:hover{
+  cursor: pointer;
+}
+#WebSeries b:hover{
+  cursor: pointer;
+}
+#Kids img:hover{
+  cursor: pointer;
+}
+#Kids b:hover{
+  cursor: pointer;
+}
