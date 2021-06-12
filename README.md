@@ -1,6 +1,6 @@
 # Movie Streaming Website  🎬
 
-Are you a movie maniac, who loves to binge watch awesome series? If Yes, then you have come to right place.
+Are you a movie maniac, who loves to binge watch awesome series and movies? If Yes, then you have come to right place.
 <p align="center"><img src="https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif" width = 40%></p>
 
 Everyone loves to watch their favorite shows with friends and some snacks. But there is something that you might be missing out on!
@@ -28,7 +28,7 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 
 ## About
 
-ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows and web series from multiple genres like crime, comedy, drama, kids etc. 
+ApnaTheatre.com is a place for all movieocohlic's for entertainment. This movie streaming website allows users to watch their favourite movies, and web series from multiple genres like crime, comedy, drama, kids etc. 
 
 ## Link to the website
 https://qazimaazarshad.github.io/Movie-Streaming-Website/
@@ -85,7 +85,7 @@ git remote add upstream https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Websit
 git remote -v
 ```
 
-**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+**6.** Always take a pull from the upstream repository to your master branch to keep it at per with the main project(updated repository).
 
 ```
 git pull upstream master
@@ -114,16 +114,15 @@ git commit -m "Relevant message"
 ```
 
 **11.** Push the committed changes in your feature branch to your remote repo.
-
 ```
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+**12.** To create a pull request, click on 'compare and pull requests'. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**13.** Add appropriate 'title' and 'description' to your pull request explaining your changes and efforts done.
 
-**14.** Click on `Create Pull Request`.
+**14.** Click on "Create Pull Request".
 
 **15.** Voila :exclamation: You have made a PR to the Apna Theatre project :boom: . Sit back patiently and relax while the project maintainers review your PR. Please understand, at times the time taken to review a PR can vary from a few hours to a few days.
 
@@ -141,7 +140,7 @@ git push -u origin <your_branch_name>
 ## Open Source Programs we have been associated with: 
 
 <p align="center">
-<a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
+<a href="https://letsgrowmore.in/soc/" target="_blank"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
 </p>
 
 ## Code of Conduct
