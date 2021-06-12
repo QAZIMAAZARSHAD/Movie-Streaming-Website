@@ -423,7 +423,7 @@ textarea.ng-valid {
   margin: auto;
   overflow-y: auto;
   overflow-x: hidden;
-  max-width: 95%;
+	max-width: 100%;
 }
 
 ::-webkit-scrollbar-track {
