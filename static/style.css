@@ -38,14 +38,9 @@ body {
 .search-form {
   margin-top: 15px;
   float: right;
-<<<<<<< HEAD
   margin-right: 100px;
 }
 input[type='text'] {
-=======
-}
-input[type="text"] {
->>>>>>> 0b869c2d61c49ae6e19241d11197007e7c3fe182
   padding: 7px;
   border: none;
   font-size: 16px;
@@ -132,7 +127,7 @@ marquee {
 }
 .menu2 li a:hover {
   color: red;
-  opacity: 0.5;
+  background:#333;
 <<<<<<< HEAD
   font-size: 20px;
 }
