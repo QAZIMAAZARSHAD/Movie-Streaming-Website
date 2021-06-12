@@ -12,7 +12,7 @@
   }
   
   #showcase{
-    background-image:url('/Images/pop.jpg');
+    background-image:url('/Images/the.jpg');
     background-size:cover;
     background-position:center;
     height:100vh;
@@ -27,7 +27,7 @@
   #showcase h1{
     font-size:50px;
     line-height:1.2;
-    color:#221ed8;
+    color:#ffffff;
     font-size:60px;
   }
   
@@ -43,7 +43,7 @@
     */padding:10px 20px;
     border-radius:20px;
     margin-top:20px;
-    background:#02171a;
+    background:#4410ffd3;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
     -ms-border-radius:20px;
@@ -52,7 +52,7 @@
 }
   
   #showcase .button:hover{
-    background:#c0290e;
+    background:linear-gradient(rgb(29, 18, 189),rgb(118, 55, 177));
     color:#fff;
   }
   
