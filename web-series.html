@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaTheatre | Web Series</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+      #header-nav .nav-link{
+        color:white;
+        font-size:20px;
+        margin-left:20px;
+
+      }
+      #header-nav{
+        height:90px;
+      }
+
+      img {
+      -webkit-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+      user-drag: none;
+      }
+
+      img {
+      pointer-events: none;
+      }
+      .movie_card{
+      padding: 0 !important;
+      width: 14rem;     
+      margin:5px;  
+      border-radius: 20px;
+      background-color:rgb(15, 15, 73) !important;
+      color:white;
+      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+      }
+      .movie_card img{
+        height:16rem;
+      }
+      .movie_info{
+      color: red;
+      }
+
+      .movie_info i{
+      font-size: 10px;
+      }
+      .card-title{
+      width: 80%;
+      font-size:15px;
+      height: 2rem;
+      }
+
+      .section-title{
+      color: red;
+      font-size:25px;
+      margin-bottom:40px;
+      }
+      .movie_info_rating{
+      color:goldenrod;
+      float:right;
+      }
+      .scroll-bar {
+        height: auto;
+        width: auto;
+        margin: auto;
+        overflow-y:auto;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+
+      ::-webkit-scrollbar-track
+      {
+        border: 5px solid #2c2f30;
+        /* // border color does not support transparent on scrollbar
+        // border-color: transparent; */
+        background-color:black;
+      }
+
+      ::-webkit-scrollbar
+      {
+        width: 15px;
+        background-color: #2c2f30;
+      }
+
+      ::-webkit-scrollbar-thumb
+      {
+        background-color:red;
+        border-radius: 10px;
+      }
+
+    </style>
+  
+</head>
+<body style="background-color:black;" color="height:auto;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+    <div class="scroll-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+              <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white;"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" style="color: red;font-size: 30px;" href="#">ApnaTheatre</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#Movies">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="web-series.html">Web Series</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kids.html">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dummy.html">TV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dummy.html">Premium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>       
+         
+
+        <div class="main-content">
+		
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Images/family_man_cover.jpg"  height="400" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/sacred_games_cover.jpg" height="400"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/scam_cover.jpg" height="400"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/Asur_cover.png" height="400"  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Images/mirzapur_cover.jpg" height="400"  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+      
+        </div>
+                
+        
+        
+        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+          <div class="row"><h3 class="section-title">Popular</h3></div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/family_man.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Family Man</h5>
+                  <span class="movie_info">2019</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.5 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/mirzapur.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mirzapur</h5>
+                  <span class="movie_info">2018</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.4 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/stranger_things.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stranger Things</h5>
+                  <span class="movie_info">2016</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span></div>
+                </div>
+            </div>
+          
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/sacred.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sacred Games</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/got.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Game of Thrones</h5>
+                    <span class="movie_info">2011</span>
+                    <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.3 / 10</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+          <div class="row"><h3 class="section-title">Top Picks For You</h3></div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/breaking.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Breaking Bad</h5>
+                  <span class="movie_info">2013</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.5 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/kota.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kota Factory</h5>
+                  <span class="movie_info">2019</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.6 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/cricket.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Inside Edge</h5>
+                  <span class="movie_info">2019</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.0 / 10</span></div>
+                </div>
+            </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/tvf.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pitchers</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.1 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/day.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Selection Day</h5>
+                    <span class="movie_info">2019</span>
+                    <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 7.4 / 10</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+          <div class="row"><h3 class="section-title">Featured</h3></div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/scam.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Scam 1992</h5>
+                  <span class="movie_info">2019</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.5 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/asur.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Asur:Welcome to your darkest side</h5>
+                  <span class="movie_info">2019</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.4 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/panch.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Panchayat</h5>
+                  <span class="movie_info">2019</span>
+                  <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.7 / 10</span></div>
+                </div>
+            </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/ashram.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aashram</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 7.5 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card movie_card">
+              <img src="./Images/criminal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Criminal Justice</h5>
+                    <span class="movie_info">2019</span>
+                    <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+          
+
+        <footer>
+            
+        </footer>
+    </div>    
+</body>
+</html>

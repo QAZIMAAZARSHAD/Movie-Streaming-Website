@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <script>
+      var namerror = false;
+      var emailerror = false;
+      var passworderror = false;
+      var confirmerror = false;
+      var strongPass = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})");
+      function DisplayResults(e) {
+        var name = document.forms["regform"]["name"].value;
+        var email = document.forms["regform"]["email"].value;
+        var password = document.forms["regform"]["password"].value;
+        var confirmpassword = document.forms["regform"]["retypepassword"].value;
+        var error = document.getElementById("errormessage");
+        if (name.length == 0) {
+          namerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+						</svg><span class="error">Name should not be empty</span></p>`;
+        } else if (email.length == 0) {
+          emailerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+						</svg><span class="error">Email should not be empty</span></p>`;
+        } else if (!strongPass.test(password)) {
+          passworderror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+						</svg><span class="error">Password should be atleast 6 characters long,contain a special character,a lower case and upper case alphabet and a number.</span></p>`;
+        } else if (password != confirmpassword) {
+          confirmerror = true;
+          error.style.display = "block";
+          error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+						</svg><span class="error">Passwords doesn't match</span></p>`;
+        } else {
+          alert("Registration successful");
+          setTimeout(function () {
+            document.location.href = "quiz.html";
+          }, 100);
+        }
+        return false;
+      }
+
+      function change(e) {
+        var name = document.forms["regform"]["name"].value;
+        var error = document.getElementById("errormessage");
+        var email = document.forms["regform"]["email"].value;
+        var password = document.forms["regform"]["password"].value;
+        var confirmpassword = document.forms["regform"]["retypepassword"].value;
+        if (namerror == true) {
+          if (name.length > 0) {
+            namerror = false;
+            error.style.display = "none";
+          }
+        } else if (emailerror == true) {
+          if (email.length > 0) {
+            emailerror = false;
+            error.style.display = "none";
+          }
+        } else if (passworderror == true) {
+          if (password.length > 0) {
+            passworderror = true;
+            error.style.display = "none";
+          }
+        } else if (confirmerror == true) {
+          if (confirmpassword == password) {
+            confirmerror = false;
+            error.style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <style>
+      h1 {
+        margin: auto;
+        width: max-content;
+        color: white;
+      }
+      span {
+        display: inline-block;
+        padding: 5px;
+      }
+      .img-logo{
+          height: 94px;
+          margin-left: 45px;
+      }
+      .seperator {
+        height: 12px;
+        display: block;
+      }
+      .main {
+        padding: 70px;
+        width: 300px;
+        height: auto;
+        border: 1.5px grey solid;
+        border-radius: 5px;
+        margin: -4.5px auto;
+      }
+      label {
+        font-weight: bold;
+        color: white;
+        font-size: 1.25em;
+      }
+      input {
+        width: 280px;
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 300px;
+        background-color: red;
+        font-weight: bold;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+        border: 2px gray solid;
+        background-color: red;
+        transform: scale(0.95);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85) ),url("Images/background3.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+      }
+      .brand {
+        margin-bottom: 13px;
+        color: red;
+        padding-top: 15px;
+      }
+      #errormessage {
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+      }
+      p {
+        display: inline-flex;
+        font-size: 1em;
+        align-items: center;
+        background: rgb(220, 53, 69);
+        padding: 0.5em;
+        color: white;
+        font-family: sans-serif;
+      }
+      p svg {
+        width: 2em;
+        height: 2em;
+        margin-right: 0.5em;
+        fill: lightgreen;
+      }
+      .login{
+          margin: 0 auto;
+          width: 310px;
+          background-color: rgba(0, 0, 0, 0.6);
+          border-radius: 5px;
+          padding: 30px 70px 143px 70px;
+      }
+
+      .login h1{
+          color: white;
+          padding-bottom: 10px;
+      }
+
+      .bottom{
+          background-color: rgba(0, 0, 0, 0.35);
+          color: #bdc7c9;
+
+      }
+
+      .bottom-width{
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 30px;
+      }
+
+      .bottom-flex{
+          display: flex;
+          flex-wrap: wrap;
+          padding: 15px 0 0 0;
+          margin-block-start: 0;
+          margin-block-end: 0;
+      }
+
+      .bottom-flex li{
+          list-style: none;
+      }
+
+      .list-bottom{
+          width: 25%;
+          margin-top: 10px;
+      }
+
+      .link-bottom{
+          text-decoration: none;
+          color: #bdc7c9;
+          font-size: 0.8rem;
+      }
+
+      .link-bottom:hover{
+          text-decoration: underline;
+
+      }
+      .remember-flex{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          font-size: 0.8rem;
+      }
+
+      .color_text{
+          color: #bdc7c9;
+      }
+
+      .color_link{
+          color: #bdc7c9;
+      }
+
+      .signup-link{
+          color: white;
+          text-decoration: none;
+      }
+
+
+
+      .signup-link:hover{
+          text-decoration: underline;
+      }
+
+      .face_icon{
+          color: #3b5998;
+          margin-right: 6px;
+          font-size: 20px;
+      }
+
+      .log_face{
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 0.8rem;
+      }
+
+      .login-face{
+          margin: 50px 0 15px 0;
+          vertical-align: middle;
+          color: #bdc7c9;
+      }
+
+      .new-members{
+          margin-bottom: 10px;
+          color: #bdc7c9;
+      }
+
+      .help a{
+          text-decoration: none;
+      }
+      .help a:hover{
+          text-decoration: underline;
+      }
+
+      .protection{
+          font-size: 0.8rem;
+          color: #bdc7c9;
+      }
+
+      .protection a{
+          text-decoration: none;
+      }
+
+      .protection a:hover{
+          text-decoration: underline;
+      }
+
+      .tel-link{
+          text-decoration: none;
+          color: #e1e5ea;
+      }
+
+      .tel-link:hover{
+          text-decoration: underline;
+      }
+
+      .select-language{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHN0cm9rZT0id2hpdGUiICBwb2ludHM9IjQ3LjI1LDE1IDQ1LjE2NCwxMi45MTQgMjUsMzMuMDc4IDQuODM2LDEyLjkxNCAyLjc1LDE1IDI1LDM3LjI1ICIvPjwvc3ZnPg==");
+          background-size: 12px;
+          background-position-x: calc(100% - 7px);
+          background-position-y: calc(100% - 14px);
+          background-repeat: no-repeat;
+          background-color: #000;
+          color:#bdc7c9;
+          padding: 14px 20px 14px 14px;
+          margin: 30px 0 40px 0;
+          font-size: 0.9rem;
+          min-height: 40px;
+          border: 1px solid #333;
+      }
+
+      .select-language option{
+          padding-left: 10px;
+      }
+      .input-text{
+          margin-bottom: 20px;
+      }
+
+      .input-text input{
+          width: 100%;
+          height: 45px;
+          background-color: #333;
+          color: white;
+          border-radius:5px;
+          border: none;
+          outline: transparent;
+          text-indent: 18px;
+      }
+
+      .input-text input::-webkit-input-placeholder {
+          font-size: 1rem;
+          color: #bdc7c9;
+      }
+
+      .input-text input::-moz-placeholder {
+          font-size: 1rem;
+          color: #bdc7c9;
+          text-indent: 40px;
+      }
+      .signin-button{
+          margin-top: 20px;
+          width: 100%;
+          padding: 13px;
+          border-radius: 5px;
+          background-color: red;
+          color:white;
+          border:none;
+          font-weight: bold;
+          font-size: 1.05rem;
+          cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+        <a href="#">
+            <img src="Images/logo.jpg" class="img-logo"/>
+        </a>
+    </div>
+    <div class="login-div">
+      <form class="login"   onsubmit="return DisplayResults()"
+        name="regform"
+        autocomplete="off">
+
+
+      <h1 class="sign">Sign Up</h1>
+      <div id="errormessage"></div>
+      <span class="seperator"></span>
+      <div class="input-text">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          oninput="change()"
+        />
+      </div>
+      <div class="input-text">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          oninput="change()"
+        />
+      </div>
+      <div class="input-text">
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          oninput="change()"
+        />
+      </div>
+      <div class="input-text">
+        <input
+          type="password"
+          name="retypepassword"
+          placeholder="Confirm password"
+          oninput="change()"
+        />
+      </div>
+        <input class="signin-button" type="submit" value="Sign Up" />
+        <div class="remember-flex">
+            <div>
+
+            </div>
+            <div class="help">
+                <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
+            </div>
+        </div>
+        <div class="login-face">
+
+        </div>
+        <br>
+
+        <br>
+        <div class="protection color_link help">
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+        </div>
+      </form>
+    </div>
+    <div class="bottom">
+        <div class="bottom-width">
+            Questions? <br>Ask on : <a href="https://www.google.com/gmail/" class="tel-link">Apna_theatre@gmail.com</a>
+            <div>
+                <ul class="bottom-flex">
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Help Center
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li class="list-bottom">
+                        <a href="#" class="link-bottom">
+                            Privacy
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <select class="fa select-language">
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+                </select>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
