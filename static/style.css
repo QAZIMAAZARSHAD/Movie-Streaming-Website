@@ -81,6 +81,15 @@ marquee{
 	float:center;
   background: black;
 }
+
+.online:hover
+{
+  transition: ease-out;
+  text-shadow: 0px 0px 0 rgb(235, 121, 87),
+                 1px 1px 0 rgb(235, 107, 34),
+                 2px 2px 0 rgb(252, 105, 7);
+  
+}
 .menu2{
   width: 100%;
   background: black;
@@ -113,7 +122,7 @@ marquee{
   font-size: 18px;
 }
 
-.exc: hover {
+.exc:hover {
   font-size: 16px !important;
 }
 
@@ -356,8 +365,8 @@ textarea.ng-valid {
 ::-webkit-scrollbar-track
 {
 	border: 5px solid #2c2f30;
-	// border color does not support transparent on scrollbar
-	// border-color: transparent;
+	/*border-color does not support transparent on scrollbar
+	border-color: transparent;*/
 	background-color:black;
 }
 
