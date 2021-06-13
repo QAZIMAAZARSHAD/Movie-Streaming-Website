@@ -1,6 +1,7 @@
 body{
   background: black;
   margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 .menu{
   width: 100%;
