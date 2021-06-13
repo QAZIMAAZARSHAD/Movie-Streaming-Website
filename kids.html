@@ -1,443 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApnaTheatre | Kids</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <style>
-     .scroll-bar {
-        height: auto;
-        width: auto;
-        margin: auto;
-        overflow-y:auto;
-        overflow-x: hidden;
-        max-width: 100%;
-      }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaTheatre | Kids</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style>
+    .scroll-bar {
+      height: auto;
+      width: auto;
+      margin: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
 
-      ::-webkit-scrollbar-track
-      {
-        border: 5px solid #2c2f30;
-        /* // border color does not support transparent on scrollbar
+    ::-webkit-scrollbar-track {
+      border: 5px solid #2c2f30;
+      /* // border color does not support transparent on scrollbar
         // border-color: transparent; */
-        background-color:black;
-      }
+      background-color: black;
+    }
 
-      ::-webkit-scrollbar
-      {
-        width: 15px;
-        background-color: #2c2f30;
-      }
+    ::-webkit-scrollbar {
+      width: 15px;
+      background-color: #2c2f30;
+    }
 
-      ::-webkit-scrollbar-thumb
-      {
-        background-color:red;
-        border-radius: 10px;
-      }
+    ::-webkit-scrollbar-thumb {
+      background-color: red;
+      border-radius: 10px;
+    }
 
-      #header-nav .nav-link{
-        color:white;
-        font-size:20px;
-        margin-left:20px;
+    #header-nav .nav-link {
+      color: white;
+      font-size: 20px;
+      margin-left: 20px;
 
-      }
-      #header-nav{
-        height:90px;
-      }
+    }
 
-      img {
+    #header-nav {
+      height: 90px;
+    }
+
+    img {
       -webkit-user-drag: none;
       -moz-user-drag: none;
       -o-user-drag: none;
       user-drag: none;
-      }
+    }
 
-      img {
+    img {
       pointer-events: none;
-      }
-      .movie_card{
+    }
+
+    .movie_card {
       padding: 0 !important;
-      width: 14rem;     
-      margin:5px;  
+      width: 14rem;
+      margin: 5px;
       border-radius: 20px;
-      background-color:rgb(15, 15, 73) !important;
-      color:white;
+      background-color: rgb(15, 15, 73) !important;
+      color: white;
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
-      }
-      .movie_card img{
-        height:16rem;
-      }
-      .movie_info{
-      color: red;
-      }
+    }
 
-      .movie_info i{
+    .movie_card img {
+      height: 16rem;
+    }
+
+    /*Changes for adding play & download button on hovering */
+
+    button {
+      background: red;
+      color: white;
+      border-radius: 5px 5px 5px 5px;
+      cursor: pointer;
+      padding: 7px;
+      border: none;
+      font-size: 25px;
+    }
+
+    .movie_card:hover {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+
+    .down-play {
+      position: relative;
+      bottom: 0px;
+      display: none;
+      flex-direction: column;
+      padding: 10px 30px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 15, 73, 0.5);
+      transition: 0.3s ease-in-out;
+    }
+
+    .movie_card:hover .down-play {
+      transition: 0.3s ease-in-out;
+      display: flex;
+    }
+
+    .movie_info {
+      color: red;
+    }
+
+    .movie_info i {
       font-size: 10px;
-      }
-      .card-title{
+    }
+
+    .card-title {
       width: 80%;
-      font-size:15px;
+      font-size: 15px;
       height: 2rem;
-      }
+    }
 
-      .section-title{
+    .section-title {
       color: red;
-      font-size:25px;
-      margin-bottom:40px;
-      }
-      .movie_info_rating{
-      color:goldenrod;
-      float:right;
-      }
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
 
-    </style>
+    .movie_info_rating {
+      color: goldenrod;
+      float: right;
+    }
+  </style>
 </head>
+
 <body style="background-color:black;" color="height:auto;">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    
-    <div class="scroll-bar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-              <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-color: white;"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" style="color: red;font-size: 30px;" href="#">ApnaTheatre</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html#Movies">Movies</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="web-series.html">Web Series</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="kids.html">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dummy.html">TV</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dummy.html">Premium</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-danger" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>       
-         
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
 
-        <div class="main-content">
-		
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Images/spider_man_cover.png"  height="400" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/cars.jpg" height="400"  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/doraemon_cover.jpg" height="400"  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/mickey_mouse cover.png" height="400"  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/shinchan_cover.jpg" height="400"  class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
-      
+  <div class="scroll-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" style="color: red;font-size: 30px;" href="#">ApnaTheatre</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Movies">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dummy.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dummy.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
         </div>
-                
-        
-        
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-          <div class="row"><h3 class="section-title">Popular</h3></div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/detective-pikachu-trailer-poster-main.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">POKEMON Detective Pikachu</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/Dyow9RgX4AElAGN.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Toy Story 4</h5>
-                  <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/captin-marvel-poster-international.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Captain Marvel</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span></div>
-                </div>
-            </div>
-          
-          <div class="col">
-            <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/01/Spider-Man-Far-From-Home-poster-1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Spider-Man: Far From Home</h5>
-                <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/mermaid.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">The Little Mermaid</h5>
-                    <span class="movie_info">2019</span>
-                    <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-                </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </nav>
 
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-          <div class="row"><h3 class="section-title">Top Picks For You</h3></div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/doraemon.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Doraemon</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/mickey_mouse.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mickey Mouse</h5>
-                  <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/toy_story.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Toy Story 3</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span></div>
-                </div>
-            </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/nemo.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Finding Nemo</h5>
-                <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/sofia.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Sofia</h5>
-                    <span class="movie_info">2019</span>
-                    <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-                </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-          <div class="row"><h3 class="section-title">Featured</h3></div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/shinChan.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Shin Chan</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/Hanuman.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Hanuman</h5>
-                  <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/BalGanesh.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bal Ganesh</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span></div>
-                </div>
-            </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/little_einsteins.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Little Einsteins</h5>
-                <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/Phineas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Phineas and Ferb</h5>
-                    <span class="movie_info">2019</span>
-                    <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-                </div>
-            </div>
-          </div>
-        </div>
+    <div class="main-content">
 
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-          <div class="row"><h3 class="section-title">Amazing Animals</h3></div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/Mouse_detective.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mouse Detective</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/spider_man_cover.png" height="400" class="d-block w-100" alt="...">
           </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/bugs_life.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">A Bug's Life</h5>
-                  <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./Images/cars.jpg" height="400" class="d-block w-100" alt="...">
           </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/jungle-book.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Jungle Book</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span></div>
-                </div>
-            </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/lion_king.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">The Lion King</h5>
-                <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./Images/doraemon_cover.jpg" height="400" class="d-block w-100" alt="...">
           </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/bolt.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bolt</h5>
-                    <span class="movie_info">2019</span>
-                    <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-                </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./Images/mickey_mouse cover.png" height="400" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/shinchan_cover.jpg" height="400" class="d-block w-100" alt="...">
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
 
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-          <div class="row"><h3 class="section-title">Fairy Tales</h3></div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/pinocchio.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pinocchio</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
+    </div>
+
+
+
+    <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+      <div class="row">
+        <h3 class="section-title">Popular</h3>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/detective-pikachu-trailer-poster-main.jpg"
+            class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
           </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/tangled.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tangled</h5>
-                  <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/frozen.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Frozen II</h5>
-                  <span class="movie_info">2019</span>
-                  <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span></div>
-                </div>
-            </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/snow_white.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Snow White</h5>
-                <span class="movie_info">2019</span>
-                <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card movie_card">
-              <img src="./Images/cinderalla.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cinderalla</h5>
-                    <span class="movie_info">2019</span>
-                    <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
-                </div>
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">POKEMON Detective Pikachu</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
           </div>
         </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/Dyow9RgX4AElAGN.jpg" class="card-img-top"
+            alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Toy Story 4</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
         </div>
-    </div>    
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/captin-marvel-poster-international.jpg"
+            class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Captain Marvel</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card movie_card">
+          <img src="https://www.joblo.com/assets/images/joblo/posters/2019/01/Spider-Man-Far-From-Home-poster-1.jpg"
+            class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man: Far From Home</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/mermaid.png" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">The Little Mermaid</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+      <div class="row">
+        <h3 class="section-title">Top Picks For You</h3>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/doraemon.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Doraemon</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/mickey_mouse.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Mickey Mouse</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/toy_story.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Toy Story 3</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/nemo.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Finding Nemo</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/sofia.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sofia</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+      <div class="row">
+        <h3 class="section-title">Featured</h3>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/shinChan.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Shin Chan</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/Hanuman.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hanuman</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/BalGanesh.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bal Ganesh</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/little_einsteins.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Little Einsteins</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/Phineas.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Phineas and Ferb</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+      <div class="row">
+        <h3 class="section-title">Amazing Animals</h3>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/Mouse_detective.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Mouse Detective</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/bugs_life.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">A Bug's Life</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/jungle-book.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Jungle Book</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/lion_king.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">The Lion King</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/bolt.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bolt</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+      <div class="row">
+        <h3 class="section-title">Fairy Tales</h3>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/pinocchio.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Pinocchio</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/tangled.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tangled</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/frozen.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Frozen II</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/snow_white.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Snow White</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card movie_card">
+          <img src="./Images/cinderalla.jpg" class="card-img-top" alt="...">
+          <div class="down-play">
+            <button>Download <i class="fa fa-download"></i></button> <br>
+            <button>Play <i class="fa fa-play"></i></button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cinderalla</h5>
+            <span class="movie_info">2019</span>
+            <span class="movie_info_rating"><i class="fas fa-star"></i> 9 / 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>

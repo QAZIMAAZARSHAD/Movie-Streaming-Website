@@ -60,7 +60,7 @@ marquee {
 .logo {
   width: 200px;
   height: 100px;
-    margin-top: 20px;
+  margin-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   float: left;
@@ -252,6 +252,7 @@ container {
 }
 .poster:hover img {
   transform: scale(1.2);
+  opacity: 0.7; /* Change 1 */
 }
 
 .flim {
@@ -263,6 +264,25 @@ container {
   color: white;
   width: 100%;
 }
+
+/* ===== Adding play and Download button on hovering === */
+.down-play {
+  position: relative;
+  bottom: 40px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 30px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.poster:hover .down-play {
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+
 .hr {
   width: 95%;
   height: 2px;
@@ -423,7 +443,7 @@ textarea.ng-valid {
   margin: auto;
   overflow-y: auto;
   overflow-x: hidden;
-	max-width: 100%;
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar-track {
@@ -445,7 +465,6 @@ textarea.ng-valid {
 
 /* CSS FOR FOOTER */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
 
 .footer-distributed {
   background-color: #292c2f;
@@ -470,7 +489,7 @@ textarea.ng-valid {
   color: #ffffff;
   margin: 0 0 10px;
   padding: 0;
-  transition: ease .25s;
+  transition: ease 0.25s;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -479,7 +498,7 @@ textarea.ng-valid {
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
-  transition: ease .25s;
+  transition: ease 0.25s;
 }
 
 .footer-distributed .footer-links a:before {
@@ -512,17 +531,23 @@ textarea.ng-valid {
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
-  transition:all .25s;
+  transition: all 0.25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
 
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
 
 /* Media Queries */
 
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
     text-align: center;
   }
   .footer-distributed .footer-right {
@@ -535,32 +560,31 @@ textarea.ng-valid {
 }
 
 #waterdrop {
-    height: 30px;
+  height: 30px;
 }
 
 #waterdrop canvas {
-    bottom: -70px !important;
+  bottom: -70px !important;
 }
-
 
 /* Cursor Added */
 
-#Movies img:hover{
+#Movies img:hover {
   cursor: pointer;
 }
-#Movies b:hover{
+#Movies b:hover {
   cursor: pointer;
 }
 
-#WebSeries img:hover{
+#WebSeries img:hover {
   cursor: pointer;
 }
-#WebSeries b:hover{
+#WebSeries b:hover {
   cursor: pointer;
 }
-#Kids img:hover{
+#Kids img:hover {
   cursor: pointer;
 }
-#Kids b:hover{
+#Kids b:hover {
   cursor: pointer;
 }
