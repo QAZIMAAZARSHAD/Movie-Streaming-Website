@@ -520,6 +520,15 @@ textarea.ng-valid {
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
+/* font family added */
+.footer-left{
+  font-family: 'Courier New', Courier, monospace;
+}
+.footer-links>a{
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 600px) {
