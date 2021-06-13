@@ -50,7 +50,7 @@
       -webkit-user-drag: none;
       -moz-user-drag: none;
       -o-user-drag: none;
-      user-drag: none;
+
       }
 
       img {
@@ -90,6 +90,110 @@
       color:goldenrod;
       float:right;
       }
+
+      /****footer***/
+      
+
+.footer{
+  background-color: #292c2f;
+  box-sizing: border-box;
+  width: 100%;
+  padding:10px 30px;
+}
+
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+}
+
+.footer-heading{
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-left, .footer-right, .footer-middle{
+  text-align:center;
+}
+.footer-links{
+  font-size:30px;
+  margin:5px;
+}
+.footer-left a:hover{
+background-color:white;
+padding:10px;
+border-radius:50px;
+color:red;
+}
+.footer-middle-list-item{
+  list-style:none;
+  font-size:16px;
+  margin:10px;
+  text-align:left;
+}
+.footer-middle-list-item a{
+  text-decoration:none;
+  color:white;
+}
+.footer-middle-list-item a:hover{
+  color:red;
+}
+.footer-contact-button{
+  font-size:20px;
+  background-color:red;
+  color:white;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  text-decoration:none;
+}
+.footer-contact-button:hover{
+  background-color:white;
+  color:red;
+}
+.footer-contact-tagline{
+color:white;
+font-size:18px;
+margin-bottom:25px;
+}
+#footer-hr{
+  width:100%;
+  height:0px;
+  background-color:red;
+}
+.footer-copyright{
+  text-align:center;
+  color:white;
+  margin-top:20px;
+  font-size:18px;
+}
+
+/* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
+
+/***************** Media Queries *********************/
+
+@media (max-width: 600px) {
+  .footer-content{ 
+     display:block;
+     text-align:center;
+  }
+  .footer-middle-list-item{
+    text-align:left;
+    margin-left:45px;
+  }
+
+  .footer-left, .footer-middle, .footer-right{
+    margin-top:50px;
+  }
+
+} 
+
+#waterdrop {
+    height: 30px;
+}
+
+#waterdrop canvas {
+    bottom: -70px !important;
+}
 
     </style>
 </head>
@@ -438,6 +542,42 @@
           </div>
         </div>
         </div>
-    </div>    
+    </div> 
+    
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-left">
+              <h2 class="footer-heading">ApnaTheatre</h2>
+              <a class="footer-links" href="#" style="color:	#4267B2"><i class="fab fa-facebook-f facebook"></i></a>
+              <a class="footer-links" href="#"><i class="fab fa-twitter twitter" style="color:#1DA1F2"></i></a>
+              <a class="footer-links" href="#"><i class="fab fa-telegram telegram" style="color:#0088CC"></i></a>
+              <a class="footer-links" href="#"><i class="fab fa-instagram instagram" style="color:#8a3ab9"></i></a>
+              <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" style="color:black"><i class="fab fa-github github"></i></a>
+          </div>
+          <div class="footer-middle">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-middle-list">
+              <li class="footer-middle-list-item"><a href="#Movies">Stream latest Movies</a> </li>
+              <li class="footer-middle-list-item"><a href="web-series.html">Watch Web Series</a> </li>
+              <li class="footer-middle-list-item"><a href="tv.html">All TV Programs</a> </li>
+              <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+              <li class="footer-middle-list-item"><a href="dummy.html">Enjoy Premium</a> </li>
+          </ul>
+          </div>
+          <div class="footer-right">
+              <p class="footer-links">
+                  <h2 class="footer-heading">Contact Us</h2>
+                  <p class="footer-contact-tagline">Feel free to contact us.</p>
+                  <a class="footer-contact-button" href="#">Contact</a>
+              </p>
+          </div>
+      </div>
+      <hr id="footer-hr">
+      <div class="footer-copyright" >
+          <span  >Copyright &copy; and &reg; Since 2021 Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</span>
+      </div>
+  </footer>
+      
+  
 </body>
 </html>
