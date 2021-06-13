@@ -37,6 +37,7 @@
       }
 
       #header-nav .nav-link{
+        
         color:white;
         font-size:20px;
         margin-left:20px;
@@ -45,6 +46,9 @@
       #header-nav{
         height:90px;
       }
+      #header-nav a:hover {
+           color: red;
+}
 
       img {
       -webkit-user-drag: none;
@@ -94,8 +98,25 @@
     /******************                    Hover Cursor Added                    ******************/
 
     .card:hover{
+      color:red;
       cursor: pointer;
     }
+     /* [1] The container */
+     .img-hover-zoom {
+          height: 300px; /* [1.1] Set it as per your need */
+          overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+
+/* [2] Transition property for smooth transformation of images */
+    .img-hover-zoom img {
+     transition: transform .5s ease;
+       }
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
     </style>
 </head>
 <body style="background-color:black;" color="height:auto;">
@@ -181,7 +202,8 @@
           <div class="row"><h3 class="section-title">Popular</h3></div>
           <div class="col">
             <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/detective-pikachu-trailer-poster-main.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/detective-pikachu-trailer-poster-main.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">POKEMON Detective Pikachu</h5>
                   <span class="movie_info">2019</span>
@@ -191,7 +213,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/Dyow9RgX4AElAGN.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/Dyow9RgX4AElAGN.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Toy Story 4</h5>
                   <span class="movie_info">2019</span>
@@ -201,7 +224,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/captin-marvel-poster-international.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/02/captin-marvel-poster-international.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Captain Marvel</h5>
                   <span class="movie_info">2019</span>
@@ -211,7 +235,8 @@
           
           <div class="col">
             <div class="card movie_card">
-              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/01/Spider-Man-Far-From-Home-poster-1.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="https://www.joblo.com/assets/images/joblo/posters/2019/01/Spider-Man-Far-From-Home-poster-1.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Spider-Man: Far From Home</h5>
                 <span class="movie_info">2019</span>
@@ -221,7 +246,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/mermaid.png" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/mermaid.png" class="card-img-top" alt="..."></div>
                 <div class="card-body">
                   <h5 class="card-title">The Little Mermaid</h5>
                     <span class="movie_info">2019</span>
@@ -235,7 +261,8 @@
           <div class="row"><h3 class="section-title">Top Picks For You</h3></div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/doraemon.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/doraemon.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Doraemon</h5>
                   <span class="movie_info">2019</span>
@@ -245,7 +272,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/mickey_mouse.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/mickey_mouse.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Mickey Mouse</h5>
                   <span class="movie_info">2019</span>
@@ -255,7 +283,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/toy_story.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/toy_story.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Toy Story 3</h5>
                   <span class="movie_info">2019</span>
@@ -264,7 +293,8 @@
             </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/nemo.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/nemo.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Finding Nemo</h5>
                 <span class="movie_info">2019</span>
@@ -274,7 +304,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/sofia.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/sofia.jpg" class="card-img-top" alt="..."></div>
                 <div class="card-body">
                   <h5 class="card-title">Sofia</h5>
                     <span class="movie_info">2019</span>
@@ -288,7 +319,8 @@
           <div class="row"><h3 class="section-title">Featured</h3></div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/shinChan.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/shinChan.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Shin Chan</h5>
                   <span class="movie_info">2019</span>
@@ -298,7 +330,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/Hanuman.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/Hanuman.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Hanuman</h5>
                   <span class="movie_info">2019</span>
@@ -308,7 +341,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/BalGanesh.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/BalGanesh.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Bal Ganesh</h5>
                   <span class="movie_info">2019</span>
@@ -317,7 +351,8 @@
             </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/little_einsteins.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/little_einsteins.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Little Einsteins</h5>
                 <span class="movie_info">2019</span>
@@ -327,7 +362,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/Phineas.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/Phineas.jpg" class="card-img-top" alt="..."></div>
                 <div class="card-body">
                   <h5 class="card-title">Phineas and Ferb</h5>
                     <span class="movie_info">2019</span>
@@ -341,7 +377,8 @@
           <div class="row"><h3 class="section-title">Amazing Animals</h3></div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/Mouse_detective.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/Mouse_detective.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Mouse Detective</h5>
                   <span class="movie_info">2019</span>
@@ -351,7 +388,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/bugs_life.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/bugs_life.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">A Bug's Life</h5>
                   <span class="movie_info">2019</span>
@@ -361,7 +399,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/jungle-book.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/jungle-book.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Jungle Book</h5>
                   <span class="movie_info">2019</span>
@@ -370,7 +409,8 @@
             </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/lion_king.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/lion_king.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">The Lion King</h5>
                 <span class="movie_info">2019</span>
@@ -380,7 +420,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/bolt.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/bolt.jpg" class="card-img-top" alt="..."></div>
                 <div class="card-body">
                   <h5 class="card-title">Bolt</h5>
                     <span class="movie_info">2019</span>
@@ -394,7 +435,8 @@
           <div class="row"><h3 class="section-title">Fairy Tales</h3></div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/pinocchio.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/pinocchio.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Pinocchio</h5>
                   <span class="movie_info">2019</span>
@@ -404,7 +446,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/tangled.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/tangled.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Tangled</h5>
                   <span class="movie_info">2019</span>
@@ -414,7 +457,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/frozen.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/frozen.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Frozen II</h5>
                   <span class="movie_info">2019</span>
@@ -423,7 +467,8 @@
             </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/snow_white.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/snow_white.jpg" class="card-img-top" alt="..."></div>
               <div class="card-body">
                 <h5 class="card-title">Snow White</h5>
                 <span class="movie_info">2019</span>
@@ -433,7 +478,8 @@
           </div>
           <div class="col">
             <div class="card movie_card">
-              <img src="./Images/cinderalla.jpg" class="card-img-top" alt="...">
+              <div class="img-hover-zoom">
+              <img src="./Images/cinderalla.jpg" class="card-img-top" alt="..."></div>
                 <div class="card-body">
                   <h5 class="card-title">Cinderalla</h5>
                     <span class="movie_info">2019</span>
