@@ -27,6 +27,7 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 <p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
 
 ## About
+<p align="center"><img src="logo.png" height = '120'></p>
 
 ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows, and web series from multiple genres like crime, comedy, drama, kids etc. 
 
