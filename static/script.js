@@ -12,8 +12,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-//code of automatic year change
-const today = new Date();
-const year = today.getFullYear();
-
-document.querySelector(".year").innerText=year;
