@@ -1,3 +1,8 @@
+*{
+margin: 0;
+padding: 0;
+}
+  
 body {
     background: black;
     margin: 0;
@@ -58,6 +63,21 @@ button {
     padding: 7px;
     border: none;
     font-size: 16px;
+  background: black;
+  overflow: auto;
+}
+
+/* Navbar Css  */
+#header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+
+}
+
+.menu li a:hover {
+  color: red !important;
+  opacity: 0.5;
 }
 
 marquee {
@@ -170,8 +190,29 @@ marquee {
   100% {
     transform: translateX(-66.6666%);
   }
+  width: 81px;
+  height: 52px;
+  padding: 3px;
 }
-*/
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  padding-left: 0px !important;
+  }
+  .row>*{
+    padding-left: 0px !important;
+  }
+.online {
+  color: red;
+  font-size: 27px;
+  padding: 10px 25px;
+  text-align: center;
+  display: block;
+  background: black;
+}
+#variety{
+  margin-bottom: 2rem;
+}
+
+
 
 .buddy {
     display: grid;
@@ -305,6 +346,8 @@ maincontainer {
 .maincontainer h2 {
     color: red;
     margin-left: 50px;
+  color: red;
+text-align: center;
 }
 
 .foot {
@@ -366,6 +409,10 @@ maincontainer {
 }
 
 
+.contactForm{
+  margin: 5px;
+}
+
 /* Contact Us CSS starts*/
 
 .box {
@@ -373,6 +420,11 @@ maincontainer {
     color: white;
     text-align: center;
     z-index: 1;
+  background: url("https://cdn.pixabay.com/photo/2017/09/17/08/39/curtain-2757815_960_720.png") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  z-index: 1;
+
 }
 
 .text {
@@ -388,10 +440,17 @@ maincontainer {
 }
 
 .redline {
+
     width: 100px;
     height: 3px;
     background-color: red;
     border: none;
+
+  width: 0px;
+  height: 3px;
+  background-color: red;
+  border: none;
+
 }
 
 .touch h2 {
@@ -582,9 +641,16 @@ textarea.ng-valid {
     -webkit-transform: scale(1.1);
 }
 
+
 .footer-distributed p.footer-links a:hover {
     text-decoration: underline;
 }
+
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); background-color:red; color:black}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+.footer-distributed .footer-left a:hover{color:red;}
 
 
 /* Media Queries */
@@ -636,4 +702,8 @@ textarea.ng-valid {
 
 #Kids b:hover {
     cursor: pointer;
+}
+
+#Kids b:hover{
+  cursor: pointer;
 }
