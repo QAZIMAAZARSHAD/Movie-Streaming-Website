@@ -32,9 +32,11 @@ marquee {
   background: black;
 }
 .logo {
-  width: 81px;
-  height: 52px;
+  width: 110px;
+  height: 90px;
   padding: 3px;
+  margin: 0;
+  padding: 0;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   padding-left: 0px !important;
@@ -469,3 +471,4 @@ textarea.ng-valid {
 #Kids b:hover{
   cursor: pointer;
 }
+
