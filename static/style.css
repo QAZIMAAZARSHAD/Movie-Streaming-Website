@@ -419,10 +419,10 @@ textarea.ng-valid {
   transition:all .25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); background-color:yellowgreen; color:violet}
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1); background-color:red; color:black}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
-.footer-distributed .footer-left a:hover{color:turquoise;}
+.footer-distributed .footer-left a:hover{color:red;}
 
 /* Media Queries */
 
