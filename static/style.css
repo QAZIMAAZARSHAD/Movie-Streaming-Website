@@ -350,6 +350,7 @@ textarea.ng-valid {
 }
 
 /* CSS FOR FOOTER */
+.footer{
 margin-bottom:15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
