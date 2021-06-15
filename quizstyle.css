@@ -8,7 +8,7 @@
 }
 
 body{
-    background: black;
+    background:red;
 }
 
 ::selection{
@@ -30,7 +30,11 @@ body{
 }
 .start_btn :hover{
     color:red;
-    background-color: black;
+    background-color:black;
+}
+.restart:hover{
+    color:red;
+    background-color:black;
 }
 
 .info_box.activeInfo,
@@ -277,7 +281,6 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #007bff;
     border: 1px solid #007bff;
     line-height: 10px;
     opacity: 0;
@@ -287,7 +290,7 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    background:red;
 }
 
 footer button.show{
@@ -355,19 +358,19 @@ footer button.show{
 
 .buttons button.restart{
     color: #fff;
-    background: #007bff;
+
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    background-color: rosybrown ;
 }
 
 .buttons button.quit{
-    color: #007bff;
-    background: #fff;
+    
+   color: #fff;
 }
 
 .buttons button.quit:hover{
-    color: #fff;
-    background: #007bff;
+    
+    background-color:rosybrown;
 }
