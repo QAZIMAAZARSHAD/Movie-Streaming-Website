@@ -10,9 +10,9 @@
 		function displayMessageSuccessfully()
 		{	
 			var x;
-			x=confirm("Do You Want To Sumbit Your Data, Please Fill All Fields");
+			x=confirm("Do You Want To Sumbit Your Data?? Please Fill All Fields.");
 			if(x==1)
-{document.write("<b>Thankyou! You Have Successfully Signed Up<b>");}
+{document.write("<b>Thankyou!!! You Have Successfully Signed Up.<b>");}
 }</script>
 
 <style>
@@ -25,50 +25,68 @@
 	.details{
 		text-align: center;
 		position: absolute;
-		top: 50%;
+		width: 80%;
+		top: 70%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		padding: 35px;
 		color: red;
 		font-size: 25px;
 		font-family: cursive;
+		background: rgba(0,0,0,0.5);
+	background-size:cover;
+	overflow: hidden;
+	border-radius: 20px;
 		}
+		form{
+	height: 300px;
+	width: 70%;
+	margin: 80px;
+	padding: 25px;
+	align-items: center;
+	
+}
+
 input[type=text],input[type=radio],input[type=number],input[type=password]{
-	border-radius: 100px;
+	border-radius: 30px;
 	color: red;
-	width: 250px;
-	height: 25px;
+	width: 350px;
+	height: 35px;
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin-left: 10px;
 	text-align: center;
 	line-height: 20px;
-	background-color: white;
-	color: black;
+	background-color:seashell;
 	text-transform: uppercase;
+	margin: 8px;
 }
 input[type=submit], input[type=reset]
 {
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	border-radius: 100px;
 	text-align: center;
-	width:125px;
-	height:30px;
+	width:150px;
+	height:40px;
 	line-height: 20px;
 	color:red;
 	background-color: black;
 	margin-left: 10px;
+	margin: 8px;
 }
 #signup{
 	color: red;
+	transform: translate(20px,20px);
+	padding: 30px;
 	font-size: 90px;
-	font-family: Arial;
+	font-family: sans-serif;
 	font-weight: bold;
-	position: absolute;
-	left:0;
-	top: 0;
-	transform: translateY(250px);
-	margin-left:50px;
+	text-shadow: orangered;
+	position: relative;
+	text-align: center;
+	text-shadow: orangered;
 	}
-form{
-	height: 100px;
-}
 	</style>
 </head>
 <body>
