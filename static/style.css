@@ -354,16 +354,34 @@ textarea.ng-valid {
 margin-bottom:15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  padding: 10px 20px;
+}
+.footer-logo{
+  width: 150px;
+  height: 120px;
+  padding: 3px;
+  margin:0px 0px 0px 10px;
+  padding: 0;
+}
+.footer-heading{
+  color:white;
+}
 .footer-left, .footer-right, .footer-middle{
 text-align:center;
+}
+.icons{
+  margin-left:-30px;
 }
 .footer-links i{
 font-size:30px;
 width:40px;
 height:40px;
+margin-top:30px;
 }
-.footer-left a i:hover{
+.footer-middle a i:hover{
 background-color:white;
 padding:5px;
 border-radius:50px;
@@ -371,8 +389,9 @@ color:red;
 }
 .footer-middle-list-item{
 list-style:none;
-font-size:16px;
-margin-left:-20px;
+font-size:15px;
+font-family:cursive;
+margin:5px 0px 0px 15px;
 text-align:left;
 }
 .footer-middle-list-item a{
@@ -381,6 +400,9 @@ color:white;
 }
 .footer-middle-list-item a:hover{
 color:red;
+}
+.footer-right{
+  margin-top:-15px;
 }
 .footer-contact-button{
 font-size:20px;
@@ -395,9 +417,10 @@ text-decoration:none;
 background-color:white;
 color:red;
 }
-.footer-contact-tagline{
+.footer-bottom-tagline{
 color:white;
-font-size:18px;
+font-size:15px;
+font-family:cursive;
 margin-bottom:25px;
 }
 
