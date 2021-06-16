@@ -283,11 +283,12 @@
         margin: 0px auto;
       }
     </style>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   </head>
   <body>
     <div class="logo">
-        <a href="#">
-            <img src="Images/logo.jpg" class="img-logo"/>
+        <a href="index.html">
+            <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
         </a>
     </div>
     <div class="login-div">
@@ -399,6 +400,7 @@
         </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     var namerror = false;
     var emailerror = false;
@@ -458,8 +460,9 @@
             Subject : "Email verification",
             Body : `Hello ${name},<br> Please enter this code: ${code} in the form to verify your email`
         }).then(
-          message => alert('Please enter the code sent to your email')
+          message => console.log(message)
         );
+        swal('Please enter the code sent to your email')
         var x = document.getElementsByClassName("aftersubmit");
         x[0].style.opacity = "1";
         console.log(x[0])
@@ -472,10 +475,14 @@
       var usercode = document.forms["verificationform"]["code"].value;
       console.log('hii')
       if(code == usercode){
-        alert('Registration successfull')
+        swal({
+            title: "Registration Successful!",
+            text:  "Happy to have you aboard",
+            type: "success",
+          });
         setTimeout(function () {
             document.location.href = "quiz.html";
-          }, 100);
+          }, 10000);
         
         // console.log(window.location.href)
         // console.log('hi')
@@ -489,7 +496,12 @@
         
         
       }else{
-        alert('invalid code')
+        swal({
+          title: "Invalid code",
+          type: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
       }
     }
 

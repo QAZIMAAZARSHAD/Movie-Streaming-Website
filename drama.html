@@ -1,164 +1,336 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
- <body>
+
+<body>
     <div class="scroll-bar">
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-         <li><a href="index.html#Movies">Movies</a></li>
-          <li><a href="web-series.html">Web Series</a></li>
-           <li><a href="index.html#Kids">Kids</a></li>
-            <li><a href="dummy.html">TV</a></li>
-             <li><a href="dummy.html">Premium</a></li>
-              <li><a href="login.html">Login</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
-    </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
-    <nav class="menu2">
-     <ul>
-	         <li><a href="popular.html">Popular</a> </li>
-          <li><a href="crime.html">Crime</a></li>
-          <li><a href="suspense.html" style="font-size: 14px">Suspense & Thriller</a></li>
-          <li><a href="action.html">Action</a></li>
-          <li><a href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a></li>
-         <li><a href="documentary.html">Documentary</a></li>
-          <li><a href="horror.html">Horror</a></li>
-          <li><a href="drama.html">Drama</a></li>
-          <li><a href="war.html">War & Politics</a></li>
-          <li><a href="comedy.html">Comedy</a></li>
-          <li><a href="romance.html">Romance</a></li>
-      </ul>
-    </nav>
-    <div class="maincontainer">
-        <h2>Drama</h2>
-        <hr>
-        <div class="container" id="Movies">
-            <div class="poster">
-                <img src="./Images/ceo.jpg" alt="">
-                <div class="flim">
-                    <b>Official Ceogiri</b>
-                    <br>
-                    IMDb - 6.6
-                </div>
 
-            </div>
-            <div class="poster">
-                <img src="./Images/swades.jpg" alt="">
-                <div class="flim">
-                    <b>Swades</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
+        <!-- navbar starts -->
 
-            </div>
-            <div class="poster">
-                <img src="./Images/bach.jpg" alt="">
-                <div class="flim">
-                    <b>TVF Bachelors</b>
-                    <br>
-                    IMDb - 8.2
+        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                        height="24"></a>
+                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Movies">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-series.html">Web Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tv.html">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dummy.html">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
                 </div>
+            </div>
+        </nav>
 
-            </div>
-            <div class="poster">
-                <img src="./Images/day.jpg" alt="">
-                <div class="flim">
-                    <b>Selection Day</b>
-                    <br>
-                    IMDb - 7.4
-                </div>
+        <!-- navbar ends -->
 
+        <!-- off canva -->
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="color: #fff;
+ background-color: #dc3545">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
-            <div class="poster">
-                <img src="./Images/trip.jpg" alt="">
-                <div class="flim">
-                    <b>TVF Tripling</b>
-                    <br>
-                    IMDb - 8.5
+            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                <div>
+                    Stream Latest Movies Now!
                 </div>
-
-            </div>
-            <div class="poster">
-                <img src="./Images/milkha.jpg" alt="">
-                <div class="flim">
-                    <b>Bhaag Milkha Bhaag</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
-
-            </div>
-
-            <div class="poster">
-                <img src="./Images/twilight.jpg" alt="">
-                <div class="flim">
-                    <b>Twilight : Breaking Dawn</b>
-                    <br>
-                    IMDb - 5.5
-                </div>
-            </div>
-            <div class="poster">
-                <img src="./Images/room.jpg" alt="">
-                <div class="flim">
-                    <b>Permanent Roomates</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-            <div class="poster">
-                <img src="./Images/dhoni.jpg" alt="">
-                <div class="flim">
-                    <b>Ms Dhoni : The Untold Story</b>
-                    <br>
-                    IMDb - 7.8
+                <div class="dropdown mt-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Varieties
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                        style="background-color: #d4a09c; color: white; ">
+                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                                Thriller</a></li>
+                        <li><a class="dropdown-item" href="action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-    <script src="./static/script.js"></script>
+
+        <!-- off canva ends -->
+
+        <div class="maincontainer">
+            <h2>Drama</h2>
+            <hr>
+            <div class="container" id="Movies">
+                <div class="poster">
+                    <img src="./Images/ceo.jpg" alt="">
+                    <div class="flim">
+                        <b>Official Ceogiri</b>
+                        <br>
+                        IMDb - 6.6
+                    </div>
+    
+                </div>
+                <div class="poster">
+                    <img src="./Images/swades.jpg" alt="">
+                    <div class="flim">
+                        <b>Swades</b>
+                        <br>
+                        IMDb - 8.2
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/bach.jpg" alt="">
+                    <div class="flim">
+                        <b>TVF Bachelors</b>
+                        <br>
+                        IMDb - 8.2
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/game.jpg" alt="">
+                    <div class="flim">
+                        <b>The Imitation Game</b>
+                        <br>
+                        IMDb - 8.0
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/upsc.jpg" alt="">
+                    <div class="flim">
+                        <b>Aspirants</b>
+                        <br>
+                        IMDb - 9
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/mohabat.jpg" alt="">
+                    <div class="flim">
+                        <b>Mohabbatein</b>
+                        <br>
+                        IMDb - 7.1
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/zindagi.jpg" alt="">
+                    <div class="flim">
+                        <b>Zindagi Na Milegi Dobara</b>
+                        <br>
+                        IMDb - 8.2
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/college.jpg" alt="">
+                    <div class="flim">
+                        <b>College Romance</b>
+                        <br>
+                        IMDb - 8.9
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/dil.jpg" alt="">
+                    <div class="flim">
+                        <b>Dilwale Dulhania Le Jayenge</b>
+                        <br>
+                        IMDb - 7.1
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/edu.jpg" alt="">
+                    <div class="flim">
+                        <b>Sex Education</b>
+                        <br>
+                        IMDb - 8.3
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/walk.jpg" alt="">
+                    <div class="flim">
+                        <b>The Walk</b>
+                        <br>
+                        IMDb - 7.3
+                    </div>
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/day.jpg" alt="">
+                    <div class="flim">
+                        <b>Selection Day</b>
+                        <br>
+                        IMDb - 7.4
+                    </div>
+    
+                </div>
+                <div class="poster">
+                    <img src="./Images/trip.jpg" alt="">
+                    <div class="flim">
+                        <b>TVF Tripling</b>
+                        <br>
+                        IMDb - 8.5
+                    </div>
+    
+                </div>
+                <div class="poster">
+                    <img src="./Images/milkha.jpg" alt="">
+                    <div class="flim">
+                        <b>Bhaag Milkha Bhaag</b>
+                        <br>
+                        IMDb - 8.2
+                    </div>
+    
+                </div>
+    
+                <div class="poster">
+                    <img src="./Images/twilight.jpg" alt="">
+                    <div class="flim">
+                        <b>Twilight : Breaking Dawn</b>
+                        <br>
+                        IMDb - 5.5
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="./Images/room.jpg" alt="">
+                    <div class="flim">
+                        <b>Permanent Roomates</b>
+                        <br>
+                        IMDb - 8.6
+                    </div>
+                </div>
+                <div class="poster">
+                    <img src="./Images/dhoni.jpg" alt="">
+                    <div class="flim">
+                        <b>Ms Dhoni : The Untold Story</b>
+                        <br>
+                        IMDb - 7.8
+                    </div>
+                </div>
+    
+            </div>
+        </div>
     </div>
-    <div id="waterdrop"></div>
-    <footer class="footer-distributed">
 
-
-        <div class="footer-right">
-
-            <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter twitter"></i></a>
-            <a href="#"><i class="fab fa-telegram telegram"></i></a>
-            <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website"><i class="fab fa-github github"></i></a>
-
+      <!-------------------------------Footer-------------------------------->
+      <div id="waterdrop"></div>
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+            <a  href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+            <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
-
-        <div class="footer-left">
-
-            <p class="footer-links">
-                <a class="link-1" href="#">Home</a>
-                <a href="contactus.html">Contact</a>
-            </p>
-            <p>Copyright &copy; and &reg; Since 2021 Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
+                </ul>
+                </div>
+            <div class="footer-middle">
+            <h2 class="footer-heading">Services</h2>
+            <ul class="footer-middle-list">
+                <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+            </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Try Our App</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios"></i></a>
+                </ul>
+                </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
         </div>
-
+        <hr id="footer-hr">
+        <div class="footer-copyright" >
+            <p>Copyright &copy; and &reg; Since <script>document.write(new Date().getFullYear())</script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        </div>
     </footer>
 
+    <!-- offcanva JS and footer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
 
+    <script> jQuery('#waterdrop').raindrops({ color: '#292c2f', canvasHeight: 150, density: 0.1, frequency: 20 });
+    </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+</body>
 
-<script> jQuery('#waterdrop').raindrops({color:'#292c2f', canvasHeight:150, density: 0.1, frequency: 20});
-</script>
-  </body>
 </html>
