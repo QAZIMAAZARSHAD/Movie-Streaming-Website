@@ -382,10 +382,10 @@ height:40px;
 margin-top:30px;
 }
 .footer-middle a i:hover{
-background-color:white;
+background-color:red;
 padding:5px;
 border-radius:50px;
-color:red;
+color:black;
 }
 .footer-middle-list-item{
 list-style:none;
