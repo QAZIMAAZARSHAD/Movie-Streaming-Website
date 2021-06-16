@@ -1,11 +1,86 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing:border-box;
 }
-  
 body {
   background: black;
   margin: 0;
+}
+section{
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(56, 1, 1);
+}
+section div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 60px 150px rgba(0, 0,0, 1);
+  border-bottom: 1px solid #fff;
+  animation: animate 1s ease-in-out forwards;
+}
+@keyframes animate{
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+section div:nth-child(1){
+  width:1500px ;
+  height: 1500px;
+  animation-delay: 0s;
+}
+section div:nth-child(2){
+  width:1250px ;
+  height: 1250px;
+  animation-delay: 0.5s;
+}
+section div:nth-child(3){
+  width:1000px ;
+  height: 1000px;
+  animation-delay: 1s;
+}
+section div:nth-child(4){
+  width:750px ;
+  height: 750px;
+  animation-delay: 1.5s;
+}
+section div:nth-child(5){
+  width:500px ;
+  height: 500px;
+  animation-delay: 1.5s;
+}
+section div:nth-child(6){
+  width:270px ;
+  height: 270px;
+  animation-delay: 2s;
+}
+section div:nth-child(6) img{
+  background-position: center;
+  max-width: 200px;
+  z-index: -1;
+  transform: translateY(500px);
+  animation: animateLogo 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+@keyframes animateLogo {
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 .menu {
   background: black;
