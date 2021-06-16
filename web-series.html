@@ -3,158 +3,163 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApnaTheatre | Web Series</title>
-    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaTheatre | Web Series</title>
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="webStyle.css">
-    <link rel="stylesheet" href="static/bootstrap.min.css">
-    <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <link rel="stylesheet" href="webStyle.css">
+  
+  <style>
+           #scrollToTopButton{
+position: fixed;
+bottom: 15px;
+right: 10px;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color: white;
+color: black;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+box-shadow: 0 6px 10px 0px gray;
+}
+    .logo {
+  width: 110px;
+  height: 90px;
+  padding: 3px;
+  margin: 0;
+  padding: 0;
+}
 
-    <style>
-        .logo {
-            width: 110px;
-            height: 90px;
-            padding: 3px;
-            margin: 0;
-            padding: 0;
-        }
-        /* CSS FOR FOOTER */
-        
-        .footer {
-            margin-bottom: 15px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
-        
-        .footer-logo {
-            width: 150px;
-            height: 120px;
-            padding: 3px;
-            margin: 0px 0px 0px 10px;
-            padding: 0;
-        }
-        
-        .footer-heading {
-            color: white;
-        }
-        
-        .footer-left,
-        .footer-right,
-        .footer-middle {
-            text-align: center;
-        }
-        
-        .icons {
-            margin-left: -30px;
-        }
-        
-        .footer-links i {
-            font-size: 30px;
-            width: 40px;
-            height: 40px;
-            margin-top: 30px;
-        }
-        
-        .footer-middle a i:hover {
-            background-color: red;
-            padding: 5px;
-            border-radius: 50px;
-            color: black;
-        }
-        
-        .footer-middle-list-item {
-            list-style: none;
-            font-size: 15px;
-            font-family: cursive;
-            margin: 5px 0px 0px 15px;
-            text-align: left;
-        }
-        
-        .footer-middle-list-item a {
-            text-decoration: none;
-            color: white;
-        }
-        
-        .footer-middle-list-item a:hover {
-            color: red;
-        }
-        
-        .footer-right {
-            margin-top: -15px;
-        }
-        
-        .footer-contact-button {
-            font-size: 20px;
-            background-color: red;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 10px;
-            text-decoration: none;
-        }
-        
-        .footer-contact-button:hover {
-            background-color: white;
-            color: red;
-        }
-        
-        .footer-bottom-tagline {
-            color: white;
-            font-size: 15px;
-            font-family: cursive;
-            margin-bottom: 25px;
-        }
-        
-        #footer-hr {
-            color: red;
-            width: 95vw;
-        }
-        
-        .footer-copyright {
-            text-align: center;
-            color: white;
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
-        /***************** Media Queries *********************/
-        
-        @media (max-width: 600px) {
-            .footer-content {
-                display: block;
-                text-align: center;
-            }
-            .footer-middle-list-item {
-                text-align: center;
-                margin-left: -20px;
-            }
-            .footer-left,
-            .footer-middle,
-            .footer-right {
-                margin-top: 50px;
-            }
-        }
-        
-        #waterdrop {
-            height: 30px;
-        }
-        
-        #waterdrop canvas {
-            bottom: -70px !important;
-        }
-    </style>
+/* CSS FOR FOOTER */
+.footer{
+margin-bottom:15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  padding: 10px 20px;
+}
+.footer-logo{
+  width: 150px;
+  height: 120px;
+  padding: 3px;
+  margin:0px 0px 0px 10px;
+  padding: 0;
+}
+.footer-heading{
+  color:white;
+}
+.footer-left, .footer-right, .footer-middle{
+text-align:center;
+}
+.icons{
+  margin-left:-30px;
+}
+.footer-links i{
+font-size:30px;
+width:40px;
+height:40px;
+margin-top:30px;
+}
+.footer-middle a i:hover{
+background-color:red;
+padding:5px;
+border-radius:50px;
+color:black;
+}
+.footer-middle-list-item{
+list-style:none;
+font-size:15px;
+font-family:cursive;
+margin:5px 0px 0px 15px;
+text-align:left;
+}
+.footer-middle-list-item a{
+text-decoration:none;
+color:white;
+}
+.footer-middle-list-item a:hover{
+color:red;
+}
+.footer-right{
+  margin-top:-15px;
+}
+.footer-contact-button{
+font-size:20px;
+background-color:red;
+color:white;
+padding:10px;
+border:none;
+border-radius:10px;
+text-decoration:none;
+}
+.footer-contact-button:hover{
+background-color:white;
+color:red;
+}
+.footer-bottom-tagline{
+color:white;
+font-size:15px;
+font-family:cursive;
+margin-bottom:25px;
+}
+
+#footer-hr{
+color:red;
+width:95vw;
+}
+.footer-copyright{
+text-align:center;
+color:white;
+margin-top:20px;
+font-size:18px;
+}
+
+/* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
+
+/***************** Media Queries *********************/
+
+@media (max-width: 600px) {
+.footer-content{ 
+   display:block;
+   text-align:center;
+}
+.footer-middle-list-item{
+  text-align:center;
+  margin-left:-20px;
+}
+
+.footer-left, .footer-middle, .footer-right{
+  margin-top:50px;
+}
+
+} 
+
+#waterdrop {
+  height: 30px;
+}
+
+#waterdrop canvas {
+  bottom: -70px !important;
+}
+
+  </style>
+
 
 </head>
 
@@ -457,6 +462,70 @@
 
 
     </div>
+
+        <div class="footer-middle">
+            <h2 class="footer-heading">Follow Us</h2>
+            <ul class="footer-middle-list icons">
+                <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
+            </ul>
+            </div>
+        <div class="footer-middle">
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+        </ul>
+        </div>
+        <div class="footer-middle">
+            <h2 class="footer-heading">Try Our App</h2>
+            <ul class="footer-middle-list icons">
+                <a class="footer-links" href="#"><i class="fab fa-google-play"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-app-store-ios"></i></a>
+            </ul>
+            </div>
+        <div class="footer-right">
+            <p class="footer-links">
+                <h2 class="footer-heading">Contact Us</h2>
+                <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                <a class="footer-contact-button" href="contactus.html">Contact</a>
+            </p>
+        </div>
+    </div>
+    <hr id="footer-hr">
+    <div class="footer-copyright" >
+        <p>Copyright &copy; and &reg; Since <script>document.write(new Date().getFullYear())</script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+    </div>
+</footer>
+
+<button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+  <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+</button>
+<script>
+$(document).ready(function(){
+  var scrollTopButton = document.getElementById("scrollToTopButton");
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollTopButton.style.display = "block";
+  } else {
+    scrollTopButton.style.display = "none";
+  }
+}
+
+$("#scrollToTopButton").click(function(){
+$('html ,body').animate({scrollTop : 0},800)
+});
+}); 
+</script>
+
+  <!-- offcanva JS and footer js -->
 
 
 
