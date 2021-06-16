@@ -286,8 +286,8 @@ footer button{
 }
 
 footer button:hover{
-    color:red;
-    background-color: black;
+    color:black;
+    background-color: red;
 }
 
 footer button.show{
