@@ -90,6 +90,14 @@ box-shadow: 0 6px 10px 0px gray;
                             <a class="nav-link" href="contactus.html">Contact Us</a>
                         </li>
                     </ul>
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                     <form id="searchForm" class="d-flex">
                         <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
                         <button class="btn btn-danger" type="submit">Search</button>
@@ -225,6 +233,11 @@ box-shadow: 0 6px 10px 0px gray;
   $('html ,body').animate({scrollTop : 0},800)
   });
   }); 
+  const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
   </script>
 
   <!-- offcanva JS and footer js -->

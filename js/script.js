@@ -190,5 +190,3 @@ function startTimer(time){
         }
     }
 }
-
-

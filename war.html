@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,23 +22,23 @@
 
 </head>
 <style>
-    #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: white;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
-}
+    #scrollToTopButton {
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+        font-size: 25px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 6px;
+        border-radius: 50%;
+        box-shadow: 0 6px 10px 0px gray;
+    }
 </style>
 
 <body>
@@ -46,8 +48,11 @@ box-shadow: 0 6px 10px 0px gray;
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt=""
+                        width="30" height="24"></a>
+                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="background-color: white;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -77,8 +82,17 @@ box-shadow: 0 6px 10px 0px gray;
                             <a class="nav-link" href="contactus.html">Contact Us</a>
                         </li>
                     </ul>
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                     <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-danger" type="submit">Search</button>
                     </form>
                 </div>
@@ -88,24 +102,29 @@ box-shadow: 0 6px 10px 0px gray;
         <!-- navbar ends -->
 
         <!-- off canva -->
-        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
             Have a Look on Various Movies!
         </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header" style="color: #fff;
     background-color: #dc3545">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
             <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
                 <div>
                     Stream Latest Movies Now!
                 </div>
                 <div class="dropdown mt-3">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
                         Varieties
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                        style="background-color: #d4a09c; color: white; ">
                         <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
                         <li><a class="dropdown-item" href="crime.html">Crime</a></li>
                         <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
@@ -208,7 +227,8 @@ box-shadow: 0 6px 10px 0px gray;
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                        height="24"></a>
                 <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
             </div>
             <div class="footer-middle">
@@ -218,7 +238,7 @@ box-shadow: 0 6px 10px 0px gray;
                     <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
                     <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
                     <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-github github"></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
@@ -239,9 +259,9 @@ box-shadow: 0 6px 10px 0px gray;
             </div>
             <div class="footer-right">
                 <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                <h2 class="footer-heading">Contact Us</h2>
+                <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                <a class="footer-contact-button" href="contactus.html">Contact</a>
                 </p>
             </div>
         </div>
@@ -250,32 +270,38 @@ box-shadow: 0 6px 10px 0px gray;
             <p>Copyright &copy; and &reg; Since
                 <script>
                     document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+            </p>
         </div>
     </footer>
 
 
-    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
         <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-      </button>
-      <script>
-      $(document).ready(function(){
-        var scrollTopButton = document.getElementById("scrollToTopButton");
-        window.onscroll = function () { scrollFunction() };
-      
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollTopButton.style.display = "block";
-        } else {
-          scrollTopButton.style.display = "none";
-        }
-      }
-      
-      $("#scrollToTopButton").click(function(){
-      $('html ,body').animate({scrollTop : 0},800)
-      });
-      }); 
-      </script>
+    </button>
+    <script>
+        $(document).ready(function () {
+            var scrollTopButton = document.getElementById("scrollToTopButton");
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopButton.style.display = "block";
+                } else {
+                    scrollTopButton.style.display = "none";
+                }
+            }
+
+            $("#scrollToTopButton").click(function () {
+                $('html ,body').animate({ scrollTop: 0 }, 800)
+            });
+        });
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -294,7 +320,9 @@ box-shadow: 0 6px 10px 0px gray;
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
 </body>
 
