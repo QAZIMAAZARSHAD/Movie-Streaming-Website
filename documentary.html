@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
 
 </head>
 
@@ -134,32 +135,103 @@ box-shadow: 0 6px 10px 0px gray;
             <h2>Documentary</h2>
             <hr>
             <div class="container" id="Movies">
-                <div class="poster">
-                    <img src="./Images/chernobyl.jpg" alt="">
-                    <div class="flim">
-                        <b>Chernobyl</b>
-                        <br> IMDb - 9.4
+              <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/chernobyl.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Chernobyl</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">9.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line to save Europe.</p>
+
+                          <form action="https://youtu.be/s9APLXM9Ei8">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Chernobyl</b>
+                            <br>
+                            IMDb - 9.4
+                        </div>
                     </div>
-
+                  </div>
                 </div>
-                <div class="poster">
-                    <img src="./Images/social.jpg" alt="">
-                    <div class="flim">
-                        <b>The Social Dilemma</b>
-                        <br> IMDb - 7.6
-                    </div>
 
-                </div>
 
                 <div class="poster">
-                    <img src="./Images/sachin.jpg" alt="">
-                    <div class="flim">
-                        <b>Sachin: A Billion Dreams</b>
-                        <br> IMDb - 8.6
-                    </div>
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/social.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>The Social Dilemma</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">94</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.6</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
 
+                        <p class="para_i">Tech experts sound the alarm on the dangerous human impact of social networking.</p>
+
+                          <form action="https://youtu.be/uaaC57tcci0">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>The Social Dilemma</b>
+                            <br>
+                            IMDb - 7.6
+                        </div>
+                    </div>
+                  </div>
                 </div>
 
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/sachin.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Sachin</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">138</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Sachin Tendulkar recounts his journey of becoming one of the most famous names in cricket with the help of archival footage, re-enactments and clips of his family, friends and colleagues</p>
+
+                          <form action="https://youtu.be/8gTeE6pa4Kg">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Sachin: A Billion Dreams</b>
+                            <br>
+                            IMDb - 8.6
+                        </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -224,7 +296,7 @@ box-shadow: 0 6px 10px 0px gray;
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
-      
+
         function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollTopButton.style.display = "block";
@@ -232,11 +304,11 @@ box-shadow: 0 6px 10px 0px gray;
           scrollTopButton.style.display = "none";
         }
       }
-      
+
       $("#scrollToTopButton").click(function(){
       $('html ,body').animate({scrollTop : 0},800)
       });
-      }); 
+      });
       </script>
 
     <!-- offcanva JS and footer js -->
