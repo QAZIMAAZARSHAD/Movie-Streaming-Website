@@ -87,6 +87,30 @@
         }
     </style>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_3Y57GrE42p8s0kTrKxP0W");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
 </head>
 
 <body>
@@ -205,7 +229,7 @@
         </div>
 
 
-        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" accept-charset="UTF-8">
+        <form method="POST" action="https://formcarry.com/s/S1peCWurw0C">
             <div class="container form-margin">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
@@ -392,7 +416,7 @@
 
     <script type="text/javascript">
         function JSalert() {
-            swal("Congrats!", "Message was delivered successfully!", "success");
+            swal("Congrats!", "Message was delivered successfully! Thanks for your Submission", "success");
         }
         function clearFunc() {
             document.getElementById("firstname").value = "";
