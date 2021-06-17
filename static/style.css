@@ -226,12 +226,6 @@ container {
 .poster {
   overflow: hidden;
 }
-.poster img {
-  transition: transform 0.5s ease;
-}
-.poster:hover img {
-  transform: scale(1.2);
-}
 
 .flim {
   text-align: center;
@@ -515,7 +509,7 @@ font-size:18px;
 /***************** Media Queries *********************/
 
 @media (max-width: 600px) {
-.footer-content{ 
+.footer-content{
    display:block;
    text-align:center;
 }
@@ -528,7 +522,7 @@ font-size:18px;
   margin-top:50px;
 }
 
-} 
+}
 
 #waterdrop {
   height: 30px;
@@ -560,4 +554,3 @@ font-size:18px;
 #Kids b:hover{
   cursor: pointer;
 }
-

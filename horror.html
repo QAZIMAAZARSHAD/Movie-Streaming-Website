@@ -9,7 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +17,7 @@
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
 
 </head>
 
@@ -135,38 +136,139 @@ box-shadow: 0 6px 10px 0px gray;
             <h2>Horror</h2>
             <hr>
             <div class="container" id="Movies">
-                <div class="poster">
-                    <img src="./Images/ghoul.jpg" alt="">
-                    <div class="flim">
-                        <b>Ghoul</b>
-                        <br> IMDb - 7.1
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/ghoul.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
+                    <div class="flip-card-back_i">
+                      <h1>Ghoul</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
 
-                <div class="poster">
-                    <img src="./Images/it.jpg" alt="">
-                    <div class="flim">
-                        <b>IT</b>
-                        <br> IMDb - 7.3
+                      <p class="para_i">In a totalitarian near-future India, a mysterious prisoner is sent to a remote military interrogation
+                        center where he turns the tables on his captors by exposing their most shameful secrets and unleashing a demon from Arabic folklore.</p>
+
+                        <form action="https://www.imdb.com/video/vi1724496665?playlistId=tt5909930">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
                     </div>
+                      <div class="flim">
+                          <b>Ghoul</b>
+                          <br>
+                          IMDb - 7.1
+                      </div>
+                  </div>
                 </div>
+              </div>
 
-                <div class="poster">
-                    <img src="./Images/veronica.jpg" alt="">
-                    <div class="flim">
-                        <b>Veronica</b>
-                        <br> IMDb - 6.2
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/it.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
+                    <div class="flip-card-back_i">
+                      <h1>IT</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.3</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
 
-                <div class="poster">
-                    <img src="./Images/type.jpg" alt="">
-                    <div class="flim">
-                        <b>Typewriter</b>
-                        <br> IMDb - 6.5
+                      <p class="para_i">In the summer of 1989, a group of bullied kids band together
+                        to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.</p>
+
+                        <form action="https://www.imdb.com/video/vi1396095257?playlistId=tt1396484">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
                     </div>
-
+                      <div class="flim">
+                          <b>IT</b>
+                          <br>
+                          IMDb - 7.3
+                      </div>
+                  </div>
                 </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/veronica.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Veronica</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">6.2</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Madrid, 1991. A teen girl finds herself besieged
+                        by an evil supernatural force after she played Ouija with two classmates.</p>
+
+                        <form action="https://www.imdb.com/video/vi231914009?playlistId=tt5862312">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Veronica</b>
+                          <br>
+                          IMDb - 6.2
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/type.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Typewriter</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">6.5</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Three young friends
+                        in Goa plan to search an old villa for ghosts, but when a new family moves in, the home's buried past resurfaces in chilling ways.</p>
+
+                        <form action="https://www.imdb.com/video/vi2871966745?playlistId=tt9310372">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Typewriter</b>
+                          <br>
+                          IMDb - 6.5
+                      </div>
+                  </div>
+                </div>
+              </div>
 
 
             </div>
@@ -233,7 +335,7 @@ box-shadow: 0 6px 10px 0px gray;
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
-      
+
         function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollTopButton.style.display = "block";
@@ -241,13 +343,13 @@ box-shadow: 0 6px 10px 0px gray;
           scrollTopButton.style.display = "none";
         }
       }
-      
+
       $("#scrollToTopButton").click(function(){
       $('html ,body').animate({scrollTop : 0},800)
       });
-      }); 
+      });
       </script>
-      
+
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
