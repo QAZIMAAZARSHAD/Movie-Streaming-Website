@@ -81,6 +81,27 @@
         .contactForm {
             margin: 5px;
         }
+
+        ul li ul.dropdown{
+      display: none;
+      position: fixed;
+  }
+  ul li:hover ul.dropdown{
+        display: block;	
+    }
+    ul.dropdown li a{
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    .maincontainer h3 {
+    color: white;
+    text-align: center;
+}
     </style>
 
 </head>
@@ -102,10 +123,18 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#Movies">Movies</a>
+                            <a class="nav-link" href="index.html#Movies">Movies &#9662;</a>
+                          <ul class="dropdown">
+                                <li><a href="index.html#Hollywood">Hollywood</a></li>
+                                <li><a href="index.html#Bollywood">Bollywood</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
+                            <a class="nav-link" href="web-series.html">Web Series &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html#Hollywood1">Hollywood</a></li>
+                                <li><a href="index.html#Bollywood1">Bollywood</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="kids.html">Kids</a>

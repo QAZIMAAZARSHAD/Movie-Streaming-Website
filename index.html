@@ -37,7 +37,27 @@
   border-radius: 50%;
   box-shadow: 0 6px 10px 0px gray;
 }
-
+ 
+  ul li ul.dropdown{
+      display: none;
+      position: fixed;
+  }
+  ul li:hover ul.dropdown{
+        display: block;	
+    }
+    ul.dropdown li a{
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    .maincontainer h3 {
+    color: white;
+    text-align: center;
+}
   </style>
 
 <script>
@@ -77,10 +97,18 @@
                             <a class="nav-link active" aria-current="page" href="#header-nav">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Movies">Movies</a>
+                            <a class="nav-link" href="#Movies">Movies &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="#Hollywood">Hollywood</a></li>
+                                <li><a href="#Bollywood">Bollywood</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
+                            <a class="nav-link" href="web-series.html">Web Series &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="#Hollywood1">Hollywood</a></li>
+                                <li><a href="#Bollywood1">Bollywood</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="kids.html">Kids</a>
@@ -228,131 +256,270 @@
 
 
         </div>
-        <div class="maincontainer">
+        
+            <div class="maincontainer">
 
-            <h2>Movies</h2>
-            <hr>
-            <div class="container">
-                <div id="movies" class="row"></div>
-            </div>
-            <hr>
-            <div class="container" id="Movies">
-                <div class="poster">
-                    <img src="./Images/aaa.jpg" alt="">
-                    <div class="flim">
-                        <b>Andaz Apna Apna</b>
-                        <br> IMDb - 8.2
+                <h2>Movies</h2>
+                <hr>        
+                <div class="container">
+                    <div id="movies" class="row"></div>
+                </div>
+               
+                <div class="container" id="Hollywood">
+                    <h3>Hollywood</h3>
+                    <hr>
+                    <div class="poster">
+                        <img src="./Images/inception.jpg" alt="">
+                        <div class="flim">
+                            <b>Inception</b>
+                            <br> IMDb - 8.8
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/dark knight.jpg" alt="">
+                        <div class="flim">
+                            <b>The Dark Knight</b>
+                            <br> IMDb - 9.0
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/Parasite.jpg" alt="">
+                        <div class="flim">
+                            <b>Parasite</b>
+                            <br> IMDb - 8.6
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/wed.jpg" alt="">
+                        <div class="flim">
+                            <b>A Wednesday</b>
+                            <br> IMDb - 8.1
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/We're_the_Millers_poster.jpg" alt="">
+                        <div class="flim">
+                            <b>We're the Millers</b>
+                            <br> IMDb - 7.1
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/zombieland.jpg" alt="">
+                        <div class="flim">
+                            <b>Zombieland</b>
+                            <br> IMDb - 7.6
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/Matrix.jpg" alt="">
+                        <div class="flim">
+                            <b>The Matrix</b>
+                            <br> IMDb - 8.7
+                        </div>
+                    </div>
+
+                    <div class="poster">
+                        <img src="./Images/joker.jpg" alt="">
+                        <div class="flim">
+                            <b>Joker</b>
+                            <br> IMDb - 8.6
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/Hamilton.jpg" alt="">
+                        <div class="flim">
+                            <b>Hamilton</b>
+                            <br> IMDb - 8.4
+                        </div>
+                    </div>
+
+                    <div class="poster">
+                        <img src="./Images/goodfellas.jpg" alt="">
+                        <div class="flim">
+                            <b>GoodFellas</b>
+                            <br> IMDb - 8.7
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/the shawshank.jpg" alt="">
+                        <div class="flim">
+                            <b>The Shawshank Redemption</b>
+                            <br> IMDb - 9.3
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/green mile.jpg" alt="">
+                        <div class="flim">
+                            <b>The Green Mile</b>
+                            <br> IMDb - 8.6
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/inter.jpg" alt="">
+                        <div class="flim">
+                            <b>Interstellar</b>
+                            <br> IMDb - 8.6
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/the terminal.jpg" alt="">
+                        <div class="flim">
+                            <b>The Terminal</b>
+                            <br> IMDb - 7.4
+                        </div>
                     </div>
                 </div>
+    
 
-                <div class="poster">
-                    <img src="./Images/chakde.jpg" alt="">
-                    <div class="flim">
-                        <b>Chakde India</b>
-                        <br> IMDb - 8.2
+                <div class="container" id="Bollywood">
+                    <h3>Bollywood</h3>
+                    <hr>
+                    <div class="poster">
+                        <img src="./Images/aaa.jpg" alt="">
+                        <div class="flim">
+                            <b>Andaz Apna Apna</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/chakde.jpg" alt="">
+                        <div class="flim">
+                            <b>Chakde India</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/milkha.jpg" alt="">
+                        <div class="flim">
+                            <b>Bhaag Milkha Bhaag</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/jaane tu ya jaane na.jpg" alt="">
+                        <div class="flim">
+                            <b>Jaane Tu... Ya Jaane Na</b>
+                            <br> IMDb - 7.8
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/dhoni.jpg" alt="">
+                        <div class="flim">
+                            <b>Ms Dhoni : The Untold Story</b>
+                            <br> IMDb - 7.8
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/drishyam.jpg" alt="">
+                        <div class="flim">
+                            <b>Drishyam</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/dil.jpg" alt="">
+                        <div class="flim">
+                            <b>Dilwale Dulhania Le Jayenge</b>
+                            <br> IMDb - 7.1
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/gangs.jpg" alt="">
+                        <div class="flim">
+                            <b>Gangs of Wasseypur</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/sholay.jpg" alt="">
+                        <div class="flim">
+                            <b>Sholay</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/rdb.jpg" alt="">
+                        <div class="flim">
+                            <b>Rang De Basanti</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/mbbs.jpg" alt="">
+                        <div class="flim">
+                            <b>Munna Bhai MBBS</b>
+                            <br> IMDb - 8.1
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/kgf.jpg" alt="">
+                        <div class="flim">
+                            <b>KGF</b>
+                            <br> IMDb - 8.2
+                        </div>
+                    </div>
+    
+                    <div class="poster">
+                        <img src="./Images/chhichhore.jpg" alt="">
+                        <div class="flim">
+                            <b>Chhichhore</b>
+                            <br> IMDb - 8.3
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/ludo.jpg" alt="">
+                        <div class="flim">
+                            <b>Ludo</b>
+                            <br> IMDb - 7.6
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/bahubali.jpg" alt="">
+                        <div class="flim">
+                            <b>Baahubali: The Beginning</b>
+                            <br> IMDb - 8.1
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <img src="./Images/aiyaary.jpg" alt="">
+                        <div class="flim">
+                            <b>Baahubali: The Beginning</b>
+                            <br> IMDb - 8.1
+                        </div>
                     </div>
                 </div>
-
-                <div class="poster">
-                    <img src="./Images/milkha.jpg" alt="">
-                    <div class="flim">
-                        <b>Bhaag Milkha Bhaag</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/wed.jpg" alt="">
-                    <div class="flim">
-                        <b>A Wednesday</b>
-                        <br> IMDb - 8.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/dhoni.jpg" alt="">
-                    <div class="flim">
-                        <b>Ms Dhoni : The Untold Story</b>
-                        <br> IMDb - 7.8
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/drishyam.jpg" alt="">
-                    <div class="flim">
-                        <b>Drishyam</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/dil.jpg" alt="">
-                    <div class="flim">
-                        <b>Dilwale Dulhania Le Jayenge</b>
-                        <br> IMDb - 7.1
-                    </div>
-                </div>
-
-
-                <div class="poster">
-                    <img src="./Images/gangs.jpg" alt="">
-                    <div class="flim">
-                        <b>Gangs of Wasseypur</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/sholay.jpg" alt="">
-                    <div class="flim">
-                        <b>Sholay</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/rdb.jpg" alt="">
-                    <div class="flim">
-                        <b>Rang De Basanti</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/mbbs.jpg" alt="">
-                    <div class="flim">
-                        <b>Munna Bhai MBBS</b>
-                        <br> IMDb - 8.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/kgf.jpg" alt="">
-                    <div class="flim">
-                        <b>KGF</b>
-                        <br> IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/inter.jpg" alt="">
-                    <div class="flim">
-                        <b>Interstellar</b>
-                        <br> IMDb - 8.6
-                    </div>
-                </div>
-
-            </div>
-            <!---next block -->
+                 <!---next block -->
 
             <h2>Web Series</h2>
             <hr>
             <div class="container" id="WebSeries">
-                <div class="poster">
-                    <img src="./Images/upsc.jpg" alt="">
+                
+                <div class="container1" id="Hollywood1">
+                    <h3>Hollywood</h3>
+                    <hr>
+                    <div class="poster">
+                    <img src="./Images/black mirror.jpg" alt="">
                     <div class="flim">
-                        <b>Aspirants</b>
-                        <br> IMDb - 9
+                        <b>Black Mirror</b>
+                        <br> IMDb - 8.8
                     </div>
                 </div>
 
@@ -371,20 +538,19 @@
                         <br> IMDb - 8.1
                     </div>
                 </div>
-
                 <div class="poster">
-                    <img src="./Images/mirzapur.jpg" alt="">
+                    <img src="./Images/sherlock series.jpg" alt="">
                     <div class="flim">
-                        <b>Mirzapur</b>
-                        <br> IMDb - 8.4
+                        <b>Sherlock</b>
+                        <br> IMDb - 9.1
                     </div>
                 </div>
 
                 <div class="poster">
-                    <img src="./Images/sacred.jpg" alt="">
+                    <img src="./Images/ozark.jpg" alt="">
                     <div class="flim">
-                        <b>Sacred Games</b>
-                        <br> IMDb - 8.7
+                        <b>Ozark</b>
+                        <br> IMDb - 8.4
                     </div>
                 </div>
 
@@ -403,73 +569,134 @@
                         <br> IMDb - 9.5
                     </div>
                 </div>
+                <div class="poster">
+                    <img src="./Images/crown.jpeg" alt="">
+                    <div class="flim">
+                        <b>The Crown</b>
+                        <br> IMDb - 8.6
+                    </div>
+                </div>
 
                 <div class="poster">
-                    <img src="./Images/kota.jpg" alt="">
+                    <img src="./Images/the office.jpg" alt="">
                     <div class="flim">
-                        <b>Kota Factory</b>
+                        <b>The Office</b>
+                        <br> IMDb - 8.9
+                    </div>
+                </div>
+
+                <div class="poster">
+                    <img src="./Images/firefly.jpg" alt="">
+                    <div class="flim">
+                        <b>Firefly</b>
                         <br> IMDb - 9.0
                     </div>
                 </div>
 
                 <div class="poster">
-                    <img src="./Images/cricket.jpg" alt="">
+                    <img src="./Images/top of the lake.jpg" alt="">
                     <div class="flim">
-                        <b>Inside Edge</b>
-                        <br> IMDb - 8.0
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/tvf.jpg" alt="">
-                    <div class="flim">
-                        <b>Pitchers</b>
-                        <br> IMDb - 9.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/day.jpg" alt="">
-                    <div class="flim">
-                        <b>Selection Day</b>
-                        <br> IMDb - 7.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/scam.jpg" alt="">
-                    <div class="flim">
-                        <b>Scam 1992 : The Harshad Mehta Story</b>
-                        <br> IMDb - 9.5
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/asur.jpg" alt="">
-                    <div class="flim">
-                        <b>Asur : Welcome to your Dark Side</b>
-                        <br> IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/panch.jpg" alt="">
-                    <div class="flim">
-                        <b>Panchayat</b>
-                        <br> IMDb - 8.7
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/ashram.jpg" alt="">
-                    <div class="flim">
-                        <b>Aashram</b>
+                        <b>Top of the Lake</b>
                         <br> IMDb - 7.5
                     </div>
                 </div>
-
+          </div>
             </div>
-            <!---third block -->
+           
+            <div class="container" id="WebSeries">
+            <div class="container1" id="Bollywood1">
+                <h3>Bollywood</h3>
+                <hr>
+                <div class="poster">
+                <img src="./Images/upsc.jpg" alt="">
+                <div class="flim">
+                    <b>Aspirants</b>
+                    <br> IMDb - 9
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/mirzapur.jpg" alt="">
+                <div class="flim">
+                    <b>Mirzapur</b>
+                    <br> IMDb - 8.4
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/sacred.jpg" alt="">
+                <div class="flim">
+                    <b>Sacred Games</b>
+                    <br> IMDb - 8.7
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/kota.jpg" alt="">
+                <div class="flim">
+                    <b>Kota Factory</b>
+                    <br> IMDb - 9.0
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/cricket.jpg" alt="">
+                <div class="flim">
+                    <b>Inside Edge</b>
+                    <br> IMDb - 8.0
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/tvf.jpg" alt="">
+                <div class="flim">
+                    <b>Pitchers</b>
+                    <br> IMDb - 9.1
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/day.jpg" alt="">
+                <div class="flim">
+                    <b>Selection Day</b>
+                    <br> IMDb - 7.4
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/scam.jpg" alt="">
+                <div class="flim">
+                    <b>Scam 1992 : The Harshad Mehta Story</b>
+                    <br> IMDb - 9.5
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/asur.jpg" alt="">
+                <div class="flim">
+                    <b>Asur : Welcome to your Dark Side</b>
+                    <br> IMDb - 8.4
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/panch.jpg" alt="">
+                <div class="flim">
+                    <b>Panchayat</b>
+                    <br> IMDb - 8.7
+                </div>
+            </div>
+
+            <div class="poster">
+                <img src="./Images/ashram.jpg" alt="">
+                <div class="flim">
+                    <b>Aashram</b>
+                    <br> IMDb - 7.5
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!---third block -->
 
             <h2>Kids</h2>
             <hr>
