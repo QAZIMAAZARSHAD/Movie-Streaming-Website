@@ -185,7 +185,7 @@ img {
 }
 
 img:hover {
-  transform: translateZ(20px);
+  transform: translateZ(14px);
 }
 
 /* Gradient shadows*/
