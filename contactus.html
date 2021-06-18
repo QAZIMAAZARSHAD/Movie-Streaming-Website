@@ -17,32 +17,29 @@
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
 
-   <!------------------------Scroll to top button------------------------------------------------>
+<!------------------------Scroll to top button------------------------------------------------>
 <style>
     #scrollToTopButton{
-  position: sticky;
+  /* position: sticky; */
+  position:relative;
   bottom: 40px;
-  left: 95%;
+  left: 93%;
   font-size: 25px;
   z-index: 99;
   width: 50px;
   height: 50px;
   background-color:white;
+  color:red;
   border: none;
   cursor: pointer;
   outline: none;
   padding: 6px;
   border-radius: 50%;
-}
-
-#scrollToTopButton:hover{
-background-color:red;
-color:black;
-}
-#scrollToTopButton i{
-color:red;
-font-weight: bolder;
-}
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:red;
+  color:black;
+  }
 
 
         .scroll-bar {
@@ -314,30 +311,7 @@ font-weight: bolder;
             </div>
         </div>
     </div>
-    <button id="scrollToTopButton" title="Go to top" class="ml-5">
-        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
-    </button>
-    <script>
-        $(document).ready(function () {
-            var scrollTopButton = document.getElementById("scrollToTopButton");
-            window.onscroll = function () {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    scrollTopButton.style.display = "block";
-                } else {
-                    scrollTopButton.style.display = "none";
-                }
-            }
-            $("#scrollToTopButton").click(function () {
-                $('html ,body').animate({
-                    scrollTop: 0
-                }, 800)
-            });
-        });
-    </script>
+   
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -401,6 +375,31 @@ font-weight: bolder;
         </div>
     </footer>
 
+    <!--------------scrool to top button-->
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+    </button>
+    <script>
+        $(document).ready(function () {
+            var scrollTopButton = document.getElementById("scrollToTopButton");
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopButton.style.display = "block";
+                } else {
+                    scrollTopButton.style.display = "none";
+                }
+            }
+            $("#scrollToTopButton").click(function () {
+                $('html ,body').animate({
+                    scrollTop: 0
+                }, 800)
+            });
+        });
+    </script>
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

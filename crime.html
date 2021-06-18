@@ -22,28 +22,25 @@
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
   #scrollToTopButton{
-position: sticky;
+/* position: sticky; */
+position:relative;
 bottom: 40px;
-left: 95%;
+left: 90%;
 font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
 background-color:white;
+color:red;
 border: none;
 cursor: pointer;
 outline: none;
 padding: 6px;
 border-radius: 50%;
 }
-
-#scrollToTopButton:hover{
+#scrollToTopButton:hover, i:hover {
 background-color:red;
 color:black;
-}
-#scrollToTopButton i{
-color:red;
-font-weight: bolder;
 }
 </style>
 <body>
@@ -490,6 +487,7 @@ font-weight: bolder;
         </div>
     </footer>
 
+    <!-----------------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
         <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
       </button>

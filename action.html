@@ -24,9 +24,10 @@
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
   #scrollToTopButton{
-position: sticky;
+/* position: sticky; */
+position:relative;
 bottom: 40px;
-left: 94%;
+left: 90%;
 font-size: 25px;
 z-index: 99;
 width: 50px;
@@ -44,11 +45,7 @@ background-color:red;
 color:black;
 }
 </style>
-<script>
-  setTimeout(function () {
-    $('.section').fadeToggle();
-  }, 4000);
-</script>
+
 
 <body>
     <div class="scroll-bar">
@@ -629,15 +626,15 @@ color:black;
   <script>
     $(document).ready(function(){
       var scrollTopButton = document.getElementById("scrollToTopButton");
-      window.onscroll = function () { scrollFunction() };
+      // window.onscroll = function () { scrollFunction() };
 
-      function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.style.display = "block";
-      } else {
-        scrollTopButton.style.display = "none";
-      }
-    }
+    //   function scrollFunction() {
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     scrollTopButton.style.display = "block";
+    //   } else {
+    //     scrollTopButton.style.display = "none";
+    //   }
+    // }
 
     $("#scrollToTopButton").click(function(){
     $('html ,body').animate({scrollTop : 0},800)
