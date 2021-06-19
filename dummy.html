@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="./static/style.css" rel="stylesheet" type="text/css" />
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
@@ -37,7 +37,7 @@
   background-color:red;
   color:black;
   }
-  
+
 
     /* navbar css */
     #header-nav .nav-link {
@@ -66,14 +66,14 @@
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color: white;"></span>
         </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#Movies">Movies</a>
@@ -221,7 +221,7 @@
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
-  
+
     function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       scrollTopButton.style.display = "block";
@@ -229,11 +229,11 @@
       scrollTopButton.style.display = "none";
     }
   }
-  
+
   $("#scrollToTopButton").click(function(){
   $('html ,body').animate({scrollTop : 0},800)
   });
-  }); 
+  });
   </script>
 
   <!-- offcanva JS and footer js -->

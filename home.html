@@ -71,14 +71,14 @@ color:black;
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="background-color: white;"></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#header-nav">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="movies.html">Movies</a>
@@ -1362,7 +1362,7 @@ color:black;
   $(document).ready(function(){
     var scrollTopButton = document.getElementById("scrollToTopButton");
     window.onscroll = function () { scrollFunction() };
-  
+
     function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       scrollTopButton.style.display = "block";
@@ -1370,11 +1370,11 @@ color:black;
       scrollTopButton.style.display = "none";
     }
   }
-  
+
   $("#scrollToTopButton").click(function(){
   $('html ,body').animate({scrollTop : 0},800)
   });
-  }); 
+  });
   </script>
 
     <!-- footer scripts -->
