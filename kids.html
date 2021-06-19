@@ -15,25 +15,31 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
  
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+    #scrollToTopButton{
+  /* position: sticky; */
+  position:relative;
+  bottom: 40px;
+  left: 93%;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:white;
+  color:red;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:red;
+  color:black;
+  }
+  
 
-  <style>
-        #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: white;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
-}
     .scroll-bar {
       height: auto;
       width: auto;
@@ -228,7 +234,7 @@ margin-bottom:25px;
 
 #footer-hr{
 color:red;
-width:95vw;
+width:99vw;
 }
 .footer-copyright{
 text-align:center;
@@ -738,8 +744,9 @@ font-size:18px;
       </div>
   </footer>
 
+  <!----------------------scroll back to top button-->
   <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-    <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
   </button>
   <script>
   $(document).ready(function(){

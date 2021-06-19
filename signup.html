@@ -10,24 +10,33 @@
 <html>
   <head>
     <title>Sign Up</title>
-    <style>
-          #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
+    <!------------------------Scroll to top button------------------------------------------------>
+<style>
+  #scrollToTopButton{
+position: sticky;
+bottom: 40px;
+left: 95%;
 font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color: white;
-color: black;
+background-color:white;
 border: none;
 cursor: pointer;
 outline: none;
 padding: 6px;
 border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
 }
+
+#scrollToTopButton:hover{
+background-color:red;
+color:black;
+}
+#scrollToTopButton i{
+color:red;
+font-weight: bolder;
+}
+
       h1 {
         margin: auto;
         width: max-content;
@@ -425,7 +434,7 @@ box-shadow: 0 6px 10px 0px gray;
         </div>
     </div>
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+      <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
     </button>
     <script>
     $(document).ready(function(){
