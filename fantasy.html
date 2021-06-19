@@ -21,28 +21,7 @@
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
-#scrollToTopButton {
-  /* position: sticky; */
-  position:relative;
-  bottom: 40px;
-  left: 90%;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color:white;
-  color:red;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-}
 
-#scrollToTopButton:hover, i:hover {
-  background-color:red;
-  color:black;
-}
 
 .b2_i {
   height: 30px;
@@ -149,7 +128,6 @@
                 </div>
               </div>
 
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -182,7 +160,6 @@
                     </div>
                   </div>
                 </div>
-
 
                 <div class="poster">
                   <div class="flip-card_i">
@@ -217,7 +194,6 @@
                   </div>
                 </div>
 
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -250,8 +226,6 @@
                     </div>
                   </div>
                 </div>
-
-
 
                 <div class="poster">
                   <div class="flip-card_i">
@@ -286,7 +260,6 @@
                   </div>
                 </div>
 
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -319,7 +292,6 @@
                     </div>
                   </div>
                 </div>
-
 
                 <div class="poster">
                   <div class="flip-card_i">
@@ -354,7 +326,6 @@
                   </div>
                 </div>
 
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -387,7 +358,6 @@
                     </div>
                   </div>
                 </div>
-
 
                 <div class="poster">
                   <div class="flip-card_i">
@@ -488,9 +458,6 @@
                   </div>
                 </div>
 
-
-
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -524,7 +491,6 @@
                   </div>
                 </div>
 
-
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
@@ -557,7 +523,6 @@
                     </div>
                   </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -570,7 +535,7 @@
           <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
       </div>
       <div class="footer-middle">
-          <h2 class="footer-heading">Follow Us</h2>
+          <h4 class="footer-heading">Follow Us</h4>
           <ul class="footer-middle-list icons">
               <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
               <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
@@ -580,7 +545,7 @@
           </ul>
       </div>
       <div class="footer-middle">
-          <h2 class="footer-heading">Services</h2>
+          <h4 class="footer-heading">Services</h4>
           <ul class="footer-middle-list">
               <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
               <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
@@ -589,7 +554,7 @@
           </ul>
       </div>
       <div class="footer-middle">
-          <h2 class="footer-heading">Try Our App</h2>
+          <h4 class="footer-heading">Try Our App</h4>
           <ul class="footer-middle-list icons">
               <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
               <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
@@ -597,7 +562,7 @@
       </div>
       <div class="footer-right">
           <p class="footer-links">
-              <h2 class="footer-heading">Contact Us</h2>
+              <h4 class="footer-heading">Contact Us</h4>
               <p class="footer-bottom-tagline">Feel free to contact us.</p>
               <a class="footer-contact-button" href="contactus.html">Contact</a>
           </p>
@@ -612,28 +577,10 @@
   </div>
 </footer>
 
-    <!----------------------scroll back to top button----->
-    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      </button>
-      <script>
-      $(document).ready(function(){
-        var scrollTopButton = document.getElementById("scrollToTopButton");
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollTopButton.style.display = "block";
-        } else {
-          scrollTopButton.style.display = "none";
-        }
-      }
-
-      $("#scrollToTopButton").click(function(){
-      $('html ,body').animate({scrollTop : 0},800)
-      });
-      });
-      </script>
+<!----------------------scroll back to top button----->
+<div class="scrollbar">
+  
+</div>
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -658,6 +605,10 @@
 
       $(document).ready(() => {
         $('.offcanva').load('offCanva.html');
+      });
+
+      $(document).ready(() => {
+        $('.scrollbar').load('scrollbar.html');
       });
 
     </script>
