@@ -1,4 +1,4 @@
-*{
+* {
 margin: 0;
 padding: 0;
 box-sizing:border-box;
@@ -7,14 +7,14 @@ body {
   background: black;
   margin: 0;
 }
-section{
+section {
   position: fixed;
   z-index: 999999;
   width: 100%;
   height: 100vh;
   background-color: rgb(56, 1, 1);
 }
-section div{
+section div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,45 +28,45 @@ section div{
   border-bottom: 1px solid #fff;
   animation: animate 1s ease-in-out forwards;
 }
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     transform: translate(-50%, -50%) scale(0);
   }
-  100%{
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
-section div:nth-child(1){
+section div:nth-child(1) {
   width:1500px ;
   height: 1500px;
   animation-delay: 0s;
 }
-section div:nth-child(2){
+section div:nth-child(2) {
   width:1250px ;
   height: 1250px;
   animation-delay: 0.5s;
 }
-section div:nth-child(3){
+section div:nth-child(3) {
   width:1000px ;
   height: 1000px;
   animation-delay: 1s;
 }
-section div:nth-child(4){
+section div:nth-child(4) {
   width:750px ;
   height: 750px;
   animation-delay: 1.5s;
 }
-section div:nth-child(5){
+section div:nth-child(5) {
   width:500px ;
   height: 500px;
   animation-delay: 1.5s;
 }
-section div:nth-child(6){
+section div:nth-child(6) {
   width:270px ;
   height: 270px;
   animation-delay: 2s;
 }
-section div:nth-child(6) img{
+section div:nth-child(6) img {
   background-position: center;
   max-width: 200px;
   z-index: -1;
@@ -74,11 +74,11 @@ section div:nth-child(6) img{
   animation: animateLogo 1s ease-in-out forwards;
   animation-delay: 2.5s;
 }
-@keyframes animateLogo {
-  0%{
+@keyframes animateLogo  {
+  0% {
     transform: translateY(500px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
@@ -113,12 +113,14 @@ marquee {
   margin: 0;
   padding: 0;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   padding-left: 0px !important;
-  }
-  .row>*{
-    padding-left: 0px !important;
-  }
+}
+
+.row>*{
+  padding-left: 0px !important;
+}
+
 .online {
   color: red;
   font-size: 27px;
@@ -127,6 +129,7 @@ marquee {
   display: block;
   background: black;
 }
+
 #variety{
   margin-bottom: 2rem;
 }
@@ -217,17 +220,17 @@ container {
   margin-left: 50px;
 }
 .poster {
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px;
   display: inline-block;
   position: relative;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 /* Hover Images */
 .poster {
   overflow: hidden;
 }
 
-.flim {
+.film {
   text-align: center;
   position: absolute;
   bottom: 0%;
@@ -535,22 +538,9 @@ font-size:18px;
 
 /* Cursor Added */
 
-#Movies img:hover{
+#Movies #WebSeries #Kids img:hover {
   cursor: pointer;
 }
-#Movies b:hover{
-  cursor: pointer;
-}
-
-#WebSeries img:hover{
-  cursor: pointer;
-}
-#WebSeries b:hover{
-  cursor: pointer;
-}
-#Kids img:hover{
-  cursor: pointer;
-}
-#Kids b:hover{
+#Movies #WebSeries #Kids b:hover {
   cursor: pointer;
 }
