@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>Sign In</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
@@ -9,6 +11,21 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="google-signin-client_id" content="Your api key">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>  
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="script.js"></script>
+    <style>
+      .g-signin2{
+        margin-left:60px;
+        margin-top:6px;
+        margin-right:10px;
+        width:50px;
+      
+      }
+  </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
@@ -428,6 +445,11 @@ box-shadow: 0 6px 10px 0px gray;
         <div class="login-face">
 
         </div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        
+        <div class="data">
+      </div>
+
         <br>
         <div class="new-members">
             New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
