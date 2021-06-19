@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color:#926239;
+    line-height:1.6;
+  }
+  
+  #showcase{
+    background-image:url('./Images/land.jpg');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+  }
+  
+  #showcase h1{
+    font-size:50px;
+    line-height:1.2;
+    color:#ffffff;
+    font-size:60px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  
+  #showcase .button{
+    font-size:28px;
+    text-decoration:none;
+    color:#e2e5e5;
+    /*border:#926239 1px solid;
+    */padding:10px 20px;
+    border-radius:20px;
+    margin-top:20px;
+    background:#4410ffd3;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    size: 45px;
+}
+  
+  #showcase .button:hover{
+    background:linear-gradient(rgb(29, 18, 189),rgb(118, 55, 177));
+    color:#fff;
+  }
+  
+  @media only screen and (max-width: 400px)
+{
+  nav {
+    margin-bottom: 19%;
+  }
+}
