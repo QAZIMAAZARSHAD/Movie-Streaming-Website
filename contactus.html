@@ -1,7 +1,9 @@
-<html>
-
-<head>
-  <title>Contact Us</title>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -59,8 +61,11 @@
     }
 
     #variety {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+     margin: 0.5rem;
+    }
+    .btn-outline-danger, .btn-outline-danger:focus {
+      outline: none;
+      box-shadow: none;
     }
     .contactForm{
       margin: 5px;
@@ -164,67 +169,68 @@
 
       <div class="text">
         <h1>Contact <span class="red">Us</span></h1>
-        <hr class="redline">
+        <div class="redline"></div>
         <p>Have Questions ? We have answers ( may be )</p>
       </div>
     </div>
 
     <div class="touch">
       <h2>Get in touch</h2>
-      <hr class="redline">
+      <div class="redline"></div>
+    </div>
+    <div class="container fill">
+      <div class="forthis">
+        <form action="" method="POST" name="contact-form">
+          <div class="form-row two2">
+            <div class="form-group col-md-6 column">
+              <input type="text" class="form-control" name="first-name" required>
+              <label>First Name</label>
+              <div class="underline"></div>
+            </div>
+            <div class="form-group col-md-6 column">
+              <input type="text" class="form-control" name="last-name" required>
+              <label>Last Name</label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="form-row one1">
+            <div class="form-group col-lg-6 column">
+              <input type="email" class="form-control" name="email" required>
+              <label>Email</label>
+              <div class="underline"></div>
+            </div>
+            <div class="form-group col-lg-6 column">
+              <input type="phone-number" class="form-control" name="phone-number" required>
+              <label>Phone Number</label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group column">
+              <input type="text" class="form-control" name="subject" required>
+              <label>Subject</label>
+              <div class="underline extra"></div>
+            </div>
+          </div>
+          <div class="form-row size">
+            <div class="form-group column">
+              <textarea type="text"class="form-control" name="message" rows="4" required></textarea>
+              <label>Message</label>
+              <div class="underline extra gap"></div>
+            </div>
+          </div>
+          <div class="btn-sm">
+            <button type="submit" class="sm-button">submit</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-
-    <form action="" method="POST" name="contact-form">
-      <div class="container form-margin">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="form-group">
-              <input type="text" class="form-control contactForm" placeholder="First Name" ng-model="firstname" name="firstname"
-                required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control contactForm" placeholder="Phone" ng-model="phone" name="firstname" required>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="form-group">
-              <input type="text" class="form-control contactForm" placeholder="Last Name" ng-model="lastname" name="lastname"
-                required>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control contactForm" placeholder="E-mail" ng-model="email" name="email" required>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-          <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="form-group">
-              <textarea class="form-control contactForm" rows="6" placeholder="Message" ng-model="message" name="message"
-                required></textarea>
-            </div>
-            <div class="pager">
-              <button type="submit" class="btn btn-success">SEND MESSAGE</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-
-      </div>
-    </form>
     <!-- address -->
 
     <div class="container address">
-      <div class="row">
-
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="row add-row">
+        <div class="col-sm-6">
           <h3>Our Address</h3>
           <div class="redline-address"></div>
           <p>13 B</p>
@@ -236,15 +242,12 @@
             <p><span class="glyphicon glyphicon-phone"></span> +91-97427 66666</p>
           </div>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+        <div class="col-sm-6 map-padd">
           <!-- -map- -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.019213593812!2d77.62060731482127!3d12.906485990898592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14eed2a26dbb%3A0x98f64960052a26b0!2sTrainingMug!5e0!3m2!1sen!2sin!4v1504259922701"
-            width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-
       </div>
     </div>
   </div>
@@ -298,7 +301,7 @@
     <div class="footer-copyright" >
         <p>Copyright &copy; and &reg; Since 2021 Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
     </div>
-</footer>
+   </footer>
 
   <!-- offcanva JS and footer js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
