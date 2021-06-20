@@ -26,8 +26,8 @@
   z-index: 99;
   width: 50px;
   height: 50px;
-  background-color:white;
-  color:red;
+  background-color:red;
+  color:black;
   border: none;
   cursor: pointer;
   outline: none;
@@ -36,34 +36,41 @@
   }
   #scrollToTopButton:hover, i:hover {
   background-color:red;
-  color:black;
+  color:white;
   }
 
 
-    .scroll-bar {
-      height: auto;
-      width: auto;
-      margin: auto;
-      overflow-y: auto;
-      overflow-x: hidden;
-      max-width: 100%;
-    }
+  .scroll-bar {
+  height: auto;
+  width: auto;
+  margin: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+	max-width: 100%;
+}
 
+::-webkit-scrollbar-track {
+  border: 5px solid #2c2f30;
+  /* border color does not support transparent on scrollbar
+  // border-color: transparent;*/
+  background-color:red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:red !important;
+}
+::-webkit-scrollbar-track:hover {
+  background-color:white;
+}
 
-    ::-webkit-scrollbar-track {
-      border: 5px solid #2c2f30;
-      background-color: black;
-    }
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #2c2f30;
+}
 
-    ::-webkit-scrollbar {
-      width: 15px;
-      background-color: #2c2f30;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: red;
-      border-radius: 10px;
-    }
+::-webkit-scrollbar-thumb {
+  background-color:black;
+  border-radius: 10px;
+}
 
     * {
       margin: 0;
@@ -158,6 +165,8 @@
     }
 
 /* CSS FOR FOOTER */
+/* CSS FOR FOOTER */
+
 .footer{
 margin-bottom:15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -190,10 +199,10 @@ height:40px;
 margin-top:30px;
 }
 .footer-middle a i:hover{
-background-color:red;
+background-color:white;
 padding:5px;
 border-radius:50px;
-color:black;
+color:red;
 }
 .footer-middle-list-item{
 list-style:none;
@@ -215,7 +224,7 @@ color:red;
 .footer-contact-button{
 font-size:20px;
 background-color:red;
-color:white;
+color:black;
 padding:10px;
 border:none;
 border-radius:10px;
@@ -233,13 +242,13 @@ margin-bottom:25px;
 }
 
 
+
 .footer-copyright{
 text-align:center;
 color:white;
 margin-top:20px;
 font-size:18px;
 }
-
 /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
 
 /***************** Media Queries *********************/
