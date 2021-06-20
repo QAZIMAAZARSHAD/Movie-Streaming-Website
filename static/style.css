@@ -405,7 +405,13 @@ textarea.ng-valid {
   border: 5px solid #2c2f30;
   /* border color does not support transparent on scrollbar
   // border-color: transparent;*/
-  background-color: black;
+  background-color:red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:red !important;
+}
+::-webkit-scrollbar-track:hover {
+  background-color:white;
 }
 
 ::-webkit-scrollbar {
@@ -414,7 +420,7 @@ textarea.ng-valid {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color:black;
   border-radius: 10px;
 }
 
@@ -451,10 +457,10 @@ height:40px;
 margin-top:30px;
 }
 .footer-middle a i:hover{
-background-color:red;
+background-color:white;
 padding:5px;
 border-radius:50px;
-color:black;
+color:red;
 }
 .footer-middle-list-item{
 list-style:none;
@@ -476,7 +482,7 @@ color:red;
 .footer-contact-button{
 font-size:20px;
 background-color:red;
-color:white;
+color:black;
 padding:10px;
 border:none;
 border-radius:10px;
@@ -493,10 +499,7 @@ font-family:cursive;
 margin-bottom:25px;
 }
 
-#footer-hr{
-color:red;
-width:99vw;
-}
+
 .footer-copyright{
 text-align:center;
 color:white;

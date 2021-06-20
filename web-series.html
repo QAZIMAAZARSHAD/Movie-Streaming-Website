@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="webStyle.css">
-  
+
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
     #scrollToTopButton{
@@ -29,8 +29,8 @@
   z-index: 99;
   width: 50px;
   height: 50px;
-  background-color:white;
-  color:red;
+  background-color:red;
+  color:black;
   border: none;
   cursor: pointer;
   outline: none;
@@ -39,10 +39,10 @@
   }
   #scrollToTopButton:hover, i:hover {
   background-color:red;
-  color:black;
+  color:white;
   }
-  
- 
+
+
     .logo {
   width: 110px;
   height: 90px;
@@ -84,10 +84,10 @@ height:40px;
 margin-top:30px;
 }
 .footer-middle a i:hover{
-background-color:red;
+background-color:white;
 padding:5px;
 border-radius:50px;
-color:black;
+color:red;
 }
 .footer-middle-list-item{
 list-style:none;
@@ -109,7 +109,7 @@ color:red;
 .footer-contact-button{
 font-size:20px;
 background-color:red;
-color:white;
+color:black;
 padding:10px;
 border:none;
 border-radius:10px;
@@ -126,23 +126,19 @@ font-family:cursive;
 margin-bottom:25px;
 }
 
-#footer-hr{
-color:red;
-width:99vw;
-}
+
 .footer-copyright{
 text-align:center;
 color:white;
 margin-top:20px;
 font-size:18px;
-}
 
 /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
 
 /***************** Media Queries *********************/
 
 @media (max-width: 600px) {
-.footer-content{ 
+.footer-content{
    display:block;
    text-align:center;
 }
@@ -155,7 +151,7 @@ font-size:18px;
   margin-top:50px;
 }
 
-} 
+}
 
 #waterdrop {
   height: 30px;
@@ -176,14 +172,14 @@ font-size:18px;
     <div class="scroll-bar">
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color: white;"></span>
         </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#Movies">Movies</a>
@@ -470,7 +466,7 @@ font-size:18px;
 
     </div>
 
-        
+
 
 
 
@@ -536,7 +532,7 @@ font-size:18px;
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
-      
+
         function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollTopButton.style.display = "block";
@@ -544,11 +540,11 @@ font-size:18px;
           scrollTopButton.style.display = "none";
         }
       }
-      
+
       $("#scrollToTopButton").click(function(){
       $('html ,body').animate({scrollTop : 0},800)
       });
-      }); 
+      });
       </script>
 
     <!-- offcanva JS and footer js -->
