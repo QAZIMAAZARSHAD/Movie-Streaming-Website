@@ -7,23 +7,29 @@
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-         <li><a href="index.html#Movies">Movies</a></li>
-          <li><a href="index.html#Web Series">Web Series</a></li>
-           <li><a href="index.html#Kids">Kids</a></li>
-            <li><a href="dummy.html">TV</a></li>
-             <li><a href="dummy.html">Premium</a></li>
-              <li><a href="login.html">Login</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
-    </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
+    <header>
+        <img src="./Images/logo.jpg" class="logo">
+        <nav class="menu" id="Home">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#Movies">Movies</a></li>
+            <li><a href="#Web Series">Web Series</a></li>
+            <li><a href="#Kids">Kids</a></li>
+            <li><a href="dummy.html">TV show</a></li>
+            <li><a href="dummy.html">Premium</a></li>
+          </ul>
+        </nav>
+         <a href="login.html" class="login">Login</a>
+        </header>
+    
+        
+        <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
+        <label class="online">Stream Latest Movies Now!</label>
+        <form class="search-form">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+          </form>
+    
     <nav class="menu2">
      <ul>
 	         <li><a href="popular.html">Popular</a> </li>
@@ -40,7 +46,6 @@
     </nav>
     <div class="maincontainer">
         <h2>Action</h2>
-        <hr>
         <div class="container" id="Movies">
             <div class="poster">
                 <img src="./Images/got.jpg" alt="">

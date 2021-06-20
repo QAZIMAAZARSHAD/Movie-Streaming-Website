@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
+    <header>
+    <img src="./Images/logo.jpg" class="logo">
     <nav class="menu" id="Home">
       <ul>
-        <li><a href="#Home">Home</a></li>
-         <li><a href="#Movies">Movies</a></li>
-          <li><a href="#Web Series">Web Series</a></li>
-           <li><a href="#Kids">Kids</a></li>
-            <li><a href="dummy.html">TV</a></li>
-             <li><a href="dummy.html">Premium</a></li>
-              <li><a href="login.html">Login</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#Movies">Movies</a></li>
+        <li><a href="#Web Series">Web Series</a></li>
+        <li><a href="#Kids">Kids</a></li>
+        <li><a href="dummy.html">TV show</a></li>
+        <li><a href="dummy.html">Premium</a></li>
       </ul>
-      <form class="search-form">
+    </nav>
+     <a href="login.html" class="login">Login</a>
+    </header>
+
+    
+    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
+    <label class="online">Stream Latest Movies Now!</label>
+    <form class="search-form">
         <input type="text" placeholder="Search">
         <button>Search</button>
-    </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
+      </form>
+
     <nav class="menu2">
      <ul>
 	         <li><a href="popular.html">Popular</a> </li>
@@ -39,25 +47,32 @@
       </ul>
     </nav>
     <div class="slider-holder">
-        
+        <marquee behavior="scroll" direction="right" scrollamount="8" >
         <div class="image-holder">
+
+            <img src="./Images/tenet.jpg" class="slider-image" />
             <img src="./Images/scam.jpg" class="slider-image" />
             <img src="./Images/got.jpg" class="slider-image" />
             <img src="./Images/breaking.jpg" class="slider-image" />
             <img src="./Images/mirzapur.jpg" class="slider-image" />
             <img src="./Images/sacred.jpg" class="slider-image" />
             <img src="./Images/infinity.jpg" class="slider-image" />
-            <img src="./Images/kota.jpg" class="slider-image" />
+            <img src="./Images/super-girl.jpg" class="slider-image" />
             <img src="./Images/apharan.jpg" class="slider-image" />
             <img src="./Images/bat.jpg" class="slider-image" />
-           <img src="./Images/criminal.jpg" class="slider-image" />
-
+            <img src="./Images/criminal.jpg" class="slider-image" />
+            <img src="./Images/John_Wick.jpg" class="slider-image" />
+            <img src="./Images/loki.jpg" class="slider-image" />
+            <img src="./Images/infinite.jpeg" class="slider-image" />
+            <img src="./Images/wrath of man.jpg" class="slider-image" />
+            <img src="./Images/nobody.jpg" class="slider-image" />
+            <img src="./Images/alita.jpg" class="slider-image" />
         </div>
+        </marquee>
        
     </div>
         <div class="maincontainer">
         <h2>Movies</h2>
-        <hr>
         <div class="container" id="Movies">
             <div class="poster">
                 <img src="./Images/aaa.jpg" alt="">
@@ -66,7 +81,6 @@
                     <br>
                     IMDb - 8.2
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/chakde.jpg" alt="">
@@ -75,7 +89,6 @@
                     <br>
                     IMDb - 8.2
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/milkha.jpg" alt="">
@@ -84,7 +97,6 @@
                     <br>
                     IMDb - 8.2
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/wed.jpg" alt="">
@@ -93,7 +105,6 @@
                     <br>
                     IMDb - 8.1
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/dhoni.jpg" alt="">
@@ -102,7 +113,6 @@
                     <br>
                     IMDb - 7.8 
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/drishyam.jpg" alt="">
@@ -111,7 +121,6 @@
                     <br>
                     IMDb - 8.2
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/gangs.jpg" alt="">
@@ -120,9 +129,7 @@
                     <br>
                     IMDb - 8.2
                 </div>
-
             </div>
-
             <div class="poster">
                 <img src="./Images/sholay.jpg" alt="">
                 <div class="flim">
@@ -147,14 +154,10 @@
                     IMDb - 8.1 
                 </div>
             </div>
+            </div>
 
-        </div>
-        <!---
-            next block -->
-
-        <h2>Web Series</h2>
-        <hr>
-        <div class="container" id="Web Series">
+            <h2 class="web-series">Web Series</h2>
+            <div class="container-2" id="Web-Series">
             <div class="poster">
                 <img src="./Images/mirzapur.jpg" alt="">
                 <div class="flim">
@@ -171,7 +174,6 @@
                     <br>
                      IMDb - 8.7
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/got.jpg" alt="">
@@ -180,19 +182,16 @@
                     <br>
                     IMDb - 9.3
                 </div>
-
             </div>
             <div class="poster">
-                <img src="./Images/breaking.jpg" alt="">
+                <img src="./Images/super-girl.jpg" alt="">
                 <div class="flim">
-                    <b>Breaking Bad</b>
+                    <b>Super Girl</b>
                     <br>
-                    IMDb - 9.5
+                    IMDb - 9.3
                 </div>
-
             </div>
-
-            <div class="poster">
+            <div class="poster"> 
                 <img src="./Images/kota.jpg" alt="">
                 <div class="flim">
                     <b>Kota Factory</b>
@@ -240,7 +239,7 @@
                     IMDb - 8.4 
                 </div>
             </div>
-                 <div class="poster">
+            <div class="poster">
                 <img src="./Images/panch.jpg" alt="">
                 <div class="flim">
                     <b>Panchayat</b>
@@ -256,40 +255,29 @@
                     IMDb - 7.5
                 </div>
             </div>
-
-        </div>
-        <!---
-            third block -->
-
-        <h2>Kids</h2>
-        <hr>
-        <div class="container" id="Kids">
             <div class="poster">
-                <img src="./Images/bat.jpg" alt="">
+                <img src="./Images/John_Wick.jpg" alt="">
                 <div class="flim">
-                    <b>The Dark Knight Rises</b>
+                    <b>John Wick</b>
                     <br>
-                   IMDb - 8.4
+                    IMDb - 9.0
                 </div>
-
             </div>
             <div class="poster">
-                <img src="./Images/narnia.jpg" alt="">
+                <img src="./Images/loki.jpg" alt="">
                 <div class="flim">
-                    <b>The Chronicles of Narnia</b>
+                    <b>Loki</b>
                     <br>
-                    IMDb - 6.9
-                </div> 
-
+                    IMDb - 8.5
+                </div>
             </div>
             <div class="poster">
-                <img src="./Images/endgame.jpg" alt="">
+                <img src="./Images/tenet.jpg" alt="">
                 <div class="flim">
-                    <b>Avengers : Endgame</b>
+                    <b>Tenet</b>
                     <br>
-                    IMDb - 8.4
+                    IMDb - 7.2
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/infinity.jpg" alt="">
@@ -298,7 +286,6 @@
                     <br>
                     IMDb - 8.4
                 </div>
-
             </div>
             <div class="poster">
                 <img src="./Images/spider.jpg" alt="">
@@ -307,18 +294,168 @@
                     <br>
                     IMDb - 7.3
                 </div>
-
             </div>
             <div class="poster">
-                <img src="./Images/infinity.jpg" alt="">
+                <img src="./Images/endgame.jpg" alt="">
                 <div class="flim">
-                    <b>Avengers : Infinity War</b>
+                    <b>Avengers : Endgame</b>
                     <br>
                     IMDb - 8.4
                 </div>
             </div>
+            <div class="poster">
+                <img src="./Images/narnia.jpg" alt="">
+                <div class="flim">
+                    <b>The Chronicles of Narnia</b>
+                    <br>
+                    IMDb - 6.9
+                </div> 
+            </div>
+            <div class="poster">
+                <img src="./Images/bat.jpg" alt="">
+                <div class="flim">
+                    <b>The Dark Knight Rises</b>
+                    <br>
+                   IMDb - 8.4
+                </div>
+            </div>
         </div>
+        <h2 class="kids">Kids</h2>
+        <div class="container-3" id="kids">
+            <div class="poster">
+                <img src="./Images/Wish_Dragon.png" alt="">
+                <div class="flim">
+                    <b>Wish Dragon</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Over_the_Moon_(2020).png" alt="">
+                <div class="flim">
+                    <b>Over The Moon</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/the-mitchells.jpg" alt="">
+                <div class="flim">
+                    <b>The Mitchells vs The Machines</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/fearless.jpg" alt="">
+                <div class="flim">
+                    <b>Fearless</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/We_Can_Be_Heroes_2020_film_poster.png" alt="">
+                <div class="flim">
+                    <b>We Can Be Heroes</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/The_Willoughbys_Theatrical_release_poster.jpg" alt="">
+                <div class="flim">
+                    <b>The Willoughbys</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/dragon.jpg" alt="">
+                <div class="flim">
+                    <b>How To Train your Dragon</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Jingle_Jangle_A_Christmas_Journey_poster.png" alt="">
+                <div class="flim">
+                    <b>Jingle Jangle</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/minions.jpg" alt="">
+                <div class="flim">
+                    <b>Minions</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/little-mermaid.jpg" alt="">
+                <div class="flim">
+                    <b>The Little Mermaid</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Dora_and_the_Lost_City_of_Gold_poster.jpg" alt="">
+                <div class="flim">
+                    <b>Dora</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Pan_2015_poster.jpg" alt="">
+                <div class="flim">
+                    <b>Pan</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Wonder_Park_theatrical_poster.jpg" alt="">
+                <div class="flim">
+                    <b>Wonder Park</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/sharkboy.jpg" alt="">
+                <div class="flim">
+                    <b>Sharkboy And Lavagirl</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/benji.jpg" alt="">
+                <div class="flim">
+                    <b>Benji</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+            <div class="poster">
+                <img src="./Images/Puss_in_Boots_Poster.jpg" alt="">
+                <div class="flim">
+                    <b>Puss In Boots</b>
+                    <br>
+                    IMDb - 7.5
+                </div>
+            </div>
+        </div>
+        
+                </div>
+
     </div>
+
     <footer>
         <div class="foot">
             <span><b style="background-color:black; padding: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 ">AT</b>&nbsp; &nbsp;  Copyright &copy; and &reg; Since 2020
