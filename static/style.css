@@ -1,11 +1,86 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing:border-box;
 }
-  
 body {
   background: black;
   margin: 0;
+}
+section{
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(56, 1, 1);
+}
+section div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 60px 150px rgba(0, 0,0, 1);
+  border-bottom: 1px solid #fff;
+  animation: animate 1s ease-in-out forwards;
+}
+@keyframes animate{
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+section div:nth-child(1){
+  width:1500px ;
+  height: 1500px;
+  animation-delay: 0s;
+}
+section div:nth-child(2){
+  width:1250px ;
+  height: 1250px;
+  animation-delay: 0.5s;
+}
+section div:nth-child(3){
+  width:1000px ;
+  height: 1000px;
+  animation-delay: 1s;
+}
+section div:nth-child(4){
+  width:750px ;
+  height: 750px;
+  animation-delay: 1.5s;
+}
+section div:nth-child(5){
+  width:500px ;
+  height: 500px;
+  animation-delay: 1.5s;
+}
+section div:nth-child(6){
+  width:270px ;
+  height: 270px;
+  animation-delay: 2s;
+}
+section div:nth-child(6) img{
+  background-position: center;
+  max-width: 200px;
+  z-index: -1;
+  transform: translateY(500px);
+  animation: animateLogo 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+@keyframes animateLogo {
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 .menu {
   background: black;
@@ -100,7 +175,7 @@ img {
 }
 
 img:hover {
-  transform: translateZ(20px);
+  transform: translateZ(14px);
 }
 
 /* Gradient shadows*/
@@ -134,12 +209,6 @@ img:hover {
 /* Hover Images */
 .poster {
   overflow: hidden;
-}
-.poster img {
-  transition: transform 0.5s ease;
-}
-.poster:hover img {
-  transform: scale(1.2);
 }
 
 .flim {
@@ -530,7 +599,13 @@ textarea.ng-valid {
   border: 5px solid #2c2f30;
   /* border color does not support transparent on scrollbar
   // border-color: transparent;*/
-  background-color: black;
+  background-color:red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:red !important;
+}
+::-webkit-scrollbar-track:hover {
+  background-color:white;
 }
 
 ::-webkit-scrollbar {
@@ -539,7 +614,7 @@ textarea.ng-valid {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color:black;
   border-radius: 10px;
 }
 
@@ -576,10 +651,10 @@ height:40px;
 margin-top:30px;
 }
 .footer-middle a i:hover{
-background-color:red;
+background-color:white;
 padding:5px;
 border-radius:50px;
-color:black;
+color:red;
 }
 .footer-middle-list-item{
 list-style:none;
@@ -601,7 +676,7 @@ color:red;
 .footer-contact-button{
 font-size:20px;
 background-color:red;
-color:white;
+color:black;
 padding:10px;
 border:none;
 border-radius:10px;
@@ -618,10 +693,7 @@ font-family:cursive;
 margin-bottom:25px;
 }
 
-#footer-hr{
-color:red;
-width:95vw;
-}
+
 .footer-copyright{
 text-align:center;
 color:white;
@@ -634,7 +706,7 @@ font-size:18px;
 /***************** Media Queries *********************/
 
 @media (max-width: 600px) {
-.footer-content{ 
+.footer-content{
    display:block;
    text-align:center;
 }
@@ -647,7 +719,7 @@ font-size:18px;
   margin-top:50px;
 }
 
-} 
+}
 
 #waterdrop {
   height: 30px;
@@ -679,4 +751,3 @@ font-size:18px;
 #Kids b:hover{
   cursor: pointer;
 }
-

@@ -1,8 +1,42 @@
 <!DOCTYPE html>
+<link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
 <html>
   <head>
     <title>Sign Up</title>
-    <style>
+    <!------------------------Scroll to top button------------------------------------------------>
+<style>
+  #scrollToTopButton{
+position: sticky;
+bottom: 40px;
+left: 95%;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:white;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+
+#scrollToTopButton:hover{
+background-color:red;
+color:black;
+}
+#scrollToTopButton i{
+color:red;
+font-weight: bolder;
+}
+
       h1 {
         margin: auto;
         width: max-content;
@@ -41,7 +75,7 @@
         outline: none;
       }
       input[type="submit"] {
-        width: 300px;
+        width: 260px;
         background-color: red;
         font-weight: bold;
       }
@@ -89,7 +123,7 @@
       }
       .login{
           margin: 0 auto;
-          width: 310px;
+          width: 400px;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
@@ -264,7 +298,6 @@
       }
       .signin-button{
           margin-top: 20px;
-          width: 100%;
           padding: 13px;
           border-radius: 5px;
           background-color: red;
@@ -399,6 +432,27 @@
             </div>
         </div>
     </div>
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+      <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+    </button>
+    <script>
+    $(document).ready(function(){
+      var scrollTopButton = document.getElementById("scrollToTopButton");
+      window.onscroll = function () { scrollFunction() };
+    
+      function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopButton.style.display = "block";
+      } else {
+        scrollTopButton.style.display = "none";
+      }
+    }
+    
+    $("#scrollToTopButton").click(function(){
+    $('html ,body').animate({scrollTop : 0},800)
+    });
+    }); 
+    </script>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
