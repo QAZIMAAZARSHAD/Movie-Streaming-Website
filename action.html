@@ -23,27 +23,29 @@
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
-  #scrollToTopButton{
-/* position: sticky; */
-position:relative;
-bottom: 40px;
-left: 90%;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color:white;
-color:red;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-}
-#scrollToTopButton:hover, i:hover {
-background-color:red;
-color:black;
-}
+ #scrollToTopButton {
+  /* position: sticky; */
+  position:fixed;
+  bottom: 40px;
+  left: 90%;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:white;
+  color:red;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  display: hidden;
+  border-radius: 50%;
+  }
+
+  #scrollToTopButton:hover, i:hover {
+      background-color:red;
+      color:black;
+  }
 </style>
 
 
@@ -95,7 +97,42 @@ color:black;
 
         <!-- navbar ends -->
 
-        <div class="offcanva"></div>
+        <!-- off canva -->
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="color: #fff;
+            background-color: #dc3545">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                <div>
+                    Stream Latest Movies Now!
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                                Thriller</a></li>
+                        <li><a class="dropdown-item" href="action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- off canva ends -->
         <div class="maincontainer">
@@ -536,56 +573,78 @@ color:black;
     <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
     <footer class="footer">
-      <div class="footer-content">
-          <div class="footer-left">
-              <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-              <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-          </div>
-          <div class="footer-middle">
-              <h4 class="footer-heading">Follow Us</h4>
-              <ul class="footer-middle-list icons">
-                  <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                  <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                  <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
-                  <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                  <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
-              </ul>
-          </div>
-          <div class="footer-middle">
-              <h4 class="footer-heading">Services</h4>
-              <ul class="footer-middle-list">
-                  <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
-                  <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                  <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                  <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
-              </ul>
-          </div>
-          <div class="footer-middle">
-              <h4 class="footer-heading">Try Our App</h4>
-              <ul class="footer-middle-list icons">
-                  <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-                  <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-              </ul>
-          </div>
-          <div class="footer-right">
-              <p class="footer-links">
-                  <h4 class="footer-heading">Contact Us</h4>
-                  <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                  <a class="footer-contact-button" href="contactus.html">Contact</a>
-              </p>
-          </div>
-      </div>
-      <hr id="footer-hr">
-      <div class="footer-copyright">
-          <p>Copyright &copy; and &reg; Since
-              <script>
-                  document.write(new Date().getFullYear())
-              </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
-      </div>
-  </footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+                <h4 class="footer-heading">Follow Us</h4>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="movies.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h4 class="footer-heading">Try Our App</h4>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
+        </div>
+        <hr id="footer-hr">
+        <div class="footer-copyright">
+            <p>Copyright &copy; and &reg; Since
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        </div>
+    </footer>
 
     <!----------------------Scroll to top button--------------------------------------------->
-   <div class="scrollbar"></div>
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      $(document).ready(() => {
+    
+        // for the top stage scroller will be hidden
+        $(window).scroll(() => {
+          if ($(this).scrollTop() > 300) {
+            $('#scrollToTopButton').fadeIn();
+          } else {
+            $('#scrollToTopButton').fadeOut();
+          }
+        });
+    
+        $("#scrollToTopButton").click(() => {
+            $("html, body").animate({ 
+                scrollTop: 0 
+            }, 200);
+            return false;
+        });
+      });
+    </script>
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -602,20 +661,6 @@ color:black;
             density: 0.1,
             frequency: 20
         });
-    </script>
-
-    
-    <!-- static pages handle script -->
-    <script>
-
-      $(document).ready(() => {
-        $('.offcanva').load('offCanva.html');
-      });
-
-      $(document).ready(() => {
-        $('.scrollbar').load('scrollbar.html');
-      });
-
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

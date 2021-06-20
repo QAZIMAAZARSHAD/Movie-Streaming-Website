@@ -20,11 +20,11 @@
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
-    #scrollToTopButton{
+    #scrollToTopButton {
   /* position: sticky; */
-  position:relative;
+  position:fixed;
   bottom: 40px;
-  left: 93%;
+  left: 90%;
   font-size: 25px;
   z-index: 99;
   width: 50px;
@@ -35,13 +35,14 @@
   cursor: pointer;
   outline: none;
   padding: 6px;
+  display: hidden;
   border-radius: 50%;
   }
-  #scrollToTopButton:hover, i:hover {
-  background-color:red;
-  color:black;
-  }
 
+  #scrollToTopButton:hover, i:hover {
+      background-color:red;
+      color:black;
+  }
 
     .logo {
   width: 110px;
@@ -230,7 +231,7 @@ font-size:18px;
                 </div>
                 <div class="dropdown mt-3">
                     <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-            Varieties
+                        Categories
           </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
                         <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
@@ -486,26 +487,26 @@ font-size:18px;
                 <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
+                <h4 class="footer-heading">Follow Us</h4>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Services</h2>
+                <h4 class="footer-heading">Services</h4>
                 <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="movies.html">Enjoy Latest Movies</a> </li>
                     <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
                     <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
                     <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
                 </ul>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
+                <h4 class="footer-heading">Try Our App</h4>
                 <ul class="footer-middle-list icons">
                     <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
                     <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
@@ -513,7 +514,7 @@ font-size:18px;
             </div>
             <div class="footer-right">
                 <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
+                    <h4 class="footer-heading">Contact Us</h4>
                     <p class="footer-bottom-tagline">Feel free to contact us.</p>
                     <a class="footer-contact-button" href="contactus.html">Contact</a>
                 </p>
@@ -528,27 +529,30 @@ font-size:18px;
         </div>
     </footer>
 
+
     <!----------------------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
       </button>
       <script>
-      $(document).ready(function(){
-        var scrollTopButton = document.getElementById("scrollToTopButton");
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollTopButton.style.display = "block";
-        } else {
-          scrollTopButton.style.display = "none";
-        }
-      }
-
-      $("#scrollToTopButton").click(function(){
-      $('html ,body').animate({scrollTop : 0},800)
-      });
-      });
+        $(document).ready(() => {
+      
+          // for the top stage scroller will be hidden
+          $(window).scroll(() => {
+            if ($(this).scrollTop() > 300) {
+              $('#scrollToTopButton').fadeIn();
+            } else {
+              $('#scrollToTopButton').fadeOut();
+            }
+          });
+      
+          $("#scrollToTopButton").click(() => {
+              $("html, body").animate({ 
+                  scrollTop: 0 
+              }, 200);
+              return false;
+          });
+        });
       </script>
 
     <!-- offcanva JS and footer js -->
