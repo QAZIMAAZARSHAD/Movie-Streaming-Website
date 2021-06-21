@@ -23,6 +23,10 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ### Home Page:
 <p align="center"><img src="https://i.postimg.cc/g0vsH5LC/Home-Page.jpg"></p>
 
+### Home page full view
+<p align="center"><img src="readme_assets/homep.gif"></p>
+
+
 ### Separate Page for All Genres:
 <p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
 
