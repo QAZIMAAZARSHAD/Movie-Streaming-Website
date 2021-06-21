@@ -35,6 +35,14 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ### Kids page
 <p align="center"><img src="readme_assets/kids_p.png"></p>
 
+### Animated fliping functions
+<p align="center"><img src="readme_assets/fliping_p.png"></p>
+
+### Animated footer funtions
+<p align="center"><img src="readme_assets/footer_p.png"></p>
+
+
+
 ### Separate Page for All Genres:
 <p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
 
