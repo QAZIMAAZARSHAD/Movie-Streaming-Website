@@ -34,6 +34,7 @@
         </div>
     </section>
 
+
     <script>
         const banner = document.getElementsByClassName('banner')[0]
         const blocks = document.getElementsByClassName('blocks')
@@ -43,6 +44,12 @@
             blocks[i].style.animationDuration = 2*duration+ 's';
             blocks[i].style.animationDelay = duration+ 's';
 
+        }
+    </script>
+    <script>
+        var preloader = document.getElementById('preloader');
+        function myfunction(){
+            preloader.style.display ='none';
         }
     </script>
 
