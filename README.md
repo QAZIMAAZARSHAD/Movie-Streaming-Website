@@ -29,6 +29,8 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ### Contact us page
 <p align="center"><img src="readme_assets/contact_p.gif"></p>
 
+### Sign up page
+<p align="center"><img src="readme_assets/signup_p.gif"></p>
 
 
 
