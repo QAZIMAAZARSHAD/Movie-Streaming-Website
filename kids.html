@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 
 <!------------------------Scroll to top button------------------------------------------------>
@@ -85,10 +86,12 @@
 
     }
 
-    .menu li a:hover {
-      color: red !important;
-      opacity: 0.5;
-    }
+.fas:hover{background: none!important ;}
+.nav-item{ flex-wrap:wrap;}
+.menu li a:hover {
+  color: red !important;
+  opacity: 0.5;
+}
 
     #variety {
       margin-top: 1rem;
@@ -288,45 +291,47 @@ font-size:18px;
         <!-- navbar starts -->
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color: white;"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#Movies">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv.html">TV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dummy.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home"> Home</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html"><i class="fas fa-video"> Movies</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html"><i class="fas fa-film"> Web Series</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html"><i class="fas fa-child"> Kids</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html"><i class="fas fa-tv"> TV</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dummy.html"><i class="fas fa-wallet"> Premium</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"> Login</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html"><i class="fas fa-address-book"> Contact Us</i></a>
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
         <!-- navbar ends -->
 
