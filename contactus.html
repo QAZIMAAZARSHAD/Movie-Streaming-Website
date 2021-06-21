@@ -1,25 +1,79 @@
-<html>
-
-<head>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./static/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./static/style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+/*     .scroll-bar {
+      height: auto;
+      width: auto;
+      margin: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    ::-webkit-scrollbar-track {
+      border: 5px solid #2c2f30;
+
+      background-color: black;
+    }
+
+    ::-webkit-scrollbar {
+      width: 15px;
+      background-color: #2c2f30;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: red;
+      border-radius: 10px;
+    } */
+
+    /* navbar css */
+    #header-nav .nav-link {
+      color: white;
+      font-size: 20px;
+      margin-left: 20px;
+
+    }
+
+    .menu li a {
+      text-decoration: none;
+    }
+
+    .menu li a:hover {
+      color: red !important;
+      opacity: 0.5;
+    }
+
+    #variety {
+     margin: 0.5rem;
+    }
+    .btn-outline-danger, .btn-outline-danger:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    .contactForm{
+      margin: 5px;
+    }
+
+/* <!------------------------Scroll to top button------------------------------------------------> */
     
-
-<!------------------------Scroll to top button------------------------------------------------>
-<style>
-    #scrollToTopButton{
+  #scrollToTopButton{
   /* position: sticky; */
   position:relative;
   bottom: 40px;
@@ -40,36 +94,18 @@
   background-color:red;
   color:white;
   }
-
-
-        
-
-        /* navbar css */
-
-        #header-nav .nav-link {
-            color: white;
-            font-size: 20px;
-            margin-left: 20px;
-        }
-
-        .menu li a {
-            text-decoration: none;
-        }
-
-        .menu li a:hover {
-            color: red !important;
-            opacity: 0.5;
-        }
-
-        #variety {
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contactForm {
-            margin: 5px;
-        }
-    </style>
+    .btn-sm a {
+      color: white;
+      transition: all 0.3s ease;
+      float:right;
+      font-size: medium;
+    } 
+    .btn-sm a:hover {
+      color: red;
+      transition: all 0.3s ease;
+    }
+    
+</style>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -94,7 +130,6 @@
             });
         }
     </script>
-
 </head>
 
 <body>
@@ -200,94 +235,89 @@
 
         <div class="box">
 
-            <div class="text">
-                <h1>Contact <span class="red">Us</span></h1>
-                <hr class="redline">
-                <p>Have Questions ? We have answers ( may be )</p>
+      <div class="text">
+        <h1>Contact <span class="red">Us</span></h1>
+        <div class="redline"></div>
+        <p>Have Questions ? We have answers ( may be )</p>
+      </div>
+    </div>
+
+    <div class="touch">
+      <h2>Get in touch</h2>
+      <div class="redline"></div>
+    </div>
+    <div class="container fill">
+      <div class="forthis">
+        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form">
+          <div class="form-row two2">
+            <div class="form-group col-md-6 column">
+              <input type="text" class="form-control" id="firstname" name="firstname" required>
+              <label>First Name</label>
+              <div class="underline"></div>
             </div>
-        </div>
-
-        <div class="touch">
-            <h2>Get in touch</h2>
-            <hr class="redline">
-        </div>
-
-
-        <form method="POST" action="https://formcarry.com/s/S1peCWurw0C">
-            <div class="container form-margin">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="form-group">
-                            <input type="text" class="form-control contactForm" placeholder="First Name"
-                                ng-model="firstname" id="firstname" name="firstname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control contactForm" placeholder="Phone" ng-model="phone"
-                                name="phone" id="phone" required>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="form-group">
-                            <input type="text" class="form-control contactForm" placeholder="Last Name"
-                                ng-model="lastname" id="lastname" name="lastname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control contactForm" placeholder="E-mail" ng-model="email"
-                                id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-                </div>
+            <div class="form-group col-md-6 column">
+              <input type="text" class="form-control" id="lastname" name="lastname" required>
+              <label>Last Name</label>
+              <div class="underline"></div>
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="form-group">
-                            <textarea class="form-control contactForm" rows="6" placeholder="Message" ng-model="message"
-                                name="message" id="message" required></textarea>
-                        </div>
-                        <div class="pager">
-                            <button onclick="JSalert()" type="submit" class="btn btn-success">SEND MESSAGE</button>
-                            <button class="btn btn-danger" onclick="clearFunc()">Reset</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-
+          </div>
+          <div class="form-row one1">
+            <div class="form-group col-lg-6 column">
+              <input type="email" class="form-control" id="email" name="email" required>
+              <label>Email</label>
+              <div class="underline"></div>
             </div>
+            <div class="form-group col-lg-6 column">
+              <input type="text" class="form-control" id="phone" name="phone" required>
+              <label>Phone Number</label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group column">
+              <input type="text" class="form-control" name="subject" id="subject" required>
+              <label>Subject</label>
+              <div class="underline extra"></div>
+            </div>
+          </div>
+          <div class="form-row size">
+            <div class="form-group column">
+              <textarea type="text"class="form-control" name="message" id="message" rows="5" required></textarea>
+              <label>Message</label>
+              <div class="underline extra gap"></div>
+            </div>
+          </div>
+          <div class="btn-sm">
+            <button onclick="JSalert()" type="submit" class="sm-button">SEND MESSAGE</button>
+            <a href="#" onclick="clearFunc()">Reset</a>
+          </div>
         </form>
-        <!-- address -->
+      </div>
+    </div>
 
-        <div class="container address">
-            <div class="row">
+    <!-- address -->
 
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <h3>Our Address</h3>
-                    <div class="redline-address"></div>
-                    <p>13 B</p>
-                    <p>King Koti Road</p>
-                    <p>Vadodara,</p>
-                    <p>Gujrat - 500029</p>
-                    <div class="phone-e">
-                        <p><span class="glyphicon glyphicon-envelope"> </span> info@movie-website.com</p>
-                        <p><span class="glyphicon glyphicon-phone"></span> +91-97427 66666</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                    <!-- -map- -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.019213593812!2d77.62060731482127!3d12.906485990898592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14eed2a26dbb%3A0x98f64960052a26b0!2sTrainingMug!5e0!3m2!1sen!2sin!4v1504259922701"
-                        width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-
-            </div>
+    <div class="container address">
+      <div class="row add-row">
+        <div class="col-sm-6">
+          <h3>Our Address</h3>
+          <div class="redline-address"></div>
+          <p>13 B</p>
+          <p>King Koti Road</p>
+          <p>Vadodara,</p>
+          <p>Gujrat - 500029</p>
+          <div class="phone-e">
+            <p><span class="glyphicon glyphicon-envelope"> </span> info@movie-website.com</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +91-97427 66666</p>
+          </div>
         </div>
+        <div class="col-sm-6 map-padd">
+          <!-- -map- -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.019213593812!2d77.62060731482127!3d12.906485990898592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14eed2a26dbb%3A0x98f64960052a26b0!2sTrainingMug!5e0!3m2!1sen!2sin!4v1504259922701"
+            width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
 
@@ -351,6 +381,7 @@
                 </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
             </p>
         </div>
+
     </footer>
 
     <!--------------scrool to top button-->
@@ -386,13 +417,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main-min.js"></script>
 
-    <script>
-        jQuery('#waterdrop').raindrops({
-            color: '#292c2f',
-            canvasHeight: 150,
-            density: 0.1,
-            frequency: 20
-        });
+    <script> jQuery('#waterdrop').raindrops({ color: '#292c2f', canvasHeight: 150, density: 0.1, frequency: 20 });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -407,12 +432,14 @@
         function clearFunc() {
             document.getElementById("firstname").value = "";
             document.getElementById("lastname").value = "";
-            document.getElementById("phone").value = "";
             document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("subject").value = "";
             document.getElementById("message").value = "";
         }
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </body>
 
