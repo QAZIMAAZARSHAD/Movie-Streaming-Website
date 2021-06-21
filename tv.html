@@ -12,30 +12,37 @@
     />
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
 
 
-    <style>
-            #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: white;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
-}
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+    #scrollToTopButton{
+  /* position: sticky; */
+  position:relative;
+  bottom: 40px;
+  left: 90%;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:red;
+  color:black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:red;
+  color:white;
+  }
+
+
         .scroll-bar {
             height: auto;
             width: auto;
@@ -44,53 +51,53 @@ box-shadow: 0 6px 10px 0px gray;
             overflow-x: hidden;
             max-width: 100%;
         }
-        
+
          ::-webkit-scrollbar-track {
             border: 5px solid #2c2f30;
             background-color: black;
         }
-        
+
          ::-webkit-scrollbar {
             width: 15px;
             background-color: #2c2f30;
         }
-        
+
          ::-webkit-scrollbar-thumb {
             background-color: red;
             border-radius: 10px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
         }
         /* navbar css */
-        
+
         #header-nav .nav-link {
             color: white;
             font-size: 20px;
             margin-left: 20px;
         }
-        
+
         .menu li a:hover {
             color: red !important;
             opacity: 0.5;
         }
-        
+
         #variety {
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .logo {
             width: 81px;
             height: 52px;
         }
-        
+
         * {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        
+
         .logo {
             width: 110px;
             height: 90px;
@@ -108,14 +115,14 @@ box-shadow: 0 6px 10px 0px gray;
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="background-color: white;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#Movies">Movies</a>
@@ -369,11 +376,11 @@ box-shadow: 0 6px 10px 0px gray;
             <div class="footer-middle">
                 <h2 class="footer-heading">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
@@ -388,8 +395,8 @@ box-shadow: 0 6px 10px 0px gray;
             <div class="footer-middle">
                 <h2 class="footer-heading">Try Our App</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
                 </ul>
             </div>
             <div class="footer-right">
@@ -409,14 +416,15 @@ box-shadow: 0 6px 10px 0px gray;
         </div>
     </footer>
 
+    <!---------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
       </button>
       <script>
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
-      
+
         function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollTopButton.style.display = "block";
@@ -424,11 +432,11 @@ box-shadow: 0 6px 10px 0px gray;
           scrollTopButton.style.display = "none";
         }
       }
-      
+
       $("#scrollToTopButton").click(function(){
       $('html ,body').animate({scrollTop : 0},800)
       });
-      }); 
+      });
       </script>
 
     <!-- offcanva JS and footer js -->

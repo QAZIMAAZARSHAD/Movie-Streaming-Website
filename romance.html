@@ -12,32 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
 
 </head>
 
 
+<!------------------------Scroll to top button------------------------------------------------>
 <style>
-    #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
+  #scrollToTopButton{
+/* position: sticky; */
+position:relative;
+bottom: 40px;
+left: 90%;
 font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color: white;
-color: black;
+background-color:red;
+color:black;
 border: none;
 cursor: pointer;
 outline: none;
 padding: 6px;
 border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:red;
+color:white;
 }
 </style>
 
@@ -48,14 +54,14 @@ box-shadow: 0 6px 10px 0px gray;
 
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="background-color: white;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#Movies">Movies</a>
@@ -136,84 +142,267 @@ box-shadow: 0 6px 10px 0px gray;
             <h2>Romance ❤ </h2>
             <hr>
             <div class="container" id="Movies">
-                <div class="poster">
-                    <img src="./Images/kissing booth.jpg" alt="">
-                    <div class="flim">
-                        <b>The Kissing Booth</b>
-                        <br> IMDb - 6.1
-                    </div>
+              <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/kissing booth.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>The Kissing Booth</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b2_i"  title="Minutes" style="color:white">1h 45 min<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.1</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
 
-                </div>
-                <div class="poster">
-                    <img src="./Images/kabir singh.jpg" alt="">
-                    <div class="flim">
-                        <b>Kabir Singh</b>
-                        <br> IMDb - 7.1
-                    </div>
+                        <p class="para_i">A high school student is forced to confront her secret crush at a kissing booth.</p>
 
-                </div>
-                <div class="poster">
-                    <img src="./Images/little things.jpg" alt="">
-                    <div class="flim">
-                        <b>Little Things</b>
-                        <br> IMDb - 8.3
-                    </div>
+                          <form action="https://www.imdb.com/video/vi3378427929?playlistId=tt3799232">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
 
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/mismatched.jpg" alt="">
-                    <div class="flim">
-                        <b>Mismatched</b>
-                        <br> IMDb - 5.5
+                      </div>
+                        <div class="flim">
+                            <b>The Kissing Booth</b>
+                            <br>
+                            IMDb - 6.1
+                        </div>
                     </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/bandish.jpg" alt="">
-                    <div class="flim">
-                        <b>Bandish Bandits</b>
-                        <br> IMDb - 8.7
-                    </div>
+                  </div>
                 </div>
 
-                <div class="poster">
-                    <img src="./Images/the notebook.jpg" alt="">
-                    <div class="flim">
-                        <b>The Notebook</b>
-                        <br> IMDb - 7.8
-                    </div>
-
-                </div>
 
                 <div class="poster">
-                    <img src="./Images/lukka.jpg" alt="">
-                    <div class="flim">
-                        <b>Lukka Chuppi</b>
-                        <br> IMDb - 6.3
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/kabir singh.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Kabir Singh</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                          <button class="btn_i b2_i"  title="Minutes" style="color:white">2h 53min<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">An exalted but short-fused surgeon plunges into a spiral of drugs, alcohol and rage after his intense relationship with his girlfriend turbulently ends.</p>
+
+                          <form action="https://www.imdb.com/video/vi518568985?playlistId=tt8983202">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Kabir Singh</b>
+                            <br>
+                            IMDb - 7.1
+                        </div>
                     </div>
+                  </div>
                 </div>
 
+
                 <div class="poster">
-                    <img src="./Images/bridgerton.jpg" alt="">
-                    <div class="flim">
-                        <b>Bridgerton</b>
-                        <br> IMDb - 7.3
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/little things.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Little Things</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                          <button class="btn_i b2_i"  title="seasons" style="color:white">4<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">A cohabiting couple in their 20s navigate the ups and downs of work, modern-day relationships and finding themselves in contemporary Bengaluru.</p>
+
+                          <form action="https://www.imdb.com/video/vi4087396889?playlistId=tt6522580">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Little Things</b>
+                            <br>
+                            IMDb - 8.3
+                        </div>
                     </div>
+                  </div>
                 </div>
+
+
                 <div class="poster">
-                    <img src="./Images/aashiqui.jpg" alt="">
-                    <div class="flim">
-                        <b>Aashiqui 2</b>
-                        <br> IMDb - 7
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/mismatched.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Mismatched</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                          <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">The movie will be a romantic film featuring two people who are not right for each other. The story is about Prajakta's character who is a tech wizard and the guy who is interested in he</p>
+
+                          <form action="https://www.imdb.com/video/vi2328346905?playlistId=tt12719250">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Mismatched</b>
+                            <br>
+                            IMDb - 8.4
+                        </div>
                     </div>
+                  </div>
                 </div>
+
+
                 <div class="poster">
-                    <img src="./Images/la la land.jpg" alt="">
-                    <div class="flim">
-                        <b>La La Land</b>
-                        <br> IMDb - 8
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/bandish.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Bandish Bandits</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                          <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Indian classical singer Radhe and pop star Tamanna.</p>
+
+                          <form action="https://www.imdb.com/video/vi1213644313?playlistId=tt9814458">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Bandish Bandits</b>
+                            <br>
+                            IMDb - 8.7
+                        </div>
                     </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/the notebook.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>The Notebook</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2004/button>
+                          <button class="btn_i b2_i"  title="Minutes" style="color:white">2h 3min<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom,</p>
+
+                          <form action="https://www.imdb.com/video/vi2603746073?playlistId=tt0332280">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>The Notebook</b>
+                            <br>
+                            IMDb - 7.8
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/lukka.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Lukka Chuppi</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                          <button class="btn_i b2_i"  title="Minutes" style="color:white">2h 16min<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.3</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Pretending to be married in order to cohabitate, a small-town couple lands in endless awkward situations to hide the truth from their orthodox families.</p>
+
+                          <form action="https://www.imdb.com/video/vi1667218457?playlistId=tt8908002">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Lukka Chuppi</b>
+                            <br>
+                            IMDb - 6.3
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/bridgerton.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Bridgerton</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                          <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.3</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Wealth, lust, and betrayal set against the backdrop of Regency-era England, seen through the eyes of the powerful Bridgerton family.</p>
+
+                          <form action="https://www.imdb.com/video/vi1143783705?playlistId=tt8740790">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Bridgerton</b>
+                            <br>
+                            IMDb - 7.3
+                        </div>
+                    </div>
+                  </div>
                 </div>
 
             </div>
@@ -231,11 +420,11 @@ box-shadow: 0 6px 10px 0px gray;
             <div class="footer-middle">
                 <h2 class="footer-heading">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
@@ -250,8 +439,8 @@ box-shadow: 0 6px 10px 0px gray;
             <div class="footer-middle">
                 <h2 class="footer-heading">Try Our App</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
                 </ul>
             </div>
             <div class="footer-right">
@@ -271,14 +460,15 @@ box-shadow: 0 6px 10px 0px gray;
         </div>
     </footer>
 
+    <!-----------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
       </button>
       <script>
       $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
-      
+
         function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           scrollTopButton.style.display = "block";
@@ -286,11 +476,11 @@ box-shadow: 0 6px 10px 0px gray;
           scrollTopButton.style.display = "none";
         }
       }
-      
+
       $("#scrollToTopButton").click(function(){
       $('html ,body').animate({scrollTop : 0},800)
       });
-      }); 
+      });
       </script>
 
 
