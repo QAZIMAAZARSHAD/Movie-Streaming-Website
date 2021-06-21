@@ -94,7 +94,13 @@ section div:nth-child(6) img{
   margin-left: 20px;
 
 }
+#nav:hover
+{
+  background-color:#f57481!important;
 
+}
+.fas:hover{background: none!important ;}
+.nav-item{ flex-wrap:wrap;}
 .menu li a:hover {
   color: red !important;
   opacity: 0.5;
