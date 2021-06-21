@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #970c1f;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+section .img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .blocks{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    z-index: 4;
+    background: rgb(139, 25, 25);
+    animation: animate 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0%{
+        transform: translateZ(2000px);
+    }
+    100%{
+        transform: translateZ(0px);
+        
+    }
+}
