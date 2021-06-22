@@ -1,6 +1,6 @@
 # Movie Streaming Website  🎬
 
-Are you a movie maniac, who loves to binge watch awesome series? If Yes, then you have come to right place.
+Are you a movie maniac, who loves to binge-watch awesome series? If Yes, then you have come to the right place.
 <p align="center"><img src="https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif" width = 40%></p>
 
 Everyone loves to watch their favorite shows with friends and some snacks. But there is something that you might be missing out on!
@@ -12,23 +12,42 @@ So, what else do you need?🤔.
 Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
 <p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 40%></p>
 
-We already have Netflix, Prime and Hotstar but they might be expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge and still you might get something really cool. 
+We already have Netflix, Prime, and Hotstar but they might be expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge, and still you might get something really cool. 
 <p align="center"><img src="https://i.pinimg.com/originals/a1/55/93/a1559307185334cb66fb0ccf5e787bd0.gif" width = 40%></p>
 
 Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre Website__ is here for the rescue!
 <p align="center"><img src="https://i.pinimg.com/originals/eb/39/9a/eb399a729c812376ca23c06df2d1e380.gif" width = 40%></p>
 
-## A sneek peek into what we have here🙈 :
+## A sneak peek into what we have here🙈 :
 
-### Home Page:
-<p align="center"><img src="https://i.postimg.cc/g0vsH5LC/Home-Page.jpg"></p>
 
-### Seperate Page for All Genres:
-<p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
+### Home page full view
+<p align="center"><img src="readme_assets/homep.gif"></p>
+
+### Contact us page
+<p align="center"><img src="readme_assets/contactus_p.gif"></p>
+
+### Sign up page
+<p align="center"><img src="readme_assets/signup_p.png"></p>
+
+### Kids page
+<p align="center"><img src="readme_assets/kids_p.png"></p>
+
+### Animated fliping functions
+<p align="center"><img src="readme_assets/flipping_p.gif"></p>
+
+### Animated footer funtions
+<p align="center"><img src="readme_assets/footer_p.gif"></p>
+
 
 ## About
-
-ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows and web series from multiple genres like crime, comedy, drama, kids etc. 
+<div>
+<div>
+<img src="Images\Logo/logo1.png" height = "120" align = "left"/>
+<div>
+ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows, and web series from multiple genres like crime, comedy, drama, kids etc.</div>
+</div>
+<br>
 
 ## Link to the website
 https://qazimaazarshad.github.io/Movie-Streaming-Website/
@@ -119,9 +138,9 @@ git commit -m "Relevant message"
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are supposed to make a PR to.
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**13.** Add an appropriate title and description to your pull request explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
 
@@ -139,10 +158,39 @@ git push -u origin <your_branch_name>
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
-
-<p align="center">
-<a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
-</p>
+<div style="display:flex">
+     <div style="flex:1;padding-right:50px;padding-left:50px">
+          <a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%" align="left"/></a>
+     </div>
+     <div style="flex:1;padding-left:10px;">
+       <table>
+        <tr>
+          <th>Level</th>
+          <th>Points</th> 
+        </tr>
+        <tr>
+          <td>Level 0</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Level 1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Level 2</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Level 3</td>
+          <td>30</td>
+        </tr>
+      <tr>
+          <td>Level 4</td>
+          <td>45</td>
+        </tr>
+      </table>  
+     </div>
+</div>
 
 ## Code of Conduct
 <p align="center">

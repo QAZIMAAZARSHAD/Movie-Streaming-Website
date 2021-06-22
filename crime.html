@@ -1,146 +1,534 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
+
 </head>
-  <body>
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+  #scrollToTopButton{
+/* position: sticky; */
+position:relative;
+bottom: 40px;
+left: 90%;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:red;
+color:black;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:red;
+color:white;
+}
+</style>
+<body>
     <div class="scroll-bar">
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-         <li><a href="index.html#Movies">Movies</a></li>
-          <li><a href="index.html#Web Series">Web Series</a></li>
-           <li><a href="index.html#Kids">Kids</a></li>
-            <li><a href="dummy.html">TV</a></li>
-             <li><a href="dummy.html">Premium</a></li>
-              <li><a href="login.html">Login</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
-    </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
-    <nav class="menu2">
-     <ul>
-	         <li><a href="popular.html">Popular</a> </li>
-          <li><a href="crime.html">Crime</a></li>
-          <li><a href="suspense.html" style="font-size: 14px">Suspense & Thriller</a></li>
-          <li><a href="action.html">Action</a></li>
-          <li><a href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a></li>
-         <li><a href="documentary.html">Documentary</a></li>
-          <li><a href="horror.html">Horror</a></li>
-          <li><a href="drama.html">Drama</a></li>
-          <li><a href="war.html">War & Politics</a></li>
-          <li><a href="comedy.html">Comedy</a></li>
-      </ul>
-    </nav>
-    <div class="maincontainer">
-        <h2>Crime</h2>
-        <hr>
-        <div class="container" id="Movies">
-            <div class="poster">
-                <img src="./Images/criminal.jpg" alt="">
-                <div class="flim">
-                    <b>Criminal Justice</b>
-                    <br>
-                    IMDb - 8.1
-                </div>
 
-            </div>
-            <div class="poster">
-                <img src="./Images/breaking.jpg" alt="">
-                <div class="flim">
-                    <b>Breaking Bad</b>
-                    <br>
-                    IMDb - 9.5
-                </div>
+        <!-- navbar starts -->
 
-            </div>
-            <div class="poster">
-                <img src="./Images/apharan.jpg" alt="">
-                <div class="flim">
-                    <b>Aphran</b>
-                    <br>
-                    IMDb - 8.3
-                </div>
-
-            </div>
-            <div class="poster">
-                <img src="./Images/delhi.jpg" alt="">
-                <div class="flim">
-                    <b>Delhi Crime</b>
-                    <br>
-                    IMDb - 8.5
-                </div>
-
-            </div>
-            <div class="poster">
-                <img src="./Images/lok.jpg" alt="">
-                <div class="flim">
-                    <b>Paatal Lok</b>
-                    <br>
-                    IMDb - 7.8
-                </div>
-
-            </div>
-
-            <div class="poster">
-                <img src="./Images/gangs.jpg" alt="">
-                <div class="flim">
-                    <b>Gangs of Wasseypur</b>
-                    <br>
-                    IMDb - 8.2
+        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Movies">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-series.html">Web Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tv.html">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dummy.html">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-            <div class="poster">
-                <img src="./Images/mirzapur.jpg" alt="">
-                <div class="flim">
-                    <b>Mirzapur</b>
-                    <br>
-                    IMDb - 8.4
+        </nav>
+
+        <!-- navbar ends -->
+
+        <!-- off canva -->
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="color: #fff;
+       background-color: #dc3545">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                <div>
+                    Stream Latest Movies Now!
                 </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Varieties
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                                Thriller</a></li>
+                        <li><a class="dropdown-item" href="action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- off canva ends -->
+        <div class="maincontainer">
+            <div class="container">
+                <div id="movies" class="row"></div>
+            </div>
+            <hr>
+            <h2>Crime</h2>
+            <hr>
+            <div class="container" id="Movies">
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/criminal.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Criminal Justice</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Criminal Justice is an Indian Hindi-language crime thriller legal drama web series for Hotstar Specials, based on the 2008 British television series of the same name,</p>
+
+                        <form action="https://youtu.be/KPyNH7mZkGc">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Criminal Justice</b>
+                          <br>
+                          IMDb - 8.1
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/peaky.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Peaky Blinders</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.</p>
+
+                        <form action="https://youtu.be/oVzVdvGIC7U">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Peaky Blinders</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/special.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Special Ops</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Himmat Singh leads a task force searching for the mastermind behind several terrorist attacks</p>
+
+                        <form action="https://youtu.be/GF0H5DZAE2g">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Special Ops</b>
+                          <br>
+                          IMDb - 8.6
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/breaking.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Breaking Bad</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse</p>
+
+                        <form action="https://youtu.be/HhesaQXLuRY">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Breaking Bad</b>
+                          <br>
+                          IMDb - 9.5
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/apharan.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Aphran</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Rudra, a senior inspector, is lured into kidnapping a young girl at the behest of her mother. However, the plan of extorting money for her release goes horribly wrong, landing him in trouble</p>
+
+                        <form action="https://youtu.be/CxNYucYVEkQ">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Aphran</b>
+                          <br>
+                          IMDb - 8.3
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/joker.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Joker</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">122</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</p>
+
+                        <form action="https://youtu.be/t433PEQGErc">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Joker</b>
+                          <br>
+                          IMDb - 8.4
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/delhi.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Delhi Crime</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">Based on a Delhi gang rape case, this crime drama follows the Delhi Police investigation into the finding of the men who perpetrated the crime.</p>
+
+                        <form action="https://youtu.be/jNuKwlKJx2E">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Delhi Crime</b>
+                          <br>
+                          IMDb - 8.5
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/lok.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Paatal Lok</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">A cynical inspector is tasked with investigating a high-profile case which leads him into a dark realm of the underworld.</p>
+
+                        <form action="https://youtu.be/cNwWMW4mxO8">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Paatal Lok</b>
+                          <br>
+                          IMDb - 7.8
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/gangs.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Gangs of Wasseypur</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">160</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).</p>
+
+                        <form action="https://youtu.be/j-AkWDkXcMY">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Gangs of Wasseypur</b>
+                          <br>
+                          IMDb - 8.2
+                      </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
         </div>
-    <script src="./static/script.js"></script>
     </div>
+
+
+    <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
-    <footer class="footer-distributed">
-        
-
-        <div class="footer-right">
-
-            <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter twitter"></i></a>
-            <a href="#"><i class="fab fa-telegram telegram"></i></a>
-            <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website"><i class="fab fa-github github"></i></a>
-
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Try Our App</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
         </div>
-
-        <div class="footer-left">
-
-            <p class="footer-links">
-                <a class="link-1" href="#">Home</a>
-                <a href="contactus.html">Contact</a>
-            </p>
-            <p>Copyright &copy; and &reg; Since 2021 Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        <hr id="footer-hr">
+        <div class="footer-copyright">
+            <p>Copyright &copy; and &reg; Since
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
         </div>
-
     </footer>
 
+    <!-----------------scroll back to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      </button>
+      <script>
+      $(document).ready(function(){
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
 
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
+      });
+      });
+      </script>
 
-<script> jQuery('#waterdrop').raindrops({color:'#292c2f', canvasHeight:150, density: 0.1, frequency: 20});
-</script>
-  </body>
+    <!-- offcanva JS and footer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+
+    <script>
+        jQuery('#waterdrop').raindrops({
+            color: '#292c2f',
+            canvasHeight: 150,
+            density: 0.1,
+            frequency: 20
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+</body>
+
 </html>

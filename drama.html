@@ -1,163 +1,792 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>ApnaTheatre.com</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
+
 </head>
- <body>
+
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+  #scrollToTopButton{
+/* position: sticky; */
+position:relative;
+bottom: 40px;
+left: 90%;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:red;
+color:black;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:red;
+color:whi;
+}
+</style>
+<body>
     <div class="scroll-bar">
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-         <li><a href="index.html#Movies">Movies</a></li>
-          <li><a href="index.html#Web Series">Web Series</a></li>
-           <li><a href="index.html#Kids">Kids</a></li>
-            <li><a href="dummy.html">TV</a></li>
-             <li><a href="dummy.html">Premium</a></li>
-              <li><a href="login.html">Login</a></li>
-      </ul>
-      <form class="search-form">
-        <input type="text" placeholder="Search">
-        <button>Search</button>
-    </nav>
-    <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-    <img src="./Images/logo.jpg" class="logo">
-    <label class="online">Stream Latest Movies Now!</label>
-    <nav class="menu2">
-     <ul>
-	         <li><a href="popular.html">Popular</a> </li>
-          <li><a href="crime.html">Crime</a></li>
-          <li><a href="suspense.html" style="font-size: 14px">Suspense & Thriller</a></li>
-          <li><a href="action.html">Action</a></li>
-          <li><a href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a></li>
-         <li><a href="documentary.html">Documentary</a></li>
-          <li><a href="horror.html">Horror</a></li>
-          <li><a href="drama.html">Drama</a></li>
-          <li><a href="war.html">War & Politics</a></li>
-          <li><a href="comedy.html">Comedy</a></li>
-      </ul>
-    </nav>
-    <div class="maincontainer">
-        <h2>Drama</h2>
-        <hr>
-        <div class="container" id="Movies">
-            <div class="poster">
-                <img src="./Images/ceo.jpg" alt="">
-                <div class="flim">
-                    <b>Official Ceogiri</b>
-                    <br>
-                    IMDb - 6.6
-                </div>
 
-            </div>
-            <div class="poster">
-                <img src="./Images/swades.jpg" alt="">
-                <div class="flim">
-                    <b>Swades</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
+        <!-- navbar starts -->
 
-            </div>
-            <div class="poster">
-                <img src="./Images/bach.jpg" alt="">
-                <div class="flim">
-                    <b>TVF Bachelors</b>
-                    <br>
-                    IMDb - 8.2
+        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: white;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Movies">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="web-series.html">Web Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tv.html">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dummy.html">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
                 </div>
+            </div>
+        </nav>
 
-            </div>
-            <div class="poster">
-                <img src="./Images/day.jpg" alt="">
-                <div class="flim">
-                    <b>Selection Day</b>
-                    <br>
-                    IMDb - 7.4
-                </div>
+        <!-- navbar ends -->
 
+        <!-- off canva -->
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="color: #fff;
+ background-color: #dc3545">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="poster">
-                <img src="./Images/trip.jpg" alt="">
-                <div class="flim">
-                    <b>TVF Tripling</b>
-                    <br>
-                    IMDb - 8.5
+            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                <div>
+                    Stream Latest Movies Now!
                 </div>
-
-            </div>
-            <div class="poster">
-                <img src="./Images/milkha.jpg" alt="">
-                <div class="flim">
-                    <b>Bhaag Milkha Bhaag</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
-
-            </div>
-
-            <div class="poster">
-                <img src="./Images/twilight.jpg" alt="">
-                <div class="flim">
-                    <b>Twilight : Breaking Dawn</b>
-                    <br>
-                    IMDb - 5.5
-                </div>
-            </div>
-            <div class="poster">
-                <img src="./Images/room.jpg" alt="">
-                <div class="flim">
-                    <b>Permanent Roomates</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-            <div class="poster">
-                <img src="./Images/dhoni.jpg" alt="">
-                <div class="flim">
-                    <b>Ms Dhoni : The Untold Story</b>
-                    <br>
-                    IMDb - 7.8
+                <div class="dropdown mt-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Varieties
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                                Thriller</a></li>
+                        <li><a class="dropdown-item" href="action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-    <script src="./static/script.js"></script>
+
+        <!-- off canva ends -->
+
+        <div class="maincontainer">
+            <div class="container">
+                <div id="movies" class="row"></div>
+            </div>
+            <hr>
+            <h2>Drama</h2>
+            <hr>
+            <div class="container" id="Movies">
+              <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/ceo.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Official Ceogiri</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.6</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+
+                          <form action="https://youtu.be/lAMwsDICoaQ">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Official Ceogiri</b>
+                            <br>
+                            IMDb - 6.6
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/swades.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Swades</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">210</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Mohan, an Indian expatriate employed with NASA, travels to his country to track down his beloved nanny, Kaveri. During his stay, he finds himself advocating for reform in a village.</p>
+
+                          <form action="https://youtu.be/vc7AZNWvs0M">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Swades</b>
+                            <br>
+                            IMDb - 8.2
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/bach.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>TVF Bachelors</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">The series revolves around Four Bachelor Flatmates who in every episode will deal with a specific daily life bachelor related problem. Its about their battle against an external X problem as a single team The Bachelors.</p>
+
+                          <form action="https://youtu.be/5XuimeH5hME">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>TVF Bachelors</b>
+                            <br>
+                            IMDb - 8.4
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/game.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>The Imitation Game</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">114</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.0</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Alan Turing, a British mathematician, joins the cryptography team to decipher the German enigma code. With the help of his fellow mathematicians, he builds a machine to crack the codes</p>
+
+                          <form action="https://youtu.be/nuPZUUED5uk">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>The Imitation Game</b>
+                            <br>
+                            IMDb - 8.0
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/upsc.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Aspirants</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Aspirants is a web series by The Viral Fever created by Arunabh Kumar.</p>
+
+                          <form action="https://youtu.be/ViOutJ0kuJY">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Aspirants</b>
+                            <br>
+                            IMDb - 9
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/mohabat.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Mohabbatein</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2000</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">216</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Narayan is a strict principal of Gurukul who does not believe in love and forbids his students from following their hearts. However, things take a turn when a music teacher challenges his authority.</p>
+
+                          <form action="https://youtu.be/6pbG4aVrs5E">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Mohabbatein</b>
+                            <br>
+                            IMDb - 7.1
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/zindagi.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Zindagi Na Milegi</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">155</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Friends Kabir, Imran and Arjun take a vacation in Spain before Kabir's marriage. The trip turns into an opportunity to mend fences, heal wounds, fall in love with life and combat their worst fears.</p>
+
+                          <form action="https://youtu.be/FJrpcDgC3zU">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Zindagi Na Milegi Dobara</b>
+                            <br>
+                            IMDb - 8.2
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/college.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>College Romance</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.9</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Three best friends look for love, laughs and some lifelong memories while attending college together.</p>
+
+                          <form action="https://youtu.be/zwRhlzrJGxo">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>College Romance</b>
+                            <br>
+                            IMDb - 8.9
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/dil.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Dilwale Dulhania</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">1995</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">192</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Raj and Simran meet during a trip across Europe and the two fall in love. However, when Raj learns that Simran is already promised to another, he follows her to India to win her and her father over.</p>
+
+                          <form action="https://youtu.be/oIZ4U21DRlM">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Dilwale Dulhania Le Jayenge</b>
+                            <br>
+                            IMDb - 7.1
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/edu.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Sex Education</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Socially awkward high school student Otis may not have much experience in the lovemaking department, but he gets good guidance on the topic in his personal sex ed course</p>
+
+                          <form action="https://youtu.be/Hd2ldTR-WpI">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Sex Education</b>
+                            <br>
+                            IMDb - 8.3
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/walk.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>The Walk</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">123</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.3</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Philippe Petit, a French street performer, dreams of performing daring stunts. He attempts to walk between the Twin Towers of the World Trade Center in New York on a tightrope.</p>
+
+                          <form action="https://youtu.be/GR1EmTKAWIw">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>The Walk</b>
+                            <br>
+                            IMDb - 7.3
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/day.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Selection Day</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">When a 14-year-old boy tries out for Mumbai's under-19 cricket team and meets his older brother's rival, everything in his world begins to change.</p>
+
+                          <form action="https://youtu.be/Zudpl3PGaL0">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Selection Days</b>
+                            <br>
+                            IMDb - 7.4
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/trip.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>TVF Tripling</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">TVF Tripling is an Indian web series created by The Viral Fever. It was developed by Sameer Saxena and written by Akarsh Khurana and Sumeet Vyas</p>
+
+                          <form action="https://youtu.be/MfKNEC9xcE8">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>TVF Tripling</b>
+                            <br>
+                            IMDb - 8.4
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Bhaag Milkha Bhaag</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">189</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to become a world champion,</p>
+
+                          <form action="https://youtu.be/3uICXnnW86U">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Bhaag Milkha Bhaag</b>
+                            <br>
+                            IMDb - 8.2
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/twilight.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Twilight:Breaking Dawn</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">5.5</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">After consummating her marriage with Edward, Bella realises that she has become pregnant with a child that is half-human, half-vampire.</p>
+
+                          <form action="https://youtu.be/PQNLfo-SOR4">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Twilight: Breaking Dawn</b>
+                            <br>
+                            IMDb - 5.5
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/room.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Permanent Roommates</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Permanent Roommates is an Indian romantic comedy web series produced by The Viral Fever Media Labs.</p>
+
+                          <form action="https://youtu.be/XsOjuDh4c-o">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Permanent Roommates</b>
+                            <br>
+                            IMDb - 8.6
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/dhoni.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>MS Dhoni</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">220</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.</p>
+
+                          <form action="https://youtu.be/6L6XqWoS8tw">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Ms Dhoni : The Untold Story</b>
+                            <br>
+                            IMDb - 7.8
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
-    <footer class="footer-distributed">
-        
-
-        <div class="footer-right">
-
-            <a href="#"><i class="fab fa-facebook-f facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter twitter"></i></a>
-            <a href="#"><i class="fab fa-telegram telegram"></i></a>
-            <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website"><i class="fab fa-github github"></i></a>
-
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Try Our App</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
         </div>
-
-        <div class="footer-left">
-
-            <p class="footer-links">
-                <a class="link-1" href="#">Home</a>
-                <a href="contactus.html">Contact</a>
-            </p>
-            <p>Copyright &copy; and &reg; Since 2021 Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        <hr id="footer-hr">
+        <div class="footer-copyright">
+            <p>Copyright &copy; and &reg; Since
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
         </div>
-
     </footer>
 
+    <!-------------scroll to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      </button>
+      <script>
+      $(document).ready(function(){
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
 
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
+      });
+      });
+      </script>
 
-<script> jQuery('#waterdrop').raindrops({color:'#292c2f', canvasHeight:150, density: 0.1, frequency: 20});
-</script>
-  </body>
+    <!-- offcanva JS and footer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+
+    <script>
+        jQuery('#waterdrop').raindrops({
+            color: '#292c2f',
+            canvasHeight: 150,
+            density: 0.1,
+            frequency: 20
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+</body>
+
 </html>
