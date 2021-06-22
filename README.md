@@ -54,7 +54,7 @@ https://qazimaazarshad.github.io/Movie-Streaming-Website/
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/fWKwrRhL/download.png">
+<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
 
 ## How to get started❓
 
