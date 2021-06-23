@@ -17,7 +17,6 @@
     text-align: center;
   }
   .intro-container {
-    /*border: 2px solid #fff;*/
     width: 370px;
     margin: 0 auto;
     text-align: center;
@@ -40,7 +39,6 @@
   .navbar-brand img{
     width: 150px;
     height: 150px;
-    /*margin-top: 80px;*/
   }
   .images-container {
     width: 100%;
@@ -48,36 +46,30 @@
     background-color: #000;
   }
   .group1 {
-    /*border: 2px solid rgb(92, 230, 12);*/
     max-width: 250vw;
     height: 329px;
     display: flex;
   }
   .group2 {
-   /* border: 2px solid rgb(92, 230, 12);*/
     max-width: 270vw;
     height: 330px;
     display: flex;
   }
   
   .group3 {
-    /* border: 2px solid rgb(92, 230, 12);*/
      max-width: 270vw;
      height: 330px;
      display: flex;
    }
   .group1 .image {
-   /* border: 2px solid rgb(12, 16, 230);*/
     width: 250px;
     height: 100%;
   }
   .group2 .images2 {
-    /*border: 2px solid rgb(12, 16, 230);*/
     width: 250px;
     height: 100%;
   }
   .group3 .images3 {
-    /*border: 2px solid rgb(12, 16, 230);*/
     width: 250px;
     height: 100%;
   }
@@ -131,7 +123,7 @@
     align-items: center;
   }
  
- /* Extra small devices (phones, 600px and down) */
+ 
 @media only screen and (max-width: 600px) {
   .text-container h1 {
     color: #fff;
@@ -156,5 +148,5 @@
     bottom: 0;
     display: flex;
     justify-content: space-around;
-    alig
+ }
 }
