@@ -94,11 +94,18 @@ section div:nth-child(6) img{
   margin-left: 20px;
 
 }
+#nav:hover
+{
+  background-color:#e60e23!important;
 
+}
+.fas:hover{background: none!important ;}
+.nav-item{ flex-wrap:wrap;}
 .menu li a:hover {
   color: red !important;
   opacity: 0.5;
 }
+
 
 marquee {
   color: red;
@@ -750,4 +757,16 @@ font-size:18px;
 }
 #Kids b:hover{
   cursor: pointer;
+}
+#fa-icon
+{
+  visibility:hidden;
+}
+
+@media screen and (max-device-width:821px)
+{
+  #fa-icon
+  {
+    visibility:visible;
+  }
 }
