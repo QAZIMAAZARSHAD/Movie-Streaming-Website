@@ -1,64 +1,160 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .text-container {
+    width: 700px;
+    height: 100vh;
+    text-align: center;
+  }
+  .intro-container {
+    /*border: 2px solid #fff;*/
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .text-container h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+  span {
+    color: rgb(187, 14, 14);
+  }
+  .text-container p {
+    color: #fff;
+    margin-top: 20px;
+  }
+  .container-2 {
+    margin-top: 80px;
+  }
+  .navbar-brand img{
+    width: 150px;
+    height: 150px;
+    /*margin-top: 80px;*/
+  }
+  .images-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+  }
+  .group1 {
+    /*border: 2px solid rgb(92, 230, 12);*/
+    max-width: 250vw;
+    height: 329px;
+    display: flex;
+  }
+  .group2 {
+   /* border: 2px solid rgb(92, 230, 12);*/
+    max-width: 270vw;
+    height: 330px;
+    display: flex;
   }
   
-  body{
-    margin:0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size:17px;
-    color:#926239;
-    line-height:1.6;
+  .group3 {
+    /* border: 2px solid rgb(92, 230, 12);*/
+     max-width: 270vw;
+     height: 330px;
+     display: flex;
+   }
+  .group1 .image {
+   /* border: 2px solid rgb(12, 16, 230);*/
+    width: 250px;
+    height: 100%;
   }
-  
-  #showcase{
-    background-image:url('./Images/land.jpg');
-    background-size:cover;
-    background-position:center;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 20px;
+  .group2 .images2 {
+    /*border: 2px solid rgb(12, 16, 230);*/
+    width: 250px;
+    height: 100%;
   }
-  
-  #showcase h1{
-    font-size:50px;
-    line-height:1.2;
-    color:#ffffff;
-    font-size:60px;
+  .group3 .images3 {
+    /*border: 2px solid rgb(12, 16, 230);*/
+    width: 250px;
+    height: 100%;
   }
-  
-  #showcase p{
-    font-size:20px;
+  img {
+    height: 100%;
   }
-  
-  #showcase .button{
-    font-size:28px;
-    text-decoration:none;
-    color:#e2e5e5;
-    /*border:#926239 1px solid;
-    */padding:10px 20px;
-    border-radius:20px;
-    margin-top:20px;
-    background:#4410ffd3;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -ms-border-radius:20px;
-    -o-border-radius:20px;
-    size: 45px;
+  .text-container .button {
+    position: relative;
+    top: 100px;
+    padding: 13px 60px;
+    border-radius: 6px;
+  }
+  .text-container .button {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(165, 7, 7);
+  }
+  .text-container .button:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(202, 6, 6);
+    transition:  all 500ms;
+  }
+  .bottom-text-container {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .bottom-text-container .watch, .bottom-text-container .chill,.bottom-text-container .repeat{
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+  }
+  .bottom-text-container .watch , .bottom-text-container .repeat{
+    background-color: rgb(145, 9, 9);
+    border: none;
+  }
+  .bottom-text-container .chill {
+    border:1px solid rgb(165, 7, 7);
+    color:rgb(165, 7, 7)
+  }
+  .bottom-text-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .text-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .container-2 {
+    margin-top: 50px;
+  }
 }
-  
-  #showcase .button:hover{
-    background:linear-gradient(rgb(29, 18, 189),rgb(118, 55, 177));
-    color:#fff;
+@media only screen and (max-width: 400px) {
+  .text-container h1 {
+    color: #fff;
+    font-size: 2rem;
   }
-  
-  @media only screen and (max-width: 400px)
-{
-  nav {
-    margin-bottom: 19%;
+  .container-2 {
+    margin-top: 50px;
   }
+  .bottom-text-container {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    alig
 }
