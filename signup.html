@@ -366,11 +366,12 @@ font-weight: bolder;
       </div>
       <div class="input-text">
         <input
+        id = "pass_signup2"
           type="password"
           name="retypepassword"
           placeholder="Confirm password"
           oninput="change()"
-        />
+        /><i class="fa fa-fw fa-eye field-icon toggle-password2" id="togglePassword"></i>
       </div>
         <input class="signin-button" type="submit" value="Sign Up" />
         <div class="remember-flex">
@@ -467,6 +468,16 @@ font-weight: bolder;
       $("#pass_signup").attr("type", "text");
      } else {
        $("#pass_signup").attr("type", "password");
+     }
+    });
+    </script>
+    <script>
+    $(".toggle-password2").click(function() {
+     $(this).toggleClass("fa-eye fa-eye-slash");
+     if ($("#pass_signup2").attr("type") == "password") {
+      $("#pass_signup2").attr("type", "text");
+     } else {
+       $("#pass_signup2").attr("type", "password");
      }
     });
     </script>
