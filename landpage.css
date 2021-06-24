@@ -151,46 +151,4 @@
     justify-content: space-around;
  }
 }
-=======
-#preloader {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(243, 63, 63);
-  display: grid;
-  align-items: center;
-  place-items: center;
-  position: fixed;
-  z-index: 9999;
-}
-.preloader-div {
-  width: 30rem;
-  height: 30rem;
-  position: relative;
-}
-.rotator {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  animation: rotator 1s linear infinite;
-  border-right: 3px solid #fff;
-}
-.preloader-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-@keyframes rotator {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
