@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <html>
   <head>
     <title>Sign Up</title>
@@ -315,6 +315,12 @@ font-weight: bolder;
         border-radius: 5px;
         margin: 0px auto;
       }
+      .field-icon{
+     position: absolute;
+     margin-left: -25px;
+     margin-top: 15px;
+     color: white;
+   }
     </style>
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   </head>
@@ -351,19 +357,21 @@ font-weight: bolder;
       </div>
       <div class="input-text">
         <input
+          id = "pass_signup"
           type="password"
           name="password"
           placeholder="Enter your password"
           oninput="change()"
-        />
+        /><i class="fa fa-fw fa-eye field-icon toggle-password" id="togglePassword"></i>
       </div>
       <div class="input-text">
         <input
+        id = "pass_signup2"
           type="password"
           name="retypepassword"
           placeholder="Confirm password"
           oninput="change()"
-        />
+        /><i class="fa fa-fw fa-eye field-icon toggle-password2" id="togglePassword"></i>
       </div>
         <input class="signin-button" type="submit" value="Sign Up" />
         <div class="remember-flex">
@@ -394,11 +402,11 @@ font-weight: bolder;
 
         <br>
         <br>
-        
+
     </div>
     <div class="bottom">
         <div class="bottom-width">
-            Questions? <br>Ask on : <a href="https://www.google.com/gmail/" class="tel-link">Apna_theatre@gmail.com</a>
+            Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a>
             <div>
                 <ul class="bottom-flex">
                     <li class="list-bottom">
@@ -439,7 +447,7 @@ font-weight: bolder;
     $(document).ready(function(){
       var scrollTopButton = document.getElementById("scrollToTopButton");
       window.onscroll = function () { scrollFunction() };
-    
+
       function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTopButton.style.display = "block";
@@ -447,11 +455,31 @@ font-weight: bolder;
         scrollTopButton.style.display = "none";
       }
     }
-    
+
     $("#scrollToTopButton").click(function(){
     $('html ,body').animate({scrollTop : 0},800)
     });
-    }); 
+    });
+    </script>
+    <script>
+    $(".toggle-password").click(function() {
+     $(this).toggleClass("fa-eye fa-eye-slash");
+     if ($("#pass_signup").attr("type") == "password") {
+      $("#pass_signup").attr("type", "text");
+     } else {
+       $("#pass_signup").attr("type", "password");
+     }
+    });
+    </script>
+    <script>
+    $(".toggle-password2").click(function() {
+     $(this).toggleClass("fa-eye fa-eye-slash");
+     if ($("#pass_signup2").attr("type") == "password") {
+      $("#pass_signup2").attr("type", "text");
+     } else {
+       $("#pass_signup2").attr("type", "password");
+     }
+    });
     </script>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -464,9 +492,9 @@ font-weight: bolder;
     var strongPass = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})");
     var btnclicked = false
     const mailformat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    
-    
-    
+
+
+
     function DisplayResults(e) {
       var name = document.forms["regform"]["name"].value;
       var email = document.forms["regform"]["email"].value;
@@ -524,7 +552,7 @@ font-weight: bolder;
       return false;
     }
 
-    
+
     function FinalResults(){
       var usercode = document.forms["verificationform"]["code"].value;
       console.log('hii')
@@ -536,8 +564,8 @@ font-weight: bolder;
           });
         setTimeout(function () {
             document.location.href = "quiz.html";
-          }, 10000);
-        
+          }, 1500);
+
         // console.log(window.location.href)
         // console.log('hi')
         // var url = window.location.href
@@ -546,9 +574,9 @@ font-weight: bolder;
         // var newurl = url1[0] + "quiz.html"
         // console.log(newurl)
         // history.pushState(null,null, newurl);
-        // window.location.reload(); 
-        
-        
+        // window.location.reload();
+
+
       }else{
         swal({
           title: "Invalid code",
