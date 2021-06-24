@@ -644,6 +644,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer-heading{
   color:white;
+  font-size:33px;
 }
 .footer-left, .footer-right, .footer-middle{
 text-align:center;
