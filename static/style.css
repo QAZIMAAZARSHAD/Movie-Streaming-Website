@@ -633,7 +633,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .footer-content{
   display:flex;
   justify-content:space-between;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 .footer-logo{
   width: 150px;
@@ -644,6 +644,8 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer-heading{
   color:white;
+  font-size:30px;
+  
 }
 .footer-left, .footer-right, .footer-middle{
 text-align:center;
@@ -700,7 +702,9 @@ font-family:cursive;
 margin-bottom:25px;
 }
 
-
+.footer-hr{
+width:100vw
+}
 .footer-copyright{
 text-align:center;
 color:white;
