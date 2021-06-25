@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    width: 1000px;
+    margin: auto;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+  .faq-section h2{
+    margin-top: 51px;
+    margin-bottom: 52px;
+  }
+  .footer-content{
+    margin-top: 55px;
+  }
+  .faq__content{
+    margin: auto;
+    width: 1000px;
+    padding: 12px 5px 5px 21px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+  summary:active{
+    color:red;
+  }
+  summary:hover{
+    color:red;
+  }
