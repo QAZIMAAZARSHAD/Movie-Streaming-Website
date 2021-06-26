@@ -17,8 +17,7 @@
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
     #scrollToTopButton{
-  /* position: sticky; */
-  position:relative;
+  position:fixed;
   bottom: 40px;
   left: 93%;
   font-size: 25px;
@@ -33,10 +32,11 @@
   padding: 6px;
   border-radius: 50%;
   }
-  #scrollToTopButton:hover, i:hover {
-  background-color:red;
-  color:white;
-  }
+  #scrollToTopButton:hover {
+background-color:transparent;
+color:white;
+border: 2px solid white;
+}
   .buttonmodal{
       text-align: center;
       height:auto;
