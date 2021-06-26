@@ -10,6 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <script>
 
       var emailerror = false;
@@ -83,7 +84,7 @@ font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color: white;
+background-color: red;
 color: black;
 border: none;
 cursor: pointer;
@@ -91,6 +92,11 @@ outline: none;
 padding: 6px;
 border-radius: 50%;
 box-shadow: 0 6px 10px 0px gray;
+}
+
+#scrollToTopButton:hover , i:hover {
+  color: red;
+  background-color: white;
 }
       h1 {
         margin: auto;
@@ -485,7 +491,7 @@ color: white;
         </div>
     </div>
       <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+      <i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
     </button>
     <script>
     $(document).ready(function(){
