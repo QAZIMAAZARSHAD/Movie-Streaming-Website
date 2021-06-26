@@ -23,6 +23,13 @@
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
+   body {
+     margin:0;
+     padding:0;
+            height: 100%;
+            width: 100%;
+           
+        }
   #scrollToTopButton {
     /* position: sticky; */
     position: relative;
@@ -50,16 +57,83 @@
   .maincontainer h3 {
     color: white;
     text-align: center;
-}
-.poster{
-  margin-left: 85px;
-}
+  }
+
+  /* .poster {
+    margin-left: 85px;
+  } */
+
+
+  #slide-wrapper {
+            width: 100%;
+            height: 300px;
+            background-color: red;
+            
+        }
+
+        .slide-wrapper::-webkit-scrollbar {
+            visibility: none;
+        }
+
+        #slider{
+            width: 98%;
+            /* background-color: green; */
+            display: flex; 
+            flex-wrap:nowrap;
+            flex-direction:row;
+            box-sizing:border-box;
+            margin-left:10px;
+            padding: 10px 30px;
+            justify-content:left;
+            justify-items:space-between;
+            overflow:hidden;
+        }
+           .poster {
+            min-width: 250px;
+            height: 360px;
+            margin:10px 20px;
+            /* background-color: purple; */
+            color: white;
+            position:relative;
+            left:0;
+          
+            text-align: center;
+
+        } 
+
+        .arrow {
+          color: white;
+    background-color: red;
+    opacity:0.4;
+    width: 55px;
+    height: 55px;
+    font-size: 39px;
+    padding: 0px 15px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    top: -237px;
+        }
+
+        .arrow:hover {
+            color: black;
+            background-color: white;
+            opacity:1;
+        }
+
+        #arrow-left {
+          
+            left: 0px;
+        }
+
+        #arrow-right {
+            right: -1418px;}
 </style>
 <script>
   setTimeout(function () {
     $('.section').fadeToggle();
   }, 4000);
-  
+
 </script>
 
 <body>
@@ -249,1965 +323,1959 @@
 
 
     </div>
-    
 
-        
+
+
     <div class="maincontainer">
 
       <h2>Movies</h2>
       <hr>
-      <div class="container">
-          <div id="movies" class="row"></div>
+      <div >
+        <div id="movies" class="row"></div>
       </div>
-      
-      <div class="container" id="Movies">
+
+      <div  id="Movies">
         <h3>Hollywood</h3>
         <hr>
-         <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Inception</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-
-                  <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Inception</b>
-                    <br>
-                    IMDb - 8.8
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/dark knight.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Dark Knight</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">152<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.</p>
-
-                  <form action="https://youtu.be/LDG9bisJEaI">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Dark Knight</b>
-                    <br>
-                    IMDb - 9.0
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/Parasite.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Parasite</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">132<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">The struggling Kim family sees an opportunity when the son starts working for the wealthy Park family. Soon, all of them find a way to work within the same household and start living a parasitic life.</p>
-
-                  <form action="https://youtu.be/SEUXfv87Wpk">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Parasite</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/We're_the_Millers_poster.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>We're the Millers</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">118</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">David, a drug dealer, is forced by his boss to smuggle drugs from Mexico. He hires a stripper, a petty thief and a teenage neighbour and forms a fake family to help him smuggle the drugs.</p>
-
-                  <form action="https://youtu.be/0Vsy5KzsieQ">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>We're the Millers</b>
-                    <br>
-                    IMDb - 7.1
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/the terminal.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Terminal</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">128<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Viktor Navorski gets stranded at an airport when a war rages in his country. He is forced by the officials to stay at the airport until his original identity is confirmed.</p>
-
-                  <form action="https://youtu.be/hjydAG1lG_8">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Terminal</b>
-                    <br>
-                    IMDb - 7.4
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/Matrix.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Matrix</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1999</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">136<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.</p>
-
-                  <form action="https://youtu.be/8xx91zoASLY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Matrix</b>
-                    <br>
-                    IMDb - 8.7
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/joker.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Joker</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">122<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</p>
-
-                  <form action="https://youtu.be/ueBcdUPzweY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Joker</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/Hamilton.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Hamilton</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">160<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Alexander Hamilton, an orphan, arrives in New York to work for George Washington. After the American Revolution, he goes on to become first Secretary of the Treasury of the US.</p>
-
-                  <form action="https://youtu.be/DSCKfXpAGHc">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Hamilton</b>
-                    <br>
-                    IMDb - 8.4
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/goodfellas.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>GoodFellas</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1990</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">148<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Young Henry Hill, with his friends Jimmy and Tommy, begins the climb from being a petty criminal to a gangster on the mean streets of New York.</p>
-
-                  <form action="https://youtu.be/0v0NUEmeqbI">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>GoodFellas</b>
-                    <br>
-                    IMDb - 8.7
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/the shawshank.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Shawshank Redemption</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">142<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.3</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i" style="margin-top: -20px;">Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.</p>
-
-                  <form action="https://youtu.be/6hB3S9bIaco">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Shawshank Redemption</b>
-                    <br>
-                    IMDb - 9.3
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/green mile.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Green Mile</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1999</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">189<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Paul, the head guard of a prison, meets an inmate, John, an African American who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.</p>
-
-                  <form action="https://youtu.be/Ki4haFrqSrw">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Green Mile</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/inter.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Interstellar</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">169<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
-
-                  <form action="https://youtu.be/zSWdZVtXT7E">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Interstellar</b>
-                    <br>
-                    IMDb - 8.6
-                </div>
-            </div>
-          </div>
-        </div> 
-      </div>
-
-<div class="container" id="Movies">
-        <h3>Bollywood</h3>
-        <hr>
-         <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/aaa.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Andaz Apna Apna</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">161<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Amar and Prem, who belong to middle-class families, compete to win over Raveena, a millionaire's daughter</p>
-
-                  <form action="https://youtu.be/fd_w7Qw8biU">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Andaz Apna Apna</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
-            </div>
-          </div>
-        </div>
 
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/chakde.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Chakde India</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">153<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
 
-                <p class="para_i">Kabir Khan, a former hockey star, is tainted as someone who betrayed his country. However, he begins coaching the Indian women's national hockey team to prove his loyalty to the nation.</p>
-
-                  <form action="https://youtu.be/6a0-dSMWm5g">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Chakde India</b>
-                    <br>
-                    IMDb - 8.4
-                </div>
-            </div>
-          </div>
-        </div> 
-
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Bhaag Milkha Bhaag</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">189<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to become a world champion, Olympian and one of India's most iconic athletes.</p>
-
-                  <form action="https://youtu.be/3uICXnnW86U">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Bhaag Milkha Bhaag</b>
-                    <br>
-                    IMDb - 8.2
-                </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="poster">
+        <div class="slide-wrapper">
+          <div id="slider">
+          <div class="poster">
             <div class="flip-card_i">
               <div class="flip-card-inner_i">
                 <div class="flip-card-front_i">
-                    <img src="./Images/wed.jpg" alt="Avatar" style="width:250px;height:360px;">
+                  <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Inception</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2010</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">162<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers
+                        to wipe clean Cobb's criminal history as payment for performing an inception on his sick
+                        competitor's son.</p>
+                      <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>Inception</b>
+                  <br>
+                  IMDb - 8.8
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/dark knight.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Dark Knight</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2008</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">152<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">9.0</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the
+                        mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the
+                        city to its knees.</p>
+                      <form action="https://youtu.be/LDG9bisJEaI">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>The Dark Knight</b>
+                  <br>
+                  IMDb - 9.0
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/Parasite.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Parasite</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">132<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">The struggling Kim family sees an opportunity when the son starts working for
+                        the wealthy Park family. Soon, all of them find a way to work within the same household and
+                        start living a parasitic life.</p>
+                      <form action="https://youtu.be/SEUXfv87Wpk">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>Parasite</b>
+                  <br>
+                  IMDb - 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/We're_the_Millers_poster.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>We're the Millers</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2013</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">118</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+                  <p class="para_i">David, a drug dealer, is forced by his boss to smuggle drugs from Mexico. He hires a
+                    stripper, a petty thief and a teenage neighbour and forms a fake family to help him smuggle the
+                    drugs.</p>
+                  <form action="https://youtu.be/0Vsy5KzsieQ">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+                </div>
+                <div class="flim">
+                  <b>We're the Millers</b>
+                  <br>
+                  IMDb - 7.1
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/the terminal.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Terminal</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2004</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">128<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">7.4</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Viktor Navorski gets stranded at an airport when a war rages in his country. He
+                        is forced by the officials to stay at the airport until his original identity is confirmed.</p>
+                      <form action="https://youtu.be/hjydAG1lG_8">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>The Terminal</b>
+                  <br>
+                  IMDb - 7.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/Matrix.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Matrix</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1999</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">136<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Thomas Anderson, a computer programmer, is led to fight an underground war
+                        against powerful computers who have constructed his entire reality with a system called the
+                        Matrix.</p>
+                      <form action="https://youtu.be/8xx91zoASLY">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>The Matrix</b>
+                  <br>
+                  IMDb - 8.7
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/joker.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Joker</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">122<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Arthur Fleck, a party clown, leads an impoverished life with his ailing mother.
+                        However, when society shuns him and brands him as a freak, he decides to embrace the life of
+                        crime and chaos.</p>
+                      <form action="https://youtu.be/ueBcdUPzweY">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>Joker</b>
+                  <br>
+                  IMDb - 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/Hamilton.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Hamilton</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">160<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Alexander Hamilton, an orphan, arrives in New York to work for George
+                        Washington. After the American Revolution, he goes on to become first Secretary of the Treasury
+                        of the US.</p>
+                      <form action="https://youtu.be/DSCKfXpAGHc">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>Hamilton</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/goodfellas.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>GoodFellas</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1990</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">148<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Young Henry Hill, with his friends Jimmy and Tommy, begins the climb from being
+                        a petty criminal to a gangster on the mean streets of New York.</p>
+                      <form action="https://youtu.be/0v0NUEmeqbI">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>GoodFellas</b>
+                  <br>
+                  IMDb - 8.7
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/the shawshank.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Shawshank Redemption</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1994</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">142<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">9.3</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i" style="margin-top: -20px;">Andy Dufresne, a successful banker, is arrested for
+                        the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank
+                        prison. He becomes the most unconventional prisoner.</p>
+                      <form action="https://youtu.be/6hB3S9bIaco">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>The Shawshank Redemption</b>
+                  <br>
+                  IMDb - 9.3
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/green mile.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Green Mile</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1999</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">189<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+                      <p class="para_i">Paul, the head guard of a prison, meets an inmate, John, an African American who
+                        is accused of murdering two girls. His life changes drastically when he discovers that John has
+                        a special gift.</p>
+                      <form action="https://youtu.be/Ki4haFrqSrw">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>The Green Mile</b>
+                  <br>
+                  IMDb - 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/inter.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Interstellar</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2014</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">169<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+                      <p class="para_i">When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot,
+                        Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new
+                        planet for humans.</p>
+                      <form action="https://youtu.be/zSWdZVtXT7E">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+                </div>
+                <div class="flim">
+                  <b>Interstellar</b>
+                  <br>
+                  IMDb - 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <span class="arrow " id="arrow-left"><</span>
+        <span class="arrow " id="arrow-right">></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div  id="Movies">        
+          <h3>Bollywood</h3>
+          <hr>
+
+          <div class="slide-wrapper">
+            <div id="slider">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/aaa.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Andaz Apna Apna</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1994</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">161<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Amar and Prem, who belong to middle-class families, compete to win over Raveena,
+                        a millionaire's daughter</p>
+
+                      <form action="https://youtu.be/fd_w7Qw8biU">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Andaz Apna Apna</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/chakde.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Chakde India</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2007</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">153<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Kabir Khan, a former hockey star, is tainted as someone who betrayed his
+                        country. However, he begins coaching the Indian women's national hockey team to prove his
+                        loyalty to the nation.</p>
+
+                      <form action="https://youtu.be/6a0-dSMWm5g">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Chakde India</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Bhaag Milkha Bhaag</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2013</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">189<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to
+                        become a world champion, Olympian and one of India's most iconic athletes.</p>
+
+                      <form action="https://youtu.be/3uICXnnW86U">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Bhaag Milkha Bhaag</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/wed.jpg" alt="Avatar" style="width:250px;height:360px;">
                 </div>
                 <div class="flip-card-back_i">
                   <h1>A Wednesday</h1>
-                    <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                    <button class="btn_i b2_i"  title="Seasons" style="color:white">104</button>
-                    <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2008</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">104</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.1</button>
                   </span>
                   <br />
                   <br />
-                </p>
+                  </p>
 
-                  <p class="para_i">Prakash Rathod, a retired police commissioner recounts the most memorable case of his career wherein he was informed about a bomb scare in Mumbai by an ordinary commoner.</p>
+                  <p class="para_i">Prakash Rathod, a retired police commissioner recounts the most memorable case of
+                    his career wherein he was informed about a bomb scare in Mumbai by an ordinary commoner.</p>
 
-                    <form action="https://youtu.be/yry6pBiXx14">
-                        <input class="trailer_i" type="submit" value="▶Trailer" />
-                    </form>
+                  <form action="https://youtu.be/yry6pBiXx14">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
 
                 </div>
-                  <div class="flim">
-                      <b>A Wednesday</b>
-                      <br>
-                      IMDb - 8.1
-                  </div>
+                <div class="flim">
+                  <b>A Wednesday</b>
+                  <br>
+                  IMDb - 8.1
+                </div>
               </div>
             </div>
-          </div> 
+          </div>
 
-           <div class="poster">
+          <div class="poster">
             <div class="flip-card_i">
               <div class="flip-card-inner_i">
                 <div class="flip-card-front_i">
-                    <img src="./Images/dhoni.jpg" alt="Avatar" style="width:250px;height:360px;">
+                  <img src="./Images/dhoni.jpg" alt="Avatar" style="width:250px;height:360px;">
                 </div>
                 <div class="flip-card-back_i">
                   <h1>MS Dhoni</h1>
-                    <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                    <button class="btn_i b2_i"  title="Seasons" style="color:white">220</button>
-                    <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">220</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.8</button>
                   </span>
                   <br />
                   <br />
-                </p>
-
-                  <p class="para_i">M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.</p>
-
-                    <form action="https://youtu.be/6L6XqWoS8tw">
-                        <input class="trailer_i" type="submit" value="▶Trailer" />
-                    </form>
-
-                </div>
-                  <div class="flim">
-                      <b>Ms Dhoni : The Untold Story</b>
-                      <br>
-                      IMDb - 7.8
-                  </div>
-              </div>
-            </div>
-          </div> 
-
-           <div class="poster">
-              <div class="flip-card_i">
-                <div class="flip-card-inner_i">
-                  <div class="flip-card-front_i">
-                      <img src="./Images/drishyam.jpg" alt="Avatar" style="width:250px;height:360px;">
-                  </div>
-                  <div class="flip-card-back_i">
-                    <h1>Drishyam</h1>
-                      <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">163</button>
-                      <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                    </span>
-                    <br />
-                    <br />
                   </p>
 
-                    <p class="para_i">When the disappearance of a policewoman's son threatens to ruin Vijay's family, he leaves no stone unturned in order to shield his family.</p>
+                  <p class="para_i">M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially
+                    tries to please his father by working for the Indian Railways, he ultimately decides to chase his
+                    dreams.</p>
 
-                      <form action="https://youtu.be/AuuX2j14NBg">
-                          <input class="trailer_i" type="submit" value="▶Trailer" />
-                      </form>
+                  <form action="https://youtu.be/6L6XqWoS8tw">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
 
-                  </div>
-                    <div class="flim">
-                        <b>Drishyam</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
+                </div>
+                <div class="flim">
+                  <b>Ms Dhoni : The Untold Story</b>
+                  <br>
+                  IMDb - 7.8
                 </div>
               </div>
             </div>
+          </div>
 
-
-             <div class="poster">
-              <div class="flip-card_i">
-                <div class="flip-card-inner_i">
-                  <div class="flip-card-front_i">
-                      <img src="./Images/dil.jpg" alt="Avatar" style="width:250px;height:360px;">
-                  </div>
-                  <div class="flip-card-back_i">
-                    <h1>Dilwale Dulhania</h1>
-                      <button class="btn_i b3_i"  title="Year" style="color:white">1995</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">192</button>
-                      <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
-                    </span>
-                    <br />
-                    <br />
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/drishyam.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Drishyam</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2015</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">163</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                  </span>
+                  <br />
+                  <br />
                   </p>
 
-                    <p class="para_i">Raj and Simran meet during a trip across Europe and the two fall in love. However, when Raj learns that Simran is already promised to another, he follows her to India to win her and her father over.</p>
+                  <p class="para_i">When the disappearance of a policewoman's son threatens to ruin Vijay's family, he
+                    leaves no stone unturned in order to shield his family.</p>
 
-                      <form action="https://youtu.be/oIZ4U21DRlM">
-                          <input class="trailer_i" type="submit" value="▶Trailer" />
-                      </form>
+                  <form action="https://youtu.be/AuuX2j14NBg">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
 
-                  </div>
-                    <div class="flim">
-                        <b>Dilwale Dulhania Le Jayenge</b>
-                        <br>
-                        IMDb - 7.1
-                    </div>
+                </div>
+                <div class="flim">
+                  <b>Drishyam</b>
+                  <br>
+                  IMDb - 8.2
                 </div>
               </div>
             </div>
+          </div>
 
 
-            <div class="poster">
-              <div class="flip-card_i">
-                <div class="flip-card-inner_i">
-                  <div class="flip-card-front_i">
-                      <img src="./Images/gangs of wassepur.jpg" alt="Avatar" style="width:250px;height:360px;">
-                  </div>
-                  <div class="flip-card-back_i">
-                    <h1>Gangs of Wasseypur</h1>
-                      <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">160</button>
-                      <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                    </span>
-                    <br />
-                    <br />
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/dil.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Dilwale Dulhania</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1995</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">192</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.1</button>
+                  </span>
+                  <br />
+                  <br />
                   </p>
 
-                    <p class="para_i">A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).</p>
+                  <p class="para_i">Raj and Simran meet during a trip across Europe and the two fall in love. However,
+                    when Raj learns that Simran is already promised to another, he follows her to India to win her and
+                    her father over.</p>
 
-                      <form action="https://youtu.be/j-AkWDkXcMY">
-                          <input class="trailer_i" type="submit" value="▶Trailer" />
-                      </form>
+                  <form action="https://youtu.be/oIZ4U21DRlM">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
 
-                  </div>
-                    <div class="flim">
-                        <b>Gangs of Wasseypur</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
+                </div>
+                <div class="flim">
+                  <b>Dilwale Dulhania Le Jayenge</b>
+                  <br>
+                  IMDb - 7.1
                 </div>
               </div>
             </div>
+          </div>
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/gangs of wassepur.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Gangs of Wasseypur</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">160</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+
+                  <p class="para_i">A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin
+                    (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).</p>
+
+                  <form action="https://youtu.be/j-AkWDkXcMY">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+
+                </div>
+                <div class="flim">
+                  <b>Gangs of Wasseypur</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/sholay.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Sholay</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1975</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">214</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Sholay</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">1975</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">214</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Jai and Veeru, two ex-convicts, are hired by Thakur Baldev Singh, a retired policeman, to help him nab Gabbar Singh, a notorious dacoit, who has spread havoc in the village of Ramgarh.</p>
+                  <p class="para_i">Jai and Veeru, two ex-convicts, are hired by Thakur Baldev Singh, a retired
+                    policeman, to help him nab Gabbar Singh, a notorious dacoit, who has spread havoc in the village of
+                    Ramgarh.</p>
 
                   <form action="https://youtu.be/XjiluhItzIA">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Sholay</b>
-                    <br>
-                    IMDb - 8.2
                 </div>
+                <div class="flim">
+                  <b>Sholay</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
 
-         <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/rdb.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Rang De Basanti</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">171</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Rang De Basanti</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2006</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">171</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">When Sue selects a few students to portray various Indian freedom fighters in her film, she unwittingly awakens their patriotism</p>
+                  <p class="para_i">When Sue selects a few students to portray various Indian freedom fighters in her
+                    film, she unwittingly awakens their patriotism</p>
 
                   <form action="https://youtu.be/l-BTOTtcGmk">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Rang De Basanti</b>
-                    <br>
-                    IMDb - 8.2
                 </div>
+                <div class="flim">
+                  <b>Rang De Basanti</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
 
 
 
-         <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/mbbs.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Munna Bhai MBBS</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">120</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Munna Bhai MBBS</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2003</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">120</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Munna is a goon who sets out to fulfil his father's dream of becoming a doctor.</p>
+                  <p class="para_i">Munna is a goon who sets out to fulfil his father's dream of becoming a doctor.</p>
 
                   <form action="https://youtu.be/_FOHXWa4KOA">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Munna Bhai MBBS</b>
-                    <br>
-                    IMDb - 8.1
                 </div>
+                <div class="flim">
+                  <b>Munna Bhai MBBS</b>
+                  <br>
+                  IMDb - 8.1
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
 
 
 
-         <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/kgf.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>KGF</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">170</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>KGF</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">170</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.2</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying mother</p>
+                  <p class="para_i">Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying
+                    mother</p>
 
                   <form action="https://youtu.be/-KfsY-qwBS0">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>KGF</b>
-                    <br>
-                    IMDb - 8.2
                 </div>
+                <div class="flim">
+                  <b>KGF</b>
+                  <br>
+                  IMDb - 8.2
+                </div>
+              </div>
             </div>
           </div>
-        </div> 
+        </div>
+        
+      </div>
+      <span class="arrow " id="arrow-left"><</span>
+      <span class="arrow " id="arrow-right">></span>
+</div>
 
 
-    </div>
-    <!---next block -->
 
-    <h2>Web Series</h2>
-    <hr>
-    <div class="container" id="WebSeries">
-      <h3>Hollywood</h3>
-      <hr>
-      <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+        <!---next block -->
+
+        <h2>Web Series</h2>
+        <hr>
+        <div  id="WebSeries">
+          <h3>Hollywood</h3>
+          <hr>
+
+
+
+          <div class="slide-wrapper">
+            <div id="slider">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/chernobyl.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Chernobyl</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Chernobyl</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line to save Europe.</p>
+                  <p class="para_i">In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst
+                    nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line
+                    to save Europe.</p>
 
                   <form action="https://youtu.be/s9APLXM9Ei8">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Chernobyl</b>
-                    <br>
-                    IMDb - 9.4
                 </div>
+                <div class="flim">
+                  <b>Chernobyl</b>
+                  <br>
+                  IMDb - 9.4
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/black mirror.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Black Mirror</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">8</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Black Mirror</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2011</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">8</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.8</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">In an abstrusely dystopian future, several individuals grapple with the manipulative effects of cutting edge technology in their personal lives and behaviours.</p>
+                  <p class="para_i">In an abstrusely dystopian future, several individuals grapple with the manipulative
+                    effects of cutting edge technology in their personal lives and behaviours.</p>
 
                   <form action="https://youtu.be/V0XOApF5nLU">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Black Mirror</b>
-                    <br>
-                    IMDb - 8.8
                 </div>
+                <div class="flim">
+                  <b>Black Mirror</b>
+                  <br>
+                  IMDb - 8.8
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/got.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Game of Thrones</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">8</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.3</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Game of Thrones</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2011</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">8</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.3</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Nine noble families wage war against each other in order to gain control over the mythical land of Westeros.
-                   Meanwhile, a force is rising after millenniums and threatens the existence of living men.</p>
+                  <p class="para_i">Nine noble families wage war against each other in order to gain control over the
+                    mythical land of Westeros.
+                    Meanwhile, a force is rising after millenniums and threatens the existence of living men.</p>
 
                   <form action="https://youtu.be/gcTkNV5Vg1E">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Game of Thrones</b>
-                    <br>
-                    IMDb - 9.3
                 </div>
+                <div class="flim">
+                  <b>Game of Thrones</b>
+                  <br>
+                  IMDb - 9.3
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/money.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Money Heist</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Money Heist</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2017</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.3</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i" >A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose.</p>
+                  <p class="para_i">A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest
+                    heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him
+                    carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing
+                    to lose.</p>
 
                   <form action="https://youtu.be/p_PJbmrX4uk">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Money Heist</b>
-                    <br>
-                    IMDb - 8.3
                 </div>
+                <div class="flim">
+                  <b>Money Heist</b>
+                  <br>
+                  IMDb - 8.3
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/luci.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Lucifier</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Lucifier</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">5</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell. After abandoning his throne and retiring to Los Angeles, Lucifer indulges in his favorite things (women, wine and song) -- until a murder takes place outside of his upscale nightclub.</p>
+                  <p class="para_i">this series follows Lucifer, the original fallen angel, who has become dissatisfied
+                    with his life in hell. After abandoning his throne and retiring to Los Angeles, Lucifer indulges in
+                    his favorite things (women, wine and song) -- until a murder takes place outside of his upscale
+                    nightclub.</p>
 
                   <form action="https://youtu.be/-0beFQnB5lY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Lucifier</b>
-                    <br>
-                    IMDb - 8.1
                 </div>
+                <div class="flim">
+                  <b>Lucifier</b>
+                  <br>
+                  IMDb - 8.1
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/sherlock series.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Sherlock</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                  <button class="btn_i b2_i"  title="seasons" style="color:white">3<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.1</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Dr Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes. Together, they take on the most unusual cases.</p>
-
-                  <form action="https://youtu.be/9UcR9iKArd0">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Sherlock</b>
-                    <br>
-                    IMDb - 9.1
                 </div>
+                <div class="flip-card-back_i">
+                  <h1>Sherlock</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2010</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">3<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">9.1</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Dr Watson, a former army doctor, finds himself sharing a flat with Sherlock
+                        Holmes, an eccentric individual with a knack for solving crimes. Together, they take on the most
+                        unusual cases.</p>
+
+                      <form action="https://youtu.be/9UcR9iKArd0">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Sherlock</b>
+                  <br>
+                  IMDb - 9.1
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/crown.jpeg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Crown</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                  <button class="btn_i b2_i"  title="seasons" style="color:white">4<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">The series begins with an inside look at the early reign of the queen, who ascended the throne at age 25 after the death of her father, King George VI. As the decades pass, personal intrigues, romances, and political rivalries are revealed that played a big role in events that shaped the later years of the 20th century.</p>
-
-                  <form action="https://youtu.be/w1pIbUOc_lU">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>The Crown</b>
-                    <br>
-                    IMDb - 8.6
                 </div>
+                <div class="flip-card-back_i">
+                  <h1>The Crown</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">4<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.6</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">The series begins with an inside look at the early reign of the queen, who
+                        ascended the throne at age 25 after the death of her father, King George VI. As the decades
+                        pass, personal intrigues, romances, and political rivalries are revealed that played a big role
+                        in events that shaped the later years of the 20th century.</p>
+
+                      <form action="https://youtu.be/w1pIbUOc_lU">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>The Crown</b>
+                  <br>
+                  IMDb - 8.6
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/firefly.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Firefly</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2002</button>
-                  <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">Set 500 years in the future after a universal civil war, the crew of a small transport spaceship takes any job so long as it puts food on the table. The disparate men and women just want to survive and maybe have better lives, but they face constant challenges on the new frontier, such as the Reavers -- flesh-eating mongrels who live on the fringes of the universe.</p>
-
-                  <form action="https://youtu.be/oBZrZij2-g8">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Firefly</b>
-                    <br>
-                    IMDb - 9.0
                 </div>
+                <div class="flip-card-back_i">
+                  <h1>Firefly</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2002</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">1<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">9.0</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Set 500 years in the future after a universal civil war, the crew of a small
+                        transport spaceship takes any job so long as it puts food on the table. The disparate men and
+                        women just want to survive and maybe have better lives, but they face constant challenges on the
+                        new frontier, such as the Reavers -- flesh-eating mongrels who live on the fringes of the
+                        universe.</p>
+
+                      <form action="https://youtu.be/oBZrZij2-g8">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Firefly</b>
+                  <br>
+                  IMDb - 9.0
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/top of the lake.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Top of the Lake</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.5</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Top of the Lake</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2013</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.5</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">A detective investigates the disappearance of a 12-year-old schoolgirl in a small town and gradually finds herself getting obsessed with the case.</p>
+                  <p class="para_i">A detective investigates the disappearance of a 12-year-old schoolgirl in a small
+                    town and gradually finds herself getting obsessed with the case.</p>
 
                   <form action="https://youtu.be/wGWSB_ezYzs">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Top of the Lake</b>
-                    <br>
-                    IMDb - 7.5
                 </div>
+                <div class="flim">
+                  <b>Top of the Lake</b>
+                  <br>
+                  IMDb - 7.5
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/breaking.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Breaking Bad</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Breaking Bad</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2008</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">5</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.5</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse</p>
+                  <p class="para_i">Walter White, a chemistry teacher, discovers that he has cancer and decides to get
+                    into the meth-making business to repay his medical debts. His priorities begin to change when he
+                    partners with Jesse</p>
 
                   <form action="https://youtu.be/HhesaQXLuRY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Breaking Bad</b>
-                    <br>
-                    IMDb - 9.5
                 </div>
+                <div class="flim">
+                  <b>Breaking Bad</b>
+                  <br>
+                  IMDb - 9.5
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/peaky.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Peaky Blinders</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Peaky Blinders</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2013</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">5</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.8</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham. Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.</p>
+                  <p class="para_i">Tommy Shelby, a dangerous man, leads the Peaky Blinders, a gang based in Birmingham.
+                    Soon, Chester Campbell, an inspector, decides to nab him and put an end to the criminal activities.
+                  </p>
 
                   <form action="https://youtu.be/oVzVdvGIC7U">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Peaky Blinders</b>
-                    <br>
-                    IMDb - 8.8
                 </div>
+                <div class="flim">
+                  <b>Peaky Blinders</b>
+                  <br>
+                  IMDb - 8.8
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/ozark.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Ozark</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">3</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Ozark</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2017</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">3</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Drama series stars Jason Bateman as Marty Byrde, a financial planner who relocates his family from Chicago to a summer resort community in the Ozarks. With wife Wendy and their two kids in tow, Marty is on the move after a money-laundering scheme goes wrong, forcing him to pay off a substantial debt to a Mexican drug lord in order to keep his family safe. While the Byrdes' fate hangs in the balance, the dire circumstances force the fractured family to reconnect.</p>
+                  <p class="para_i">Drama series stars Jason Bateman as Marty Byrde, a financial planner who relocates
+                    his family from Chicago to a summer resort community in the Ozarks. With wife Wendy and their two
+                    kids in tow, Marty is on the move after a money-laundering scheme goes wrong, forcing him to pay off
+                    a substantial debt to a Mexican drug lord in order to keep his family safe. While the Byrdes' fate
+                    hangs in the balance, the dire circumstances force the fractured family to reconnect.</p>
 
                   <form action="https://youtu.be/5hAXVqrljbs">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Ozark</b>
-                    <br>
-                    IMDb - 8.4
                 </div>
+                <div class="flim">
+                  <b>Ozark</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/stranger.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Stranger Things</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">3</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Stranger Things</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">3</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits.</p>
+                  <p class="para_i">In 1980s Indiana, a group of young friends witness supernatural forces and secret
+                    government exploits.</p>
 
                   <form action="https://youtu.be/b9EkMc79ZSU">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Stranger Things</b>
-                    <br>
-                    IMDb - 8.7
                 </div>
+                <div class="flim">
+                  <b>Stranger Things</b>
+                  <br>
+                  IMDb - 8.7
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/witcher.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Witcher</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Witcher</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.5</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.</p>
+                  <p class="para_i">The witcher Geralt, a mutated monster hunter, struggles to find his place in a world
+                    in which people often prove more wicked than beasts.</p>
 
                   <form action="https://youtu.be/ndl1W4ltcmg">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>The Witcher</b>
-                    <br>
-                    IMDb - 8.5
                 </div>
+                <div class="flim">
+                  <b>The Witcher</b>
+                  <br>
+                  IMDb - 8.5
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/wanda.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Wanda Vision</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Wanda Vision</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2021</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Living idealized suburban lives, super-powered beings Wanda and Vision begin to suspect that everything is not as it seems.</p>
+                  <p class="para_i">Living idealized suburban lives, super-powered beings Wanda and Vision begin to
+                    suspect that everything is not as it seems.</p>
 
                   <form action="https://youtu.be/sj9J2ecsSpo">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Wanda Vision</b>
-                    <br>
-                    IMDb - 8.1
                 </div>
+                <div class="flim">
+                  <b>Wanda Vision</b>
+                  <br>
+                  IMDb - 8.1
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
+      </div>
+      <span class="arrow " id="arrow-left"><</span>
+      <span class="arrow " id="arrow-right">></span>
+</div>
 
-    </div>
-    <!---third block -->
 
-    <div class="container" id="WebSeries">
-       <h3>Bollywood</h3>
-       <hr>
-      <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+
+
+
+
+        <!---third block -->
+
+        <div id="WebSeries">
+          <h3>Bollywood</h3>
+          <hr>
+
+          <div class="slide-wrapper">
+            <div id="slider">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/mirzapur.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Mirzapur</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Mirzapur</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Akhandanand Tripathi made millions exporting carpets and became the mafia boss of Mirzapur. His son Munna, an unworthy, power-hungry heir, stops at nothing to continue his father's legacy.</p>
+                  <p class="para_i">Akhandanand Tripathi made millions exporting carpets and became the mafia boss of
+                    Mirzapur. His son Munna, an unworthy, power-hungry heir, stops at nothing to continue his father's
+                    legacy.</p>
 
                   <form action="https://youtu.be/ZNeGF-PvRHY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Mirzapur</b>
-                    <br>
-                    IMDb - 8.4
                 </div>
+                <div class="flim">
+                  <b>Mirzapur</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/sacred.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Sacred Games</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Sacred Games</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">When police officer Sartaj Singh receives an anonymous tip about the location of criminal overlord Ganesh Gaitonde, he embarks on a chase around Mumbai in what becomes a dangerous cat-and-mouse game. Amidst the chaos, trappings of a corrupt underworld are revealed.</p>
+                  <p class="para_i">When police officer Sartaj Singh receives an anonymous tip about the location of
+                    criminal overlord Ganesh Gaitonde, he embarks on a chase around Mumbai in what becomes a dangerous
+                    cat-and-mouse game. Amidst the chaos, trappings of a corrupt underworld are revealed.</p>
 
                   <form action="https://youtu.be/RWpuZXhCEkQ">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Sacred Games</b>
-                    <br>
-                    IMDb - 8.7
                 </div>
+                <div class="flim">
+                  <b>Sacred Games</b>
+                  <br>
+                  IMDb - 8.7
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/kota.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Kota Factory</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Kota Factory</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.0</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Kota Factory is an 2019 Indian Hindi-language web series created by Saurabh Khanna and directed by Raghav Subbu for The Viral Fever. The story is set is in Kota, which is a hub for many coaching centres where students come from all over India to prepare for various entrance exams.</p>
+                  <p class="para_i">Kota Factory is an 2019 Indian Hindi-language web series created by Saurabh Khanna
+                    and directed by Raghav Subbu for The Viral Fever. The story is set is in Kota, which is a hub for
+                    many coaching centres where students come from all over India to prepare for various entrance exams.
+                  </p>
 
                   <form action="https://youtu.be/pNZQ6msbOvM">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Kota Factory</b>
-                    <br>
-                    IMDb - 9.0
                 </div>
+                <div class="flim">
+                  <b>Kota Factory</b>
+                  <br>
+                  IMDb - 9.0
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/upsc.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Aspirants</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Aspirants</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2021</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">Aspirants is a web series by The Viral Fever created by Arunabh Kumar.</p>
+                  <p class="para_i">Aspirants is a web series by The Viral Fever created by Arunabh Kumar.</p>
 
                   <form action="https://youtu.be/ViOutJ0kuJY">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form>
 
-              </div>
-                <div class="flim">
-                    <b>Aspirants</b>
-                    <br>
-                    IMDb - 9
                 </div>
+                <div class="flim">
+                  <b>Aspirants</b>
+                  <br>
+                  IMDb - 9
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
                   <img src="./Images/bach.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>TVF Bachelors</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>TVF Bachelors</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-                <p class="para_i">The series revolves around Four Bachelor Flatmates who in every episode will deal with a specific daily life bachelor related problem. Its about their battle against an external X problem as a single team The Bachelors.</p>
+                  <p class="para_i">The series revolves around Four Bachelor Flatmates who in every episode will deal
+                    with a specific daily life bachelor related problem. Its about their battle against an external X
+                    problem as a single team The Bachelors.</p>
 
                   <form action="https://youtu.be/5XuimeH5hME">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>TVF Bachelors</b>
-                    <br>
-                    IMDb - 8.4
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/mismatched.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Mismatched</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                  <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-              </p>
-
-                <p class="para_i">After being set-up by their families, two teenagers strike up a tentative friendship at their summer programme.</p>
-
-                  <form action="https://youtu.be/uYmwNNkix-k">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                  </form>
-
-              </div>
-                <div class="flim">
-                    <b>Mismatched</b>
-                    <br>
-                    IMDb - 8.4
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                  <img src="./Images/bandish.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Bandish Bandits</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                <button class="btn_i b2_i"  title="seasons" style="color:white">1<button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-              </span>
-              <br />
-              <br />
-            </p>
-
-              <p class="para_i">Two singers who have contrasting personalities set out on an incredible journey of self-discovery with one another.</p>
-
-                <form action="https://youtu.be/UhU57OgGp50">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
+                </div>
+                <div class="flim">
+                  <b>TVF Bachelors</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
             </div>
-              <div class="flim">
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/mismatched.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Mismatched</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">1<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">After being set-up by their families, two teenagers strike up a tentative
+                        friendship at their summer programme.</p>
+
+                      <form action="https://youtu.be/uYmwNNkix-k">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Mismatched</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/bandish.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Bandish Bandits</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">1<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">Two singers who have contrasting personalities set out on an incredible journey
+                        of self-discovery with one another.</p>
+
+                      <form action="https://youtu.be/UhU57OgGp50">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
                   <b>Bandish Bandits</b>
                   <br>
                   IMDb - 8.7
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/little things.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Little Things</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                <button class="btn_i b2_i"  title="seasons" style="color:white">3<button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/little things.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Little Things</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2016</button>
+                  <button class="btn_i b2_i" title="seasons" style="color:white">3<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.3</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
 
-              <p class="para_i">A cohabitating couple in their 20s navigates the ups and downs of work, modern-day relationships and finding themselves in contemporary Mumbai.</p>
+                      <p class="para_i">A cohabitating couple in their 20s navigates the ups and downs of work,
+                        modern-day relationships and finding themselves in contemporary Mumbai.</p>
 
-                <form action="https://youtu.be/LhpA-_8cWv8">
-                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                      <form action="https://youtu.be/LhpA-_8cWv8">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Little Things</b>
                   <br>
                   IMDb - 8.3
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/lok.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Paatal Lok</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/lok.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Paatal Lok</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.8</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">A cynical inspector is tasked with investigating a high-profile case which leads him into a dark realm of the underworld.</p>
+                  <p class="para_i">A cynical inspector is tasked with investigating a high-profile case which leads him
+                    into a dark realm of the underworld.</p>
 
-                <form action="https://youtu.be/cNwWMW4mxO8">
+                  <form action="https://youtu.be/cNwWMW4mxO8">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Paatal Lok</b>
                   <br>
                   IMDb - 7.8
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/scam.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Scam 1992 : The Harshad Mehta Story</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/scam.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Scam 1992 : The Harshad Mehta Story</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.5</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">Harshad Mehta took the stock market to dizzying heights and had a catastrophic downfall.</p>
+                  <p class="para_i">Harshad Mehta took the stock market to dizzying heights and had a catastrophic
+                    downfall.</p>
 
-                <form action="https://youtu.be/ISORfez27og">
+                  <form action="https://youtu.be/ISORfez27og">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Scam 1992 : The Harshad Mehta Story</b>
                   <br>
                   IMDb - 9.5
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/tvf.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Pitchers</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">9.1</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/tvf.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Pitchers</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2015</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">9.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">TVF Pitchers is a web series created by The Viral Fever and developed by Arunabh Kumar. Written by Biswapati Sarkar, the series were directed by Amit Golani and features Naveen Kasturia, Arunabh Kumar, Jitendra Kumar and Abhay Mahajan.</p>
+                  <p class="para_i">TVF Pitchers is a web series created by The Viral Fever and developed by Arunabh
+                    Kumar. Written by Biswapati Sarkar, the series were directed by Amit Golani and features Naveen
+                    Kasturia, Arunabh Kumar, Jitendra Kumar and Abhay Mahajan.</p>
 
-                <form action="https://youtu.be/xcUHB9n8Kws">
+                  <form action="https://youtu.be/xcUHB9n8Kws">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Pitchers</b>
                   <br>
                   IMDb - 9.1
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/criminal.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Criminal Justice</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/criminal.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Criminal Justice</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">2</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.1</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">Criminal Justice is an Indian Hindi-language crime thriller legal drama web series for Hotstar Specials, based on the 2008 British television series of the same name,</p>
+                  <p class="para_i">Criminal Justice is an Indian Hindi-language crime thriller legal drama web series
+                    for Hotstar Specials, based on the 2008 British television series of the same name,</p>
 
-                <form action="https://youtu.be/KPyNH7mZkGc">
+                  <form action="https://youtu.be/KPyNH7mZkGc">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Criminal Justice</b>
                   <br>
                   IMDb - 8.1
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/day.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Selection Day</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/day.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Selection Day</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">When a 14-year-old boy tries out for Mumbai's under-19 cricket team and meets his older brother's rival, everything in his world begins to change.</p>
+                  <p class="para_i">When a 14-year-old boy tries out for Mumbai's under-19 cricket team and meets his
+                    older brother's rival, everything in his world begins to change.</p>
 
-                <form action="https://youtu.be/2Q8xTwV9ecI">
+                  <form action="https://youtu.be/2Q8xTwV9ecI">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Selection Day</b>
                   <br>
                   IMDb - 7.4
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/asur.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Asur : Welcome to your Dark Side</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/asur.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Asur : Welcome to your Dark Side</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">Asur is a 2020 Indian Hindi-language crime thriller web series, produced by Tanveer Bookwala of Ding Entertainment for the video on demand platform Voot. The series stars Arshad Warsi, Barun Sobti and Amey Wagh. The series is set in the context of a modern day serial killer having religious ties.</p>
+                  <p class="para_i">Asur is a 2020 Indian Hindi-language crime thriller web series, produced by Tanveer
+                    Bookwala of Ding Entertainment for the video on demand platform Voot. The series stars Arshad Warsi,
+                    Barun Sobti and Amey Wagh. The series is set in the context of a modern day serial killer having
+                    religious ties.</p>
 
-                <form action="https://youtu.be/LDirQBvwx7g">
+                  <form action="https://youtu.be/LDirQBvwx7g">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Asur : Welcome to your Dark Side</b>
                   <br>
                   IMDb - 8.4
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="poster">
-        <div class="flip-card_i">
-          <div class="flip-card-inner_i">
-            <div class="flip-card-front_i">
-                <img src="./Images/panch.jpg" alt="Avatar" style="width:250px;height:360px;">
-            </div>
-            <div class="flip-card-back_i">
-              <h1>Panchayat</h1>
-                <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
-              </span>
-              <br />
-              <br />
-            </p>
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/panch.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Panchayat</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2020</button>
+                  <button class="btn_i b2_i" title="Seasons" style="color:white">1</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.7</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
 
-              <p class="para_i">An engineering graduate, for lack of a better job, becomes the secretary of a Panchayat office in a remote village in Uttar Pradesh.</p>
+                  <p class="para_i">An engineering graduate, for lack of a better job, becomes the secretary of a
+                    Panchayat office in a remote village in Uttar Pradesh.</p>
 
-                <form action="https://youtu.be/mojZJ7oeD_g">
+                  <form action="https://youtu.be/mojZJ7oeD_g">
                     <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
+                  </form>
 
-            </div>
-              <div class="flim">
+                </div>
+                <div class="flim">
                   <b>Panchayat</b>
                   <br>
                   IMDb - 8.7
-              </div>
-          </div>
-        </div>
-      </div>
-
-  </div>
-  <!---third block -->
-
-  
-
-       
-               
-      
-            
-         
-       
-
-
-      <h2>Kids</h2>
-      <hr>
-      <div class="container" id="Kids">
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                <img src="./Images/bat.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Dark Knight Rises</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">164</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-                </p>
-
-                <p class="para_i">Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long
-                  period of peace.</p>
-
-                <form action="https://youtu.be/g8evyE9TuYk">
-                  <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
-
-              </div>
-              <div class="flim">
-                <b>The Dark Knight Rises</b>
-                <br>
-                IMDb - 8.4
+                </div>
               </div>
             </div>
           </div>
+
         </div>
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                <img src="./Images/narnia.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>The Chronicles of Narnia</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2005</button>
-                <button class="btn_i b2_i" title="minutes" style="color:white">150</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">6.9</button>
-                </span>
-                <br />
-                <br />
-                </p>
-
-                <p class="para_i">While playing, Lucy and her siblings find a wardrobe that lands them in a mystical
-                  place called Narnia.</p>
-
-                <form action="https://youtu.be/ruGHxmjQ180">
-                  <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
-
-              </div>
-              <div class="flim">
-                <b>The Chronicles of Narnia</b>
-                <br>
-                IMDb - 6.9
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Avengers : Endgame</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">182</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
-                </span>
-                <br />
-                <br />
-                </p>
-
-                <p class="para_i">After Thanos, an intergalactic warlord, disintegrates half of the universe, the
-                  Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.
-                </p>
-
-                <form action="https://youtu.be/TcMBFSGVi1c">
-                  <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
-
-              </div>
-              <div class="flim">
-                <b>Avengers : Endgame</b>
-                <br>
-                IMDb - 8.4
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                <img src="./Images/infinity.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Avengers : Infinity War</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">160<button>
-                    <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
-                    </span>
-                    <br />
-                    <br />
-                    </p>
-
-                    <p class="para_i">The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on
-                      all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane
-                      plan.</p>
-
-                    <form action="https://youtu.be/6ZfuNTqbHE8">
-                      <input class="trailer_i" type="submit" value="▶Trailer" />
-                    </form>
-
-              </div>
-              <div class="flim">
-                <b>Avengers : Infinity War</b>
-                <br>
-                IMDb - 8.4
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="poster">
-          <div class="flip-card_i">
-            <div class="flip-card-inner_i">
-              <div class="flip-card-front_i">
-                <img src="./Images/spider.jpg" alt="Avatar" style="width:250px;height:360px;">
-              </div>
-              <div class="flip-card-back_i">
-                <h1>Spider Man</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">153</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">7.3</button>
-                </span>
-                <br />
-                <br />
-                </p>
-
-                <p class="para_i">Peter Parker, an outcast high school student, gets bitten by a radioactive spider and
-                  attains superpowers.</p>
-
-                <form action="https://youtu.be/-tnxzJ0SSOw">
-                  <input class="trailer_i" type="submit" value="▶Trailer" />
-                </form>
-
-              </div>
-              <div class="flim">
-                <b>Spider Man</b>
-                <br>
-                IMDb - 7.3
-              </div>
-            </div>
-          </div>
-        </div>
-
 
       </div>
+      <span class="arrow " id="arrow-left"><</span>
+      <span class="arrow " id="arrow-right">></span>
+</div>
+        <!---third block -->
 
 
 
@@ -2215,113 +2283,321 @@
 
 
 
-    </div>
-    <div id="waterdrop"></div>
 
-    <!-------------------------------Footer-------------------------------->
-    <footer class="footer">
-      <hr class="footer-hr">
-      <div class="footer-content">
-       
-        <div class="footer-left">
-          <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-              height="24"></a>
-          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+
+
+
+        <h2>Kids</h2>
+        <hr>
+        <div  id="Kids">
+
+
+          <div class="slide-wrapper">
+            <div id="slider">
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/bat.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Dark Knight Rises</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">164</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+
+                  <p class="para_i">Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long
+                    period of peace.</p>
+
+                  <form action="https://youtu.be/g8evyE9TuYk">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+
+                </div>
+                <div class="flim">
+                  <b>The Dark Knight Rises</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/narnia.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>The Chronicles of Narnia</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2005</button>
+                  <button class="btn_i b2_i" title="minutes" style="color:white">150</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">6.9</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+
+                  <p class="para_i">While playing, Lucy and her siblings find a wardrobe that lands them in a mystical
+                    place called Narnia.</p>
+
+                  <form action="https://youtu.be/ruGHxmjQ180">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+
+                </div>
+                <div class="flim">
+                  <b>The Chronicles of Narnia</b>
+                  <br>
+                  IMDb - 6.9
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Avengers : Endgame</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">182</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+
+                  <p class="para_i">After Thanos, an intergalactic warlord, disintegrates half of the universe, the
+                    Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.
+                  </p>
+
+                  <form action="https://youtu.be/TcMBFSGVi1c">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+
+                </div>
+                <div class="flim">
+                  <b>Avengers : Endgame</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/infinity.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Avengers : Infinity War</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">160<button>
+                      <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                      </span>
+                      <br />
+                      <br />
+                      </p>
+
+                      <p class="para_i">The Avengers must stop Thanos, an intergalactic warlord, from getting his hands
+                        on
+                        all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his
+                        insane
+                        plan.</p>
+
+                      <form action="https://youtu.be/6ZfuNTqbHE8">
+                        <input class="trailer_i" type="submit" value="▶Trailer" />
+                      </form>
+
+                </div>
+                <div class="flim">
+                  <b>Avengers : Infinity War</b>
+                  <br>
+                  IMDb - 8.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="poster">
+            <div class="flip-card_i">
+              <div class="flip-card-inner_i">
+                <div class="flip-card-front_i">
+                  <img src="./Images/spider.jpg" alt="Avatar" style="width:250px;height:360px;">
+                </div>
+                <div class="flip-card-back_i">
+                  <h1>Spider Man</h1>
+                  <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
+                  <button class="btn_i b2_i" title="Minutes" style="color:white">153</button>
+                  <button class="btn_i b1_i" title="IMDb" style="color:white">7.3</button>
+                  </span>
+                  <br />
+                  <br />
+                  </p>
+
+                  <p class="para_i">Peter Parker, an outcast high school student, gets bitten by a radioactive spider
+                    and
+                    attains superpowers.</p>
+
+                  <form action="https://youtu.be/-tnxzJ0SSOw">
+                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                  </form>
+
+                </div>
+                <div class="flim">
+                  <b>Spider Man</b>
+                  <br>
+                  IMDb - 7.3
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Follow Us</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
-                class="fab fa-facebook-f facebook" style="color:red"></i></a>
-            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
-                class="fab fa-twitter twitter" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
-                class="fab fa-linkedin linkedin" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
-                class="fab fa-instagram instagram" style="color:red"></i></a>
-            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                class="fab fa-github github" style="color:red"></i></a>
-          </ul>
+
+      </div>
+      <span class="arrow " id="arrow-left"><</span>
+      <span class="arrow " id="arrow-right">></span>
+</div>
+
+
+
+
+
+
+      </div>
+      <div id="waterdrop"></div>
+
+      <!-------------------------------Footer-------------------------------->
+      <footer class="footer">
+        <hr class="footer-hr">
+        <div class="footer-content">
+
+          <div class="footer-left">
+            <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                height="24"></a>
+            <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+          </div>
+          <div class="footer-middle">
+            <h2 class="footer-heading">Follow Us</h2>
+            <ul class="footer-middle-list icons">
+              <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                  class="fab fa-facebook-f facebook" style="color:red"></i></a>
+              <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                  class="fab fa-twitter twitter" style="color:red"></i></a>
+              <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                  class="fab fa-linkedin linkedin" style="color:red"></i></a>
+              <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                  class="fab fa-instagram instagram" style="color:red"></i></a>
+              <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website"
+                target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+            </ul>
+          </div>
+          <div class="footer-middle">
+            <h2 class="footer-heading">Services</h2>
+            <ul class="footer-middle-list">
+              <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+              <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+              <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+              <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+              <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+            </ul>
+          </div>
+          <div class="footer-middle">
+            <h2 class="footer-heading">Try Our App</h2>
+            <ul class="footer-middle-list icons">
+              <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+              <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p class="footer-links">
+            <h2 class="footer-heading">Contact Us</h2>
+            <p class="footer-bottom-tagline">Feel free to contact us.</p>
+            <a class="footer-contact-button" href="contactus.html">Contact</a>
+            </p>
+          </div>
         </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Services</h2>
-          <ul class="footer-middle-list">
-            <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
-            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-            <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
-          </ul>
-        </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Try Our App</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <p class="footer-links">
-          <h2 class="footer-heading">Contact Us</h2>
-          <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+          <p>Copyright &copy; and &reg; Since
+            <script>
+              document.write(new Date().getFullYear())
+            </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
           </p>
         </div>
-      </div>
-      <hr class="footer-hr">
-      <div class="footer-copyright">
-        <p>Copyright &copy; and &reg; Since
-          <script>
-            document.write(new Date().getFullYear())
-          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
-        </p>
-      </div>
-    </footer>
+      </footer>
 
-    <!----------------------scroll back to top button-->
-    <button id="scrollToTopButton" title="Go to top" class="ml-5">
-      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-    </button>
-    <script>
-      $(document).ready(function () {
-        var scrollTopButton = document.getElementById("scrollToTopButton");
-        window.onscroll = function () { scrollFunction() };
+      <!----------------------scroll back to top button-->
+      <button id="scrollToTopButton" title="Go to top" class="ml-5">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </button>
+      <script>
+        $(document).ready(function () {
+          var scrollTopButton = document.getElementById("scrollToTopButton");
+          window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollTopButton.style.display = "block";
-          } else {
-            scrollTopButton.style.display = "none";
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              scrollTopButton.style.display = "block";
+            } else {
+              scrollTopButton.style.display = "none";
+            }
           }
-        }
 
-        $("#scrollToTopButton").click(function () {
-          $('html ,body').animate({ scrollTop: 0 }, 800)
+          $("#scrollToTopButton").click(function () {
+            $('html ,body').animate({ scrollTop: 0 }, 800)
+          });
         });
-      });
-    </script>
+      </script>
 
-    <!-- footer scripts -->
+      <!-- footer scripts -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/main-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="js/main-min.js"></script>
 
-    <script>
-      jQuery('#waterdrop').raindrops({
-        color: '#292c2f',
-        canvasHeight: 150,
-        density: 0.1,
-        frequency: 20
-      });
-    </script>
-    <!-- bootsstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"></script>
-    <script src="./static/script.js"></script>
+      <script>
+        jQuery('#waterdrop').raindrops({
+          color: '#292c2f',
+          canvasHeight: 150,
+          density: 0.1,
+          frequency: 20
+        });
+      </script>
+      <!-- bootsstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+      <script src="./static/script.js"></script>
+
+      <script>
+           let leftButton = document.getElementById("arrow-left");
+        let rightButton = document.getElementById("arrow-right");
+        leftButton.addEventListener("click", function () {
+            document.getElementById("slider").scrollLeft -= 330;
+        });
+        rightButton.addEventListener("click", function () {
+            document.getElementById("slider").scrollLeft += 330
+        });
+      </script>
 </body>
+
 
 </html>
