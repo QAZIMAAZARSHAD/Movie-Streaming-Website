@@ -76,21 +76,27 @@
 
     <style>
          #scrollToTopButton{
-position: fixed;
-bottom: 15px;
-right: 10px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: white;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
+      position: sticky;
+      bottom: 40px;
+      left: 95%;
+      font-size: 25px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color:white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 6px;
+      border-radius: 50%;
+}
+
+#scrollToTopButton:hover{
+    background-color:rgb(0, 0, 0);
+}
+#scrollToTopButton i{
+    color:red;
+    font-weight: bolder;
 }
       h1 {
         margin: auto;
@@ -103,7 +109,6 @@ box-shadow: 0 6px 10px 0px gray;
       }
       .img-logo{
           height: 94px;
-          margin-left: 45px;
       }
       .seperator {
         height: 12px;
@@ -130,15 +135,10 @@ box-shadow: 0 6px 10px 0px gray;
         outline: none;
       }
       input[type="submit"] {
-        width: 260px;
-        background-color: red;
-        font-weight: bold;
-
+        width: 100%;
       }
       input[type="submit"]:hover {
         cursor: pointer;
-        border: 2px gray solid;
-        background-color: red;
         transform: scale(0.95);
       }
       body {
@@ -180,6 +180,7 @@ box-shadow: 0 6px 10px 0px gray;
       .login{
           margin: 0 auto;
           width: 400px;
+          height: 100vh;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
@@ -188,18 +189,24 @@ box-shadow: 0 6px 10px 0px gray;
       .login h1{
           color: white;
           padding-bottom: 10px;
+          font-size: 23px;
       }
 
       .bottom{
           background-color: rgba(0, 0, 0, 0.35);
           color: #bdc7c9;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
       }
 
       .bottom-width{
           max-width: 1000px;
           margin: 0 auto;
           padding: 30px;
+          padding-top: 50px;
+          text-align: center;
+          margin-top: 30px;
       }
 
       .bottom-flex{
@@ -276,6 +283,7 @@ box-shadow: 0 6px 10px 0px gray;
       .new-members{
           margin-bottom: 10px;
           color: #bdc7c9;
+          margin-top: -50px;
       }
 
       .help a{
@@ -288,6 +296,9 @@ box-shadow: 0 6px 10px 0px gray;
       .protection{
           font-size: 0.8rem;
           color: #bdc7c9;
+          position: absolute;
+          width: 250px;
+          bottom: 10px;
       }
 
       .protection a{
@@ -356,7 +367,7 @@ box-shadow: 0 6px 10px 0px gray;
           margin-top: 20px;
           padding: 13px;
           border-radius: 5px;
-          background-color: red;
+          background-color: rgb(168, 14, 14);
           color:white;
           border:none;
           font-weight: bold;
@@ -364,16 +375,34 @@ box-shadow: 0 6px 10px 0px gray;
           cursor: pointer;
       }
 
-
-      .logo img{
-        position: relative;
-        top: 30px;
-        left: 10px;
-        width: 110px;
-        height: 90px;
-        padding: 3px;
-        margin: 0;
-        padding: 0;
+      .logo {
+         width: 100%;
+         height: 80px;
+         margin-bottom: 30px;
+         display: flex;
+         justify-content: center;
+    }
+@media screen and (max-width: 500px) {
+  .login{
+          margin: 0 auto;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.6);
+          border-radius: 5px;
+          padding: 30px 70px 143px 70px;
+      }
+      .signin-button{
+          width: 100%;
+          margin-top: 10px;
+          padding: 10px;
+          border-radius: 5px;
+          background-color: rgb(168, 16, 16);
+          color:white;
+          border:none;
+          font-weight: bold;
+          font-size: 1.05rem;
+          cursor: pointer;
+      }
 }
 .field-icon{
 position: absolute;
@@ -384,17 +413,18 @@ color: white;
     </style>
   </head>
   <body>
-    <div class="logo">
-        <a href="index.html">
-            <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
-        </a>
-    </div>
+    
     <div class="login-div">
       <form class="login" onsubmit="return DisplayResults()"
       name="regform"
       autocomplete="off">
 
 
+      <div class="logo">
+        <a href="index.html">
+            <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
+        </a>
+    </div>
       <h1 class="sign">Sign In</h1>
       <div id="errormessage"></div>
       <span class="seperator"></span>
@@ -436,19 +466,14 @@ color: white;
         </div>
         <br>
         <div class="new-members">
-            New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
+            New to ApnaTheatre? <a href="signup.html" class="signup-link">Sign up now</a>.
         </div>
         <br>
         <div class="protection color_link help">
             This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
         </div>
       </form>
-    </div>
-
-
-
-
-    <div class="bottom">
+      <div class="bottom">
         <div class="bottom-width">
             Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a>
             <div>
@@ -477,6 +502,12 @@ color: white;
                 </ul>
             </div>
             <div>
+    </div>
+
+
+
+
+    
                 <select class="fa select-language">
                     <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
                     <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
@@ -485,7 +516,7 @@ color: white;
         </div>
     </div>
       <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+      <i class="fa fa-angle-double-up" aria-hidden="true""></i>
     </button>
     <script>
     $(document).ready(function(){
