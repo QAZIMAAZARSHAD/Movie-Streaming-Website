@@ -29,7 +29,8 @@ border-radius: 50%;
 }
 
 #scrollToTopButton:hover{
-background-color:rgb(0, 0, 0);
+background-color:red;
+color:black;
 }
 #scrollToTopButton i{
 color:red;
@@ -47,6 +48,7 @@ font-weight: bolder;
       }
       .img-logo{
           height: 94px;
+          margin-left: 45px;
       }
       .seperator {
         height: 12px;
@@ -73,10 +75,14 @@ font-weight: bolder;
         outline: none;
       }
       input[type="submit"] {
-        width: 100%;
+        width: 260px;
+        background-color: red;
+        font-weight: bold;
       }
       input[type="submit"]:hover {
         cursor: pointer;
+        border: 2px gray solid;
+        background-color: red;
         transform: scale(0.95);
       }
       body {
@@ -118,7 +124,6 @@ font-weight: bolder;
       .login{
           margin: 0 auto;
           width: 400px;
-          height: 100vh;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
@@ -127,23 +132,18 @@ font-weight: bolder;
       .login h1{
           color: white;
           padding-bottom: 10px;
-          font-size: 23px;
       }
 
       .bottom{
           background-color: rgba(0, 0, 0, 0.35);
           color: #bdc7c9;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+
       }
 
       .bottom-width{
           max-width: 1000px;
           margin: 0 auto;
-          padding-top: 50px;
-          text-align: center;
-          margin-top: 30px;
+          padding: 30px;
       }
 
       .bottom-flex{
@@ -220,7 +220,6 @@ font-weight: bolder;
       .new-members{
           margin-bottom: 10px;
           color: #bdc7c9;
-          margin-top: -50px;
       }
 
       .help a{
@@ -233,10 +232,6 @@ font-weight: bolder;
       .protection{
           font-size: 0.8rem;
           color: #bdc7c9;
-          position: absolute;
-          width: 250px;
-          bottom: 10px;
-      
       }
 
       .protection a{
@@ -302,10 +297,10 @@ font-weight: bolder;
           text-indent: 40px;
       }
       .signin-button{
-          margin-top: 10px;
-          padding: 10px;
+          margin-top: 20px;
+          padding: 13px;
           border-radius: 5px;
-          background-color: rgb(168, 14, 14);
+          background-color: red;
           color:white;
           border:none;
           font-weight: bold;
@@ -320,62 +315,27 @@ font-weight: bolder;
         border-radius: 5px;
         margin: 0px auto;
       }
-      .logo {
-  width: 100%;
-  height: 80px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
       .field-icon{
      position: absolute;
      margin-left: -25px;
      margin-top: 15px;
      color: white;
    }
-   @media screen and (max-width: 500px) {
-  .login{
-          margin: 0 auto;
-          width: 100%;
-          height: 100vh;
-          background-color: rgba(0, 0, 0, 0.6);
-          border-radius: 5px;
-          padding: 30px 70px 143px 70px;
-      }
-      .signin-button{
-          width: 100%;
-          margin-top: 10px;
-          padding: 10px;
-          border-radius: 5px;
-          background-color: rgb(168, 16, 16);
-          color:white;
-          border:none;
-          font-weight: bold;
-          font-size: 1.05rem;
-          cursor: pointer;
-      }
-}
     </style>
-
-
-
-
-
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   </head>
   <body>
-  
+    <div class="logo">
+        <a href="index.html">
+            <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
+        </a>
+    </div>
     <div class="login-div">
       <form class="login"   onsubmit="return DisplayResults()"
         name="regform"
         autocomplete="off">
 
 
-        <div class="logo">
-          <a href="index.html">
-              <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
-          </a>
-      </div>
       <h1 class="sign">Sign Up</h1>
       <div id="errormessage"></div>
       <span class="seperator"></span>
@@ -422,12 +382,29 @@ font-weight: bolder;
                 <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
             </div>
         </div>
-        <div class="protection color_link help">
-          This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
-        </div>
       </form>
-      
-      <div class="bottom">
+      <div class="protection color_link help" style="margin: 0px 30%;">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+      </div>
+      <span class="seperator"></span>
+      <form style="opacity: 0;" class="aftersubmit" onsubmit="return FinalResults()" name="verificationform" autocomplete="off">
+        <hr>
+        <div class="input-text">
+        <input
+          type="password"
+          name="code"
+          placeholder="Enter code"
+          oninput="change()"
+        />
+        </div>
+        <input class="signin-button" type="submit" value="Register" />
+      </form>
+
+        <br>
+        <br>
+
+    </div>
+    <div class="bottom">
         <div class="bottom-width">
             Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a>
             <div>
@@ -456,8 +433,6 @@ font-weight: bolder;
                 </ul>
             </div>
             <div>
-    </div>
-    
                 <select class="fa select-language">
                     <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
                     <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
