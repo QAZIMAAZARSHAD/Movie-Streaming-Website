@@ -21,24 +21,20 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 ## A sneak peek into what we have here🙈 :
 
 
-### Home page full view
+## Home Page
 <p align="center"><img src="readme_assets/homep.gif"></p>
 
-### Contact us page
-<p align="center"><img src="readme_assets/contactus_p.gif"></p>
+## Sign-Up Page
+<p align="center"><img src="readme_assets/signup.gif"></p>
 
-### Sign up page
-<p align="center"><img src="readme_assets/signup_p.png"></p>
+## Kids Page
+<p align="center"><img src="readme_assets/kids_p.gif"></p>
 
-### Kids page
-<p align="center"><img src="readme_assets/kids_p.png"></p>
+## Search Function
+<p align="center"><img width=100% src="readme_assets/search.gif"></p>
 
-### Animated fliping functions
-<p align="center"><img src="readme_assets/flipping_p.gif"></p>
-
-### Animated footer funtions
-<p align="center"><img src="readme_assets/footer_p.gif"></p>
-
+## Contact Us Page
+<p align="center"><img src="readme_assets/contactus.gif"></p>
 
 ## About
 <div>
