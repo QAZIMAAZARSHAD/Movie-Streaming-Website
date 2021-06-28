@@ -14,20 +14,20 @@
     <!------------------------Scroll to top button------------------------------------------------>
 <style>
   #scrollToTopButton{
-position: sticky;
-bottom: 40px;
-left: 95%;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color:red;
-color:black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0px gray;
 }
 
 #scrollToTopButton:hover , i:hover{
@@ -126,6 +126,7 @@ color:red;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
+          margin-bottom: 12px;
       }
 
       .login h1{
@@ -136,29 +137,32 @@ color:red;
       .bottom{
           background-color: rgba(0, 0, 0, 0.35);
           color: #bdc7c9;
+         
 
       }
 
       .bottom-width{
-          max-width: 1000px;
-          margin: 0 auto;
-          padding: 30px;
+        max-width: 1000px;
+          padding:8px 30px ;
       }
 
       .bottom-flex{
           display: flex;
           flex-wrap: wrap;
           padding: 15px 0 0 0;
-          margin-block-start: 0;
-          margin-block-end: 0;
+          justify-content:center;
+         
       }
-
+      .bottom-flex li a{
+         font-size: 15px;
+      }
       .bottom-flex li{
           list-style: none;
+          margin:0px 10px;
       }
 
       .list-bottom{
-          width: 25%;
+          /* width: 25%; */
           margin-top: 10px;
       }
 
@@ -320,6 +324,12 @@ color:red;
      margin-top: 15px;
      color: white;
    }
+   .questions{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
     </style>
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   </head>
@@ -405,7 +415,14 @@ color:red;
     </div>
     <div class="bottom">
         <div class="bottom-width">
-            Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a>
+          <div class="questions">
+         <span> Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span> 
+            <select class="fa select-language">
+                <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+                <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+            </select>
+        </div>
+            
             <div>
                 <ul class="bottom-flex">
                     <li class="list-bottom">
@@ -431,12 +448,7 @@ color:red;
 
                 </ul>
             </div>
-            <div>
-                <select class="fa select-language">
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
-                </select>
-            </div>
+           
         </div>
     </div>
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
