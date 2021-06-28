@@ -31,7 +31,7 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 <p align="center"><img src="Readme_assets/kids_p.gif"></p>
 
 ## Search Function
-<p align="center"><img width=100% src="Readme_assets/search.gif"></p>
+<p align="center"><img width=100% src="Readme_assets/search_p.gif"></p>
 
 ## Contact Us Page
 <p align="center"><img src="Readme_assets/Contactus_p.gif"></p>
