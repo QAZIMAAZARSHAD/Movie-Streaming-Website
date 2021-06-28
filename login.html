@@ -424,38 +424,80 @@ color: white;
 
 
 
-            </div>
-            <div>
-                
-            </div>
-        </div>
-    </div>
+  </div>
+  <div>
       
-    <script>
-    $(document).ready(function(){
-      var scrollTopButton = document.getElementById("scrollToTopButton");
-      window.onscroll = function () { scrollFunction() };
+  </div>
+</div>
+</div>
 
-      function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.style.display = "block";
-      } else {
-        scrollTopButton.style.display = "none";
-      }
-    }
+=======
+<div class="bottom">
+<div class="bottom-width">
+<div class ="questions">
+<span>Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span>   
+  <select class="fa select-language">
+    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+</select>
+</div>
+  
+  <div>
+      <ul class="bottom-flex">
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  FAQ
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Help Center
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Terms of Use
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Privacy
+              </a>
+          </li>
 
-    
-    });
-    </script>
-    <script>
-    $(".toggle-password").click(function() {
-     $(this).toggleClass("fa-eye fa-eye-slash");
-     if ($("#pass_signup").attr("type") == "password") {
-      $("#pass_signup").attr("type", "text");
-     } else {
-       $("#pass_signup").attr("type", "password");
-     }
-    });
-    </script>
-  </body>
+      </ul>
+  </div>
+</div>
+</div>
+<button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+<i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
+</button>
+>>>>>>> master
+<script>
+$(document).ready(function(){
+var scrollTopButton = document.getElementById("scrollToTopButton");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+scrollTopButton.style.display = "block";
+} else {
+scrollTopButton.style.display = "none";
+}
+}
+
+
+});
+</script>
+<script>
+$(".toggle-password").click(function() {
+$(this).toggleClass("fa-eye fa-eye-slash");
+if ($("#pass_signup").attr("type") == "password") {
+$("#pass_signup").attr("type", "text");
+} else {
+$("#pass_signup").attr("type", "password");
+}
+});
+</script>
+</body>
 </html>
