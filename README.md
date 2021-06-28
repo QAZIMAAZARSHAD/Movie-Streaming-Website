@@ -22,19 +22,19 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 
 
 ## Home Page
-<p align="center"><img src="readme_assets/homep.gif"></p>
+<p align="center"><img src="Readme_assets/home_pd.gif"></p>
 
 ## Sign-Up Page
-<p align="center"><img src="readme_assets/signup.gif"></p>
+<p align="center"><img src="Readme_assets/Singup_p.gif"></p>
 
 ## Kids Page
-<p align="center"><img src="readme_assets/kids_p.gif"></p>
+<p align="center"><img src="Readme_assets/kids_p.gif"></p>
 
 ## Search Function
-<p align="center"><img width=100% src="readme_assets/search.gif"></p>
+<p align="center"><img width=100% src="Readme_assets/search.gif"></p>
 
 ## Contact Us Page
-<p align="center"><img src="readme_assets/contactus.gif"></p>
+<p align="center"><img src="Readme_assets/Contactus_p.gif"></p>
 
 ## About
 <div>
