@@ -10,7 +10,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <script>
 
       var emailerror = false;
@@ -49,7 +48,7 @@
             type: "success",
           });
           setTimeout(function () {
-            document.location.href = "home.html";
+            document.location.href = 'http://localhost/dashboard/Movie-Streaming-Website/home.html';;
           }, 1500);
         }
         return false;
@@ -84,7 +83,7 @@ font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color: red;
+background-color: white;
 color: black;
 border: none;
 cursor: pointer;
@@ -92,11 +91,6 @@ outline: none;
 padding: 6px;
 border-radius: 50%;
 box-shadow: 0 6px 10px 0px gray;
-}
-
-#scrollToTopButton:hover , i:hover {
-  color: red;
-  background-color: white;
 }
       h1 {
         margin: auto;
@@ -189,7 +183,6 @@ box-shadow: 0 6px 10px 0px gray;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
-          margin-bottom: 12px;
       }
 
       .login h1{
@@ -200,29 +193,29 @@ box-shadow: 0 6px 10px 0px gray;
       .bottom{
           background-color: rgba(0, 0, 0, 0.35);
           color: #bdc7c9;
+
       }
 
       .bottom-width{
           max-width: 1000px;
-          padding:8px 30px ;
+          margin: 0 auto;
+          padding: 30px;
       }
 
       .bottom-flex{
           display: flex;
           flex-wrap: wrap;
           padding: 15px 0 0 0;
-          justify-content:center;
+          margin-block-start: 0;
+          margin-block-end: 0;
       }
 
       .bottom-flex li{
           list-style: none;
-          margin:0px 10px;
       }
-      .bottom-flex li a{
-         font-size: 15px;
-      }
+
       .list-bottom{
-          /* width: 25%; */
+          width: 25%;
           margin-top: 10px;
       }
 
@@ -388,13 +381,13 @@ margin-left: -25px;
 margin-top: 15px;
 color: white;
 }
-.questions{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
     </style>
+    <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src ="script.js" ></script>
+    
   </head>
   <body>
     <div class="logo">
@@ -408,126 +401,103 @@ color: white;
       autocomplete="off">
 
 
-      <h1 class="sign">Sign In</h1>
-      <div id="errormessage"></div>
+      <h1 class="sign">Sign In </h1>
+      
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <div class="g-signin2" data-onsuccess="onSignIn"
+      ></div>
+     
+
+
+     <div id="errormessage"></div>
       <span class="seperator"></span>
 
-  <div class="input-text">
 
-
-    <input
-      type="email"
-      name="email"
-      placeholder=" Email"
-      oninput="change()"
-    />
-  </div>
-      <div class="input-text">
-
-        <input
-          id = "pass_signup"
-          type="password"
-          name="password"
-          placeholder="Password"
-          oninput="change()"
-        /><i class="fa fa-fw fa-eye field-icon toggle-password" id="togglePassword"></i>
-
-      </div>
-
-        <span class="seperator"></span>
-        <input class="signin-button" type="submit" value="Sign In" />
-        <div class="remember-flex">
-            <div>
-
-            </div>
-            <div class="help">
-                <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
-            </div>
-        </div>
-        <div class="login-face">
-
-        </div>
         <br>
-        <div class="new-members">
-            New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
-        </div>
-        <br>
-        <div class="protection color_link help">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
-        </div>
+       
       </form>
     </div>
 
 
 
 
-    <div class="bottom">
-        <div class="bottom-width">
-          <div class ="questions">
-          <span>Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span>   
-            <select class="fa select-language">
-              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
-          </select>
-          </div>
-            
-            <div>
-                <ul class="bottom-flex">
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Help Center
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Terms of Use
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Privacy
-                        </a>
-                    </li>
 
-                </ul>
-            </div>
-        </div>
-    </div>
-      <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
-    </button>
-    <script>
-    $(document).ready(function(){
-      var scrollTopButton = document.getElementById("scrollToTopButton");
-      window.onscroll = function () { scrollFunction() };
+  </div>
+  <div>
+      
+  </div>
+</div>
+</div>
 
-      function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.style.display = "block";
-      } else {
-        scrollTopButton.style.display = "none";
-      }
-    }
+=======
+<div class="bottom">
+<div class="bottom-width">
+<div class ="questions">
+<span>Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span>   
+  <select class="fa select-language">
+    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+</select>
+</div>
+  
+  <div>
+      <ul class="bottom-flex">
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  FAQ
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Help Center
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Terms of Use
+              </a>
+          </li>
+          <li class="list-bottom">
+              <a href="#" class="link-bottom">
+                  Privacy
+              </a>
+          </li>
 
-    $("#scrollToTopButton").click(function(){
-    $('html ,body').animate({scrollTop : 0},800)
-    });
-    });
-    </script>
-    <script>
-    $(".toggle-password").click(function() {
-     $(this).toggleClass("fa-eye fa-eye-slash");
-     if ($("#pass_signup").attr("type") == "password") {
-      $("#pass_signup").attr("type", "text");
-     } else {
-       $("#pass_signup").attr("type", "password");
-     }
-    });
-    </script>
-  </body>
+      </ul>
+  </div>
+</div>
+</div>
+<button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+<i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
+</button>
+>>>>>>> master
+<script>
+$(document).ready(function(){
+var scrollTopButton = document.getElementById("scrollToTopButton");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+scrollTopButton.style.display = "block";
+} else {
+scrollTopButton.style.display = "none";
+}
+}
+
+
+});
+</script>
+<script>
+$(".toggle-password").click(function() {
+$(this).toggleClass("fa-eye fa-eye-slash");
+if ($("#pass_signup").attr("type") == "password") {
+$("#pass_signup").attr("type", "text");
+} else {
+$("#pass_signup").attr("type", "password");
+}
+});
+</script>
+</body>
 </html>
