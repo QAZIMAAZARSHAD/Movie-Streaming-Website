@@ -253,10 +253,10 @@ box-shadow: 0 6px 10px 0px gray;
 
       .signup-link{
           color: white;
+          margin-bottom: 25px;
+
           text-decoration: none;
       }
-
-
 
       .signup-link:hover{
           text-decoration: underline;
@@ -275,18 +275,27 @@ box-shadow: 0 6px 10px 0px gray;
       }
 
       .login-face{
-          margin: 50px 0 15px 0;
+          margin: 100px -20px 30px -260px;
+          text-align: center
           vertical-align: middle;
           color: #bdc7c9;
       }
 
       .new-members{
           margin-bottom: 10px;
+
+          color: #bdc7c9;
+      }
+      .or{
+          margin-bottom: 5px;
+          text-align: center;
           color: #bdc7c9;
       }
 
       .help a{
           text-decoration: none;
+          margin-left: 193px;
+          
       }
       .help a:hover{
           text-decoration: underline;
@@ -299,6 +308,7 @@ box-shadow: 0 6px 10px 0px gray;
 
       .protection a{
           text-decoration: none;
+          
       }
 
       .protection a:hover{
@@ -359,6 +369,10 @@ box-shadow: 0 6px 10px 0px gray;
           color: #bdc7c9;
           text-indent: 40px;
       }
+      .learnmore{
+        margin: -19px 0 40px -50px;
+
+      }
       .signin-button{
           margin-top: 20px;
           padding: 13px;
@@ -395,6 +409,11 @@ color: white;
   justify-content: space-between;
 }
     </style>
+        <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src ="script.js" ></script>
   </head>
   <body>
     <div class="logo">
@@ -437,24 +456,28 @@ color: white;
         <span class="seperator"></span>
         <input class="signin-button" type="submit" value="Sign In" />
         <div class="remember-flex">
-            <div>
-
-            </div>
+            <div> 
+              <div class="or">OR</div>
+              <div class="g-signin2" data-width="260" data-height="50" 
+              data-longtitle="true">
+              </div>
             <div class="help">
                 <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
             </div>
         </div>
         <div class="login-face">
 
-        </div>
+       
         <br>
         <div class="new-members">
             New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
         </div>
         <br>
         <div class="protection color_link help">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot.
+           <div class="learnmore"> <a href="#">Learn more.</a></div>
         </div>
+      </div>
       </form>
     </div>
 
