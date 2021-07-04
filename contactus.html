@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <title>Contact Us</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+  <title>Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -18,7 +19,7 @@
   <link href="./static/style.css" rel="stylesheet" type="text/css" />
 
   <style>
-/*     .scroll-bar {
+    /*     .scroll-bar {
       height: auto;
       width: auto;
       margin: auto;
@@ -61,181 +62,186 @@
     }
 
     #variety {
-     margin: 0.5rem;
+      margin: 0.5rem;
     }
-    .btn-outline-danger, .btn-outline-danger:focus {
+
+    .btn-outline-danger,
+    .btn-outline-danger:focus {
       outline: none;
       box-shadow: none;
     }
-    .contactForm{
+
+    .contactForm {
       margin: 5px;
     }
 
-/* <!------------------------Scroll to top button------------------------------------------------> */
-    
-  #scrollToTopButton{
-  /* position: sticky; */
-  position:relative;
-  bottom: 40px;
-  left: 93%;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color:red;
-  color:black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  }
-  #scrollToTopButton:hover, i:hover {
-  background-color:red;
-  color:white;
-  }
+    /* <!------------------------Scroll to top button------------------------------------------------> */
+
+    #scrollToTopButton {
+      /* position: sticky; */
+      position: relative;
+      bottom: 40px;
+      left: 93%;
+      font-size: 25px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      color: black;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 6px;
+      border-radius: 50%;
+    }
+
+    #scrollToTopButton:hover,
+    i:hover {
+      background-color: red;
+      color: white;
+    }
+
     .btn-sm a {
       color: white;
       transition: all 0.3s ease;
-      float:right;
+      float: right;
       font-size: medium;
-    } 
+    }
+
     .btn-sm a:hover {
       color: red;
       transition: all 0.3s ease;
     }
-    #nav:hover
-{
-  background-color:#e60e23!important;
 
-}
+    #nav:hover {
+      background-color: #e60e23 !important;
 
-    
-</style>
+    }
+  </style>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_3Y57GrE42p8s0kTrKxP0W");
-        })();
-    </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_3Y57GrE42p8s0kTrKxP0W");
+    })();
+  </script>
 
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 </head>
 
 <body>
-    <div class="scroll-bar">
+  <div class="scroll-bar">
 
-        <!-- navbar starts -->
+    <!-- navbar starts -->
 
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="background-color: dark-grey;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv.html">TV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color: dark-grey;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-        <!-- navbar ends -->
+    <!-- navbar ends -->
 
-        <!-- off canva -->
-        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-            aria-controls="offcanvasExample">
-            Have a Look on Various Movies!
-        </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header" style="color: #fff;
+    <!-- off canva -->
+    <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      Have a Look on Various Movies!
+    </a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header" style="color: #fff;
    background-color: #dc3545">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-                <div>
-                    Stream Latest Movies Now!
-                </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown">
-                        Varieties
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                        style="background-color: #d4a09c; color: white; ">
-                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                                Thriller</a></li>
-                        <li><a class="dropdown-item" href="action.html">Action</a></li>
-                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                        </li>
-                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                    </ul>
-                </div>
-            </div>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+        <div>
+          Stream Latest Movies Now!
         </div>
-
-        <!-- off canva ends -->
-        <div class="container">
-            <div id="movies" class="row"></div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Varieties
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+            style="background-color: #d4a09c; color: white; ">
+            <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+            <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+            <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                Thriller</a></li>
+            <li><a class="dropdown-item" href="action.html">Action</a></li>
+            <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+            </li>
+            <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+            <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+            <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+          </ul>
         </div>
-        <hr>
+      </div>
+    </div>
+
+    <!-- off canva ends -->
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+    <hr>
 
 
-        <div class="box">
+    <div class="box">
 
       <div class="text">
         <h1>Contact <span class="red">Us</span></h1>
@@ -250,42 +256,43 @@
     </div>
     <div class="container fill">
       <div class="forthis">
-        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form">
+        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" id="contact-form">
           <div class="form-row two2">
             <div class="form-group col-md-6 column">
               <input type="text" class="form-control" id="firstname" name="firstname" required>
-              <label>First Name</label>
-              <div class="underline"></div>
+              <label for="firstname" class="">First Name</label>
+              <div class="underline">
+              </div>
             </div>
             <div class="form-group col-md-6 column">
               <input type="text" class="form-control" id="lastname" name="lastname" required>
-              <label>Last Name</label>
+              <label for="lastname" class="">Last Name</label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="form-row one1">
             <div class="form-group col-lg-6 column">
               <input type="email" class="form-control" id="email" name="email" required>
-              <label>Email</label>
+              <label for="email" class="">Email</label>
               <div class="underline"></div>
             </div>
             <div class="form-group col-lg-6 column">
               <input type="text" class="form-control" id="phone" name="phone" required>
-              <label>Phone Number</label>
+              <label for="number" class="">Phone Number</label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group column">
               <input type="text" class="form-control" name="subject" id="subject" required>
-              <label>Subject</label>
+              <label for="subject" class="">Subject</label>
               <div class="underline extra"></div>
             </div>
           </div>
           <div class="form-row size">
             <div class="form-group column">
-              <textarea type="text"class="form-control" name="message" id="message" rows="5" required></textarea>
-              <label>Message</label>
+              <textarea type="text" class="form-control" name="message" id="message" rows="5" required></textarea>
+              <label for="message" class="">Message</label>
               <div class="underline extra gap"></div>
             </div>
           </div>
@@ -335,82 +342,87 @@
     <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-                        height="24"></a>
-                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-            </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Services</h2>
-                <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <p class="footer-links">
-                <h2 class="footer-heading">Contact Us</h2>
-                <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                <a class="footer-contact-button" href="contactus.html">Contact</a>
-                </p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
-        <hr id="footer-hr">
-        <div class="footer-copyright">
-            <p>Copyright &copy; and &reg; Since
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
-            </p>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Follow Us</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f facebook" style="color:red"></i></a>
+            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                class="fab fa-twitter twitter" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                class="fab fa-linkedin linkedin" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram" style="color:red"></i></a>
+            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
+                class="fab fa-github github" style="color:red"></i></a>
+          </ul>
         </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Try Our App</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="footer-links">
+          <h2 class="footer-heading">Contact Us</h2>
+          <p class="footer-bottom-tagline">Feel free to contact us.</p>
+          <a class="footer-contact-button" href="contactus.html">Contact</a>
+          </p>
+        </div>
+      </div>
+      <hr id="footer-hr">
+      <div class="footer-copyright">
+        <p>Copyright &copy; and &reg; Since
+          <script>
+            document.write(new Date().getFullYear())
+          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+        </p>
+      </div>
 
     </footer>
 
     <!--------------scrool to top button-->
     <button id="scrollToTopButton" title="Go to top" class="ml-5">
-        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </button>
     <script>
-        $(document).ready(function () {
-            var scrollTopButton = document.getElementById("scrollToTopButton");
-            window.onscroll = function () {
-                scrollFunction()
-            };
+      $(document).ready(function () {
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () {
+          scrollFunction()
+        };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    scrollTopButton.style.display = "block";
-                } else {
-                    scrollTopButton.style.display = "none";
-                }
-            }
-            $("#scrollToTopButton").click(function () {
-                $('html ,body').animate({
-                    scrollTop: 0
-                }, 800)
-            });
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
+        }
+        $("#scrollToTopButton").click(function () {
+          $('html ,body').animate({
+            scrollTop: 0
+          }, 800)
         });
+      });
     </script>
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -424,22 +436,22 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
 
     <script type="text/javascript">
-        function JSalert() {
-            swal("Congrats!", "Message was delivered successfully! Thanks for your Submission", "success");
-        }
-        function clearFunc() {
-            document.getElementById("firstname").value = "";
-            document.getElementById("lastname").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("phone").value = "";
-            document.getElementById("subject").value = "";
-            document.getElementById("message").value = "";
-        }
+      function JSalert() {
+        swal("Congrats!", "Message was delivered successfully! Thanks for your Submission", "success");
+      }
+      function clearFunc() {
+        document.getElementById("firstname").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+      }
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
