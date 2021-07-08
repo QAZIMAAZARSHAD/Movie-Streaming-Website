@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.post-container {
+  margin-top: 50px;
+  align-items: center;
+  margin-left: 160px;
+}
+.post-container .post {
+  width: 300px;
+
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.langdrop {
+  position: absolute;
+
+  list-style-type: none;
+  background: rgb(27, 27, 27);
+  display: block;
+  width: 125px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.langdrop1:hover .langdrop {
+  opacity: 1;
+  visibility: visible;
+}
+.lang {
+  left: 0;
+  list-style-type: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+}
+.lang a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .langdrop {
+    width: 100%;
+    z-index: 1;
+  }
+}
