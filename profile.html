@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaTheatre</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.whoIsWatching {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+.logo-section {
+  width: 95vw;
+  margin: auto;
+  height: 7rem;
+  background-color: rgb(20, 20, 20);
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-section a img {
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.main-div {
+  width: 100vw;
+  height: 80vh;
+  /* background-color: rosybrown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.main-div h1 {
+  font-size: 6.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 600;
+}
+
+.memberDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.memberDiv .btn,
+.addIcon {
+  height: 10vw;
+  min-height: 8.4rem;
+  max-height: 20rem;
+  width: 10vw;
+  min-width: 8.4px;
+  max-width: 20rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  margin-top: 4rem;
+  margin-right: 3.5rem;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.memberDiv .btn:nth-child(1) {
+  background-image: url("./Images//user1.png");
+}
+
+.memberDiv .btn:nth-child(2) {
+  background-image: url("./Images//user2.png");
+}
+
+.memberDiv .btn:nth-child(3) {
+  background-image: url("./Images//user3.png");
+}
+
+.memberDiv .btn:hover {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+.memberDiv .btn span,
+.addIcon span {
+  width: inherit;
+  /* background-color: red; */
+  position: absolute;
+  bottom: -3.5rem;
+  left: 0;
+  text-transform: capitalize;
+  color: rgb(153, 153, 153);
+  font-size: 2rem;
+}
+
+.fa-plus-circle {
+  font-size: 7vw;
+  color: grey;
+  opacity: 0.8;
+}
+
+.addIcon {
+  background-color: transparent;
+}
+
+.addIcon:hover {
+  background-color: #fff;
+}
+
+.addicon:hover > .fa-plus-circle {
+  opacity: 1;
+}
+
+.manageProfile {
+  border: 1px solid grey;
+  color: grey;
+  text-transform: uppercase;
+  padding: 0.8rem 2.6rem;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  margin-top: 12rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.manageProfile:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+#scrollToTopButton {
+    /* position: sticky; */
+    position: relative;
+    bottom: 40px;
+    left: 90%;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+i:hover {
+    background-color: white;
+    color: red;
+  }
+
+  .maincontainer h3 {
+    color: white;
+    text-align: center;
+}
+.poster{
+  margin-left: 85px;
+}
+
+</style>
+<body>
+  
+  <div class="scroll-bar">
+    <!-- Navbar starts  -->
+
+
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Manage Profile</a>
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends  -->
+    <div class="whoIsWatching">
+        
+
+        <div class="main-div">
+            <h1>Who's watching?</h1>
+            <div class="memberDiv">
+                <button class="addIcon"><i class="fas fa-plus-circle"></i> <span>Add Profile</span></button>
+            </div>
+            <button class="manageProfile">manage Profile</button>
+        </div>
+    </div>
+    <footer class="footer">
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Follow Us</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f facebook" style="color:red"></i></a>
+            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                class="fab fa-twitter twitter" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                class="fab fa-linkedin linkedin" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram" style="color:red"></i></a>
+            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
+                class="fab fa-github github" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Try Our App</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="footer-links">
+          <h2 class="footer-heading">Contact Us</h2>
+          <p class="footer-bottom-tagline">Feel free to contact us.</p>
+          <a class="footer-contact-button" href="contactus.html">Contact</a>
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-copyright">
+        <p>Copyright &copy; and &reg; Since
+          <script>
+            document.write(new Date().getFullYear())
+          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+   <script> 
+const users = ['vinod', 'thapa', 'bahadur'];
+
+const memberDiv = document.querySelector('.memberDiv');
+const addIcon = document.querySelector('.addIcon');
+
+const userIcons = () => {
+    users.reverse();
+    users.map((curElem) => {
+        memberDiv.insertAdjacentHTML('afterbegin', `
+        <button class="btn"><span>${curElem}</span></button>
+        `);
+    })
+};
+
+addIcon.addEventListener('click', () => {
+    let userName = prompt('please enter your name');
+
+    if(userName != null && !users.includes(userName)){
+        users.push(userName);
+        console.log(users);
+        memberDiv.insertAdjacentHTML('afterbegin', `
+        <button class="btn"><span>${userName}</span></button>
+        `);
+    }else{
+        alert('username already exist');
+    }
+})
+
+
+userIcons();
+
+</script>
+</body>
+</html>
