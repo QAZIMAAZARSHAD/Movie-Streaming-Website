@@ -178,3 +178,4 @@ git push -u origin <your_branch_name>
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Movie-Streaming-Website" />
 </a>
+
