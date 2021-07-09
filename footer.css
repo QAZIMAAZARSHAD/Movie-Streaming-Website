@@ -160,6 +160,9 @@
   }
   .footer-heading{
     color:white;
+    padding-bottom:0;
+    margin-bottom:0;
+    
   }
   .footer-left, .footer-right, .footer-middle{
   text-align:center;

@@ -44,6 +44,7 @@ background-color:white;
 color:red;
 }
 </style>
+
 <body>
     <div class="scroll-bar">
 
@@ -52,7 +53,7 @@ color:red;
         <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button id="nav"class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -98,7 +99,7 @@ color:red;
         </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header" style="color: #fff;
- background-color: #dc3545">
+    background-color: #dc3545">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -132,41 +133,81 @@ color:red;
 
         <!-- off canva ends -->
 
+        <!-- off canva ends -->
         <div class="maincontainer">
-            <div class="container">
+            <div class="container mx-auto">
                 <div id="movies" class="row"></div>
             </div>
             <hr>
-            <h2>Drama</h2>
+            <h2>Anime</h2>
             <hr>
             <div class="container" id="Movies">
               <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/paprika.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Paprika</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                        <button class="btn_i b2_i"  title="Movies" style="color:white">1.30hr</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.7</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+
+                      <p class="para_i">
+                      Dr. Atsuko Chiba works as a scientist by day and, under the code name "Paprika," 
+                      is a dream detective at night. Atsuko and her colleagues are working on a device 
+                      called the DC Mini, which is intended to help psychiatric patients, 
+                      but in the wrong hands it could destroy people's minds. When a prototype
+                       is stolen, Atsuko/Paprika springs into action to recover it before damage is done.</p>
+
+                        <form action="https://youtu.be/anu2IrsUlVs">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+
+                    </div>
+                      <div class="flim">
+                          <b>Paprika</b>
+                          <br>
+                          IMDb - 7.7
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/ceo.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/Tokyo Ghoul.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Official Ceogiri</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.6</button>
+                        <h1>Tokyo Ghoul</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                          <button class="btn_i b2_i"  title="Minutes" style="color:white">1hr</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">A college student has no idea 
+                        a ghoul wants to serve him up for dinner.</p>
 
-                          <form action="https://youtu.be/lAMwsDICoaQ">
+                          <form action="https://youtu.be/iSgFFY87Rg0">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Official Ceogiri</b>
+                            <b>Tokyo Ghoul</b>
                             <br>
-                            IMDb - 6.6
+                            IMDb - 7.8
                         </div>
                     </div>
                   </div>
@@ -177,27 +218,65 @@ color:red;
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/swades.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/tokypgf.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Swades</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">210</button>
+                        <h1>Tokyo Godfathers</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.37hrs</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Middle-aged alcoholic Gin, teenage runaway 
+                        Miyuki and former drag queen Hana are a trio of 
+                        homeless people surviving as a makeshift family on the streets of Tokyo. While 
+                        rummaging in the trash for food on Christmas Eve, they stumble upon an abandoned 
+                        newborn baby in a trash bin. </p>
+
+                          <form action="https://youtu.be/ZL_2E-HfIZY">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Tokyo Godfathers</b>
+                            <br>
+                            IMDb - 7.8
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/totoro.jpg" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h3>My Neighbour Totoro</h3>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">1988</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.28 hrs</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Mohan, an Indian expatriate employed with NASA, travels to his country to track down his beloved nanny, Kaveri. During his stay, he finds himself advocating for reform in a village.</p>
+                        <p class="para_i">Satsuke and her sister, Mei,settle into an 
+                        old country house, they encounter and befriend playful spirits in their house and the nearby forest, a Totoro.</p>
 
-                          <form action="https://youtu.be/vc7AZNWvs0M">
+                          <form action="https://youtu.be/92a7Hj0ijLs">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Swades</b>
+                            <b>My Neighbour Totoro</b>
                             <br>
                             IMDb - 8.2
                         </div>
@@ -205,63 +284,70 @@ color:red;
                   </div>
                 </div>
 
+
+
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/bach.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/Grave of the Fireflies.png" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>TVF Bachelors</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        <h3>Grave of the Fireflies</h3>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">1988</button>
+                          <button class="btn_i b2_i"  title="Time" style="color:white">1.33hrs</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">The series revolves around Four Bachelor Flatmates who in every episode will deal with a specific daily life bachelor related problem. Its about their battle against an external X problem as a single team The Bachelors.</p>
+                        <p class="para_i">Seita (Tsutomu Tatsumi), a teenager charged with the care of his younger sister, Setsuko (Ayano Shiraishi), 
+                        after an American firebombing during World War II separates the two children from their parents. 
+                        Their tale of survival is as heartbreaking as it is true to life. 
+                        </p>
 
-                          <form action="https://youtu.be/5XuimeH5hME">
+                          <form action="https://youtu.be/4vPeTSRd580">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>TVF Bachelors</b>
+                            <b>Grave of the Fireflies</b>
                             <br>
-                            IMDb - 8.4
+                            IMDb - 8.5
                         </div>
                     </div>
                   </div>
                 </div>
 
+
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/game.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/perfectblue.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>The Imitation Game</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">114</button>
+                        <h1>Perfect Blue</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">1998</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.30hrs</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.0</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Alan Turing, a British mathematician, joins the cryptography team to decipher the German enigma code. With the help of his fellow mathematicians, he builds a machine to crack the codes</p>
+                        <p class="para_i">A singer quits her band to become an actress and sheds her 
+                        "good girl" image to further her career.</p>
 
-                          <form action="https://youtu.be/nuPZUUED5uk">
+                          <form action="https://youtu.be/dpaCRJ_u600">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>The Imitation Game</b>
+                            <b>Perfect Blue</b>
                             <br>
                             IMDb - 8.0
                         </div>
@@ -274,29 +360,32 @@ color:red;
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/upsc.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/spiritedaway.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Aspirants</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
+                        <h3>Spirited Away</h3>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2001</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2.05hr</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Aspirants is a web series by The Viral Fever created by Arunabh Kumar.</p>
+                        <p class="para_i">10-year-old Chihiro (Rumi Hiiragi) and her parents (Takashi Naitô, Yasuko Sawaguchi) 
+                        stumble upon a seemingly abandoned amusement park.Chihiro meets the mysterious Haku (Miyu Irino), who explains that the park is a resort 
+                        for supernatural beings who need a break from their time spent in 
+                        the earthly realm, and that she must work there to free herself and her parents.</p>
 
-                          <form action="https://youtu.be/ViOutJ0kuJY">
+                          <form action="https://youtu.be/ByXuk9QqQkk">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Aspirants</b>
+                            <b>Spirited Away</b>
                             <br>
-                            IMDb - 9
+                            IMDb - 8.6
                         </div>
                     </div>
                   </div>
@@ -307,29 +396,30 @@ color:red;
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/mohabat.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/A Whisker Away.png" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Mohabbatein</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2000</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">216</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        <h3>A Whisker Away</h3>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                          <button class="btn_i b2_i"  title="Time" style="color:white">1.44hrs</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.7</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Narayan is a strict principal of Gurukul who does not believe in love and forbids his students from following their hearts. However, things take a turn when a music teacher challenges his authority.</p>
+                        <p class="para_i">
+                        The line between human and animal starts to blur after a girl transforms herself into a cat.</p>
 
-                          <form action="https://youtu.be/6pbG4aVrs5E">
+                          <form action="https://youtu.be/aXc9DVfLTGo">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Mohabbatein</b>
+                            <b>A Whisker Away</b>
                             <br>
-                            IMDb - 7.1
+                            IMDb - 6.7
                         </div>
                     </div>
                   </div>
@@ -340,222 +430,28 @@ color:red;
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/zindagi.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/urname.png" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Zindagi Na Milegi</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">155</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">Friends Kabir, Imran and Arjun take a vacation in Spain before Kabir's marriage. The trip turns into an opportunity to mend fences, heal wounds, fall in love with life and combat their worst fears.</p>
-
-                          <form action="https://youtu.be/FJrpcDgC3zU">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>Zindagi Na Milegi Dobara</b>
-                            <br>
-                            IMDb - 8.2
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/college.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>College Romance</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.9</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">Three best friends look for love, laughs and some lifelong memories while attending college together.</p>
-
-                          <form action="https://youtu.be/zwRhlzrJGxo">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>College Romance</b>
-                            <br>
-                            IMDb - 8.9
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/dil.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>Dilwale Dulhania</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">1995</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">192</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">Raj and Simran meet during a trip across Europe and the two fall in love. However, when Raj learns that Simran is already promised to another, he follows her to India to win her and her father over.</p>
-
-                          <form action="https://youtu.be/oIZ4U21DRlM">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>Dilwale Dulhania Le Jayenge</b>
-                            <br>
-                            IMDb - 7.1
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/edu.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>Sex Education</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">Socially awkward high school student Otis may not have much experience in the lovemaking department, but he gets good guidance on the topic in his personal sex ed course</p>
-
-                          <form action="https://youtu.be/Hd2ldTR-WpI">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>Sex Education</b>
-                            <br>
-                            IMDb - 8.3
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/walk.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>The Walk</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">123</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.3</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">Philippe Petit, a French street performer, dreams of performing daring stunts. He attempts to walk between the Twin Towers of the World Trade Center in New York on a tightrope.</p>
-
-                          <form action="https://youtu.be/GR1EmTKAWIw">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>The Walk</b>
-                            <br>
-                            IMDb - 7.3
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/day.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>Selection Day</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
-
-                        <p class="para_i">When a 14-year-old boy tries out for Mumbai's under-19 cricket team and meets his older brother's rival, everything in his world begins to change.</p>
-
-                          <form action="https://youtu.be/Zudpl3PGaL0">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>Selection Days</b>
-                            <br>
-                            IMDb - 7.4
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/trip.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>TVF Tripling</h1>
+                        <h1>Your Name</h1>
                           <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.52hrs</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">TVF Tripling is an Indian web series created by The Viral Fever. It was developed by Sameer Saxena and written by Akarsh Khurana and Sumeet Vyas</p>
+                        <p class="para_i">Two teenagers share a profound, magical connection upon discovering they are swapping bodies. 
+                        Things manage to become even more complicated when the boy and girl decide to meet in person.</p>
 
-                          <form action="https://youtu.be/MfKNEC9xcE8">
+                          <form action="https://youtu.be/s0wTdCQoc2k">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>TVF Tripling</b>
+                            <b>Your Name</b>
                             <br>
                             IMDb - 8.4
                         </div>
@@ -567,27 +463,64 @@ color:red;
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/naruto.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Bhaag Milkha Bhaag</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">189</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        <h4>Naruto-Guardians of the Crescent Moon Kingdom</h4>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.35hrs</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.5</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Milkha Singh, an Indian athlete, overcomes many agonising obstacles in order to become a world champion,</p>
+                        <p class="para_i">Naruto and his friends are on a mission to protect the prince of 
+                        the Land of the Moon.</p>
 
-                          <form action="https://youtu.be/3uICXnnW86U">
+                          <form action="https://youtu.be/5aqLi1XhGdU">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Bhaag Milkha Bhaag</b>
+                            <b>Naruto-Guardians of the Crescent Moon Kingdom</b>
+                            <br>
+                            IMDb - 6.5
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/howls.png" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Howl's Moving Castle</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
+                          <button class="btn_i b2_i"  title="Time" style="color:white">1.59hr</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">Sophie has an uneventful life at her 
+                        late father's hat shop, but all that changes when she befriends wizard 
+                        Howl, who lives in a magical flying castle. 
+                        
+</p>
+
+                          <form action="https://youtu.be/iwROgK94zcM">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Howl's Moving Castle</b>
                             <br>
                             IMDb - 8.2
                         </div>
@@ -596,104 +529,116 @@ color:red;
                 </div>
 
 
-                <div class="poster">
-                  <div class="flip-card_i">
-                    <div class="flip-card-inner_i">
-                      <div class="flip-card-front_i">
-                          <img src="./Images/twilight.jpg" alt="Avatar" style="width:250px;height:360px;">
-                      </div>
-                      <div class="flip-card-back_i">
-                        <h1>Twilight:Breaking Dawn</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">5.5</button>
-                        </span>
-                        <br />
-                        <br />
-                      </p>
 
-                        <p class="para_i">After consummating her marriage with Edward, Bella realises that she has become pregnant with a child that is half-human, half-vampire.</p>
-
-                          <form action="https://youtu.be/PQNLfo-SOR4">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-
-                      </div>
-                        <div class="flim">
-                            <b>Twilight: Breaking Dawn</b>
-                            <br>
-                            IMDb - 5.5
-                        </div>
-                    </div>
-                  </div>
-                </div>
 
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/room.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/death.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>Permanent Roommates</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                        <h1>Death Note</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">130mins</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Permanent Roommates is an Indian romantic comedy web series produced by The Viral Fever Media Labs.</p>
+                        <p class="para_i">The story follows Light Yagami, a teen genius who discovers a mysterious notebook: 
+                        the "Death Note", which belonged to the Shinigami Ryuk, 
+                        and grants the user the supernatural ability to kill anyone whose name is written in its pages.</p>
 
-                          <form action="https://youtu.be/XsOjuDh4c-o">
+                          <form action="https://youtu.be/NlJZ-YgAt-c">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Permanent Roommates</b>
+                            <b>Death Note</b>
                             <br>
-                            IMDb - 8.6
+                            IMDb - 9.0
                         </div>
                     </div>
                   </div>
                 </div>
+                <div class="poster">
+                  <div class="flip-card_i">
+                    <div class="flip-card-inner_i">
+                      <div class="flip-card-front_i">
+                          <img src="./Images/Arrietty.png" alt="Avatar" style="width:250px;height:360px;">
+                      </div>
+                      <div class="flip-card-back_i">
+                        <h1>Secret World of Arrietty</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1.34hr</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.7</button>
+                        </span>
+                        <br />
+                        <br />
+                      </p>
+
+                        <p class="para_i">
+                         A secret friendship forms when 12-year-old Shawn meets Arrietty,
+                         but their relationship could spell danger for Arrietty's family.</p>
+
+                          <form action="https://youtu.be/NlJZ-YgAt-c">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
+
+                      </div>
+                        <div class="flim">
+                            <b>Secret World of Arrietty</b>
+                            <br>
+                            IMDb - 7.7
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
 
                 <div class="poster">
                   <div class="flip-card_i">
                     <div class="flip-card-inner_i">
                       <div class="flip-card-front_i">
-                          <img src="./Images/dhoni.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          <img src="./Images/AOT.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>MS Dhoni</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">220</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                        <h1>Attack on Titan</h1>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                          <button class="btn_i b2_i"  title="Parts" style="color:white">120mins</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams.</p>
+                        <p class="para_i">As the battle between the Titans and the humans continues, 
+                        Eren uncovers a secret that leaves the entire regiment confused. 
+                        They must unravel its mystery and find a way to stop the Titans.</p>
 
-                          <form action="https://youtu.be/6L6XqWoS8tw">
+                          <form action="https://youtu.be/bT9csxkth8g">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
 
                       </div>
                         <div class="flim">
-                            <b>Ms Dhoni : The Untold Story</b>
+                            <b>Attack on Titan</b>
                             <br>
-                            IMDb - 7.8
+                            IMDb - 9.0
                         </div>
                     </div>
                   </div>
                 </div>
+
             </div>
         </div>
     </div>
+
+
 
     <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
@@ -748,9 +693,9 @@ color:red;
         </div>
     </footer>
 
-    <!-------------scroll to top button-->
+    <!---scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
       </button>
       <script>
       $(document).ready(function(){
