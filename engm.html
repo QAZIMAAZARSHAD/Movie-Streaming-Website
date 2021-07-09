@@ -26,7 +26,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="webStyle.css">
     <link rel="stylesheet" href="hindim.css">
 <!------------------------Scroll to top button------------------------------------------------>
@@ -188,7 +190,25 @@ font-size:18px;
 }
 
 
-</style>    
+i:hover {
+    background-color: white;
+    color: red;
+  }
+
+  .maincontainer h3 {
+    color: white;
+    text-align: center;
+}
+.poster{
+  margin-left: 85px;
+}
+</style>
+<script>
+  setTimeout(function () {
+    $('.section').fadeToggle();
+  }, 4000);
+  
+</script> 
 
   </head>
   <body style="background-color:black;" color="height:auto;">
@@ -328,62 +348,218 @@ font-size:18px;
                         <h3 class="section-title text-center">Top Picks For You</h3>
                     </div>
                     <div class="post-container owl-carousel">
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/titanic.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Titanic</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.5 / 10</span>
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/titanic.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/Parasite.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Parasites</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                            <div class="flip-card-back_i">
+                              <h1>Titanic</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Titanic</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/knives.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Knives Out</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/Parasite.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
+                            <div class="flip-card-back_i">
+                              <h1>Parasite</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Parasite</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/knives.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Knives Out</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Knives Out</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Avengers:Endgame</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Avengers: Endgame</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
         
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/endgame.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Avengers: Endgame</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/dark knight.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/dark knight.jpg" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                                <h5 class="card-title">The Dark Knight</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
+                            <div class="flip-card-back_i">
+                              <h1>The Dark Knight</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>The Dark Knight</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/Parasite.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" style="bottom: 0%;">Parasite</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-        
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/lala.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
+                            <div class="flip-card-back_i">
+                              <h1>La La Land</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>La La Land</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                      </div> 
+                   
                     
             
                 </div>
@@ -397,62 +573,183 @@ font-size:18px;
                         <h3 class="section-title text-center">Popular</h3>
                     </div>
                     <div class="post-container owl-carousel">
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/inception.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Inception</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.5 / 10</span>
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/la la land.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">La La Land</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                            <div class="flip-card-back_i">
+                              <h1>Inception</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Inception</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/joker.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Joker</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/lala.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
+                            <div class="flip-card-back_i">
+                              <h1>La La Land</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>La La Land</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/joker.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Joker</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Joker</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Avengers: Endgame</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Avengers: Endgame</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
         
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/endgame.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Avengers: Endgame</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/inter.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/inter.jpg" class="card-img-top" alt="..." >
-                            <div class="card-body">
-                                <h5 class="card-title">Interstellar</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
+                            <div class="flip-card-back_i">
+                              <h1>Interstellar</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Interstellar</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/Parasite.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title" style="bottom: 0%;">Parasite</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-        
-                            </div>
-                        </div>
-                    </div>
+                      </div> 
+                   
                     
             
                 </div>
@@ -466,56 +763,182 @@ font-size:18px;
                         <h3 class="section-title text-center">Action</h3>
                     </div>
                     <div class="post-container owl-carousel">
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/atomicblonde.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Atomic Blonde</h5>
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/atomicblonde.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/6 underground.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">6 Underground</h5>
-                                
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                            <div class="flip-card-back_i">
+                              <h1>Atomic Blonde</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Atomic Blonde</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/inception.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Inception</h5>
-                                
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/6 underground.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/johnwick.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">John Wick</h5>
-                        
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-        
+                            <div class="flip-card-back_i">
+                              <h1>6 Underground</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
                             </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>6 Underground</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card movie_card">
-                            <img src="./Images/wonderwoman.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Wonder Woman</h5>
-                               
-                                <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 7.4 / 10</span>
+                      </div> 
+                    
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/johnwick.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
+                            <div class="flip-card-back_i">
+                              <h1>John Wick</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>John Wick</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
                         </div>
-                    </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/wonderwoman.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Wonder Woman</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Wonder Woman</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Inception</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Inception</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
                 </div>
                 
                 </div>
@@ -530,67 +953,182 @@ font-size:18px;
                 <h3 class="section-title text-center">Comedy</h3>
             </div>
             <div class="post-container owl-carousel">
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/duedate.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Due Date</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/duedate.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/hangover.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Hangover</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                    <div class="flip-card-back_i">
+                      <h1>Due Date</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Due Date</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/We're_the_Millers_poster.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">We're the Millers</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/hangover.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/17 again.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">17 Again</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
+                    <div class="flip-card-back_i">
+                      <h1>Hangover</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Hangover</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/bridesmaids.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bridesmaids</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/We're_the_Millers_poster.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/21 street.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">21 Jump Street</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
+                    <div class="flip-card-back_i">
+                      <h1>We're the Millers</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>We're the Millers</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/17 again.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>17 Again</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>17 Again</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/bridesmaids.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Bridesmaids</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Bridesmaids</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+            
             </div>
         </div>
         
@@ -600,78 +1138,150 @@ font-size:18px;
                 <h3 class="section-title text-center">Romantic</h3>
             </div>
             <div class="post-container owl-carousel">
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/mary.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">There's Something About Mary</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/mary.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/forest.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Forest Gump</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                    <div class="flip-card-back_i">
+                      <h1>There's Something About Mary</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>There's Something About Mary</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/27dresses.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">27 Dresses</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/forest.png" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/NottingHillRobertsGrant.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Notting Hill</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
+                    <div class="flip-card-back_i">
+                      <h1>Forest Gump</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Forest Gump</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/prettywoman.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pretty Woman</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/27dresses.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/the notebook.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">The Notebook</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
+                    <div class="flip-card-back_i">
+                      <h1>27 Dresses</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
                     </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>27 Dresses</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/lala.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">La La Land</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/NottingHillRobertsGrant.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
+                    <div class="flip-card-back_i">
+                      <h1>Notting Hill</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Notting Hill</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
                 </div>
-            </div>
+              </div> 
+           
+            
+            
+            
             </div>
         </div>
         
@@ -737,7 +1347,7 @@ font-size:18px;
       </footer>
   
       <!----------------------scroll back to top button-->
-      <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <button id="scrollToTopButton" title="Go to top" class="ml-5" style="position: fixed; ">
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
       </button>
       <script>
@@ -801,7 +1411,7 @@ font-size:18px;
                   items: 3,
                 },
                 1200: {
-                  items: 4,
+                  items: 3,
                 },
               },
             });

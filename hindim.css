@@ -5,18 +5,22 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-.post-container {
-  margin-top: 50px;
+.post-container,
+.posts-container {
   align-items: center;
-  margin-left: 160px;
+  margin-left: 20px;
+  width: 1130px;
 }
-.post-container .post {
-  width: 300px;
 
-  background: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
-  padding-bottom: 20px;
+.langdrops {
+  position: fixed;
+  list-style-type: none;
+  background: rgb(27, 27, 27);
+  display: block;
+  width: 125px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .langdrop {
@@ -30,7 +34,8 @@
   opacity: 0;
   visibility: hidden;
 }
-.langdrop1:hover .langdrop {
+.langdrop1:hover .langdrop,
+.langdrop1:hover .langdrops {
   opacity: 1;
   visibility: visible;
 }
@@ -50,5 +55,14 @@
   .langdrop {
     width: 100%;
     z-index: 1;
+  }
+  .langdrops {
+    width: 100%;
+    z-index: 1;
+  }
+}
+@media (max-width: 700px) {
+  .post-container {
+    margin-left: 0px;
   }
 }
