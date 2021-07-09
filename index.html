@@ -1,589 +1,248 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ApnaTheatre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To ApnaTheatre</title>
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="./static/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./landing-page.js"></script>
+
+    <link rel="stylesheet" href="landpage.css">
+
 </head>
 
 <body>
-    <div class="scroll-bar">
-        <!-- Navbar starts  -->
 
-
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-              <button class="navbar-toggler" style="background-color:white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-color: white;"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#header-nav">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#Movies">Movies</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="web-series.html">Web Series</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="kids.html">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="tv.html">TV</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dummy.html">Premium</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contactus.html">Contact Us</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-danger" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        <!-- Navbar Ends  -->
-        <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
-        <label class="online">Stream Latest Movies Now!</label>
-     <!-- off canva -->
-     <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-     aria-controls="offcanvasExample">
-     Have a Look on Various Movies!
- </a>
- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-     aria-labelledby="offcanvasExampleLabel">
-     <div class="offcanvas-header"  style="color: #fff;
-     background-color: #dc3545">
-         <h5 class="offcanvas-title" id="offcanvasExampleLabel" >Varieties</h5>
-         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-             aria-label="Close"></button>
-     </div>
-     <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-         <div>
-             Stream Latest Movies Now!
+      <div class="text-container">
+        <div class="container-2">
+            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt=""></a>
+         <div class="intro-container">
+            <h1>WELCOME TO<br><span>ApnaTheatre</span></h1>
+            <p>Stream your favourite movies online. </p>
          </div>
-         <div class="dropdown mt-3">
-             <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
-                 data-bs-toggle="dropdown">
-                 Varieties
-             </button>
-             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                 <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                 <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                 <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                         Thriller</a></li>
-                 <li><a class="dropdown-item" href="action.html">Action</a></li>
-                 <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                 </li>
-                 <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                 <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                 <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                 <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                 <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                 <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-             </ul>
+         <a href="#" class="button" onclick="myFunction()">Register</a>
+        </div>
+        <div class="bottom-text-container1">
+        <div class="bottom-text-container">
+          <p class="watch">Watch</p>
+          <p class="chill">Chill</p>
+          <p class="repeat">Repeat</p>
+        </div>
+      </div>
+      </div>
+
+     <div class="images-container">
+       <marquee behavior="scroll" direction="left">
+       <div class="group1">
+         <div class="image">
+           <img src="./Images/super-girl.jpg" alt="super girl">
          </div>
-     </div>
- </div>
-
- <!-- off canva ends -->
-
-
-        <div class="buddy">
-
-            <div class="slider">
-                <div class="slide_track">
-
-                    <div class="slide">
-                        <img src="./Images/apharan.jpg" alt="" />
-                    </div>
-
-                    <div class="slide">
-                        <img src="./Images/bat.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/breaking.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/criminal.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/got.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/infinity.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/kota.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mirzapur.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/sacred.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/scam.jpg" alt="" />
-                    </div>
-
-
-                    <div class="slide">
-                        <img src="./Images/apharan.jpg" alt="" />
-                    </div>
-
-                    <div class="slide">
-                        <img src="./Images/bat.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/breaking.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/criminal.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/got.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/infinity.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/kota.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mirzapur.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/sacred.jpg" alt="" />
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/scam.jpg" alt="" />
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-
-
+         <div class="image">
+           <img src="./Images/tenet.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/dangal.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/without-remores.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/along-with-the-gods.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/asoka.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/animal-world.ZW1zLXByZC1hc3NldHMvbW92aWVzL2JjNTBhMTY4LTczZTItNGQxZi05ZmUxLWQwN2ZlNThiZGVkYi53ZWJw" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/bao.jpg.crdownload" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/the-mermaid.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/boss-baby.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/the-eight-hundred.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/Over_the_Moon2020.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/baagi.jpg.crdownload" alt="">
+         </div>
+         <div class="image">
+          <img src="./Images/outside-the-wire.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/killerman-french-dvd-movie-cover.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/shadow.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/grown-ups.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/train-to-busan.jpg" alt="">
+         </div>
+         <div class="image">
+           <img src="./Images/Mulan_(2020_film)_poster.jpg" alt="">
+         </div>
+       </div>
+      </marquee>
+      <marquee behavior="scroll" direction="right">
+       <div class="group2">
+        <div class="images2">
+          <img src="./Images/War_official_poster.jpg" alt="">
         </div>
-        <div class="maincontainer">
-
-            <h2>Movies</h2>
-            <hr>
-            <div class="container" id="Movies">
-                <div class="poster">
-                    <img src="./Images/aaa.jpg" alt="">
-                    <div class="flim">
-                        <b>Andaz Apna Apna</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/chakde.jpg" alt="">
-                    <div class="flim">
-                        <b>Chakde India</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/milkha.jpg" alt="">
-                    <div class="flim">
-                        <b>Bhaag Milkha Bhaag</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/wed.jpg" alt="">
-                    <div class="flim">
-                        <b>A Wednesday</b>
-                        <br>
-                        IMDb - 8.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/dhoni.jpg" alt="">
-                    <div class="flim">
-                        <b>Ms Dhoni : The Untold Story</b>
-                        <br>
-                        IMDb - 7.8
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/drishyam.jpg" alt="">
-                    <div class="flim">
-                        <b>Drishyam</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/dil.jpg" alt="">
-                    <div class="flim">
-                        <b>Dilwale Dulhania Le Jayenge</b>
-                        <br>
-                        IMDb - 7.1
-                    </div>
-                </div>
-
-
-                <div class="poster">
-                    <img src="./Images/gangs.jpg" alt="">
-                    <div class="flim">
-                        <b>Gangs of Wasseypur</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/sholay.jpg" alt="">
-                    <div class="flim">
-                        <b>Sholay</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/rdb.jpg" alt="">
-                    <div class="flim">
-                        <b>Rang De Basanti</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/mbbs.jpg" alt="">
-                    <div class="flim">
-                        <b>Munna Bhai MBBS</b>
-                        <br>
-                        IMDb - 8.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/kgf.jpg" alt="">
-                    <div class="flim">
-                        <b>KGF</b>
-                        <br>
-                        IMDb - 8.2
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/inter.jpg" alt="">
-                    <div class="flim">
-                        <b>Interstellar</b>
-                        <br>
-                        IMDb - 8.6
-                    </div>
-                </div>
-
-            </div>
-            <!---next block -->
-
-            <h2>Web Series</h2>
-            <hr>
-            <div class="container" id="WebSeries">
-                <div class="poster">
-                    <img src="./Images/upsc.jpg" alt="">
-                    <div class="flim">
-                        <b>Aspirants</b>
-                        <br>
-                        IMDb - 9
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/money.jpg" alt="">
-                    <div class="flim">
-                        <b>Money Heist</b>
-                        <br>
-                        IMDb - 8.3
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/luci.jpg" alt="">
-                    <div class="flim">
-                        <b>Lucifier</b>
-                        <br>
-                        IMDb - 8.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/mirzapur.jpg" alt="">
-                    <div class="flim">
-                        <b>Mirzapur</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/sacred.jpg" alt="">
-                    <div class="flim">
-                        <b>Sacred Games</b>
-                        <br>
-                        IMDb - 8.7
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/got.jpg" alt="">
-                    <div class="flim">
-                        <b>Game of Thrones</b>
-                        <br>
-                        IMDb - 9.3
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/breaking.jpg" alt="">
-                    <div class="flim">
-                        <b>Breaking Bad</b>
-                        <br>
-                        IMDb - 9.5
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/kota.jpg" alt="">
-                    <div class="flim">
-                        <b>Kota Factory</b>
-                        <br>
-                        IMDb - 9.0
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/cricket.jpg" alt="">
-                    <div class="flim">
-                        <b>Inside Edge</b>
-                        <br>
-                        IMDb - 8.0
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/tvf.jpg" alt="">
-                    <div class="flim">
-                        <b>Pitchers</b>
-                        <br>
-                        IMDb - 9.1
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/day.jpg" alt="">
-                    <div class="flim">
-                        <b>Selection Day</b>
-                        <br>
-                        IMDb - 7.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/scam.jpg" alt="">
-                    <div class="flim">
-                        <b>Scam 1992 : The Harshad Mehta Story</b>
-                        <br>
-                        IMDb - 9.5
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/asur.jpg" alt="">
-                    <div class="flim">
-                        <b>Asur : Welcome to your Dark Side</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/panch.jpg" alt="">
-                    <div class="flim">
-                        <b>Panchayat</b>
-                        <br>
-                        IMDb - 8.7
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/ashram.jpg" alt="">
-                    <div class="flim">
-                        <b>Aashram</b>
-                        <br>
-                        IMDb - 7.5
-                    </div>
-                </div>
-
-            </div>
-            <!---third block -->
-
-            <h2>Kids</h2>
-            <hr>
-            <div class="container" id="Kids">
-                <div class="poster">
-                    <img src="./Images/bat.jpg" alt="">
-                    <div class="flim">
-                        <b>The Dark Knight Rises</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/narnia.jpg" alt="">
-                    <div class="flim">
-                        <b>The Chronicles of Narnia</b>
-                        <br>
-                        IMDb - 6.9
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/endgame.jpg" alt="">
-                    <div class="flim">
-                        <b>Avengers : Endgame</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/infinity.jpg" alt="">
-                    <div class="flim">
-                        <b>Avengers : Infinity War</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/spider.jpg" alt="">
-                    <div class="flim">
-                        <b>Spider Man</b>
-                        <br>
-                        IMDb - 7.3
-                    </div>
-                </div>
-
-                <div class="poster">
-                    <img src="./Images/infinity.jpg" alt="">
-                    <div class="flim">
-                        <b>Avengers : Infinity War</b>
-                        <br>
-                        IMDb - 8.4
-                    </div>
-                </div>
-            </div>
+        <div class="images2">
+          <img src="./Images/zootopia_866a1bf2.webp" alt="">
         </div>
+        <div class="images2">
+          <img src="./Images/13-assassins-poster-movie.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Onward_IanBarley-1-702x1024.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/the-little-things.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Jodhaa_akbar.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/wom.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/John_Wick_TeaserPoster.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Redcliffposter.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/MonsterHunter_01282021.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Wolfwakers_key_art_2_3.jpg.crdownload" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/col.jpg.crdownload" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Zero_official_poster.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/loki.jpg.crdownload" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/capone.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/jiang.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Justice_Society_World_War_II-359498245-mmed.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/venom.jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/Revenger_(2018).jpg" alt="">
+        </div>
+        <div class="images2">
+          <img src="./Images/the-old-gurd.jpg" alt="">
+        </div>
+       </div>
+      </marquee>
 
-
-
-
-
-
-
+     <marquee behavior="scroll" direction="left">
+      <div class="group3">
+       <div class="images3">
+         <img src="./Images/The_Villainess.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/patton.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/odyssey.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/wizard.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/The_Witch-480212918-mmed.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/top-gun.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/the-marksman.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/chaos-wlaking.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/insight.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/Steel_Rain.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/Tune_in_the_love.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/3-iron.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/Zero_official_poster.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/loki.jpg.crdownload" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/VanquishPoster.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/aotd.jpg.crdownload" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/mk.png" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/misfits.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/karnan.jpg" alt="">
+       </div>
+       <div class="images3">
+         <img src="./Images/lucid-dream.jpg" alt="">
+       </div>
+      </div>
+     </marquee>
     </div>
-    <div id="waterdrop"></div>
 
-    <!-------------------------------Footer-------------------------------->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-            <a  href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-            <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-        </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" ></i></a>
-                </ul>
-                </div>
-            <div class="footer-middle">
-            <h2 class="footer-heading">Services</h2>
-            <ul class="footer-middle-list">
-                <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
-                <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
-            </ul>
-            </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios"></i></a>
-                </ul>
-                </div>
-            <div class="footer-right">
-                <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
-                </p>
-            </div>
-        </div>
-        <hr id="footer-hr">
-        <div class="footer-copyright" >
-            <p>Copyright &copy; and &reg; Since <script>document.write(new Date().getFullYear())</script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
-        </div>
-    </footer>
-    
-    
-    <!-- footer scripts -->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
-    
-    <script> jQuery('#waterdrop').raindrops({ color: '#292c2f', canvasHeight: 150, density: 0.1, frequency: 20 });
+
+
+      
+
+
+
+
+
+
+
+
+    <script>
+      
+        function myFunction() {
+            location.replace('login.html')
+        }
+
     </script>
-    <!-- bootsstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-    <script src="./static/script.js"></script>
+   
 </body>
-
 </html>

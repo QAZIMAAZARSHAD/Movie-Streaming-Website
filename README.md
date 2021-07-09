@@ -20,11 +20,21 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 
 ## A sneak peek into what we have here🙈 :
 
-### Home Page:
-<p align="center"><img src="https://i.postimg.cc/g0vsH5LC/Home-Page.jpg"></p>
 
-### Separate Page for All Genres:
-<p align="center"><img src="https://i.postimg.cc/bYFxk8FG/Seperate.jpg"></p>
+## Home Page
+<p align="center"><img src="Readme_assets/home_pd.gif" width = 85% ></p>
+
+## Sign-Up Page
+<p align="center"><img src="Readme_assets/Singup_p.gif" width = 85% ></p>
+
+## Kids Page
+<p align="center"><img src="Readme_assets/kids_p.gif" width = 85% ></p>
+
+## Search Function
+<p align="center"><img src="Readme_assets/search_p.gif" width = 85% ></p>
+
+## Contact Us Page
+<p align="center"><img src="Readme_assets/Contactus_p.gif" width = 85% ></p>
 
 ## About
 <div>
@@ -40,7 +50,7 @@ https://qazimaazarshad.github.io/Movie-Streaming-Website/
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/fWKwrRhL/download.png">
+<img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-best-web-design-psd-html-cms-development-ecommerce-6.png" width="200" alt="" />
 
 ## How to get started❓
 
@@ -60,7 +70,7 @@ Are we missing any of your favorite features, which you think you can add to it�
 
 To start contributing, follow the below guidelines: 
 
-**🌟.**  Star🌟 the project to bookmark and appreciate the work.
+**🌟.**  Star🌟 the repo to stay updated and appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
@@ -144,11 +154,14 @@ git push -u origin <your_branch_name>
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
 ## Open Source Programs we have been associated with: 
-
+     
 <p align="center">
-<a href="https://letsgrowmore.in/soc/" target="_black"><img src="https://i.postimg.cc/2jLPNC5V/download.jpg" width= "25%"/></a>
+<a href="https://lgmsoc.co/">
+<img  height=30% src="https://i.postimg.cc/2jPGcsqW/logo.png">
+<a href="https://devincept.codes/projects.html">
+<img width=30% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif">
 </p>
-
+     
 ## Code of Conduct
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/CODE_OF_CONDUCT.md">
