@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ApnaTheatre.com</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="./static/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style-min.css">
+
+
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+    #scrollToTopButton{
+  /* position: sticky; */
+  position:relative;
+  bottom: 40px;
+  left: 90%;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color:red;
+  color:black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  border-radius: 50%;
+  }
+  #scrollToTopButton:hover, i:hover {
+  background-color:white;
+  color:red;
+  }
+
+
+        .scroll-bar {
+            height: auto;
+            width: auto;
+            margin: auto;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+         ::-webkit-scrollbar-track {
+            border: 5px solid #2c2f30;
+            background-color: black;
+        }
+
+         ::-webkit-scrollbar {
+            width: 15px;
+            background-color: #2c2f30;
+        }
+
+         ::-webkit-scrollbar-thumb {
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li a:hover {
+            color: red !important;
+            opacity: 0.5;
+        }
+
+        #variety {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .logo {
+            width: 81px;
+            height: 52px;
+        }
+
+     
+
+        .logo {
+            width: 110px;
+            height: 90px;
+            padding: 3px;
+            margin: 0;
+            padding: 0;
+        }
+        .flip-card_i{
+  position: relative;
+  background-color: transparent;
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+}
+.flip-card-inner_i {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card_i:hover .flip-card-inner_i {
+  transform: rotateY(180deg);
+}
+.para_i{
+    font-size: 0.8em;
+  }
+.flip-card-front_i, .flip-card-back_i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front_i {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back_i {
+  width: 200px;
+  height: 280px;
+  background-image: linear-gradient(black,#8B0000);
+  color: white;
+  transform: rotateY(180deg);
+}
+.btn_i{
+  width: 50px;
+ height: 35px;
+ border:none;
+ border:solid 2px grey;
+ border-radius: 5px;
+ background: rgba(255, 255, 255,0);
+ font-size: 1em;
+   }
+  .b1_i{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .b2_i{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .b3_i{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .btnContainer{
+      display: flex;
+      margin-bottom: -8px;
+  }
+
+   /*****style for image slider***/
+   .slide-wrapper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .slide-wrapper::-webkit-scrollbar {
+    visibility: none;
+  }
+
+  .mainSlider {
+    width: 98%;
+    height: 450px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 20px 25px;
+    overflow: hidden;
+  }
+
+  .poster {
+    min-width: 250px;
+    height: 800px;
+    margin: 10px 20px;
+    color: white;
+    position: relative;
+    left: 0;
+
+    text-align: center;
+
+  }
+
+  .arrow {
+    color: white;
+    background-color: red;
+    opacity: 0.4;
+    width: 55px;
+    height: 55px;
+    font-size: 39px;
+    
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    top: -332px;
+  }
+
+  .arrow:hover {
+    color: black;
+    background-color: white;
+    opacity: 1;
+  }
+
+  .arrow-left {
+    padding: 4px 12px;
+    left: 0px;
+  }
+
+  .arrow-right {
+    padding: 4px 15px;
+    right: -1411px;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-bar">
+
+        <!-- navbar starts -->
+
+      <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="anime.html">Anime</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dummy.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" style="margin-left: 10px;"aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+        <!-- navbar ends -->
+
+        <!-- off canva -->
+        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header" style="color: #fff;
+   background-color: #dc3545">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                <div>
+                    Stream Latest Movies Now!
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Varieties
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                                Thriller</a></li>
+                        <li><a class="dropdown-item" href="action.html">Action</a></li>
+                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                        </li>
+                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- off canva ends -->
+
+        <div class="maincontainer">
+            <h2>ANIME</h2>
+            <hr>
+            <div class="container">
+                <div id="movies" class="row"></div>
+            </div>
+            <hr>
+
+
+
+            <div  id="TV shows">
+<div class="slide-wrapper">
+  <div class="mainSlider">
+
+
+                <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/deathnote.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h3>DeathNote</h3>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">37<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
+                          </div>
+                            
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. The story follows Light Yagami, a teen genius who discovers a mysterious notebook</p>
+          
+                            <form action="https://youtu.be/NlJZ-YgAt-c">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>DeathNote</b>
+                              <br>
+                              IMDb - 9.0
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/naruto.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Naruto</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2002</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">220<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                        </div>  
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Adapted from a comic by Masashi Kishimoto, this animated hit follows the adventures of Naruto Uzumaki, a boy who is determined to become a Hokage, the ninja in his village who is acknowledged as the leader and the strongest of them all.</p>
+          
+                            <form action="https://youtu.be/-G9BqkgZXRA">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Naruto</b>
+                              <br>
+                              IMDb - 8.3
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/Aot.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Attack on Titan</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">75<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
+                        </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.</p>
+          
+                            <form action="https://youtu.be/o_go-8TFBXs">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Attack on Titan</b>
+                              <br>
+                              IMDb - 9.0
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/demonSlayer.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Demon Slayer</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">26<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                        </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">A youth begins a quest to fight demons and save his sister after finding his family slaughtered and his sister turned into a demon.</p>
+          
+                            <form action="https://youtu.be/VQGCKyvzIM4">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Demon Slayer</b>
+                              <br>
+                              IMDb - 8.7
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/one-punch-man.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>One Punch Man</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">24<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                        </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">It tells the story of Saitama, a superhero who can defeat any opponent with a single punch but seeks to find a worthy opponent after growing bored by a lack of challenge due to his overwhelming strength.</p>
+          
+                            <form action="https://youtu.be/2JAElThbKrI">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>One Punch Man</b>
+                              <br>
+                              IMDb - 8.8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/tokyo.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Tokyo Ghoul</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">1231<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                        </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">A Tokyo college student is attacked by a ghoul, a superpowered human who feeds on human flesh. He survives, but has become part ghoul and becomes a fugitive on the run.</p>
+          
+                            <form action="https://youtu.be/ETHpMMV8rJU">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Tokyo Ghoul</b>
+                              <br>
+                              IMDb - 7.8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/fullMetal.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Fullmetal Alchemist</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">51<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i" style="margin-top: -8px;">When a failed alchemical ritual leaves brothers Edward and Alphonse Elric with severely damaged bodies, they begin searching for the one thing that can save them, the fabled philosopher's stone.</p>
+          
+                            <form action="https://youtu.be/2Dsa8j_usqI">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Fullmetal Alchemist</b>
+                              <br>
+                              IMDb - 8.5
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/onePiece.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>One Piece</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">1999</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">981<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named "One Piece".</p>
+          
+                            <form action="https://youtu.be/S8_YwFLCh4U">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>One Piece</b>
+                              <br>
+                              IMDb - 8.8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/hunter.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Hunter x Hunter</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">148<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks for his father who left him when he was younger.</p>
+          
+                            <form action="https://youtu.be/d6kBeJjTGnY">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Hunter x Hunter</b>
+                              <br>
+                              IMDb - 9
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/code-geass.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Code Geass</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">3191<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">TAfter being given a mysterious power to control others, an outcast prince becomes the masked leader of the rebellion against an all powerful empire</p>
+          
+                            <form action="https://youtu.be/v-AGjx0N24U">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Code Geass</b>
+                              <br>
+                              IMDb - 8.7
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/gintama.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Gintama</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2005</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">367<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">In an era where aliens have invaded and taken over feudal Tokyo, an unemployed samurai finds work however he can.</p>
+          
+                            <form action="https://youtu.be/YQC3ot0IjiA">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Gintama</b>
+                              <br>
+                              IMDb - 8.7
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/psycho-pass.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Psycho Pass</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">48<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Believing in humanity and order, policewoman Akane Tsunemori obeys the ruling, computerized, precognitive Sibyl System. But when she faces a criminal mastermind who can elude this "perfect" system, she questions both Sibyl and herself</p>
+          
+                            <form action="https://youtu.be/YzuJnyebc40">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Psycho Pass</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+               
+            </div>
+
+          </div>
+          <span class="arrow arrow-left">
+            < </span>
+              <span class="arrow arrow-right"> > </span>
+        </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------Footer-------------------------------->
+    <div id="waterdrop"></div>
+    <footer class="footer">
+        <hr class="footer-hr">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Try Our App</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+            <p>Copyright &copy; and &reg; Since
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        </div>
+    </footer>
+
+    <!---------scroll back to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </button>
+      <script>
+      $(document).ready(function(){
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
+
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
+      });
+      });
+      </script>
+
+    <!-- offcanva JS and footer js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+
+    <script>
+        jQuery('#waterdrop').raindrops({
+            color: '#292c2f',
+            canvasHeight: 150,
+            density: 0.1,
+            frequency: 20
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./static/script.js"></script>
+
+
+    <script>
+      let leftButton = document.getElementsByClassName("arrow-left");
+      let rightButton = document.getElementsByClassName("arrow-right");
+      let mainSlider= document.getElementsByClassName("mainSlider");
+  
+      for (let j = 0; j < leftButton.length; j++) {
+  
+        leftButton[j].addEventListener("click", function () {
+          // alert("left");
+          mainSlider[j].scrollLeft -= 330;
+        });
+      }
+  
+      for (let k = 0; k < rightButton.length; k++) {
+        rightButton[k].addEventListener("click", function () {
+          // alert("right");
+          mainSlider[k].scrollLeft += 330;
+        });
+      }
+  
+  
+    </script>
+</body>
+
+</html>

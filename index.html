@@ -12,11 +12,12 @@
 
 </head>
 
-<body>
+<body id="stop-scrolling">
+    <div class="preloader"></div>
 
       <div class="text-container">
         <div class="container-2">
-            <a class="navbar-brand" href="#"><img class="logo" src="Images/TheaterLogoFinal.png" alt=""></a>
+            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt=""></a>
          <div class="intro-container">
             <h1>WELCOME TO<br><span>ApnaTheatre</span></h1>
             <p>Stream your favourite movies online. </p>
@@ -243,6 +244,18 @@
         }
 
     </script>
+    <script>
+        function preloaderFadeOutInit(){
+          $('.preloader').fadeOut('slow');
+          $('body').attr('id','');
+          }
+          // Window load function
+          jQuery(window).on('load', function () {
+          (function ($) {
+          preloaderFadeOutInit();
+          })(jQuery);
+          });
+      </script>
    
 </body>
 </html>

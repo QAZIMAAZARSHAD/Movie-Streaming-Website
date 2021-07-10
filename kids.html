@@ -36,8 +36,8 @@
   border-radius: 50%;
   }
   #scrollToTopButton:hover, i:hover {
-  background-color:red;
-  color:white;
+  background-color:white;
+  color:red;
   }
 
 
@@ -80,11 +80,59 @@
 
     /* navbar css */
     #header-nav .nav-link {
-      color: white;
-      font-size: 20px;
-      margin-left: 20px;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
 
-    }
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
 
 .fas:hover{background: none!important ;}
 .nav-item{ flex-wrap:wrap;}
@@ -313,7 +361,7 @@ font-size:18px;
               <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html #Movies.html">Movies</a>
+              <a class="nav-link" href="movies.html">Movies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="web-series.html">Web Series</a>
@@ -325,8 +373,11 @@ font-size:18px;
               <a class="nav-link" href="tv.html">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dummy.html">Premium</a>
-            </li>
+                <a class="nav-link" href="anime.html">Anime</a>
+              </li>
+              <li class="nav-item">
+                            <a class="nav-link" href="premium.html">Premium</a>
+                        </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
@@ -721,7 +772,7 @@ font-size:18px;
 
       <div class="footer-content">
           <div class="footer-left">
-          <a  href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+          <a  href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
           <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
       </div>
       <div class="footer-middle">
@@ -737,10 +788,10 @@ font-size:18px;
           <div class="footer-middle">
           <h2 class="footer-heading">Services</h2>
           <ul class="footer-middle-list">
-              <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+              <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
               <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
               <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-              <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+              <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
               <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
           </ul>
           </div>
@@ -800,6 +851,8 @@ font-size:18px;
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
   <script src="./static/script.js"></script>
+
+  
 
 </body>
 

@@ -40,8 +40,62 @@ padding: 6px;
 border-radius: 50%;
 }
 #scrollToTopButton:hover, i:hover {
-background-color:red;
-color:white;
+background-color:white;
+color:red;
+}
+#header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
 }
 </style>
 
@@ -62,7 +116,7 @@ color:white;
                             <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#Movies">Movies</a>
+                            <a class="nav-link" href="movies.html">Movies</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="web-series.html">Web Series</a>
@@ -74,7 +128,10 @@ color:white;
                             <a class="nav-link" href="tv.html">TV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="dummy.html">Premium</a>
+                          <a class="nav-link" href="anime.html">Anime</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="premium.html">Premium</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">Login</a>
@@ -184,7 +241,7 @@ color:white;
                           <img src="./Images/inter.jpg" alt="Avatar" style="width:250px;height:360px;">
                       </div>
                       <div class="flip-card-back_i">
-                        <h1>https://youtu.be/2LqzF5WauAw</h1>
+                        <h1>Interstellar</h1>
                           <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
                           <button class="btn_i b2_i"  title="Minutes" style="color:white">2h49min</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
@@ -597,7 +654,7 @@ color:white;
       <hr class="footer-hr">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
             </div>
             <div class="footer-middle">
@@ -613,10 +670,10 @@ color:white;
             <div class="footer-middle">
                 <h2 class="footer-heading">Services</h2>
                 <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
                     <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
                     <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
                     <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
                 </ul>
             </div>

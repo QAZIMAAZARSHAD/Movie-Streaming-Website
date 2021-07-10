@@ -10,6 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <script>
 
       var emailerror = false;
@@ -83,7 +84,7 @@ font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color: white;
+background-color: red;
 color: black;
 border: none;
 cursor: pointer;
@@ -91,6 +92,11 @@ outline: none;
 padding: 6px;
 border-radius: 50%;
 box-shadow: 0 6px 10px 0px gray;
+}
+
+#scrollToTopButton:hover , i:hover {
+  color: red;
+  background-color: white;
 }
       h1 {
         margin: auto;
@@ -183,6 +189,7 @@ box-shadow: 0 6px 10px 0px gray;
           background-color: rgba(0, 0, 0, 0.6);
           border-radius: 5px;
           padding: 30px 70px 143px 70px;
+          margin-bottom: 12px;
       }
 
       .login h1{
@@ -193,29 +200,29 @@ box-shadow: 0 6px 10px 0px gray;
       .bottom{
           background-color: rgba(0, 0, 0, 0.35);
           color: #bdc7c9;
-
       }
 
       .bottom-width{
           max-width: 1000px;
-          margin: 0 auto;
-          padding: 30px;
+          padding:8px 30px ;
       }
 
       .bottom-flex{
           display: flex;
           flex-wrap: wrap;
           padding: 15px 0 0 0;
-          margin-block-start: 0;
-          margin-block-end: 0;
+          justify-content:center;
       }
 
       .bottom-flex li{
           list-style: none;
+          margin:0px 10px;
       }
-
+      .bottom-flex li a{
+         font-size: 15px;
+      }
       .list-bottom{
-          width: 25%;
+          /* width: 25%; */
           margin-top: 10px;
       }
 
@@ -246,10 +253,10 @@ box-shadow: 0 6px 10px 0px gray;
 
       .signup-link{
           color: white;
+          margin-bottom: 25px;
+
           text-decoration: none;
       }
-
-
 
       .signup-link:hover{
           text-decoration: underline;
@@ -268,18 +275,27 @@ box-shadow: 0 6px 10px 0px gray;
       }
 
       .login-face{
-          margin: 50px 0 15px 0;
+          margin: 100px -20px 30px -260px;
+          text-align: center;
           vertical-align: middle;
           color: #bdc7c9;
       }
 
       .new-members{
           margin-bottom: 10px;
+
+          color: #bdc7c9;
+      }
+      .or{
+          margin-bottom: 5px;
+          text-align: center;
           color: #bdc7c9;
       }
 
       .help a{
           text-decoration: none;
+          margin-left: 193px;
+          
       }
       .help a:hover{
           text-decoration: underline;
@@ -292,6 +308,7 @@ box-shadow: 0 6px 10px 0px gray;
 
       .protection a{
           text-decoration: none;
+          
       }
 
       .protection a:hover{
@@ -352,6 +369,10 @@ box-shadow: 0 6px 10px 0px gray;
           color: #bdc7c9;
           text-indent: 40px;
       }
+      .learnmore{
+        margin: -19px 0 40px -50px;
+
+      }
       .signin-button{
           margin-top: 20px;
           padding: 13px;
@@ -381,11 +402,21 @@ margin-left: -25px;
 margin-top: 15px;
 color: white;
 }
+.questions{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
     </style>
+        <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="logo">
-        <a href="index.html">
+        <a href="home.html">
             <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
         </a>
     </div>
@@ -424,24 +455,28 @@ color: white;
         <span class="seperator"></span>
         <input class="signin-button" type="submit" value="Sign In" />
         <div class="remember-flex">
-            <div>
-
-            </div>
+            <div> 
+              <div class="or">OR</div>
+              <div class="g-signin2" data-width="260" data-height="50" 
+              data-longtitle="true">
+              </div>
             <div class="help">
                 <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
             </div>
         </div>
         <div class="login-face">
 
-        </div>
+       
         <br>
         <div class="new-members">
             New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
         </div>
         <br>
         <div class="protection color_link help">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot.
+           <div class="learnmore"> <a href="#">Learn more.</a></div>
         </div>
+      </div>
       </form>
     </div>
 
@@ -450,11 +485,18 @@ color: white;
 
     <div class="bottom">
         <div class="bottom-width">
-            Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a>
+          <div class ="questions">
+          <span>Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span>   
+            <select class="fa select-language">
+              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+          </select>
+          </div>
+            
             <div>
                 <ul class="bottom-flex">
                     <li class="list-bottom">
-                        <a href="#" class="link-bottom">
+                        <a href="faq.html" class="link-bottom">
                             FAQ
                         </a>
                     </li>
@@ -476,16 +518,10 @@ color: white;
 
                 </ul>
             </div>
-            <div>
-                <select class="fa select-language">
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-                    <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
-                </select>
-            </div>
         </div>
     </div>
       <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
+      <i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
     </button>
     <script>
     $(document).ready(function(){
@@ -514,6 +550,13 @@ color: white;
        $("#pass_signup").attr("type", "password");
      }
     });
+    </script>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        document.location.href = 'https://qazimaazarshad.github.io/Movie-Streaming-Website/home.html'
+        
+      };
     </script>
   </body>
 </html>
