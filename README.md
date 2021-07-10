@@ -70,7 +70,7 @@ Are we missing any of your favorite features, which you think you can add to it�
 
 To start contributing, follow the below guidelines: 
 
-**🌟.**  Star🌟 the repo to stay updated and appreciate the work.
+**🌟.**  Star🌟 the repo to appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
@@ -178,3 +178,4 @@ git push -u origin <your_branch_name>
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Movie-Streaming-Website" />
 </a>
+

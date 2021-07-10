@@ -276,7 +276,7 @@ box-shadow: 0 6px 10px 0px gray;
 
       .login-face{
           margin: 100px -20px 30px -260px;
-          text-align: center
+          text-align: center;
           vertical-align: middle;
           color: #bdc7c9;
       }
@@ -413,7 +413,6 @@ color: white;
         <script src="https://apis.google.com/js/platform.js" async defer></script>
     
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src ="script.js" ></script>
   </head>
   <body>
     <div class="logo">
@@ -551,6 +550,13 @@ color: white;
        $("#pass_signup").attr("type", "password");
      }
     });
+    </script>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        document.location.href = 'https://qazimaazarshad.github.io/Movie-Streaming-Website/home.html'
+        
+      };
     </script>
   </body>
 </html>
