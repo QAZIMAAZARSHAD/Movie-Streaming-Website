@@ -101,6 +101,7 @@
     top: 100px;
     padding: 13px 60px;
     border-radius: 6px;
+    padding-bottom: 100px;
   }
   .text-container .button {
     color: #fff;
@@ -114,8 +115,9 @@
     transition:  all 500ms;
   }
   .bottom-text-container {
+    padding-top: 50px;
     width: 300px;
-    height: 80px;
+    height: 70px;
     position: absolute;
     bottom: 20px;
     display: flex;
@@ -338,7 +340,7 @@ overflow:hidden;
 
 .images-container .marquee-block{
 --total-marquee-items:20;
-height: 380px;
+height: 420px;
 width: calc(300px * (var(--total-marquee-items)));
 overflow: hidden;
 box-sizing: border-box;
@@ -354,7 +356,7 @@ width: 260px;
 .marquee-inner{
 display: block;  
 position: absolute;
-height: 460px;
+height: 450px;
 }
 .marquee-item>img{
 height: 100%;
