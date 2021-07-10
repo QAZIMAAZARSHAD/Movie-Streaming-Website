@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -16,6 +17,7 @@
 
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
+    <link rel="stylesheet" href="cards.css">
 
 
 <!------------------------Scroll to top button------------------------------------------------>
@@ -103,6 +105,128 @@
             margin: 0;
             padding: 0;
         }
+        .flip-card_i{
+  position: relative;
+  background-color: transparent;
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+}
+.flip-card-inner_i {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card_i:hover .flip-card-inner_i {
+  transform: rotateY(180deg);
+}
+.para_i{
+    font-size: 0.8em;
+  }
+.flip-card-front_i, .flip-card-back_i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front_i {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back_i {
+  width: 200px;
+  height: 280px;
+  background-image: linear-gradient(black,#8B0000);
+  color: white;
+  transform: rotateY(180deg);
+}
+.btn_i{
+  width: 50px;
+ height: 35px;
+ border:none;
+ border:solid 2px grey;
+ border-radius: 5px;
+ background: rgba(255, 255, 255,0);
+ font-size: 1em;
+   }
+  .b1_i{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .b2_i{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .b3_i{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .btnContainer{
+      display: flex;
+      margin-bottom: -8px;
+  }
+  #header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
     </style>
 </head>
 
@@ -137,7 +261,10 @@
               <a class="nav-link" href="tv.html">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dummy.html">Premium</a>
+              <a class="nav-link" href="anime.html">Anime</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
@@ -207,155 +334,404 @@
 
             <div class="container" id="TV shows">
 
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/anupama2.jpg">
-                            <div class="flim">
-                                <b>Anupama</b>
-                                <br>
-
-                            </div>
-
+                <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/anupama2.jpg" alt="Avatar" style="width:200px;height:280px;">
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/yeh rishta.jpg">
-                            <div class="flim">
-                                <b>Yeh rishta kya kehlata hai</b>
-                                <br>
-                            </div>
+                        <div class="flip-card-back_i">
+                          <h3>Anupama</h3>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">294<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">4.8</button>
+                          </div>
+                            
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Anupamaa, who parts with her ambitions and goals in a bid to raise her family, feels dejected when she fails to get any credit for her sacrifices and trials. She then decides to live on her own terms.</p>
 
+                            <form action="https://www.imdb.com/video/vi4272078361?ref_=ttvi_vi_imdb_1">
+                              <input class="trailer_i" type="submit" value="▶Trailer" />
+                          </form>
                         </div>
+                          <div class="flim">
+                              <b>Anupama</b>
+                              <br>
+                              IMDb - 4.8
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/gum hai kisi.jpg" alt="">
-                            <div class="flim">
-                                <b>Gum hai kisi ke pyar mein</b>
-                                <br>
-
-                            </div>
-
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/yeh rishta.jpg" alt="Avatar" style="width:200px;height:280px;">
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-4">
-
-
-                        <div class="poster">
-                            <img src="./Images/bigboss.jpg" alt="">
-                            <div class="flim">
-                                <b>Big Boss</b>
-                                <br>
-
-                            </div>
-
+                        <div class="flip-card-back_i">
+                          <h5>Yeh Rishta Kya kehlata hai</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2009</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">3543<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">2.7</button>
+                        </div>  
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">On their honeymoon in Greece, a flirtatious Kartik and a bold Naira pretend to be strangers and try to woo each other all over again.</p>
+          
+                           <form action="https://www.imdb.com/video/vi375766041?playlistId=tt7112704&ref_=tt_ov_vi">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
                         </div>
+                          <div class="flim">
+                              <b>Yeh Rishta Kya kehlata hai</b>
+                              <br>
+                              IMDb - 2.7
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/fear.jpg" alt="">
-                            <div class="flim">
-                                <b>Fear files</b>
-                                <br>
-
-                            </div>
-
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/gum hai kisi.jpg" alt="Avatar" style="width:200px;height:280px;">
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-
-                        <div class="poster">
-                            <img src="./Images/crime.jpg" alt="">
-                            <div class="flim">
-                                <b>Crime Patrol</b>
-                                <br>
-
-                            </div>
-
+                        <div class="flip-card-back_i">
+                          <h5>Ghum hai kisikey pyaar mein</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">224<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.9</button>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/shaurya.jpg" alt="">
-                            <div class="flim">
-                                <b>Shaurya aur Anokhi ki kahaniyaan</b>
-                                <br>
-
-                            </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Virat, a young police officer, marries a woman to honour the promise he made to her dying father. But when his former lover re-enters his life, he finds his heart pulled in both directions.</p>
+          
+                            <form action="https://www.imdb.com/video/vi2629419033?playlistId=tt13085534&ref_=tt_ov_vi">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
                         </div>
+                          <div class="flim">
+                              <b>Ghum hai kisikey pyaar mein</b>
+                              <br>
+                              IMDb - 5.9
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-lg-4">
-
-                        <div class="poster">
-                            <img src="./Images/kbc.jpg" alt="">
-                            <div class="flim">
-                                <b>KBC</b>
-                                <br>
-
-                            </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/bigboss.jpg" alt="Avatar" style="width:200px;height:280px;">
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-
-                        <div class="poster">
-                            <img src="./Images/indianidol.jpg" alt="">
-                            <div class="flim">
-                                <b>Indian Idol</b>
-                                <br>
-
-                            </div>
+                        <div class="flip-card-back_i">
+                          <h3>Big Boss</h3>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">1360<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">3.9</button>
                         </div>
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/tmkoc.jpg" alt="">
-                            <div class="flim">
-                                <b>TMKOC</b>
-                                <br>
-
-                            </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Isolated from the outside world, the contestants live together in a house under the live cameras that monitor their every move. They perform various tasks and avoid eviction to be declared a winner.</p>
+          
+                                <form action="https://www.imdb.com/video/vi1928444953?playlistId=tt1281973&ref_=tt_ov_vi">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
                         </div>
+                          <div class="flim">
+                              <b>Big Boss</b>
+                              <br>
+                              IMDb - 3.9
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="poster">
-                            <img src="./Images/fear.jpg" alt="">
-                            <div class="flim">
-                                <b>Fear files</b>
-                                <br>
-
-                            </div>
-
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/fear.jpg" alt="Avatar" style="width:200px;height:280px;">
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-
-                        <div class="poster">
-                            <img src="./Images/crime.jpg" alt="">
-                            <div class="flim">
-                                <b>Crime Patrol</b>
-                                <br>
-
-                            </div>
-
+                        <div class="flip-card-back_i">
+                          <h3>Fear Files</h3>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">456<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.8</button>
                         </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">A series of tales of the supernatural inspired by real life incidents. Moving beyond ghosts and exploring all paranormal phenomenon.</p>
+          
+                          <form action="https://www.imdb.com/title/tt7666252/?ref_=ttep_ep1">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+          
+                        </div>
+                          <div class="flim">
+                              <b>Fear Files</b>
+                              <br>
+                              IMDb - 5.8
+                          </div>
+                      </div>
                     </div>
-                </div>
-
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/crime.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Crime Patrol</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">1231<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8</button>
+                        </div>
+                          </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">The host narrates several dramatised real-life crime cases revolving around harassment, kidnapping and murder while also presenting re-enactments.</p>
+           <form action="https://www.imdb.com/title/tt14273900/mediaviewer/rm903397377/">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+          
+                        </div>
+                          <div class="flim">
+                              <b>Crime Patrol</b>
+                              <br>
+                              IMDb - 8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/shaurya.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Shaurya Aur Anokhi Ki Kahan</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">161<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.1</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Shaurya, a male chauvinist who believes that every girl's future belongs in the kitchen, is in for a surprise when he crosses paths with Anokhi, a hardworking girl.</p>
+          
+                            <form action="https://www.imdb.com/video/vi1200734233?ref_=nv_sr_srsg_1">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Shaurya Aur Anokhi Ki Kahan</b>
+                              <br>
+                              IMDb - 9.1
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/kbc.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>KBC</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2000</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">936<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">The host, Amitabh Bachchan, gives contestants the chance to answer a series of questions based on general knowledge and current affairs in order to win a cash prize</p>
+          
+                            <form action="https://www.imdb.com/title/tt13551448/?ref_=ttep_ep1">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Kaun Banega Crorepati</b>
+                              <br>
+                              IMDb - 8.3
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/indianidol.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Indian Idol</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">317<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5</button>
+                        </div>
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Various talented participants from India compete against each other during a singing competition in order to impress the judges and win the title.</p>
+          
+                           <form action="https://www.imdb.com/title/tt0486068/mediaviewer/rm3598682113/">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Indian Idol</b>
+                              <br>
+                              IMDb - 5
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/tmkoc.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>TMKOC</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">3191<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">The residents of a housing society help each other find solutions when they face common, real-life challenges and get involved in sticky situations.</p>
+          
+                            <form action="https://www.imdb.com/video/vi204126745?ref_=nv_sr_srsg_1">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Tarak Mehta Ka Ooltah Chasma</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/satya.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Satyamev Jayate</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">25<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">Host Aamir Khan interacts with the general public of India and aims to enlighten citizens about the social issues present in the country.</p>
+          
+                           <form action="https://www.imdb.com/video/vi2485238297?playlistId=tt2360717&ref_=tt_ov_vi">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Satyamev Jayate</b>
+                              <br>
+                              IMDb - 8.6
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/24.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>24:India</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">48<button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div> 
+                        </span>
+                          <br />
+                          <br />
+                        </p>
+          
+                          <p class="para_i">When a drug lord, Haroon Sherchan, threatens to let loose a virus unless the Indian government releases his brother from prison, a now-reclusive Jai Singh Rathod is asked to return to stop Sherchan.</p>
+          
+                           <form action="https://www.imdb.com/video/vi302760217?playlistId=tt2792284&ref_=tt_ov_vi">
+                                <input class="trailer_i" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>24:India</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+              
 
 
 
@@ -371,7 +747,7 @@
         <hr class="footer-hr">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
                 <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
             </div>
             <div class="footer-middle">
@@ -387,10 +763,10 @@
             <div class="footer-middle">
                 <h2 class="footer-heading">Services</h2>
                 <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
                     <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
                     <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
                     <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
                 </ul>
             </div>
@@ -462,4 +838,7 @@
     <script src="./static/script.js"></script>
 </body>
 
+
 </html>
+
+

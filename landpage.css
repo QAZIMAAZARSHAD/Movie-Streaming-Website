@@ -4,6 +4,26 @@
     box-sizing: border-box;
   }
 
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999999;
+    background: url('Loader.webp'); /* your icon gif file path */
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    }
+
+    #stop-scrolling {
+        height: 100% !important;
+        overflow: hidden !important;
+        }
+
   body {
     background-color: rgb(0, 0, 0);
     display: flex;
