@@ -31,7 +31,27 @@
     justify-content: center;
     overflow: hidden;
   }
+  @media(max-width:360px){
+    .text-container{
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .intro-container{
+      padding-right: 80px;
+    }
+  }
+ 
+  @media(max-width:320px){
+    .text-container{
+      margin-left: 40px;
+    }
+    .intro-container{
+      padding-right: 80px;
+    }
+  }
   .text-container {
+    padding-left:25px;
+    padding-right:25px;
     width: 700px;
     height: 100vh;
     text-align: center;
@@ -340,7 +360,7 @@ overflow:hidden;
 
 .images-container .marquee-block{
 --total-marquee-items:20;
-height: 420px;
+height: 450px;
 width: calc(300px * (var(--total-marquee-items)));
 overflow: hidden;
 box-sizing: border-box;
@@ -356,7 +376,7 @@ width: 260px;
 .marquee-inner{
 display: block;  
 position: absolute;
-height: 450px;
+height: 480px;
 }
 .marquee-item>img{
 height: 100%;
