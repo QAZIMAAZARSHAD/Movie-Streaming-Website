@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apna Theater|English Movies </title>
+    <title>Apna Theater|Hindi Movies </title>
     <link
       rel="shortcut icon"
       href="./Images/Logo/Title.jpeg"
@@ -27,11 +27,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
     <link rel="stylesheet" href="cards.css">
@@ -196,6 +196,61 @@ font-size:18px;
   bottom: -70px !important;
 }
 
+#waterdrop canvas {
+  bottom: -70px !important;
+}
+#header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+
 
 i:hover {
     background-color: white;
@@ -215,7 +270,9 @@ i:hover {
     $('.section').fadeToggle();
   }, 4000);
   
-</script> 
+</script>
+
+  
 
   </head>
   <body style="background-color:black;" color="height:auto;">
@@ -227,343 +284,134 @@ i:hover {
         <!-- Navbar starts  -->
     
     
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-                height="24"></a>
-            <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                </li>
-                <li class="nav-item langdrop1">
-                  <a class="nav-link" href="movies.html">Movies</a>
-                  <ul class="langdrop">
-                    <li class="lang"><a href="engm.html">English</a></li>
-                    <li class="lang"><a href="hindim.html">Hindi</a></li>
-                   </ul>
-                 
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="web-series.html">Web Series</a>
-                  
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kids.html">Kids</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tv.html">TV</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="premium.html">Premium</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactus.html">Contact Us</a>
-                </li>
-              </ul>
-              <form id="searchForm" class="d-flex">
-                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                <button class="btn btn-danger" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-               <!-- off canva -->
-               <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                Have a Look on Various Movies!
-              </a>
-                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                      <div class="offcanvas-header" style="color: #fff;
-           background-color: #dc3545">
-                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                      <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-                          <div>
-                              Stream Latest Movies Now!
-                          </div>
-                          <div class="dropdown mt-3">
-                              <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                      Varieties
-                    </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                                  <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                                  <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                                  <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                          Thriller</a></li>
-                                  <li><a class="dropdown-item" href="action.html">Action</a></li>
-                                  <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                                  </li>
-                                  <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                                  <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                                  <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                                  <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                                  <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                                  <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-          
-                  <!-- off canva ends -->
-                  
-                <div class="page-container">
-                  <div class="post-slider">
-                    
-                    <i class="fas fa-chevron-left prev"></i>
-                    <i class="fas fa-chevron-right next"></i>
-                    <div class="post-wrapper">
-                      <div class="post">
-                        <img src="images/duedate1.jpg" alt="" class="slider-image" />
-                      </div>
-                      <div class="post">
-                        <img src="images/17 again 2.jpg" alt="" class="slider-image" />
-                      </div>
-                      <div class="post">
-                        <img src="images/atomicblonde1.jpg" alt="" class="slider-image" />
-                      </div>
-                      <div class="post">
-                        <img src="images/lala.jpg" alt="" class="slider-image" />
-                      </div>
-                      <div class="post">
-                        <img src="images/forest1.jpg" alt="" class="slider-image" />
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-                    <div class="container">
-                        <div id="movies" class="row"></div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <h3 class="section-title text-center">Top Picks For You</h3>
-                    </div>
-                    <div class="post-container owl-carousel">
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/titanic.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Titanic</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Titanic</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/Parasite.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Parasite</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Parasite</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/knives.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Knives Out</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Knives Out</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Avengers:Endgame</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Avengers: Endgame</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-        
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/dark knight.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>The Dark Knight</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>The Dark Knight</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/lala.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>La La Land</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>La La Land</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
+        <div class="scroll-bar">
+          <!--Navbar Starts-->
+              <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                  height="24"></a>
+              <button  id="nav" class="navbar-toggler"style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item langdrop1">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                    <ul class="langdrop">
+                      <li class="lang"><a href="engm.html">English</a></li>
+                      <li class="lang"><a href="hindim.html">Hindi</a></li>
+                     </ul>
                    
-                    
-            
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="web-series.html">Web Series</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kids.html">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tv.html">TV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="anime.html">Anime</a>
+                  </li>
+                    <li class="nav-item">
+                                  <a class="nav-link" href="premium.html">Premium</a>
+                              </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form id="searchForm" class="d-flex">
+                  <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+              <!-- off canva -->
+              <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+          </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header" style="color: #fff;
+       background-color: #dc3545">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                      <div>
+                          Stream Latest Movies Now!
+                      </div>
+                      <div class="dropdown mt-3">
+                          <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Varieties
+                </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                              <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                              <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                              <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                      Thriller</a></li>
+                              <li><a class="dropdown-item" href="action.html">Action</a></li>
+                              <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                              </li>
+                              <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                              <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                              <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                              <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                              <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                              <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- off canva ends -->
+        
+              <div class="page-container">
+                <div class="post-slider">
+                  
+                  <i class="fas fa-chevron-left prev"></i>
+                  <i class="fas fa-chevron-right next"></i>
+                  <div class="post-wrapper">
+                    <div class="post">
+                      <img src="images/Idiots.png" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                      <img src="images/ckd.jpg" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                      <img src="images/vlhta.jpg" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                      <img src="images/YJHD cover.jpg" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                        <img src="images/Idiots.png" alt="" class="slider-image" />
+                      </div>
+                      <div class="post">
+                        <img src="images/ckd.jpg" alt="" class="slider-image" />
+                      </div>
+                      <div class="post">
+                        <img src="images/vlhta.jpg" alt="" class="slider-image" />
+                      </div>
+                      <div class="post">
+                        <img src="images/YJHD cover.jpg" alt="" class="slider-image" />
+                      </div>
+                   
+                  </div>
                 </div>
-                
+              </div>
+            </div>
+            
+          
                 <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
                     <div class="container">
                         <div id="movies" class="row"></div>
@@ -577,10 +425,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/msdhoni.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>Inception</h1>
+                              <h1>MS Dhoni</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -601,7 +449,7 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>Inception</b>
+                                  <b>MS Dhoni</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -612,10 +460,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/lala.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/ye jawani.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>La La Land</h1>
+                              <h1>Ye Jawani Hai Deewani</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -636,7 +484,7 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>La La Land</b>
+                                  <b>Ye Jawani Hai Deewani</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -647,10 +495,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/joker.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/Idiots.png" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>Joker</h1>
+                              <h1>3 Idiots</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -671,7 +519,7 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>Joker</b>
+                                  <b>3 Idiots</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -682,10 +530,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/bb.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>Avengers: Endgame</h1>
+                              <h1>Bajrangi Bhaijan</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -706,7 +554,7 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>Avengers: Endgame</b>
+                                  <b>Bajrangi Bhaijan</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -718,10 +566,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/inter.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/ppw.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>Interstellar</h1>
+                              <h1>Pati Patni Aur Woh</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -742,35 +590,30 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>Interstellar</b>
+                                  <b>Pati Patni Aur Woh</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
                           </div>
                         </div>
                       </div> 
-                   
-                    
-            
+                     
                 </div>
-               
-
-
-
-
+                </div>
+                <!--top picks-->
                 <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
                     <div class="row">
-                        <h3 class="section-title text-center">Action</h3>
+                        <h3 class="section-title text-center">Top Picks For You</h3>
                     </div>
                     <div class="post-container owl-carousel">
                       <div class="poster">
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/atomicblonde.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/holiday.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>Atomic Blonde</h1>
+                              <h1>Holiday</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -791,7 +634,7 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>Atomic Blonde</b>
+                                  <b>Holiday</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -802,10 +645,10 @@ i:hover {
                         <div class="flip-card_i">
                           <div class="flip-card-inner_i">
                             <div class="flip-card-front_i">
-                                <img src="./Images/6 underground.jpg" alt="Avatar" style="width:250px;height:360px;">
+                                <img src="./Images/ett.jpg" alt="Avatar" style="width:250px;height:360px;">
                             </div>
                             <div class="flip-card-back_i">
-                              <h1>6 Underground</h1>
+                              <h1>Ek Tha Tiger</h1>
                                 <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                                 <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -826,7 +669,112 @@ i:hover {
                               background: rgba(0, 0, 0, 0.5);
                               color: white;
                               width: 100%;">
-                                  <b>6 Underground</b>
+                                  <b>Ek Tha Tiger</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/pdm.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Padmavati</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Padmavati</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/stoy.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Student Of The Year</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Student Of The Year</b>
+                                  <br>
+                                  IMDb - 8.8
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="poster">
+                        <div class="flip-card_i">
+                          <div class="flip-card-inner_i">
+                            <div class="flip-card-front_i">
+                                <img src="./Images/race.jpg" alt="Avatar" style="width:250px;height:360px;">
+                            </div>
+                            <div class="flip-card-back_i">
+                              <h1>Race 2</h1>
+                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                              </span>
+                              <br />
+                              <br />
+                            </p>
+              
+                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+              
+                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                                    <input class="trailer_i" type="submit" value="▶Trailer" />
+                                </form>
+              
+                            </div>
+                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                              background: rgb(0, 0, 0);
+                              background: rgba(0, 0, 0, 0.5);
+                              color: white;
+                              width: 100%;">
+                                  <b>Race 2</b>
                                   <br>
                                   IMDb - 8.8
                               </div>
@@ -834,116 +782,195 @@ i:hover {
                         </div>
                       </div> 
                     
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/johnwick.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>John Wick</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>John Wick</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/wonderwoman.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Wonder Woman</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Wonder Woman</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
-                      <div class="poster">
-                        <div class="flip-card_i">
-                          <div class="flip-card-inner_i">
-                            <div class="flip-card-front_i">
-                                <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
-                            </div>
-                            <div class="flip-card-back_i">
-                              <h1>Inception</h1>
-                                <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                                <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
-                                <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
-                              </span>
-                              <br />
-                              <br />
-                            </p>
-              
-                              <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
-              
-                                <form action="https://youtu.be/YoHD9XEInc0&t=17s">
-                                    <input class="trailer_i" type="submit" value="▶Trailer" />
-                                </form>
-              
-                            </div>
-                              <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
-                              background: rgb(0, 0, 0);
-                              background: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              width: 100%;">
-                                  <b>Inception</b>
-                                  <br>
-                                  IMDb - 8.8
-                              </div>
-                          </div>
-                        </div>
-                      </div> 
                 </div>
                 
                 </div>
         
-       
+        <!--abradabra-->
+        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+            <div class="row">
+                <h3 class="section-title text-center">Featured</h3>
+            </div>
+            <div class="post-container owl-carousel">
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/aaam.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Andaaz Apna Apna</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Andaz Apna Apna</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/ckdm.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Chakde India</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Chakde India</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/bmb.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Bhaag Milkha Bhaag</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Bhaag Milkha Bhaag</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/gangs of wassepur.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Gangs of Wasseypur</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Gangs Of Wasseypur</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/dsm.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Drishiyam</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Drishyam</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
+            
+        </div>
+        </div>
+
         <!--COMEDY-->
 
 
@@ -957,10 +984,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/duedate.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/cc.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Due Date</h1>
+                      <h1>Chichore</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -981,7 +1008,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>Due Date</b>
+                          <b>Chichore</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -992,10 +1019,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/hangover.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/m.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Hangover</h1>
+                      <h1>Phir Hera Pheri</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1016,7 +1043,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>Hangover</b>
+                          <b>Phir Hera Pheri</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1027,10 +1054,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/We're_the_Millers_poster.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/gn.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>We're the Millers</h1>
+                      <h1>Good Newwz</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1051,7 +1078,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>We're the Millers</b>
+                          <b>Good Newwz</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1062,10 +1089,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/17 again.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/welc.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>17 Again</h1>
+                      <h1>Welcome</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1086,7 +1113,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>17 Again</b>
+                          <b>Welcome</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1097,10 +1124,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/bridesmaids.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/golmaal.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Bridesmaids</h1>
+                      <h1>Golmaal 3</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1121,7 +1148,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>Bridesmaids</b>
+                          <b>Golmaal 3</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1142,10 +1169,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/mary.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/rl.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>There's Something About Mary</h1>
+                      <h1>Goliyon ki Raasleela- Ram Leela</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1166,7 +1193,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>There's Something About Mary</b>
+                          <b>Goliyon Ki Raasleela- Ram Leela</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1177,10 +1204,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/forest.png" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/ts.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Forest Gump</h1>
+                      <h1>2 States</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1201,7 +1228,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>Forest Gump</b>
+                          <b>2 States</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1212,10 +1239,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/27dresses.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/adhm.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>27 Dresses</h1>
+                      <h1>Ae Dil Hai Mushkil</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1236,7 +1263,7 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>27 Dresses</b>
+                          <b>Ae Dil Hai Mushkil</b>
                           <br>
                           IMDb - 8.8
                       </div>
@@ -1247,10 +1274,10 @@ i:hover {
                 <div class="flip-card_i">
                   <div class="flip-card-inner_i">
                     <div class="flip-card-front_i">
-                        <img src="./Images/NottingHillRobertsGrant.jpg" alt="Avatar" style="width:250px;height:360px;">
+                        <img src="./Images/ks.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Notting Hill</h1>
+                      <h1>Kabir Singh</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
                         <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
@@ -1271,138 +1298,169 @@ i:hover {
                       background: rgba(0, 0, 0, 0.5);
                       color: white;
                       width: 100%;">
-                          <b>Notting Hill</b>
+                          <b>Kabir Singh</b>
                           <br>
                           IMDb - 8.8
                       </div>
                   </div>
                 </div>
               </div> 
-           
-            
-            
+              <div class="poster">
+                <div class="flip-card_i">
+                  <div class="flip-card-inner_i">
+                    <div class="flip-card-front_i">
+                        <img src="./Images/stk.jpg" alt="Avatar" style="width:250px;height:360px;">
+                    </div>
+                    <div class="flip-card-back_i">
+                      <h1>Sanam Teri Kasam</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                      </span>
+                      <br />
+                      <br />
+                    </p>
+      
+                      <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
+      
+                        <form action="https://youtu.be/YoHD9XEInc0&t=17s">
+                            <input class="trailer_i" type="submit" value="▶Trailer" />
+                        </form>
+      
+                    </div>
+                      <div class="flim" style="z-index: 11;position: relative;bottom:-320px;text-align: center;                            
+                      background: rgb(0, 0, 0);
+                      background: rgba(0, 0, 0, 0.5);
+                      color: white;
+                      width: 100%;">
+                          <b>Sanam Teri Kasam</b>
+                          <br>
+                          IMDb - 8.8
+                      </div>
+                  </div>
+                </div>
+              </div> 
             
             </div>
         </div>
         
 
-       </div>  </div>
+          </div>              
         <!-------------------------------Footer-------------------------------->
-    <footer class="footer">
-        <hr class="footer-hr">
-        <div class="footer-content">
-          <div class="footer-left">
-            <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-                height="24"></a>
-            <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-          </div>
-          <div class="footer-middle">
-            <h2 class="footer-heading">Follow Us</h2>
-            <ul class="footer-middle-list icons">
-              <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
-                  class="fab fa-facebook-f facebook" style="color:red"></i></a>
-              <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
-                  class="fab fa-twitter twitter" style="color:red"></i></a>
-              <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
-                  class="fab fa-linkedin linkedin" style="color:red"></i></a>
-              <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
-                  class="fab fa-instagram instagram" style="color:red"></i></a>
-              <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                  class="fab fa-github github" style="color:red"></i></a>
-            </ul>
-          </div>
-          <div class="footer-middle">
-            <h2 class="footer-heading">Services</h2>
-            <ul class="footer-middle-list">
-              <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-              <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-              <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-              <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-              <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
-            </ul>
-          </div>
-          <div class="footer-middle">
-            <h2 class="footer-heading">Try Our App</h2>
-            <ul class="footer-middle-list icons">
-              <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-              <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-            </ul>
-          </div>
-          <div class="footer-right">
-            <p class="footer-links">
-            <h2 class="footer-heading">Contact Us</h2>
-            <p class="footer-bottom-tagline">Feel free to contact us.</p>
-            <a class="footer-contact-button" href="contactus.html">Contact</a>
-            </p>
-          </div>
+     <!-------------------------------Footer-------------------------------->
+     <footer class="footer">
+      <hr class="footer-hr">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
-        <hr class="footer-hr">
-        <div class="footer-copyright">
-          <p>Copyright &copy; and &reg; Since
-            <script>
-              document.write(new Date().getFullYear())
-            </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+        <div class="footer-middle">
+          <h2 class="footer-heading">Follow Us</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f facebook" style="color:red"></i></a>
+            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                class="fab fa-twitter twitter" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                class="fab fa-linkedin linkedin" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram" style="color:red"></i></a>
+            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
+                class="fab fa-github github" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Try Our App</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="footer-links">
+          <h2 class="footer-heading">Contact Us</h2>
+          <p class="footer-bottom-tagline">Feel free to contact us.</p>
+          <a class="footer-contact-button" href="contactus.html">Contact</a>
           </p>
         </div>
-      </footer>
-  
-      <!----------------------scroll back to top button-->
-      <button id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      </button>
-      <script>
-        $(document).ready(function () {
-          var scrollTopButton = document.getElementById("scrollToTopButton");
-          window.onscroll = function () { scrollFunction() };
-  
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              scrollTopButton.style.display = "block";
-            } else {
-              scrollTopButton.style.display = "none";
-            }
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-copyright">
+        <p>Copyright &copy; and &reg; Since
+          <script>
+            document.write(new Date().getFullYear())
+          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+        </p>
+      </div>
+      
+    </footer>
+
+    <!----------------------scroll back to top button-->
+    <button id="scrollToTopButton" title="Go to top" class="ml-5" >
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      $(document).ready(function () {
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
           }
-  
-          $("#scrollToTopButton").click(function () {
-            $('html ,body').animate({ scrollTop: 0 }, 800)
-          });
+        }
+
+        $("#scrollToTopButton").click(function () {
+          $('html ,body').animate({ scrollTop: 0 }, 800)
         });
-      </script>
+      });
+    </script>
 
+    <!-- footer scripts -->
 
-  
-      <!-- footer scripts -->
-    
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="js/main-min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      ></script>
-      <script>
-        jQuery('#waterdrop').raindrops({
-          color: '#292c2f',
-          canvasHeight: 150,
-          density: 0.1,
-          frequency: 20
-        });
-      </script>
-        <!-- bootsstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      jQuery('#waterdrop').raindrops({
+        color: '#292c2f',
+        canvasHeight: 150,
+        density: 0.1,
+        frequency: 20
+      });
+    </script>
+      <!-- bootsstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-          crossorigin="anonymous"></script>
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-          crossorigin="anonymous"></script>
-        <script src="./static/script.js"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+      <script src="./static/script.js"></script>
         <script>
           $(document).ready(function () {
             $(".post-container").owlCarousel({

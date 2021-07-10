@@ -26,11 +26,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="webStyle.css">
     <link rel="stylesheet" href="hindim.css">
+    <link rel="stylesheet" href="test.css">
+    
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
     #scrollToTopButton{
@@ -189,6 +197,62 @@ font-size:18px;
   bottom: -70px !important;
 }
 
+#waterdrop canvas {
+  bottom: -70px !important;
+}
+#header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+
+
 i:hover {
     background-color: white;
     color: red;
@@ -221,20 +285,22 @@ i:hover {
         <!-- Navbar starts  -->
     
     
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-                height="24"></a>
-            <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                </li>
-                <li class="nav-item langdrop1">
+        
+          <!--Navbar Starts-->
+              <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                  height="24"></a>
+              <button  id="nav" class="navbar-toggler"style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item langdrop1">
                     <a class="nav-link" href="movies.html">Movies</a>
                     <ul class="langdrop">
                       <li class="lang"><a href="engm.html">English</a></li>
@@ -242,100 +308,100 @@ i:hover {
                      </ul>
                    
                   </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="web-series.html">Web Series</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kids.html">Kids</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tv.html">TV</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="premium.html">Premium</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contactus.html">Contact Us</a>
-                </li>
-              </ul>
-              <form id="searchForm" class="d-flex">
-                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                <button class="btn btn-danger" type="submit">Search</button>
-              </form>
+                  <li class="nav-item">
+                    <a class="nav-link" href="web-series.html">Web Series</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kids.html">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tv.html">TV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="anime.html">Anime</a>
+                  </li>
+                    <li class="nav-item">
+                                  <a class="nav-link" href="premium.html">Premium</a>
+                              </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form id="searchForm" class="d-flex">
+                  <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </nav>
-               <!-- off canva -->
-               <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                Have a Look on Various Movies!
-              </a>
-                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                      <div class="offcanvas-header" style="color: #fff;
-           background-color: #dc3545">
-                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </nav>
+              <!-- off canva -->
+              <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Have a Look on Various Movies!
+          </a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header" style="color: #fff;
+       background-color: #dc3545">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+                      <div>
+                          Stream Latest Movies Now!
                       </div>
-                      <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-                          <div>
-                              Stream Latest Movies Now!
-                          </div>
-                          <div class="dropdown mt-3">
-                              <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                      Varieties
-                    </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                                  <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                                  <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                                  <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                          Thriller</a></li>
-                                  <li><a class="dropdown-item" href="action.html">Action</a></li>
-                                  <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                                  </li>
-                                  <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                                  <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                                  <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                                  <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                                  <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                                  <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                              </ul>
-                          </div>
+                      <div class="dropdown mt-3">
+                          <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Varieties
+                </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
+                              <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
+                              <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+                              <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
+                      Thriller</a></li>
+                              <li><a class="dropdown-item" href="action.html">Action</a></li>
+                              <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
+                              </li>
+                              <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
+                              <li><a class="dropdown-item" href="horror.html">Horror</a></li>
+                              <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                              <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
+                              <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
+                              <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                          </ul>
                       </div>
                   </div>
-          
-                  <!-- off canva ends -->
-                  <div class="main-content">
-
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="./Images/msd.jpg"  height="400" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Images/YJHD cover.jpg" height="400"  class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Images/vlhta.jpg" height="400"  class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Images/Idiots.png" height="400"  class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./Images/ckd.jpg" height="400"  class="d-block w-100" alt="...">
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </a>
+              </div>
+      
+              <!-- off canva ends -->
+        
+              <div class="page-container">
+                <div class="post-slider">
+                  
+                  <i class="fas fa-chevron-left prev"></i>
+                  <i class="fas fa-chevron-right next"></i>
+                  <div class="post-wrapper">
+                    <div class="post">
+                      <img src="images/Idiots.png" alt="" class="slider-image" />
                     </div>
+                    <div class="post">
+                      <img src="images/ckd.jpg" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                      <img src="images/vlhta.jpg" alt="" class="slider-image" />
+                    </div>
+                    <div class="post">
+                      <img src="images/YJHD cover.jpg" alt="" class="slider-image" />
+                    </div>
+                    
+                   
+                  </div>
                 </div>
+              </div>
+            
+            
+          
                 <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
                     <div class="container">
                         <div id="movies" class="row"></div>
@@ -522,6 +588,7 @@ i:hover {
                         </div>
                       </div> 
                      
+                </div>
                 </div>
                 <!--top picks-->
                 <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
@@ -1268,7 +1335,7 @@ i:hover {
         </div>
         
 
-                    
+          </div>              
         <!-------------------------------Footer-------------------------------->
      <!-------------------------------Footer-------------------------------->
      <footer class="footer">
@@ -1331,7 +1398,7 @@ i:hover {
     </footer>
 
     <!----------------------scroll back to top button-->
-    <button id="scrollToTopButton" title="Go to top" class="ml-5" style="position:fixed;">
+    <button id="scrollToTopButton" title="Go to top" class="ml-5" >
       <i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </button>
     <script>
@@ -1361,7 +1428,11 @@ i:hover {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main-min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script>
       jQuery('#waterdrop').raindrops({
         color: '#292c2f',
@@ -1374,7 +1445,7 @@ i:hover {
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -1403,5 +1474,6 @@ i:hover {
           });
         </script>
       <script src="./static/script.js"></script>  
+      <script src="./js/hindim.js"></script>
   </body>
 </html>
