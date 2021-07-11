@@ -1,8 +1,10 @@
-#### Issue Number
+#### Fixes #(issue number)
+<!--  Please Mention the issue number as  Fixes #(issue number) instead of ISSUE #(issue number)
+      Example:
+      Fixes #5 
+      (so that the issue automatically gets closed on successful merging of PR)
+-->
  
-<!-- Please Mention the issue number as  ISSUE #(Issue Number)
-Example:
-ISSUE #5 -->
 
 #### Describe the changes you've made
 A clear and concise description of what you have done to successfully close your assigned issue. Any new files? or anything you feel to let us know!
