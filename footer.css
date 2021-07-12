@@ -1,7 +1,31 @@
  /* CSS FOR FOOTER */
  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+.footer{
+  padding:0;
+  height:fit-content;
+}
+.heading
+{
+  padding-bottom:2px;
+  margin-bottom:0;
+  
+}
+.footer-left
+{
+  margin-top:0 !important;
 
+}
+.footer-logo
+{
+  margin-top:0 !important;
+}
+.footer-copyright{
+  text-align:center;
+  color:white;
+  margin-top:0;
+  font-size:18px;
+  }
  .footer-distributed {
    background-color: #292c2f;
    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -160,6 +184,9 @@
   }
   .footer-heading{
     color:white;
+    padding-bottom:0;
+    margin-bottom:0;
+    
   }
   .footer-left, .footer-right, .footer-middle{
   text-align:center;
@@ -217,12 +244,7 @@
   }
   
   
-  .footer-copyright{
-  text-align:center;
-  color:white;
-  margin-top:20px;
-  font-size:18px;
-  }
+ 
   .footer-hr{
       color:grey;
       font-weight:bold;
