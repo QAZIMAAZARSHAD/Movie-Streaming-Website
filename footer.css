@@ -183,8 +183,9 @@
   list-style:none;
   font-size:15px;
   font-family:cursive;
-  margin:5px 0px 0px 15px;
-  text-align:left;
+  padding: 0px;
+  text-align:center;
+  margin: 0px;
   }
   .footer-middle-list-item a{
   text-decoration:none;
@@ -254,5 +255,6 @@
     bottom: -70px !important;
   }
   
+ 
   
  
