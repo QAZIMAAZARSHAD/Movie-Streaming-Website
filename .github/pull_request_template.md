@@ -27,7 +27,6 @@ Example how to mark a checkbox :-
 - [ ] I have mentioned related issue number in PR description.
 - [ ] I have added screenshots and related demo links of my changes..
 - [ ] The title of my pull request is a short description of the requested changes.
-- [ ] I have added my name in the contributors list at the end of README.md file.
 - [ ] My code follows the code style of this project.
 - [ ] My change requires a change to the documentation.
 - [ ] I have updated the documentation accordingly.
