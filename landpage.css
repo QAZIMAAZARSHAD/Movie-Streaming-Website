@@ -106,12 +106,29 @@
     color: #fff;
     text-decoration: none;
     background-color: rgb(165, 7, 7);
-  }
+    }
   .text-container .button:hover {
     color: #fff;
     text-decoration: none;
     background-color: rgb(202, 6, 6);
     transition:  all 500ms;
+  }
+  .button {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(165, 7, 7);
+    box-shadow: 0 5px #660707;
+    display: inline-block;
+    opacity: 0.9;
+  }
+  .button:hover{
+    opacity: 1;
+  }
+  .button:active {
+    position: relative;
+    box-shadow: none;
+    transform: translateY(3px);
+    
   }
   .bottom-text-container {
     width: 300px;
