@@ -1,6 +1,6 @@
 # Movie Streaming Website  🎬
 
-Are you a movie maniac, who loves to binge-watch awesome series? If Yes, then you have come to the right place.
+Are you a movie maniac, who loves to binge-watch awesome movies & series? If Yes, then you have come to the right place.
 <p align="center"><img src="https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif" width = 40%></p>
 
 Everyone loves to watch their favorite shows with friends and some snacks. But there is something that you might be missing out on!
@@ -12,10 +12,10 @@ So, what else do you need?🤔.
 Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
 <p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 40%></p>
 
-We already have Netflix, Prime, and Hotstar but they might be expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time, require some web development knowledge, and still you might get something really cool. 
+We already have Netflix, Amazon Prime, and Hotstar but they might get expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time or require some web development knowledge, and after all of that will you still get something really cool?
 <p align="center"><img src="https://i.pinimg.com/originals/a1/55/93/a1559307185334cb66fb0ccf5e787bd0.gif" width = 40%></p>
 
-Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre Website__ is here for the rescue!
+Well, take a chill pill. Don't be intimidated by these thoughts. __Apna Theatre Website__ is here to the rescue!
 <p align="center"><img src="https://i.pinimg.com/originals/eb/39/9a/eb399a729c812376ca23c06df2d1e380.gif" width = 40%></p>
 
 ## A sneak peek into what we have here🙈 :
@@ -41,7 +41,7 @@ Well! Take a chill pill. Don't be intimidated by those thoughts. __Apna Theatre 
 <div>
 <img src="Images\Logo/logo1.png" height = "120" align = "left"/>
 <div>
-ApnaTheatre.com is a place for all movieocohlic's to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows, and web series from multiple genres like crime, comedy, drama, kids etc.</div>
+ApnaTheatre.com is a place for all movieholics & cinephiles to enjoy. This movie streaming website allows users to watch their favorite movies, tv shows, and web series from multiple genres like Crime, Comedy, Drama, Documentaries, Horror, Anime, Romance, War, Action, Fantasy, Kids and many more! </div>
 </div>
 <br>
 
@@ -70,7 +70,7 @@ Are we missing any of your favorite features, which you think you can add to it�
 
 To start contributing, follow the below guidelines: 
 
-**🌟.**  Star🌟 the repo to stay updated and appreciate the work.
+**🌟.**  Star🌟 the repo to appreciate the work.
 
 **0.**  Take a look at the existing [issues](https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/issues) or create your own issues. Wait for the Issue to be assigned to you after which you can start working on it.
 
@@ -144,7 +144,7 @@ git push -u origin <your_branch_name>
 
 <p align="center"><img src="https://media.tenor.com/images/b562ddcfb131e962f9dfa01bd32a30d1/tenor.gif" width=30%></p>
 
-## Project Admin👨‍:
+## Project Admin👨‍
 
 <p align="center">
 <img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
@@ -153,7 +153,7 @@ git push -u origin <your_branch_name>
 <a href="https://www.linkedin.com/in/qazi-maaz-arshad/">
 <h5 align="center"><b>Qazi Maaz Arshad</b></a>
 
-## Open Source Programs we have been associated with: 
+## Open Source Programs we have been associated with
      
 <p align="center">
 <a href="https://lgmsoc.co/">
@@ -178,3 +178,4 @@ git push -u origin <your_branch_name>
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=QAZIMAAZARSHAD/Movie-Streaming-Website" />
 </a>
+

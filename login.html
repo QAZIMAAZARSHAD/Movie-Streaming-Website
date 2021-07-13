@@ -276,7 +276,7 @@ box-shadow: 0 6px 10px 0px gray;
 
       .login-face{
           margin: 100px -20px 30px -260px;
-          text-align: center
+          text-align: center;
           vertical-align: middle;
           color: #bdc7c9;
       }
@@ -409,11 +409,10 @@ color: white;
   justify-content: space-between;
 }
     </style>
-        <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src ="script.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="logo">
@@ -458,8 +457,7 @@ color: white;
         <div class="remember-flex">
             <div> 
               <div class="or">OR</div>
-              <div class="g-signin2" data-width="260" data-height="50" 
-              data-longtitle="true">
+              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="250" data-height="50" data-longtitle="true"></div>
               </div>
             <div class="help">
                 <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
@@ -551,6 +549,15 @@ color: white;
        $("#pass_signup").attr("type", "password");
      }
     });
+    </script>
+    <script>
+      
+      function onSignIn(googleUser) {
+   
+            document.location.href = 'https://qazimaazarshad.github.io/Movie-Streaming-Website/home.html'
+      
+    }
+      
     </script>
   </body>
 </html>
