@@ -211,3 +211,32 @@
   #waterdrop canvas {
     bottom: -70px !important;
   }
+
+/* Genre dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+background-color: red;
+color: white;
+text-decoration: none;
+}

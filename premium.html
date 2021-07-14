@@ -23,49 +23,78 @@
         </head>
         <body>
 
-    <!-- Navbar starts  -->
+    <!-- navbar starts -->
 
-
-    <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-      <a href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"height="24"></a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="movies.html">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="web-series.html">Web Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kids.html">Kids</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tv.html">TV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="anime.html">Anime</a>
-              </li>
-                <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
-            </ul>
-            <form id="searchForm" class="d-flex">
-              <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Search</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li>
+              <!-- Genre dropdown starts-->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                        Genres
+                    </button>
+                    <div class="dropdown-content" style="color: white;">
+                        <a href="popular.html">Popular</a>
+                        <a href="crime.html">Crime</a>
+                        <a href="suspense.html">Suspense & Thriller</a>
+                        <a href="action.html">Action</a>
+                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                        <a href="documentary.html">Documentary</a>
+                        <a href="horror.html">Horror</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="war.html">War & Politics</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="romance.html">Romance</a>
+                      </div>
+                </div>
+              </div>
+              <!-- Genre dropdown ends-->
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
         </div>
+      </div>
       </nav>
-      <!-- Navbar Ends  -->
+
+        <!-- navbar ends -->
+        
        <!-- ======= Pricing Section ======= -->
     <div id="pricing" class="pricing">
       <div class="container">
