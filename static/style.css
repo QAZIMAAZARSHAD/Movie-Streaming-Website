@@ -839,21 +839,22 @@ textarea.ng-valid {
   border-radius: 5px;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: darkred;
   min-width: 160px;
   z-index: 1;
 }
 
 .dropdown-content a {
+  font-size: 15px;
   border-radius: 5px;
   color: white;
-  padding: 5px 10px;
+  padding: 10px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-background-color: darkred;
+background-color: red;
 color: white;
 text-decoration: none;
 }
