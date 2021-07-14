@@ -61,7 +61,7 @@ color:red;
 
         <!-- navbar starts -->
 
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
@@ -72,6 +72,30 @@ color:red;
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <!-- Genre dropdown starts-->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px;">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px;">
+                        Genres
+                    </button>
+                    <div class="dropdown-content" style="background-color: #d4a09c; color: white;">
+                        <a href="popular.html">Popular</a>
+                        <a href="crime.html">Crime</a>
+                        <a href="suspense.html">Suspense & Thriller</a>
+                        <a href="action.html">Action</a>
+                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                        <a href="documentary.html">Documentary</a>
+                        <a href="horror.html">Horror</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="war.html">War & Politics</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="romance.html">Romance</a>
+                      </div>
+                </div>
+              </div>
+              <!-- Genre dropdown ends-->
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
@@ -104,36 +128,10 @@ color:red;
           </form>
         </div>
       </div>
-    </nav>
+      </nav>
 
         <!-- navbar ends -->
 
-
-      <!-- Genre dropdown starts-->
-      <div>
-        <div class="dropdown" style="position: relative; display: inline-block; padding-left: 5%; padding-top: 15px;">
-            <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton">
-                Genres
-            </button>
-            <div class="dropdown-content" style="background-color: #d4a09c; color: white;">
-                <a href="popular.html">Popular</a>
-                <a href="crime.html">Crime</a>
-                <a href="suspense.html">Suspense & Thriller</a>
-                <a href="action.html">Action</a>
-                <a href="fantasy.html">Sci-Fi & Fantasy</a>
-                <a href="documentary.html">Documentary</a>
-                <a href="horror.html">Horror</a>
-                <a href="drama.html">Drama</a>
-                <a href="war.html">War & Politics</a>
-                <a href="comedy.html">Comedy</a>
-                <a href="romance.html">Romance</a>
-              </div>
-        </div>
-      </div>
-      <!-- Genre dropdown ends-->
-        
-
-      
         <div class="maincontainer">
             <div class="container">
                 <div id="movies" class="row"></div>
