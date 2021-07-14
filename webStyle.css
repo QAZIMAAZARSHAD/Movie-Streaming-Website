@@ -221,7 +221,7 @@
   border-radius: 5px;
   display: none;
   position: absolute;
-  background-color: darkred;
+  background-color: black;
   min-width: 160px;
   z-index: 1;
 }
