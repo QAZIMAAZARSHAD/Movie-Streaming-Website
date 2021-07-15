@@ -25,10 +25,6 @@
     -o-user-drag: none;
   }
 
-  img {
-    pointer-events: none;
-  }
-
   .movie_card {
     padding: 0 !important;
     width: 14rem;
@@ -239,4 +235,8 @@
 background-color: red;
 color: white;
 text-decoration: none;
+}
+
+.col img {
+  cursor: pointer;
 }
