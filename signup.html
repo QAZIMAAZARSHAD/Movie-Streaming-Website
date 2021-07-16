@@ -569,12 +569,15 @@ color:red;
       var usercode = document.forms["verificationform"]["code"].value;
       console.log('hii')
       if(code == usercode){
+      
+        
+
         swal({
             title: "Registration Successful!",
             text:  "Happy to have you aboard",
             type: "success",
           });
-          
+        
           window.location.href="quiz.html";
         // console.log(window.location.href)
         // console.log('hi')
@@ -585,9 +588,9 @@ color:red;
         // console.log(newurl)
         // history.pushState(null,null, newurl);
         // window.location.reload();
+        // onsubmit="return DisplayResults()"
 
-
-      }else{
+  }else{
         swal({
           title: "Invalid code",
           type: "warning",
