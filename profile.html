@@ -193,6 +193,12 @@ i:hover {
 }
 
 </style>
+<script>
+  setTimeout(function () {
+    $('.section').fadeToggle();
+  }, 4000);
+  
+</script>
 <body>
   
   <div class="scroll-bar">
@@ -227,9 +233,7 @@ i:hover {
             <li class="nav-item">
               <a class="nav-link" href="premium.html">Premium</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
@@ -237,10 +241,10 @@ i:hover {
               <a class="nav-link" href="profile.html">My Profile</a>
             </li>
           </ul>
-          <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
-          </form>
+          <li>
+            <a class="nav-link" href="login.html">Logout</a>
+          </li>
+        </ul>
         </div>
       </div>
     </nav>
@@ -313,6 +317,28 @@ i:hover {
         </p>
       </div>
     </footer>
+      <!----------------------scroll back to top button-->
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      $(document).ready(function () {
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
+        }
+
+        $("#scrollToTopButton").click(function () {
+          $('html ,body').animate({ scrollTop: 0 }, 800)
+        });
+      });
+    </script>
     <script src="script.js"></script>
    <script> 
 const users = ['vinod', 'thapa', 'bahadur'];
@@ -347,5 +373,27 @@ addIcon.addEventListener('click', () => {
 userIcons();
 
 </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main-min.js"></script>
+
+<script>
+  jQuery('#waterdrop').raindrops({
+    color: '#292c2f',
+    canvasHeight: 150,
+    density: 0.1,
+    frequency: 20
+  });
+</script>
+<!-- bootsstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"></script>
+<script src="./static/script.js"></script>
 </body>
 </html>
