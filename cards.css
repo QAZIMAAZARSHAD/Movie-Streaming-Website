@@ -43,6 +43,12 @@ h1{
     margin-left: 10px;
     margin-right: 5px;
   }
+  .b4_i{
+    margin-top: -10px;
+    margin-bottom: 2px;;
+    color: white;
+    border-color: grey;
+  }
 
   .trailer_i{
     width: 90px;
@@ -57,6 +63,7 @@ h1{
   }
   .para_i{
     font-size: 0.8em;
+    margin-bottom: 5px;
   }
 .flip-card-front_i, .flip-card-back_i {
   position: absolute;
