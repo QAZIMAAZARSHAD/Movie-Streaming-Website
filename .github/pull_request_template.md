@@ -9,6 +9,9 @@
 #### Describe the changes you've made
 A clear and concise description of what you have done to successfully close your assigned issue. Any new files? or anything you feel to let us know!
 
+#### Deploy your changes to github page or netlify and mention deployment link:
+Add the deployment link here.
+
 #### Describe if there is any unusual behaviour of your code(Write `NA` if there isn't)
 A clear and concise description of it.
 
