@@ -45,10 +45,17 @@ h1{
     margin-right: 5px;
   }
   .b4_i{
-    margin-top: -10px;
+    
     margin-bottom: 2px;;
-    color: white;
-    border-color: grey;
+    width: 90px;
+    height: 35px;
+    margin-top: auto;
+    border:none;
+    border:solid 2px white;
+    border-radius: 5px;
+    background-color: #e7e7e7; 
+    color: black;
+    font-size: 1em;
   }
 
   .trailer_i{
