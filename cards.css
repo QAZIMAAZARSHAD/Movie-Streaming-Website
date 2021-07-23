@@ -5,6 +5,7 @@
   width: 250px;
   height: 360px;
   perspective: 1000px;
+  cursor: pointer;
 }
 h1{
   font-size: 45px;
@@ -57,7 +58,8 @@ h1{
    border:none;
    border:solid 2px white;
    border-radius: 5px;
-   {background-color: #e7e7e7; color: black;}
+   background-color: #e7e7e7; 
+   color: black;
    font-size: 1em;
 
   }
@@ -77,7 +79,7 @@ h1{
 }
 .form-group2_i{
   float: none;
-  float:
+
 }
 .form-group3_i {
     float:right;

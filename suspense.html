@@ -55,92 +55,78 @@ color:red;
 <body>
     <div class="scroll-bar">
 
-        <!-- navbar starts -->
+       <!-- navbar starts -->
 
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv.html">TV</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="anime.html">Anime</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <!-- navbar ends -->
-
-        <!-- off canva -->
-        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            Have a Look on Various Movies!
-        </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header" style="color: #fff;
-  background-color: #dc3545">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
+       <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="web-series.html">Web Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kids.html">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tv.html">TV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="premium.html">Premium</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li>
+                <!-- Genre dropdown starts-->
                 <div>
-                    Stream Latest Movies Now!
+                  <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                      <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                          Genres
+                      </button>
+                      <div class="dropdown-content" style="color: white;">
+                          <a href="popular.html">Popular</a>
+                          <a href="crime.html">Crime</a>
+                          <a href="suspense.html">Suspense & Thriller</a>
+                          <a href="action.html">Action</a>
+                          <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                          <a href="documentary.html">Documentary</a>
+                          <a href="horror.html">Horror</a>
+                          <a href="drama.html">Drama</a>
+                          <a href="war.html">War & Politics</a>
+                          <a href="comedy.html">Comedy</a>
+                          <a href="romance.html">Romance</a>
+                          <a href="anime.html">Anime</a>
+                        </div>
+                  </div>
                 </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                        Varieties
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                                Thriller</a></li>
-                        <li><a class="dropdown-item" href="action.html">Action</a></li>
-                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                        </li>
-                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                    </ul>
-                </div>
-            </div>
+                <!-- Genre dropdown ends-->
+              </li>
+            </ul>
+            <form id="searchForm" class="d-flex">
+              <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-
-        <!-- off canva ends -->
+        </nav>
+  
+          <!-- navbar ends -->
 
         <div class="maincontainer">
             <div class="container">
@@ -158,17 +144,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>A Wednesday</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1h44m</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">Prakash Rathod, a retired police commissioner recounts the most memorable case of his career wherein he was informed about a bomb scare in Mumbai by an ordinary commoner.</p>
 
-                          <form action="https://www.youtube.com/watch?v=LGfwASavWNQ">
+                          <form action="https://www.imdb.com/video/vi1117764377?playlistId=tt1280558&ref_=tt_pr_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -192,17 +178,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>Drishyam</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2h43m</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">When the disappearance of a policewoman's son threatens to ruin Vijay's family, he leaves no stone unturned in order to shield his family.</p>
 
-                          <form action="https://www.youtube.com/watch?v=AuuX2j14NBg">
+                          <form action="https://www.imdb.com/video/vi1972222745?playlistId=tt4430212&ref_=tt_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -226,17 +212,18 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>The Family Man</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">Srikant Tiwari is a middle-class man who also serves as a world-class spy. Srikant tries to balance his familial responsibilities 
+                            with the demands of the highly secretive special cell of the National Intelligence Agency that he is working for.</p>
 
-                          <form action="https://www.youtube.com/watch?v=NGf_B81Hc2M">
+                          <form action="https://www.imdb.com/video/vi1674035225?playlistId=tt9544034&ref_=tt_pr_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -245,7 +232,7 @@ color:red;
                         <div class="flim">
                             <b>The Family Man</b>
                             <br>
-                            IMDb - 8.7
+                            IMDb - 8.8
                         </div>
                     </div>
                   </div>
@@ -260,17 +247,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>Money Heist</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. </p>
 
-                          <form action="https://www.youtube.com/watch?v=p_PJbmrX4uk">
+                          <form action="https://www.imdb.com/video/vi3823876889">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -294,17 +281,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>Lucifier</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">Based on characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg, this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell. </p>
 
-                          <form action="https://www.youtube.com/watch?v=X4bF_quwNtw">
+                          <form action="https://www.imdb.com/video/vi3234640665">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -328,17 +315,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>The Hunger Games</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">2h23m</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">7.2</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">Katniss volunteers to replace her sister in a tournament that ends only when one participant remains. Pitted against contestants who have trained for this all their life, she has little to rely on.</p>
 
-                          <form action="https://www.youtube.com/watch?v=mfmrPu43DF8">
+                          <form action="https://www.imdb.com/video/vi3358368281?playlistId=tt1392170&ref_=tt_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -347,7 +334,7 @@ color:red;
                         <div class="flim">
                             <b>The Hunger Games</b>
                             <br>
-                            IMDb - 7.4
+                            IMDb - 7.2
                         </div>
                     </div>
                   </div>
@@ -370,9 +357,9 @@ color:red;
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">This thriller explores the lives of ordinary men faced with extraordinary circumstances.</p>
 
-                          <form action="https://www.youtube.com/watch?v=v91vyMR-fuU">
+                          <form action="https://www.imdb.com/video/vi2549725209?playlistId=tt6466208&ref_=tt_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -396,17 +383,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>Asur</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
                           <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">The series is set in the context of a modern day serial killer having religious ties.</p>
 
-                          <form action="https://www.youtube.com/watch?v=s9OywY2g8Bo">
+                          <form action="https://www.imdb.com/video/vi3937386009?playlistId=tt11912196&ref_=tt_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -415,7 +402,7 @@ color:red;
                         <div class="flim">
                             <b>Asur : Welcome to your dark side</b>
                             <br>
-                            IMDb - 8.4
+                            IMDb - 8.5
                         </div>
                     </div>
                   </div>
@@ -429,17 +416,17 @@ color:red;
                       </div>
                       <div class="flip-card-back_i">
                         <h1>Typewriter</h1>
-                          <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                          <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
                           <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.6</button>
+                          <button class="btn_i b1_i"  title="IMDb" style="color:white">6.5</button>
                         </span>
                         <br />
                         <br />
                       </p>
 
-                        <p class="para_i">Revolving around the elusive CEO of the office, essayed by India’s leading digital star, Sumeet Vyas, the drone aka D will present his worldview on corporate life. Get ready for double the drama and double the fun!</p>
+                        <p class="para_i">A haunted house and an old book stir the imaginations of young wannabe ghost hunters, but when a new family move to town, the home's buried secrets resurface.</p>
 
-                          <form action="https://www.youtube.com/watch?v=mmyNUPvEF5M">
+                          <form action="https://www.imdb.com/video/vi2871966745?playlistId=tt9310372&ref_=tt_ov_vi">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form> <br>
                           <button class="btn_i b4_i">Play</button>
@@ -448,7 +435,7 @@ color:red;
                         <div class="flim">
                             <b>Typewriter</b>
                             <br>
-                            IMDb - 6.6
+                            IMDb - 6.5
                         </div>
                     </div>
                   </div>

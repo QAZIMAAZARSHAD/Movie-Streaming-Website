@@ -41,7 +41,7 @@
     border-radius: 50%;
   }
 
-i:hover {
+#scrollToTopButton:hover,i:hover {
     background-color: white;
     color: red;
   }
@@ -77,21 +77,21 @@ i:hover {
 
 
   <div class="scroll-bar">
-    <!-- Navbar starts  -->
+    <!-- navbar starts -->
 
-
-    <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
-        <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav" >
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html" >Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="movies.html">Movies</a>
@@ -106,69 +106,54 @@ i:hover {
               <a class="nav-link" href="tv.html">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="anime.html">Anime</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="premium.html">Premium</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
-           <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li>
+              <!-- Genre dropdown starts-->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                        Genres
+                    </button>
+                    <div class="dropdown-content" style="color: white;">
+                        <a href="popular.html">Popular</a>
+                        <a href="crime.html">Crime</a>
+                        <a href="suspense.html">Suspense & Thriller</a>
+                        <a href="action.html">Action</a>
+                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                        <a href="documentary.html">Documentary</a>
+                        <a href="horror.html">Horror</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="war.html">War & Politics</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="anime.html">Anime</a>
+                      </div>
+                </div>
+              </div>
+              <!-- Genre dropdown ends-->
             </li>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" style="margin-left: 10px;" placeholder="Search" aria-label="Search">
-            <button id="submitBtn" class="btn btn-danger" type="submit">Search</button>
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
           </form>
         </div>
       </div>
-    </nav>
-    <!-- Navbar Ends  -->
+      </nav>
+
+        <!-- navbar ends -->
+
+
     <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
     <label class="online">Stream Latest Movies Now!</label>
-    <!-- off canva -->
-    <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-      aria-controls="offcanvasExample">
-      Have a Look on Various Movies!
-    </a>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header" style="color: #fff;
-     background-color: #dc3545">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-        <div>
-          Stream Latest Movies Now!
-        </div>
-        <div class="dropdown mt-3">
-          <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown">
-            Varieties
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-            style="background-color: #d4a09c; color: white; ">
-            <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-            <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-            <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                Thriller</a></li>
-            <li><a class="dropdown-item" href="action.html">Action</a></li>
-            <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-            </li>
-            <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-            <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-            <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-            <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-            <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- off canva ends -->
+    
 
 
     <div class="buddy">
@@ -274,7 +259,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Inception</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">162<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h42m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
                 </span>
                 <br />
@@ -307,7 +292,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>The Dark Knight</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">152<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h32m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
                 </span>
                 <br />
@@ -340,7 +325,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Parasite</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">132<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h12m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
                 </span>
                 <br />
@@ -373,8 +358,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>We're the Millers</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">118</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1h58m</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.0</button>
                 </span>
                 <br />
                 <br />
@@ -391,7 +376,7 @@ i:hover {
                 <div class="flim">
                     <b>We're the Millers</b>
                     <br>
-                    IMDb - 7.1
+                    IMDb - 7.0
                 </div>
             </div>
           </div>
@@ -406,7 +391,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>The Terminal</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">128<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h8m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
                 </span>
                 <br />
@@ -439,7 +424,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>The Matrix</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1999</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">136<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h16m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
                 </span>
                 <br />
@@ -472,8 +457,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Joker</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">122<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h2m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
                 </span>
                 <br />
                 <br />
@@ -490,7 +475,7 @@ i:hover {
                 <div class="flim">
                     <b>Joker</b>
                     <br>
-                    IMDb - 8.6
+                    IMDb - 8.4
                 </div>
             </div>
           </div>
@@ -505,7 +490,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Hamilton</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">160<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h40m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
                 </span>
                 <br />
@@ -538,7 +523,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>GoodFellas</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1990</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">148<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h28m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
                 </span>
                 <br />
@@ -547,7 +532,7 @@ i:hover {
 
                 <p class="para_i">Young Henry Hill, with his friends Jimmy and Tommy, begins the climb from being a petty criminal to a gangster on the mean streets of New York.</p>
 
-                  <form action="youtube.com/watch?v=qo5jJpHtI1Y">
+                  <form action="https://www.imdb.com/video/vi2673654553?playlistId=tt0099685&ref_=tt_ov_vi">
                       <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form><br>
                   <button class="btn_i b4_i">Play</button>
@@ -571,7 +556,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1 style="font-size: 30px;">The Shawshank Redemption</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">142<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h22m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">9.3</button>
                 </span>
                 <br />
@@ -604,7 +589,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>The Green Mile</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1999</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">189<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">3h9m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
                 </span>
                 <br />
@@ -637,7 +622,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Interstellar</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">169<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h55m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
                 </span>
                 <br />
@@ -674,8 +659,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Andaz Apna Apna</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">161<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h41m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                 </span>
                 <br />
                 <br />
@@ -692,7 +677,7 @@ i:hover {
                 <div class="flim">
                     <b>Andaz Apna Apna</b>
                     <br>
-                    IMDb - 8.2
+                    IMDb - 8.1
                 </div>
             </div>
           </div>
@@ -708,8 +693,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Chakde India</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">153<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h33m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                 </span>
                 <br />
                 <br />
@@ -726,7 +711,7 @@ i:hover {
                 <div class="flim">
                     <b>Chakde India</b>
                     <br>
-                    IMDb - 8.4
+                    IMDb - 8.2
                 </div>
             </div>
           </div>
@@ -740,9 +725,13 @@ i:hover {
                   <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
+<<<<<<< HEAD
                 <h1 style="font-size: 30px;">Bhaag Milkha Bhaag</h1>
+=======
+                <h1 style="font-size: 37px;">Bhaag Milkha Bhaag</h1>
+>>>>>>> upstream/master
                   <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">189<button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">3h9m<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                 </span>
                 <br />
@@ -775,7 +764,7 @@ i:hover {
                 <div class="flip-card-back_i">
                   <h1>A Wednesday</h1>
                     <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                    <button class="btn_i b2_i"  title="Seasons" style="color:white">104</button>
+                    <button class="btn_i b2_i"  title="Seasons" style="color:white">1h44m</button>
                     <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                   </span>
                   <br />
@@ -808,8 +797,8 @@ i:hover {
                 <div class="flip-card-back_i">
                   <h1>MS Dhoni</h1>
                     <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
-                    <button class="btn_i b2_i"  title="Seasons" style="color:white">220</button>
-                    <button class="btn_i b1_i"  title="IMDb" style="color:white">7.8</button>
+                    <button class="btn_i b2_i"  title="Seasons" style="color:white">3h40m</button>
+                    <button class="btn_i b1_i"  title="IMDb" style="color:white">7.9</button>
                   </span>
                   <br />
                   <br />
@@ -826,7 +815,7 @@ i:hover {
                   <div class="flim">
                       <b>Ms Dhoni : The Untold Story</b>
                       <br>
-                      IMDb - 7.8
+                      IMDb - 7.9
                   </div>
               </div>
             </div>
@@ -841,7 +830,7 @@ i:hover {
                   <div class="flip-card-back_i">
                     <h1>Drishyam</h1>
                       <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">163</button>
+                      <button class="btn_i b2_i"  title="Seasons" style="color:white">2h43m</button>
                       <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                     </span>
                     <br />
@@ -875,8 +864,8 @@ i:hover {
                   <div class="flip-card-back_i">
                     <h1>Dilwale Dulhania</h1>
                       <button class="btn_i b3_i"  title="Year" style="color:white">1995</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">192</button>
-                      <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                      <button class="btn_i b2_i"  title="Seasons" style="color:white">3h12m</button>
+                      <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                     </span>
                     <br />
                     <br />
@@ -893,7 +882,7 @@ i:hover {
                     <div class="flim">
                         <b>Dilwale Dulhania Le Jayenge</b>
                         <br>
-                        IMDb - 7.1
+                        IMDb - 8.1
                     </div>
                 </div>
               </div>
@@ -909,7 +898,7 @@ i:hover {
                   <div class="flip-card-back_i">
                     <h1>Gangs of Wasseypur</h1>
                       <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                      <button class="btn_i b2_i"  title="Seasons" style="color:white">160</button>
+                      <button class="btn_i b2_i"  title="Seasons" style="color:white">2h40m</button>
                       <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                     </span>
                     <br />
@@ -944,7 +933,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Sholay</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">1975</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">214</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:white">3h24m</button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                 </span>
                 <br />
@@ -978,8 +967,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Rang De Basanti</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">171</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2h51m</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                 </span>
                 <br />
                 <br />
@@ -996,7 +985,7 @@ i:hover {
                 <div class="flim">
                     <b>Rang De Basanti</b>
                     <br>
-                    IMDb - 8.2
+                    IMDb - 8.1
                 </div>
             </div>
           </div>
@@ -1013,7 +1002,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Munna Bhai MBBS</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">120</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2h36m</button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                 </span>
                 <br />
@@ -1022,14 +1011,14 @@ i:hover {
 
                 <p class="para_i">Munna is a goon who sets out to fulfil his father's dream of becoming a doctor.</p>
 
-                  <form action="https://www.youtube.com/watch?v=6lCGvu-hwX4">
+                  <form action="https://www.imdb.com/video/vi1188543257?playlistId=tt0374887&ref_=tt_ov_vi">
                       <input class="trailer_i" type="submit" value="▶Trailer" />
                   </form><br>
                   <button class="btn_i b4_i">Play</button>
 
               </div>
                 <div class="flim">
-                    <b>Munna Bhai MBBS</b>
+                    <b>Munna Bhai MBBS</b>      
                     <br>
                     IMDb - 8.1
                 </div>
@@ -1049,8 +1038,8 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>KGF</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">170</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2h50m</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
                 </span>
                 <br />
                 <br />
@@ -1067,7 +1056,7 @@ i:hover {
                 <div class="flim">
                     <b>KGF</b>
                     <br>
-                    IMDb - 8.2
+                    IMDb - 8.3
                 </div>
             </div>
           </div>
@@ -1124,7 +1113,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Black Mirror</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">8</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:white">5</button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
                 </span>
                 <br />
@@ -1158,7 +1147,7 @@ i:hover {
                 <h1>Game of Thrones</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
                   <button class="btn_i b2_i"  title="Seasons" style="color:white">8</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.3</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.2</button>
                 </span>
                 <br />
                 <br />
@@ -1176,7 +1165,7 @@ i:hover {
                 <div class="flim">
                     <b>Game of Thrones</b>
                     <br>
-                    IMDb - 9.3
+                    IMDb - 9.2
                 </div>
             </div>
           </div>
@@ -1554,7 +1543,7 @@ i:hover {
                 <h1>Wanda Vision</h1>
                   <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
                   <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.0</button>
                 </span>
                 <br />
                 <br />
@@ -1571,7 +1560,7 @@ i:hover {
                 <div class="flim">
                     <b>Wanda Vision</b>
                     <br>
-                    IMDb - 8.1
+                    IMDb - 8.0
                 </div>
             </div>
           </div>
@@ -1886,12 +1875,16 @@ i:hover {
                 <img src="./Images/scam.jpg" alt="Avatar" style="width:250px;height:360px;">
             </div>
             <div class="flip-card-back_i">
+<<<<<<< HEAD
               <h1 style="font-size: 30px;">Scam 1992 : The Harshad Mehta Story</h1>
+=======
+              <h1 style="font-size: 34px;">Scam 1992 : The Harshad Mehta Story</h1>
+>>>>>>> upstream/master
                 <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
                 <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
                 <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
               </span>
-              <br />
+              <br />    
               <br />
             </p>
 
@@ -2018,7 +2011,11 @@ i:hover {
                 <img src="./Images/asur.jpg" alt="Avatar" style="width:250px;height:360px;">
             </div>
             <div class="flip-card-back_i">
+<<<<<<< HEAD
               <h1 style="font-size: 30px;">Asur : Welcome to your Dark Side</h1>
+=======
+              <h1 style="font-size: 32px;">Asur : Welcome to your Dark Side</h1>
+>>>>>>> upstream/master
                 <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
                 <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
                 <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
@@ -2103,7 +2100,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>The Dark Knight Rises</h1>
                 <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">164</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:white">2h44m</button>
                 <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
                 </span>
                 <br />
@@ -2137,7 +2134,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1 style="font-size: 30px;">The Chronicles of Narnia</h1>
                 <button class="btn_i b3_i" title="Year" style="color:white">2005</button>
-                <button class="btn_i b2_i" title="minutes" style="color:white">150</button>
+                <button class="btn_i b2_i" title="minutes" style="color:white">2h30m</button>
                 <button class="btn_i b1_i" title="IMDb" style="color:white">6.9</button>
                 </span>
                 <br />
@@ -2171,7 +2168,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Avengers : Endgame</h1>
                 <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">182</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:white">3h2m</button>
                 <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
                 </span>
                 <br />
@@ -2206,7 +2203,7 @@ i:hover {
               <div class="flip-card-back_i">
                 <h1>Avengers : Infinity War</h1>
                 <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">160<button>
+                <button class="btn_i b2_i" title="Minutes" style="color:white">2h40m<button>
                     <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
                     </span>
                     <br />
@@ -2241,8 +2238,8 @@ i:hover {
               </div>
               <div class="flip-card-back_i">
                 <h1>Spider Man</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">153</button>
+                <button class="btn_i b3_i" title="Year" style="color:white">2002</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:white">2h1m</button>
                 <button class="btn_i b1_i" title="IMDb" style="color:white">7.3</button>
                 </span>
                 <br />
