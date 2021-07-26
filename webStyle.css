@@ -77,15 +77,19 @@
     border: 5px solid #2c2f30;
     background-color: black;
   }
-
+  
   ::-webkit-scrollbar {
     width: 15px;
     background-color: #2c2f30;
   }
-
+  
   ::-webkit-scrollbar-thumb {
     background-color: red;
     border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:tomato !important;
   }
 
   .logo {
