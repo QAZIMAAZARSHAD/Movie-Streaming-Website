@@ -664,7 +664,15 @@ textarea.ng-valid {
 
 ::-webkit-scrollbar-track {
   border: 5px solid #2c2f30;
-  background-color: black;
+  /* border color does not support transparent on scrollbar
+  // border-color: transparent;*/
+  background-color: red;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: red !important;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -673,12 +681,8 @@ textarea.ng-valid {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: black;
   border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color:tomato !important;
 }
 
 /* CSS FOR FOOTER */
