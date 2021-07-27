@@ -271,48 +271,48 @@
     </div>
     <div class="container fill">
       <div class="forthis">
-        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" id="contact-form">
+        <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" id="contact-form" onsubmit="return validateForm();">
           <div class="form-row two2">
             <div class="form-group col-md-6 column">
-              <input type="text" class="form-control" id="firstname" name="firstname" required>
+              <input type="text" class="form-control input" id="firstname" name="firstname" placeholder=" " >
               <label for="firstname" class="">First Name</label>
               <div class="underline">
               </div>
             </div>
             <div class="form-group col-md-6 column">
-              <input type="text" class="form-control" id="lastname" name="lastname" required>
+              <input type="text" class="form-control input" id="lastname" name="lastname" placeholder=" " >
               <label for="lastname" class="">Last Name</label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="form-row one1">
             <div class="form-group col-lg-6 column">
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control input" id="email" name="email" placeholder=" " >
               <label for="email" class="">Email</label>
               <div class="underline"></div>
             </div>
             <div class="form-group col-lg-6 column">
-              <input type="text" class="form-control" id="phone" name="phone" required>
+              <input type="text" class="form-control input" id="phone" name="phone"  placeholder=" ">
               <label for="number" class="">Phone Number</label>
               <div class="underline"></div>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group column">
-              <input type="text" class="form-control" name="subject" id="subject" required>
+              <input type="text" class="form-control input" name="subject" id="subject" placeholder=" " >
               <label for="subject" class="">Subject</label>
               <div class="underline extra"></div>
             </div>
           </div>
           <div class="form-row size">
             <div class="form-group column">
-              <textarea type="text" class="form-control" name="message" id="message" rows="5" required></textarea>
+              <textarea type="text" class="form-control input" name="message" id="message" rows="5"  placeholder=" "></textarea>
               <label for="message" class="">Message</label>
               <div class="underline extra gap"></div>
             </div>
           </div>
           <div class="btn-sm">
-            <button onclick="JSalert()" type="submit" class="sm-button">SEND MESSAGE</button>
+            <input type="submit" value="SEND MESSAGE" class="sm-button" id="submit-btn"> 
             <a href="#" onclick="clearFunc()">Reset</a>
           </div>
         </form>
@@ -456,9 +456,47 @@
     <script src="./static/script.js"></script>
 
     <script type="text/javascript">
-      function JSalert() {
-        swal("Congrats!", "Message was delivered successfully! Thanks for your Submission", "success");
+
+    function validateForm(){
+      const firstname = document.getElementById("firstname");
+      const lastname = document.getElementById("lastname");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const subject = document.getElementById("subject");
+      const message = document.getElementById("message");
+      
+      console.log(firstname);
+      if (firstname.value.trim().length === 0 && lastname.value.trim().length === 0 && email.value.trim().length === 0 && phone.value.trim().length === 0 && subject.value.trim().length === 0 && message.value.trim().length === 0  ){
+       swal("Oops..." , "Please! Enter the credentials first ." , "error"); 
+        return false ; 
       }
+      if (firstname.value.trim().length === 0 ) {
+        swal("Oops..." , "Please! Enter your first name ." , "error"); 
+        return false ; 
+      }
+
+      if (email.value.trim().length === 0 ) {
+        swal("Oops..." , "Please! Enter your email address." , "error"); 
+        return false ; 
+      }
+      if (phone.value.trim().length < 10 ||  typeof(phone.value.trim()) === Number ) {
+        swal("Oops..." , "Please! Enter your Phone details." , "error"); 
+        return false ; 
+      }
+      if (subject.value.trim().length === 0 ) {
+        swal("Oops..." , "Please! Enter the subject." , "error"); 
+        return false ; 
+      }
+      if (message.value.trim().length === 0 ) {
+        swal("Oops..." , "Please! Enter the message." , "error"); 
+        return false ; 
+      }
+      swal("Congrats!", "Message was delivered successfully! Thanks for your Submission", "success");
+      return true ; 
+    }
+
+    document.getElementById("submit-btn").addEventListener("click" , validateForm);
+
       function clearFunc() {
         document.getElementById("firstname").value = "";
         document.getElementById("lastname").value = "";
@@ -467,6 +505,7 @@
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
       }
+
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
