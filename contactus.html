@@ -287,7 +287,7 @@
           </div>
           <div class="form-row one1">
             <div class="form-group col-lg-6 column">
-              <input type="email" class="form-control input" id="email" name="email" placeholder=" " >
+              <input type="text" class="form-control input" id="email" name="email" placeholder=" " >
               <label for="email" class="">Email</label>
               <div class="underline"></div>
             </div>
@@ -464,7 +464,7 @@
       const phone = document.getElementById("phone");
       const subject = document.getElementById("subject");
       const message = document.getElementById("message");
-      
+      let alphabets = /^[A-Za-z]+$/ ; 
       console.log(firstname);
       if (firstname.value.trim().length === 0 && lastname.value.trim().length === 0 && email.value.trim().length === 0 && phone.value.trim().length === 0 && subject.value.trim().length === 0 && message.value.trim().length === 0  ){
        swal("Oops..." , "Please! Enter the credentials first ." , "error"); 
@@ -474,13 +474,27 @@
         swal("Oops..." , "Please! Enter your first name ." , "error"); 
         return false ; 
       }
+      if (!firstname.value.trim().match(alphabets) ){
+        swal("Oops..." , "Please! Enter a valid first name." , "error"); 
+        return false; 
+      }
+      if(lastname.value.trim().length > 0 ) {
+        if (!lastname.value.trim().match(alphabets) ){
+        swal("Oops..." , "Please! Enter a valid last name." , "error"); 
+        return false; 
+      }
+      }
 
       if (email.value.trim().length === 0 ) {
         swal("Oops..." , "Please! Enter your email address." , "error"); 
         return false ; 
       }
+      if (!email.value.trim().includes("@gmail.com")) {
+        swal("Oops..." , "Please! Enter a valid email address." , "error"); 
+        return false ; 
+      }
       if (phone.value.trim().length < 10 ||  typeof(phone.value.trim()) === Number ) {
-        swal("Oops..." , "Please! Enter your Phone details." , "error"); 
+        swal("Oops..." , "Phone number should be digits. " , "error"); 
         return false ; 
       }
       if (subject.value.trim().length === 0 ) {
