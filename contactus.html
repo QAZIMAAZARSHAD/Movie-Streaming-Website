@@ -465,7 +465,6 @@
       const subject = document.getElementById("subject");
       const message = document.getElementById("message");
       let alphabets = /^[A-Za-z]+$/ ; 
-      console.log(firstname);
       if (firstname.value.trim().length === 0 && lastname.value.trim().length === 0 && email.value.trim().length === 0 && phone.value.trim().length === 0 && subject.value.trim().length === 0 && message.value.trim().length === 0  ){
        swal("Oops..." , "Please! Enter the credentials first ." , "error"); 
         return false ; 
@@ -482,9 +481,8 @@
         if (!lastname.value.trim().match(alphabets) ){
         swal("Oops..." , "Please! Enter a valid last name." , "error"); 
         return false; 
+        }
       }
-      }
-
       if (email.value.trim().length === 0 ) {
         swal("Oops..." , "Please! Enter your email address." , "error"); 
         return false ; 
@@ -493,8 +491,8 @@
         swal("Oops..." , "Please! Enter a valid email address." , "error"); 
         return false ; 
       }
-      if (phone.value.trim().length < 10 ||  typeof(phone.value.trim()) === Number ) {
-        swal("Oops..." , "Phone number should be digits. " , "error"); 
+      if ( phone.value.trim().length != 10 ||  isNaN(phone.value.trim()) ) {
+        swal("Oops..." , "Phone number should be 10 digits. " , "error"); 
         return false ; 
       }
       if (subject.value.trim().length === 0 ) {
