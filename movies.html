@@ -1,247 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ApnaTheatre.com|Movies</title>
+    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="./static/style.css" rel="stylesheet" type="text/css" />
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ApnaTheatre | Web Series</title>
-  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="webStyle.css">
 
-<!------------------------Scroll to top button------------------------------------------------>
-<style>
-    #scrollToTopButton{
-  /* position: sticky; */
-  position:relative;
-  bottom: 40px;
-  left: 93%;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color:red;
-  color:black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  }
-  #scrollToTopButton:hover, i:hover {
-  background-color:white;
-  color:red;
-  }
-  #nav:hover
-{
-  background-color:#e60e23!important;
-
-}
-
-
-
-    .logo {
-  width: 110px;
-  height: 90px;
-  padding: 3px;
-  margin: 0;
-  padding: 0;
-}
-.fas:hover{background: none!important ;}
-.nav-item{ flex-wrap:wrap;}
-.menu li a:hover {
-  color: red !important;
-  opacity: 0.5;
-}
-
-/* CSS FOR FOOTER */
-.footer{
-margin-bottom:15px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.footer-content{
-  display:flex;
-  justify-content:space-between;
-  padding: 10px 20px;
-}
-.footer-logo{
-  width: 150px;
-  height: 120px;
-  padding: 3px;
-  margin:0px 0px 0px 10px;
-  padding: 0;
-}
-.footer-heading{
-  color:white;
-}
-.footer-left, .footer-right, .footer-middle{
-text-align:center;
-}
-.icons{
-  margin-left:-30px;
-}
-.footer-links i{
-font-size:30px;
-width:40px;
-height:40px;
-margin-top:30px;
-}
-.footer-middle a i:hover{
-background-color:white;
-padding:5px;
-border-radius:50px;
-color:red;
-}
-.footer-middle-list-item{
-list-style:none;
-font-size:15px;
-font-family:cursive;
-margin:5px 0px 0px 15px;
-text-align:left;
-}
-.footer-middle-list-item a{
-text-decoration:none;
-color:white;
-}
-.footer-middle-list-item a:hover{
-color:red;
-}
-.footer-right{
-  margin-top:-15px;
-}
-.footer-contact-button{
-font-size:20px;
-background-color:red;
-color:black;
-padding:10px;
-border:none;
-border-radius:10px;
-text-decoration:none;
-}
-.footer-contact-button:hover{
-background-color:white;
-color:red;
-}
-.footer-bottom-tagline{
-color:white;
-font-size:15px;
-font-family:cursive;
-margin-bottom:25px;
-}
-
-
-.footer-copyright{
-text-align:center;
-color:white;
-margin-top:20px;
-font-size:18px;
-}
-.footer-hr{
-    color:grey;
-    font-weight:bold;
-}
-/* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
-
-/***************** Media Queries *********************/
-
-@media (max-width: 600px) {
-.footer-content{
-   display:block;
-   text-align:center;
-}
-.footer-middle-list-item{
-  text-align:center;
-  margin-left:-20px;
-}
-
-.footer-left, .footer-middle, .footer-right{
-  margin-top:50px;
-}
-}
-
-#waterdrop {
-  height: 30px;
-}
-
-#waterdrop canvas {
-  bottom: -70px !important;
-}
-#header-nav .nav-link {
-  color: white;
-  font-size: 20px;
-  margin-left: 20px;
-}
-    @media only screen and (max-width: 1400px){
-  #header-nav .nav-link {
-    color: white;
-    font-size: 18px;
-    margin-left: 18px;
-  }
-}
-
-@media only screen and (min-width: 1133px) and (max-width: 1275px) {
-  #header-nav .nav-link {
-    color: white;
-    font-size: 15px;
-    margin-left: 10px;
-  } 
-}
-@media only screen and (min-width: 1035px) and (max-width: 1132px) {
-  #header-nav .nav-link {
-    color: white;
-    font-size: 15px;
-    margin-left: 10px;
-  } 
-  #searchText{
-    width: 120px;
-  }
-  #submitBtn{
-    width: 60px;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1034px) {
-  #header-nav .nav-link {
-    color: white;
-    font-size: 14px;
-    margin-left: 10px;
-  } 
-
-#searchText{
-  width: 100px;
-}
-#submitBtn{
-  width: 50px;
-  display: flex;
-  justify-content: center;
-}
-}
-
-</style>    
-
-
+    
+    <link rel="stylesheet" href="movies.css">
 </head>
 
-<body style="background-color:black;" color="height:auto;">
-
-
+<body>
     <div class="scroll-bar">
-    <!--Navbar Starts-->
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+
+        <!-- navbar starts -->
+
+      <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
-        <button  id="nav" class="navbar-toggler"style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
@@ -263,11 +49,11 @@ font-size:18px;
               <a class="nav-link" href="tv.html">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="anime.html">Anime</a>
+                <a class="nav-link" href="anime.html">Anime</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dummy.html">Premium</a>
             </li>
-              <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
             </li>
@@ -276,19 +62,22 @@ font-size:18px;
             </li>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" style="margin-left: 10px;"aria-label="Search">
             <button class="btn btn-danger" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
+
+        <!-- navbar ends -->
+
         <!-- off canva -->
         <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-      Have a Look on Various Movies!
-    </a>
+            Have a Look on Various Movies!
+        </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header" style="color: #fff;
- background-color: #dc3545">
+   background-color: #dc3545">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -298,13 +87,13 @@ font-size:18px;
                 </div>
                 <div class="dropdown mt-3">
                     <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-            Varieties
-          </button>
+                        Varieties
+                    </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
                         <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
                         <li><a class="dropdown-item" href="crime.html">Crime</a></li>
                         <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                Thriller</a></li>
+                                Thriller</a></li>
                         <li><a class="dropdown-item" href="action.html">Action</a></li>
                         <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
                         </li>
@@ -320,417 +109,947 @@ font-size:18px;
         </div>
 
         <!-- off canva ends -->
+        <div class="main-content">
 
-    <div class="main-content">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/Idiots.png" height="500"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/YJHD cover.jpg" height="500" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/msd.jpg" height="500" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/vlhta.jpg" height="500" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/ckd.jpg" height="500" class="d-block w-100" alt="...">
+                    </div>
+                </div>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./Images/msd.jpg"  height="400" class="d-block w-100" alt="...">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
-            <div class="carousel-item">
-              <img src="./Images/YJHD cover.jpg" height="400"  class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./Images/vlhta.jpg" height="400"  class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./Images/Idiots.png" height="400"  class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./Images/ckd.jpg" height="400"  class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+
         </div>
 
-      </div>
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+
+        <div class="maincontainer">
             <div class="container">
                 <div id="movies" class="row"></div>
             </div>
-            <hr>
-            <div class="row">
-                <h3 class="section-title text-center">Popular</h3>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/msdhoni.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">MS Dhoni</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.5 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ye jawani.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Yeh Jawani Hai Deewani</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/Idiots.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">3 Idiots</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
+          
+            <div class="container" id="TV shows">
+            <h2> Popular</h2>
 
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/bb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bajrangi Bhaijan</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 8.7 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ppw.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pati Patni Aur Woh</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-             <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-            <div class="row">
-                <h3 class="section-title text-center">Top Picks For You</h3>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/holiday.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Holiday</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ett.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ek Tha Tiger</h5>
+                <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/msdhoni.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h3>MS Dhoni</h3>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">3h40m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.9</button>
+                          </div>
+                            
+                          </span>
+                          <br>
                         
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                      
+          
+                          <p class="para_i">Biopic of cricketer M.S. Dhoni</p>
+          
+                            <form action="https://youtu.be/6L6XqWoS8tw">
+                              <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                          </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>MS Dhoni</b>
+                              <br>
+                              IMDb - 7.9
+                          </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/pdm.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Padmavati</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/yjhd.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Yeh Jawani Hai Deewani</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h56m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.2</button>
+                        </div>  
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Kabir and Naina meet during a trekking trip where she falls in love 
+                          with him but refrains from expressing it.</p>
+          
+                            <form action="https://youtu.be/Rbp2XUSeUNE">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Yeh Jawani Hai Deewani</b>
+                              <br>
+                              IMDb - 7.2
+                          </div>
+                      </div>
                     </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/Idiots.png" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>3 Idiots</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2009</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h51m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                        </div>
+                          </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Three college friends reunite after years due to a college bet.</p>
+          
+                            <form action="https://youtu.be/o_go-8TFBXs">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>3 Idiots</b>
+                              <br>
+                              IMDb - 8.4
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/bb.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Bajrangi Bhaijan</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h43m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8</button>
+                        </div>
+                          </span>
+                          <br>
+                         
+          
+                          <p class="para_i">A young mute girl from Pakistan loses herself in India with no way to head back. A devoted 
+                          man undertakes the task to get 
+                          her back to her motherland and unite her with her family.</p>
+          
+                            <form action="https://youtu.be/4nwAra0mz_Q">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Bajrangi Bhaijan</b>
+                              <br>
+                              IMDb - 8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/ppw.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Pati Patni Aur Woh</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h8m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.7</button>
+                        </div>
+                          </span>
+                          <br>
+                         
+          
+                          <p class="para_i">Things take an unexpected turn when Chintu Tyagi, who is married to Vedika, finds himself infatuated with Tapasya, a young fashion designer.</p>
+          
+                            <form action="https://youtu.be/L7a1JSeqaXk">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Pati Patni Aur Woh</b>
+                              <br>
+                              IMDb - 5.7
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                   <div class="container" id="TV shows">
+                              <h2> Top Picks For You</h2> 
+                        <div class="poster">
+                        <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/holiday.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div><br>
+                        <div class="flip-card-back_i">
+                          <h4>Holiday</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h41m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.2</button>
+                        </div>
+                          </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Virat, a soldier, accidentally bumps into a terrorist who plans to rip apart Mumbai.</p>
+          
+                            <form action="https://youtu.be/oZ3r-m7RH_8">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Holiday</b>
+                              <br>
+                              IMDb - 7.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/ett.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Ek Tha Tiger</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h12m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.5</button>
+                        </div>
+                        </span>
+                          <br>
+                      
+          
+                          <p class="para_i" style="margin-top: -8px;">A RAW agent, Tiger, is sent to Dublin to observe an Indian scientist who is suspected of sharing nuclear secrets with the ISI.</p>
+          
+                            <form action="https://youtu.be/SmUl0l8qBXw">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Ek Tha Tiger</b>
+                              <br>
+                              IMDb - 5.5
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/pdm.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Padmavati</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h44m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7</button>
+                        </div>
+                        </span>
+                          <br>
+                         
+          
+                          <p class="para_i">In medieval India, a tyrannical sultan and his army attack a prosperous kingdom to try and capture the beautiful Queen Padmavati.</p>
+          
+                            <form action="https://youtu.be/X_5_BLt76c0">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Padmavati</b>
+                              <br>
+                              IMDb - 7
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/stoy.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Student of The Year</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h26m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.3</button>
+                        </div>
+                        </span>
+                          <br>
+                         
+          
+                          <p class="para_i">Abhimanyu and Rohan are good friends. However, their friendship is affected after they compete to win a title and Abhimanyu falls in love with Shanaya, Rohan's girlfriend.</p>
+          
+                            <form action="https://youtu.be/fivOhPjX9YM">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Student of The Year</b>
+                              <br>
+                              IMDb - 5.3
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/race.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Race 2</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">2h30m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.4</button>
+                        </div> 
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Ranvir befriends a billionaire gangster, Armaan, in Turkey.</p>
+          
+                            <form action="https://youtu.be/9CwQ9PClSWk">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Race 2</b>
+                              <br>
+                              IMDb - 5.4
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/stoy.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Student Of The Year</h5>
-                
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
+                <div class="container" id="TV shows">
+                              <h2> Featured</h2> 
+                        <div class="poster">
+                        <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/bmb.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div><br>
+                        <div class="flip-card-back_i">
+                          <h4>Bhaag Milkha Bhaag</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">3h</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div>
+                          </span>
+                          <br>
+                         
+          
+                          <p class="para_i">Biopic of Indian athlete Milkha Singh</p>
+          
+                            <form action="https://youtu.be/WbblCMem1ME">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Bhaag Milkha Bhaag</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/gow.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Gangs of Wasseypur</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h40m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i" style="margin-top: -8px;">A gangster (Manoj Bajpayee) clashes with the ruthless, coal-mining kingpin (Tigmanshu Dhulia) who killed his father (Jaideep Ahlawat).</p>
+          
+                            <form action="https://youtu.be/9ZpPQdrHfl8">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Gangs of Wasseypur</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/dsm.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Drishyam</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h43m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">When the disappearance of a policewoman's son threatens to ruin Vijay's family, he leaves no stone unturned in order to shield his family.</p>
+          
+                            <form action="https://youtu.be/AuuX2j14NBg">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Drishyam</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/aaam.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Andaz Apna Apna</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h41m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Amar and Prem, who belong to middle-class families, compete to win over Raveena, a millionaire's daughter. Along the way, they run into a local gangster, Teja, who turns their lives upside down.</p>
+          
+                            <form action="https://youtu.be/fd_w7Qw8biU">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Andaz Apna Apna</b>
+                              <br>
+                              IMDb - 8.1
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/ckdm.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Chakde India</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">2h33m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                        </div> 
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">After failing to score the winning goal, Kabir Khan, Captain of the Men's Hockey Team is blamed for the team's loss and fired.</p>
+          
+                            <form action="https://youtu.be/6a0-dSMWm5g">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Chakde India</b>
+                              <br>
+                              IMDb - 8.2
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <!--Comedy-->
+                <div class="container" id="TV shows">
+                              <h2> Comedy</h2> 
+                        <div class="poster">
+                        <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/cc.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div><br>
+                        <div class="flip-card-back_i">
+                          <h4>Chichore</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h23m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                        </div>
+                          </span>
+                          <br>
+                         
+          
+                          <p class="para_i">A tragic incident forces Anirudh to take a trip down memory lane and reminisce his college days along with his friends.</p>
+          
+                            <form action="https://youtu.be/tsxemFX0a7k">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Chichore</b>
+                              <br>
+                              IMDb - 8.3
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/m.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Phir Hera Pheri</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h34m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i" style="margin-top: -8px;">The lives of Raju, Shyam and Baburao change completely when they get cheated by a fraudster. </p>
+          
+                            <form action="https://youtu.be/1rJQQCZcq2s">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Phir Hera Pheri</b>
+                              <br>
+                              IMDb - 7.1
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/gn.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>Good Newwz</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">6.9</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Two couples with the same surnames pursue in-vitro fertilisation and wait for their upcoming babies.</p>
+          
+                            <form action="https://youtu.be/r9VJpqoAr84">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Good Newwz</b>
+                              <br>
+                              IMDb - 6.9
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/welc.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Welcome</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h39m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">6.9</button>
+                        </div>
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Two thugs meet Rajiv, who belongs to a respectable family, and want to fix their sister's wedding with him.</p>
+          
+                            <form action="https://youtu.be/SIKfSPbsuyw">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Welcome</b>
+                              <br>
+                              IMDb - 6.9
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/golmaal.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Golmaal 3</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">2h</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
+                        </div> 
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">Friends Gopal, Lucky, Madhav and Laxman often dupe gullible people out of their money</p>
+          
+                            <form action="https://youtu.be/A1-PEkuuWi8">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Golmaal</b>
+                              <br>
+                              IMDb - 7.4
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <!--Romance-->
+                <div class="container" id="TV shows">
+                              <h2> Romance</h2> 
+                        <div class="poster">
+                        <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/rl.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div><br>
+                        <div class="flip-card-back_i">
+                          <h4>Ram Leela</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h35m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">6.4</button>
+                        </div>
+                          </span>
+                          <br>
+                         
+                          <p class="para_i">Ram and Leela love each other but cannot stay together as their families, Rajadi and Sanera, have been at war with each other for the past 500 years.  </p>
+          
+                            <form action="https://youtu.be/ETHpMMV8rJU">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Ram Leela</b>
+                              <br>
+                              IMDb - 7.8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/ks.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Kabir Singh</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">3h</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        </div>
+                        </span>
+                          <br >
+                          
+          
+                          <p class="para_i" style="margin-top: -8px;">Kabir Singh, a bipolar guy is heartbroken when his girlfriend is forced to marry another man.</p>
+          
+                            <form action="https://youtu.be/2Dsa8j_usqI">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                            <b>Kabir Singh</b>
+                              <br>
+                              IMDb - 7.1
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/ts.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h4>2 States</h4>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">6.9</button>
+                        </div>
+                        </span>
+                          <br>
+                         
+          
+                          <p class="para_i">A man and a woman come from two very different cultural backgrounds, decide that they won't get married until they convince their parents.</p>
+          
+                            <form action="https://youtu.be/S8_YwFLCh4U">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>2 States</b>
+                              <br>
+                              IMDb - 6.9
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/adhm.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Ae Dil Hai Mushkil</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                            <button class="btn_i b2_i"  title="Minutes" style="color:white">2h30m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.8</button>
+                        </div>
+                        </span>
+                          <br >
+                          
+          
+                          <p class="para_i">Musician Ayan's quest for true love remains unfulfilled as Alizeh does not reciprocate his feelings.</p>
+          
+                            <form action="https://youtu.be/d6kBeJjTGnY">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Ae Dil Hai Mushkil</b>
+                              <br>
+                              IMDb - 5.8
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="poster">
+                    <div class="flip-card_i">
+                      <div class="flip-card-inner_i">
+                        <div class="flip-card-front_i">
+                            <img src="./Images/stk.jpg" alt="Avatar" style="width:200px;height:280px;">
+                        </div>
+                        <div class="flip-card-back_i">
+                          <h5>Sanam Teri Kasam</h5>
+                          <div class="btnContainer">
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                            <button class="btn_i b2_i"  title="Episodes" style="color:white">2h34m</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">7.5</button>
+                        </div> 
+                        </span>
+                          <br>
+                          
+          
+                          <p class="para_i">When Saraswati's father throws her out of the house, Inder stands with her against all odds and this brings them close to each other.</p>
+          
+                            <form action="https://youtu.be/v-AGjx0N24U">
+                                <input class="btn btn-light" id="button" type="submit" value="▶Trailer" />
+                            </form>
+          
+                        </div>
+                          <div class="flim">
+                              <b>Sanam Teri Kasam</b>
+                              <br>
+                              IMDb - 7.5
+                          </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/race.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Race 2</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 7.4 / 10</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-            </div>
-            <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-            <div class="row">
-                <h3 class="section-title text-center">Featured</h3>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/aaam.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Andaz Apna Apna</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ckdm.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Chakde India</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/bmb.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bhag Milkha Bhag</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/gow.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Gangs Of Wasseypur</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/dsm.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Drishyam</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
-
-
-    </div>
-
-       </div>
-            <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-            <div class="row">
-                <h3 class="section-title text-center">Comedy</h3>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/cc.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Chichore</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/m.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Phir Hera Pheri</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/gn.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Good Newwz</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/welc.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Welcome</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/golmaal.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Golmaal 3</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
-                    </div>
-                </div>
-            </div>
-        </div></div>
-
-
-   <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
-            <div class="row">
-                <h3 class="section-title text-center">Romance</h3>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/rl.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Goliyon ki Raasleela- Ram Leela</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ks.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kabir Singh</h5>
-                       
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/ts.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">2 States</h5>
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/adhm.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ae Dil Hai Mushkil</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i> IMDb 9 / 10</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card movie_card">
-                    <img src="./Images/stk.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sanam Teri Kasam</h5>
-                        
-                        <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9 / 10</span>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </div>
     <!-------------------------------Footer-------------------------------->
+    <div id="waterdrop"></div>
     <footer class="footer">
-      <hr class="footer-hr">
-      <div class="footer-content">
-        <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-              height="24"></a>
-          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+        <hr class="footer-hr">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
+                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading">Try Our App</h2>
+                <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                </p>
+            </div>
         </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Follow Us</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
-                class="fab fa-facebook-f facebook" style="color:red"></i></a>
-            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
-                class="fab fa-twitter twitter" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
-                class="fab fa-linkedin linkedin" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
-                class="fab fa-instagram instagram" style="color:red"></i></a>
-            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                class="fab fa-github github" style="color:red"></i></a>
-          </ul>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+            <p>Copyright &copy; and &reg; Since
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
         </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Services</h2>
-          <ul class="footer-middle-list">
-            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
-          </ul>
-        </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Try Our App</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <p class="footer-links">
-          <h2 class="footer-heading">Contact Us</h2>
-          <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
-          </p>
-        </div>
-      </div>
-      <hr class="footer-hr">
-      <div class="footer-copyright">
-        <p>Copyright &copy; and &reg; Since
-          <script>
-            document.write(new Date().getFullYear())
-          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
-        </p>
-      </div>
     </footer>
 
-    <!----------------------scroll back to top button-->
-    <button id="scrollToTopButton" title="Go to top" class="ml-5">
-      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-    </button>
-    <script>
-      $(document).ready(function () {
+    <!---------scroll back to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </button>
+      <script>
+      $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollTopButton.style.display = "block";
-          } else {
-            scrollTopButton.style.display = "none";
-          }
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
         }
+      }
 
-        $("#scrollToTopButton").click(function () {
-          $('html ,body').animate({ scrollTop: 0 }, 800)
-        });
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
       });
-    </script>
+      });
+      </script>
 
-    <!-- footer scripts -->
-
+    <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
@@ -739,17 +1058,16 @@ font-size:18px;
     <script src="js/main-min.js"></script>
 
     <script>
-      jQuery('#waterdrop').raindrops({
-        color: '#292c2f',
-        canvasHeight: 150,
-        density: 0.1,
-        frequency: 20
-      });
+        jQuery('#waterdrop').raindrops({
+            color: '#292c2f',
+            canvasHeight: 150,
+            density: 0.1,
+            frequency: 20
+        });
     </script>
-    <!-- bootsstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
 </body>
+
 </html>
