@@ -177,30 +177,46 @@ background-color: #2c2f30;
   font-size: 20px;
   margin-left: 20px;
 }
-    @media only screen and (max-width: 1400px){
+@media only screen and (min-width: 1401px) and (max-width: 3840px){
   #header-nav .nav-link {
     color: white;
     font-size: 18px;
-    margin-left: 18px;
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
   }
   #searchText{
     width: 150px;
   }
 }
-
+@media only screen and (min-width: 1276px) and (max-width: 1399px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 15px;
+    margin-left: 8px;
+  } 
+}
 @media only screen and (min-width: 1133px) and (max-width: 1275px) {
   #header-nav .nav-link {
     color: white;
-    font-size: 15px;
-    margin-left: 10px;
+    font-size: 13px;
+    margin-left: 5px;
   } 
-  
+  #searchText{
+    width: 135px;
+  }
 }
-@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+@media only screen and (min-width: 1036px) and (max-width: 1132px) {
   #header-nav .nav-link {
     color: white;
-    font-size: 15px;
-    margin-left: 10px;
+    font-size: 13px;
+    margin-left: 4px;
   } 
   #searchText{
     width: 120px;
@@ -211,12 +227,15 @@ background-color: #2c2f30;
     justify-content: center;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1034px) {
+@media only screen and (min-width: 993px) and (max-width: 1035px) {
   #header-nav .nav-link {
     color: white;
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 12px;
+    margin-left: 4px;
   } 
+  .dropdownMenuButton{
+    width: 45px;
+  }
 
 #searchText{
   width: 100px;
@@ -226,6 +245,7 @@ background-color: #2c2f30;
   display: flex;
   justify-content: center;
 }
+
 }
     </style>
 </head>

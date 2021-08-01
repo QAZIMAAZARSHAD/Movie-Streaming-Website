@@ -98,8 +98,8 @@ section div:nth-child(6) img {
 @media only screen and (min-width: 1401px) and (max-width: 3840px){
   #header-nav .nav-link {
     color: white;
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 18px;
+    margin-left: 12px;
   }
 }
 
@@ -107,19 +107,28 @@ section div:nth-child(6) img {
   #header-nav .nav-link {
     color: white;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
   #searchText{
     width: 150px;
   }
 }
-
-@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+@media only screen and (min-width: 1276px) and (max-width: 1399px) {
   #header-nav .nav-link {
     color: white;
     font-size: 15px;
     margin-left: 8px;
   } 
+}
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: white;
+    font-size: 13px;
+    margin-left: 5px;
+  } 
+  #searchText{
+    width: 135px;
+  }
 }
 @media only screen and (min-width: 1036px) and (max-width: 1132px) {
   #header-nav .nav-link {
