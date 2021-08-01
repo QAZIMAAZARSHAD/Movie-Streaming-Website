@@ -94,6 +94,9 @@ section div:nth-child(6) img {
   margin-left: 20px;
 
 }
+
+
+
 @media only screen and (max-width: 1400px){
   #header-nav .nav-link {
     color: white;
@@ -551,10 +554,7 @@ textarea.ng-valid {
   height: 100px;
 }
 
-.fill .form-group input:focus ~ label,
-.fill .form-group input:valid ~ label,
-.fill .form-group textarea:focus ~ label,
-.fill .form-group textarea:valid ~ label {
+.fill .form-group .input:focus ~ label , .fill .form-group textarea:focus ~ label ,  .input:not(:placeholder-shown).input:not(:focus) + label{
   transform: translateY(-25px);
   font-size: 10px;
   color: #e71328;
@@ -562,6 +562,7 @@ textarea.ng-valid {
   font-weight: 600;
   padding-left: 10px;
 }
+
 
 .fill .form-row .form-group label {
   position: absolute;
@@ -616,9 +617,9 @@ textarea.ng-valid {
 }
 
 .fill .form-group input:focus ~ .underline::before,
-.fill .form-group input:valid ~ .underline::before,
+.fill .form-group input:not(:placeholder-shown) ~ .underline::before,
 .fill .form-group textarea:focus ~ .underline::before,
-.fill .form-group textarea:valid ~ .underline::before {
+.fill .form-group textarea:not(:placeholder-shown) ~ .underline::before {
   transform: scaleX(1);
   border-bottom: none;
 }
@@ -660,21 +661,21 @@ textarea.ng-valid {
 }
 
 ::-webkit-scrollbar-track {
-  border: 5px solid #2c2f30;
-  /* border color does not support transparent on scrollbar
-  // border-color: transparent;*/
-  background-color: red;
+border: 5px solid #2c2f30;
+background-color: red;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background-color: red !important;
+background-color: red !important;
 }
+
 ::-webkit-scrollbar-track:hover {
-  background-color: white;
+background-color: white;
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
-  background-color: #2c2f30;
+width: 15px;
+background-color: #2c2f30;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -825,4 +826,33 @@ textarea.ng-valid {
   #fa-icon {
     visibility: visible;
   }
+}
+
+/* Genre dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+background-color: red;
+color: white;
+text-decoration: none;
 }

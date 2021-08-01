@@ -106,90 +106,79 @@ color:red;
 
         <!-- navbar starts -->
 
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="background-color: dark-grey;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv.html">TV</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="anime.html">Anime</a>
-                        </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                height="24"></a>
+            <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="web-series.html">Web Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tv.html">TV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="premium.html">Premium</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <!-- Genre dropdown starts-->
+                  <div>
+                    <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                        <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                            Genres
+                        </button>
+                        <div class="dropdown-content" style="color: white;">
+                            <a href="popular.html">Popular</a>
+                            <a href="crime.html">Crime</a>
+                            <a href="suspense.html">Suspense & Thriller</a>
+                            <a href="action.html">Action</a>
+                            <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                            <a href="documentary.html">Documentary</a>
+                            <a href="horror.html">Horror</a>
+                            <a href="drama.html">Drama</a>
+                            <a href="war.html">War & Politics</a>
+                            <a href="comedy.html">Comedy</a>
+                            <a href="romance.html">Romance</a>
+                            <a href="anime.html">Anime</a>
+                          </div>
+                    </div>
+                  </div>
+                  <!-- Genre dropdown ends-->
+                </li>
+                <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                  <li>
+                    <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                  </li>
                 </div>
+              </ul>
+              <form id="searchForm" class="d-flex">
+                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
             </div>
-        </nav>
-
-        <!-- navbar ends -->
-
-        <!-- off canva -->
-        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            Have a Look on Various Movies!
-        </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header" style="color: #fff;
-  background-color: #dc3545">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-                <div>
-                    Stream Latest Movies Now!
-                </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                        Varieties
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                                Thriller</a></li>
-                        <li><a class="dropdown-item" href="action.html">Action</a></li>
-                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                        </li>
-                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- off canva ends -->
+          </div>
+          </nav>
+    
+            <!-- navbar ends -->
 
         <div class="maincontainer">
             <div class="container">
@@ -206,21 +195,22 @@ color:red;
                         <img src="./Images/breaking.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Breaking Bad</h1>
+                      <h1 style="font-size: 35px;">Breaking Bad</h1>
                         <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing
-                         and selling methamphetamine in order to secure his family's future.</p>
+                      <p class="para_i">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. 
+                          His priorities begin to change when he partners with Jesse.</p>
 
                         <form action="https://www.imdb.com/video/vi338798873?playlistId=tt0903747">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
-                        </form>
+                        </form> <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
@@ -240,26 +230,27 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Mirzapur</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
                         <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Akhandanand Tripathi made millions exporting carpets and became the mafia boss of Mirzapur. 
+                          His son Munna, an unworthy, power-hungry heir, stops at nothing to continue his father's legacy.</p>
 
-                        <form action="https://www.youtube.com/watch?v=ZNeGF-PvRHY">
+                        <form action="https://www.imdb.com/video/vi2155985433">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
-                        </form>
+                        </form> <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
                           <b>Mirzapur</b>
                           <br>
-                          IMDb - 7.1
+                          IMDb - 8.4
                       </div>
                   </div>
                 </div>
@@ -274,26 +265,27 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Money Heist</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2017</button>
                         <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- 
+                          to print billions of euros in the Royal Mint of Spain. </p>
 
-                        <form action="https://www.youtube.com/watch?v=p_PJbmrX4uk">
+                        <form action="https://www.imdb.com/video/vi3823876889">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
-                        </form>
+                        </form> <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
                           <b>Money Heist</b>
                           <br>
-                          IMDb - 8.1
+                          IMDb - 8.3
                       </div>
                   </div>
                 </div>
@@ -307,26 +299,26 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Wanda Vision</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.1</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Living idealized suburban lives, super-powered beings Wanda and Vision begin to suspect that everything is not as it seems.</p>
 
-                        <form action="https://www.youtube.com/watch?v=sj9J2ecsSpo">
+                        <form action="https://www.imdb.com/video/vi3485450265?playlistId=tt9140560&ref_=tt_pr_ov_vi">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
-                        </form>
+                        </form> <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
                           <b>Wanda Vision</b>
                           <br>
-                          IMDb - 7.1
+                          IMDb - 8
                       </div>
                   </div>
                 </div>
@@ -341,20 +333,21 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Pitchers</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2015</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">9.1</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">TVF Pitchers is a web series created by The Viral Fever and developed by Arunabh Kumar.</p>
 
-                        <form action="https://www.youtube.com/watch?v=xcUHB9n8Kws">
+                        <form action="https://www.imdb.com/video/vi2803612441?playlistId=tt4742876&ref_=tt_ov_vi">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
                         </form>
+                        <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
@@ -375,20 +368,22 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Lucifier</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Based on characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg, 
+                          this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell.</p>
 
-                        <form action="ttps://www.youtube.com/watch?v=X4bF_quwNtw">
+                        <form action="https://www.imdb.com/video/vi3234640665">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
                         </form>
+                        <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
@@ -409,26 +404,27 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Aspirants</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:white">9.7</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Aspirants is a 2021 Indian Hindi-language coming-of-age web series produced by The Viral Fever and created by Arunabh Kumar and Shreyansh Pandey, 
+                          written by Deepesh Sumitra Jagdish and was directed by Apoorv Singh Karki. </p>
 
-                        <form action="https://www.youtube.com/watch?v=ViOutJ0kuJY">
+                        <form action="https://www.imdb.com/video/vi4169842713">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
-                        </form>
+                        </form> <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
                           <b>Aspirants</b>
                           <br>
-                          IMDb - 9
+                          IMDb - 9.7
                       </div>
                   </div>
                 </div>
@@ -442,20 +438,22 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Sherlock</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">3</button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">9.1</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Dr Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes. 
+                          Together, they take on the most unusual cases.</p>
 
-                        <form action="https://www.youtube.com/watch?v=xK7S9mrFWL4">
+                        <form action="https://www.imdb.com/video/vi1337965849">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
                         </form>
+                        <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
@@ -477,20 +475,21 @@ color:red;
                     </div>
                     <div class="flip-card-back_i">
                       <h1>Scam 1992</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
+                        <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
                         <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
                       </span>
                       <br />
                       <br />
                     </p>
 
-                      <p class="para_i">Sex, drugs and a gruesome murder. An edgy one night stand turns into a nightmare for Aditya, when he wakes up with blood on his hands. The evidence is stacked against him,
-                        but he doesn't remember the grisly crime. Is he guilty or not ?</p>
+                      <p class="para_i">Harshad Mehta took the stock market to dizzying heights and had a catastrophic downfall.</p>
 
-                        <form action="https://www.youtube.com/watch?v=ISORfez27og">
+                        <form action="https://www.imdb.com/video/vi3985359129">
                             <input class="trailer_i" type="submit" value="▶Trailer" />
                         </form>
+                        <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                     </div>
                       <div class="flim">
@@ -584,6 +583,11 @@ color:red;
       });
       });
       </script>
+      <script>
+        function logout(){
+          window.location.replace("login.html");
+        }
+        </script>
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

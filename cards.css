@@ -5,6 +5,7 @@
   width: 250px;
   height: 360px;
   perspective: 1000px;
+  cursor: pointer;
 }
 h1{
   font-size: 45px;
@@ -43,6 +44,19 @@ h1{
     margin-left: 10px;
     margin-right: 5px;
   }
+  .b4_i{
+    
+    margin-bottom: 2px;;
+    width: 90px;
+    height: 35px;
+    margin-top: auto;
+    border:none;
+    border:solid 2px white;
+    border-radius: 5px;
+    background-color: #e7e7e7; 
+    color: black;
+    font-size: 1em;
+  }
 
   .trailer_i{
     width: 90px;
@@ -51,12 +65,14 @@ h1{
    border:none;
    border:solid 2px white;
    border-radius: 5px;
-   {background-color: #e7e7e7; color: black;}
+   background-color: #e7e7e7; 
+   color: black;
    font-size: 1em;
 
   }
   .para_i{
     font-size: 0.8em;
+    margin-bottom: 5px;
   }
 .flip-card-front_i, .flip-card-back_i {
   position: absolute;
@@ -70,7 +86,7 @@ h1{
 }
 .form-group2_i{
   float: none;
-  float:
+
 }
 .form-group3_i {
     float:right;

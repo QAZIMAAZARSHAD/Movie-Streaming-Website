@@ -58,88 +58,78 @@ color:red;
 
         <!-- navbar starts -->
 
-        <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <button id="nav"class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="background-color: dark-grey;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="movies.html">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="web-series.html">Web Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kids.html">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tv.html">TV</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="anime.html">Anime</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="premium.html">Premium</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form id="searchForm" class="d-flex">
-                        <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-danger" type="submit">Search</button>
-                    </form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                height="24"></a>
+            <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="web-series.html">Web Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tv.html">TV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="premium.html">Premium</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <!-- Genre dropdown starts-->
+                  <div>
+                    <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                        <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                            Genres
+                        </button>
+                        <div class="dropdown-content" style="color: white;">
+                            <a href="popular.html">Popular</a>
+                            <a href="crime.html">Crime</a>
+                            <a href="suspense.html">Suspense & Thriller</a>
+                            <a href="action.html">Action</a>
+                            <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                            <a href="documentary.html">Documentary</a>
+                            <a href="horror.html">Horror</a>
+                            <a href="drama.html">Drama</a>
+                            <a href="war.html">War & Politics</a>
+                            <a href="comedy.html">Comedy</a>
+                            <a href="romance.html">Romance</a>
+                            <a href="anime.html">Anime</a>
+                          </div>
+                    </div>
+                  </div>
+                  <!-- Genre dropdown ends-->
+                </li>
+                <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                  <li>
+                    <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                  </li>
                 </div>
+              </ul>
+              <form id="searchForm" class="d-flex">
+                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
             </div>
-        </nav>
-
-        <!-- off canva -->
-        <a class="btn btn-outline-danger" id="variety" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-            Have a Look on Various Movies!
-        </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header" style="color: #fff;
-      background-color: #dc3545">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Varieties</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body" style="color: aliceblue; background-color: black;">
-                <div>
-                    Stream Latest Movies Now!
-                </div>
-                <div class="dropdown mt-3">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                        Varieties
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #d4a09c; color: white; ">
-                        <li><a class="dropdown-item" href="popular.html">Popular</a> </li>
-                        <li><a class="dropdown-item" href="crime.html">Crime</a></li>
-                        <li><a class="dropdown-item" href="suspense.html" style="font-size: 14px">Suspense &
-                                Thriller</a></li>
-                        <li><a class="dropdown-item" href="action.html">Action</a></li>
-                        <li><a class="dropdown-item" href="fantasy.html" style="font-size: 14px">Sci-Fi & Fantasy</a>
-                        </li>
-                        <li><a class="dropdown-item" href="documentary.html">Documentary</a></li>
-                        <li><a class="dropdown-item" href="horror.html">Horror</a></li>
-                        <li><a class="dropdown-item" href="drama.html">Drama</a></li>
-                        <li><a class="dropdown-item" href="war.html">War & Politics</a></li>
-                        <li><a class="dropdown-item" href="comedy.html">Comedy</a></li>
-                        <li><a class="dropdown-item" href="romance.html">Romance</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- off canva ends -->
+          </div>
+          </nav>
+    
+            <!-- navbar ends -->
 
         <div class="maincontainer">
             <div class="container">
@@ -158,7 +148,7 @@ color:red;
                       <div class="flip-card-back_i">
                         <h1>Friends</h1>
                           <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                          <button class="btn_i b2_i"  title="Seasons" style="color:white">4</button>
+                          <button class="btn_i b2_i"  title="Seasons" style="color:white">10</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.9</button>
                         </span>
                         <br />
@@ -170,6 +160,8 @@ color:red;
                           <form action="https://youtu.be/hDNNmeeJs1Q">
                               <input class="trailer_i" type="submit" value="▶Trailer" />
                           </form>
+                          <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                       </div>
                         <div class="flim">
@@ -189,7 +181,7 @@ color:red;
                             <img src="./Images/big.jpg" alt="Avatar" style="width:250px;height:360px;">
                         </div>
                         <div class="flip-card-back_i">
-                          <h1>The Big Bang Theory</h1>
+                          <h1 style="font-size: 44px;">The Big Bang Theory</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">12</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
@@ -203,6 +195,8 @@ color:red;
                             <form action="https://youtu.be/WBb3fojgW0Q">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -235,6 +229,8 @@ color:red;
                             <form action="https://youtu.be/_uUcMwsR5hg">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -256,7 +252,7 @@ color:red;
                         <div class="flip-card-back_i">
                           <h1>Phir Hera Pheri</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
-                            <button class="btn_i b2_i"  title="Seasons" style="color:white">154</button>
+                            <button class="btn_i b2_i"  title="Seasons" style="color:white">2h34m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">6.9</button>
                           </span>
                           <br />
@@ -268,6 +264,8 @@ color:red;
                             <form action="https://youtu.be/1rJQQCZcq2sc">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -301,6 +299,8 @@ color:red;
                             <form action="https://youtu.be/5XuimeH5hME">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -321,7 +321,7 @@ color:red;
                         <div class="flip-card-back_i">
                           <h1>Munna Bhai MBBS</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
-                            <button class="btn_i b2_i"  title="Seasons" style="color:white">120</button>
+                            <button class="btn_i b2_i"  title="Seasons" style="color:white">2h36m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
                           </span>
                           <br />
@@ -333,6 +333,8 @@ color:red;
                             <form action="https://youtu.be/6lCGvu-hwX4">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -351,20 +353,23 @@ color:red;
                             <img src="./Images/tom.jpg" alt="Avatar" style="width:250px;height:360px;">
                         </div>
                         <div class="flip-card-back_i">
-                          <h1>Tom and Jerry</h1>
-                            <button class="btn_i b3_i"  title="Year" style="color:white">1940</button>
-                            <button class="btn_i b2_i"  title="Seasons" style="color:white">160</button>
+                          <h1 style="font-size: 20px;">Tom and Jerry</h1>
+                            <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
+                            <button class="btn_i b2_i"  title="Seasons" style="color:white">1h41m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">5.3</button>
                           </span>
                           <br />
                           <br />
                         </p>
 
-                          <p class="para_i">Tom and Jerry is an American animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph Barbera</p>
+                          <p class="para_i">A legendary rivalry reemerges when Jerry moves into New York City's finest hotel on the eve of the wedding of the century, forcing the desperate event planner to hire Tom to get rid of him. 
+                              As mayhem ensues, the escalating cat-and-mouse battle soon threatens to destroy her career, the wedding, and possibly the hotel itself.</p>
 
                             <form action="https://youtu.be/kP9TfCWaQT4">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -386,7 +391,7 @@ color:red;
                         <div class="flip-card-back_i">
                           <h1>Chhalaang</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                            <button class="btn_i b2_i"  title="Seasons" style="color:white">136</button>
+                            <button class="btn_i b2_i"  title="Seasons" style="color:white">2h16m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">6.8</button>
                           </span>
                           <br />
@@ -398,6 +403,8 @@ color:red;
                             <form action="https://youtu.be/BY-0SbSF2dE">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -416,7 +423,7 @@ color:red;
                             <img src="./Images/permanent roommates.jpg" alt="Avatar" style="width:250px;height:360px;">
                         </div>
                         <div class="flip-card-back_i">
-                          <h1>Permanent Roommates</h1>
+                          <h1 style="font-size: 25px;">Permanent Roommates</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2014</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
@@ -430,6 +437,8 @@ color:red;
                             <form action="https://youtu.be/XsOjuDh4c-o">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -453,7 +462,7 @@ color:red;
                           <h1>TVF Tripling</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
                           </span>
                           <br />
                           <br />
@@ -464,12 +473,14 @@ color:red;
                             <form action="https://youtu.be/MfKNEC9xcE8">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
                               <b>TVF Tripling</b>
                               <br>
-                              IMDb - 8.5
+                              IMDb - 8.6
                           </div>
                       </div>
                     </div>
@@ -484,7 +495,7 @@ color:red;
                         <div class="flip-card-back_i">
                           <h1>Brooklyn Nine-Nine</h1>
                             <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                            <button class="btn_i b2_i"  title="Seasons" style="color:white">7</button>
+                            <button class="btn_i b2_i"  title="Seasons" style="color:white">8</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
                           </span>
                           <br />
@@ -496,6 +507,8 @@ color:red;
                             <form action="https://youtu.be/icTOP9F17pU">
                                 <input class="trailer_i" type="submit" value="▶Trailer" />
                             </form>
+                            <br>
+                        <button class="btn_i b4_i">▶Play</button>
 
                         </div>
                           <div class="flim">
@@ -587,7 +600,11 @@ color:red;
     });
     });
     </script>
-
+    <script>
+      function logout(){
+        window.location.replace("login.html");
+      }
+    </script>
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
