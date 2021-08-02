@@ -18,54 +18,81 @@
 
   <link rel="stylesheet" href="static/bootstrap.min.css">
   <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="cards.css">
   <link rel="stylesheet" href="footer.css">
-</head>   
+  
+</head>
 <body>
     <!-- navbar starts -->
 
-
-
-    <nav class="menu navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-              height="24"></a>
-          <button class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li>
+              <!-- Genre dropdown starts-->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                        Genres
+                    </button>
+                    <div class="dropdown-content" style="color: white;">
+                        <a href="popular.html">Popular</a>
+                        <a href="crime.html">Crime</a>
+                        <a href="suspense.html">Suspense & Thriller</a>
+                        <a href="action.html">Action</a>
+                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                        <a href="documentary.html">Documentary</a>
+                        <a href="horror.html">Horror</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="war.html">War & Politics</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="anime.html">Anime</a>
+                      </div>
+                </div>
+              </div>
+              <!-- Genre dropdown ends-->
+            </li>
+            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+              <li>
+                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="movies.html">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="web-series.html">Web Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kids.html">Kids</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tv.html">TV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="premium.html">Premium</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
-            </ul>
-            <form id="searchForm" class="d-flex">
-              <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Search</button>
-            </form>
-          </div>
-
+            </div>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
         </div>
       </div>
       </nav>
@@ -126,83 +153,88 @@
         <br>
       </details>
       <!-------------------------------Footer-------------------------------->
-    <div id="waterdrop"></div>
     <footer class="footer">
-
-        <hr class="footer-hr">
-        <div class="footer-content">
-            <div class="footer-left">
-                <a href="index.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-            </div>
-            <div class="footer-middle">
-                <h4 class="heading">Follow Us</h4>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-telegram telegram" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-github github" style="color:red"></i></a>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <h4 class="heading">Services</h4>
-                <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="index.html">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="index.html">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <h4 class="heading">Try Our App</h4>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <p class="footer-links">
-                    <h4 class="heading">Contact Us</h4>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
-                </p>
-            </div>
+      <hr class="footer-hr">
+      <div class="footer-content m-0">
+        <div class="footer-left">
+          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
         </div>
-        <hr class="footer-hr">
-        <div class="footer-copyright">
-            <p>Copyright &copy; and &reg; Since
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Follow Us</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                class="fab fa-facebook-f facebook" style="color:red"></i></a>
+            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                class="fab fa-twitter twitter" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                class="fab fa-linkedin linkedin" style="color:red"></i></a>
+            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                class="fab fa-instagram instagram" style="color:red"></i></a>
+            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
+                class="fab fa-github github" style="color:red"></i></a>
+          </ul>
         </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-middle-list">
+            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <h2 class="footer-heading">Try Our App</h2>
+          <ul class="footer-middle-list icons">
+            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+          </ul>
+        </div>
+        <div class="footer-right mt-0">
+          <p class="footer-links mb-0">
+          <h2 class="footer-heading d-flex">Contact Us</h2>
+          <p class="footer-bottom-tagline">Feel free to contact us.</p>
+          <a class="footer-contact-button" href="contactus.html">Contact</a>
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-copyright">
+        <p>Copyright &copy; and &reg; Since
+          <script>
+            document.write(new Date().getFullYear())
+          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+        </p>
+      </div>
     </footer>
 
     <!----------------------scroll back to top button-->
-    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      </button>
-      <script>
-      $(document).ready(function(){
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      $(document).ready(function () {
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          scrollTopButton.style.display = "block";
-        } else {
-          scrollTopButton.style.display = "none";
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
         }
-      }
 
-      $("#scrollToTopButton").click(function(){
-      $('html ,body').animate({scrollTop : 0},800)
+        $("#scrollToTopButton").click(function () {
+          $('html ,body').animate({ scrollTop: 0 }, 800)
+        });
       });
-      });
-      </script>
+    </script>
 
-    <!-- offcanva JS and footer js -->
+    <!-- footer scripts -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -210,17 +242,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main-min.js"></script>
+
     <script>
-        jQuery('#waterdrop').raindrops({
-            color: '#292c2f',
-            canvasHeight: 150,
-            density: 0.1,
-            frequency: 20
-        });
+      jQuery('#waterdrop').raindrops({
+        color: '#292c2f',
+        canvasHeight: 150,
+        density: 0.1,
+        frequency: 20
+      });
     </script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      function logout(){
+        window.location.replace("login.html");
+      }
+      </script>
+    <!-- bootsstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
 </body>
 </html>
