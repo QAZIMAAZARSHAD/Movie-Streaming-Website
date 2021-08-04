@@ -24,9 +24,9 @@
 <style>
     #scrollToTopButton{
   /* position: sticky; */
-  position:relative;
+  position:fixed;
   bottom: 40px;
-  left: 90%;
+  right: 25px;
   font-size: 25px;
   z-index: 99;
   width: 50px;
@@ -116,9 +116,14 @@ background-color: #2c2f30;
   position: relative;
   background-color: transparent;
   width: 200px;
-  height: 280px;
+  height: 350px;
   perspective: 1000px;
   cursor: pointer;
+}
+
+.flip-card_i img {
+  width: 200px !important;
+  height: 350px !important;
 }
 .flip-card-inner_i {
   position: relative;
@@ -150,7 +155,7 @@ background-color: #2c2f30;
 
 .flip-card-back_i {
   width: 200px;
-  height: 280px;
+  height: 350px;
   background-image: linear-gradient(black,#8B0000);
   color: white;
   transform: rotateY(180deg);
@@ -246,6 +251,28 @@ background-color: #2c2f30;
   justify-content: center;
 }
 
+}
+
+.container {
+  text-align: center;
+}
+
+@media only screen and (max-width: 298px) {
+  .flip-card_i{
+    width: 200px;
+    height: 350px;
+  }
+  .flip-card-back_i{
+    width: 200px !important;
+    height: 350px !important;
+  }
+  .flip-card_i img {
+    height: 350px !important;
+    width: 200px !important;
+  }
+  .flip-card-back_i h1 {
+    font-size: 32px;
+  }
 }
     </style>
 </head>
@@ -365,10 +392,14 @@ background-color: #2c2f30;
           
                           <p class="para_i" style="margin-top: -36px;">Anupamaa, who parts with her ambitions and goals in a bid to raise her family, feels dejected when she fails to get any credit for her sacrifices and trials. She then decides to live on her own terms.</p>
 
-                            <form action="https://www.imdb.com/video/vi4272078361?ref_=ttvi_vi_imdb_1">
-                              <input class="trailer_i" type="submit" value="▶Trailer" />
-                          </form>
-                          <br>
+                           
+                              <button class="trailer_i" type="submit" value="" onclick="openWin()">▶Trailer</button>
+                    <script type="text/javascript">
+                      function openWin(){
+                        window.open("https://www.imdb.com/video/vi4272078361?ref_=ttvi_vi_imdb_1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                      }
+                    </script>
+                          <br><br>
                           <button class="btn_i b4_i">▶Play</button>
                         </div>
                           <div class="flim">
@@ -398,10 +429,14 @@ background-color: #2c2f30;
                         </p>
           
                           <p class="para_i"  style="margin-top: -36px;">On their honeymoon in Greece, a flirtatious Kartik and a bold Naira pretend to be strangers and try to woo each other all over again.</p>
-          
-                           <form action="https://www.imdb.com/video/vi375766041?playlistId=tt7112704&ref_=tt_ov_vi">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+        
+                                
+                              <button class="trailer_i" type="submit" value="" onclick="openWin1()">▶Trailer</button>
+                              <script type="text/javascript">
+                                function openWin1(){
+                                  window.open("https://www.imdb.com/video/vi375766041?playlistId=tt7112704&ref_=tt_ov_vi","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                }
+                              </script> <br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -433,9 +468,12 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">Virat, a young police officer, marries a woman to honour the promise he made to her dying father. But when his former lover re-enters his life, he finds his heart pulled in both directions.</p>
           
-                            <form action="https://www.imdb.com/video/vi2629419033?playlistId=tt13085534&ref_=tt_ov_vi">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                              <button class="trailer_i" type="submit" value="" onclick="openWin2()">▶Trailer</button>
+                              <script type="text/javascript">
+                                function openWin2(){
+                                  window.open("https://www.imdb.com/video/vi2629419033?playlistId=tt13085534&ref_=tt_ov_vi","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                }
+                              </script> <br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -466,10 +504,14 @@ background-color: #2c2f30;
                         </p>
           
                           <p class="para_i"  style="margin-top: -36px;">Isolated from the outside world, the contestants live together in a house under the live cameras that monitor their every move. They perform various tasks and avoid eviction to be declared a winner.</p>
-          
-                                <form action="https://www.imdb.com/video/vi1928444953?playlistId=tt1281973&ref_=tt_ov_vi">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+
+                                
+                              <button class="trailer_i" type="submit" value="" onclick="openWin3()">▶Trailer</button>
+                              <script type="text/javascript">
+                                function openWin3(){
+                                  window.open("https://www.imdb.com/video/vi1928444953?playlistId=tt1281973&ref_=tt_ov_vi","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                }
+                              </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -501,9 +543,12 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">A series of tales of the supernatural inspired by real life incidents. Moving beyond ghosts and exploring all paranormal phenomenon.</p>
           
-                          <form action="https://www.imdb.com/title/tt7666252/?ref_=ttep_ep1">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                              <button class="trailer_i" type="submit" value="" onclick="openWin4()">▶Trailer</button>
+                              <script type="text/javascript">
+                                function openWin4(){
+                                  window.open("https://www.imdb.com/title/tt7666252/?ref_=ttep_ep1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                }
+                              </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
           
@@ -535,9 +580,13 @@ background-color: #2c2f30;
                         </p>
           
                           <p class="para_i"  style="margin-top: -36px;">The host narrates several dramatised real-life crime cases revolving around harassment, kidnapping and murder while also presenting re-enactments.</p>
-           <form action="https://www.imdb.com/title/tt14273900/mediaviewer/rm903397377/">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+        
+            <button class="trailer_i" type="submit" value="" onclick="openWin5()">▶Trailer</button>
+            <script type="text/javascript">
+              function openWin5(){
+                window.open("https://www.imdb.com/title/tt14273900/mediaviewer/rm903397377/","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+              }
+            </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
           
@@ -570,9 +619,14 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">Shaurya, a male chauvinist who believes that every girl's future belongs in the kitchen, is in for a surprise when he crosses paths with Anokhi, a hardworking girl.</p>
           
-                            <form action="https://www.imdb.com/video/vi1200734233?ref_=nv_sr_srsg_1">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                      
+                               
+            <button class="trailer_i" type="submit" value="" onclick="openWin6()">▶Trailer</button>
+            <script type="text/javascript">
+              function openWin6(){
+                window.open("https://www.imdb.com/video/vi1200734233?ref_=nv_sr_srsg_1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+              }
+            </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -603,10 +657,13 @@ background-color: #2c2f30;
                         </p>
           
                           <p class="para_i"  style="margin-top: -36px;">The host, Amitabh Bachchan, gives contestants the chance to answer a series of questions based on general knowledge and current affairs in order to win a cash prize</p>
-          
-                            <form action="https://www.imdb.com/title/tt13551448/?ref_=ttep_ep1">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+
+                              <button class="trailer_i" type="submit" value="" onclick="openWin7()">▶Trailer</button>
+                              <script type="text/javascript">
+                                function openWin7(){
+                                  window.open("https://www.imdb.com/title/tt13551448/?ref_=ttep_ep1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                }
+                              </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -638,9 +695,13 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">Various talented participants from India compete against each other during a singing competition in order to impress the judges and win the title.</p>
           
-                           <form action="https://www.imdb.com/title/tt0486068/mediaviewer/rm3598682113/">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                        
+                            <button class="trailer_i" type="submit" value="" onclick="openWin8()">▶Trailer</button>
+                            <script type="text/javascript">
+                              function openWin8(){
+                                window.open("https://www.imdb.com/title/tt0486068/mediaviewer/rm3598682113/","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                              }
+                            </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -672,9 +733,12 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">The residents of a housing society help each other find solutions when they face common, real-life challenges and get involved in sticky situations.</p>
           
-                            <form action="https://www.imdb.com/video/vi204126745?ref_=nv_sr_srsg_1">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                            <button class="trailer_i" type="submit" value="" onclick="openWin9()">▶Trailer</button>
+                            <script type="text/javascript">
+                              function openWin9(){
+                                window.open("https://www.imdb.com/video/vi204126745?ref_=nv_sr_srsg_1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                              }
+                            </script><br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -706,9 +770,12 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">Host Aamir Khan interacts with the general public of India and aims to enlighten citizens about the social issues present in the country.</p>
           
-                           <form action="https://www.imdb.com/video/vi2485238297?playlistId=tt2360717&ref_=tt_ov_vi">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                            <button class="trailer_i" type="submit" value="" onclick="openWin10()">▶Trailer</button>
+                            <script type="text/javascript">
+                              function openWin10(){
+                                window.open("https://www.imdb.com/video/vi2485238297?playlistId=tt2360717&ref_=tt_ov_vi","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                              }
+                            </script> <br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
@@ -740,9 +807,12 @@ background-color: #2c2f30;
           
                           <p class="para_i"  style="margin-top: -36px;">When a drug lord, Haroon Sherchan, threatens to let loose a virus unless the Indian government releases his brother from prison, a now-reclusive Jai Singh Rathod is asked to return to stop Sherchan.</p>
           
-                           <form action="https://www.imdb.com/video/vi302760217?playlistId=tt2792284&ref_=tt_ov_vi">
-                                <input class="trailer_i" type="submit" value="▶Trailer" />
-                            </form> <br>
+                            <button class="trailer_i" type="submit" value="" onclick="openWin11()">▶Trailer</button>
+                            <script type="text/javascript">
+                              function openWin11(){
+                                window.open("https://www.imdb.com/video/vi302760217?playlistId=tt2792284&ref_=tt_ov_vi","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                              }
+                            </script> <br><br>
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>

@@ -280,10 +280,9 @@ img:hover {
 }
 
 .poster {
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   display: inline-block;
   position: relative;
-  margin-left: 30px;
 }
 /* Hover Images */
 .poster {
