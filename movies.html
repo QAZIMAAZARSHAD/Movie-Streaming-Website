@@ -22,10 +22,9 @@
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
     #scrollToTopButton{
-  /* position: sticky; */
-  position:relative;
+  position: fixed;
   bottom: 40px;
-  left: 93%;
+  right: 25px;
   font-size: 25px;
   z-index: 99;
   width: 50px;
@@ -227,7 +226,16 @@ font-size:18px;
   justify-content: center;
 }
 }
+@media only screen and (max-width: 531px) {
+  .poster {
+  margin: 50px auto !important;
+  width: 230px !important;
+}
+}
 
+.poster {
+  margin: 50px 20px;
+}
 </style>    
 
 
@@ -344,7 +352,7 @@ font-size:18px;
         </div>
 
       </div>
-        <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+        <div class="row poster">
             <div class="container">
                 <div id="movies" class="row"></div>
             </div>
@@ -402,7 +410,7 @@ font-size:18px;
         </div>
 
 
-             <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+             <div class="row poster">
             <div class="row">
                 <h3 class="section-title text-center">Top Picks For You</h3>
             </div>
@@ -459,7 +467,7 @@ font-size:18px;
         </div>
 
             </div>
-            <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+            <div class="row poster">
             <div class="row">
                 <h3 class="section-title text-center">Featured</h3>
             </div>
@@ -522,7 +530,7 @@ font-size:18px;
     </div>
 
        </div>
-            <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+            <div class="row poster">
             <div class="row">
                 <h3 class="section-title text-center">Comedy</h3>
             </div>
@@ -579,7 +587,7 @@ font-size:18px;
         </div></div>
 
 
-   <div class="row justify-content-center" style="margin:50px 20px 50px 20px;">
+   <div class="row poster">
             <div class="row">
                 <h3 class="section-title text-center">Romance</h3>
             </div>
@@ -634,9 +642,6 @@ font-size:18px;
                 </div>
             </div>
         </div>
-
-
-
 
     </div>
     <!-------------------------------Footer-------------------------------->

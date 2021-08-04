@@ -63,6 +63,39 @@ body{
     transition: all 0.3s ease;
 }
 
+@media only screen and (max-width: 576px) {
+    .info_box {
+        width: 340px;
+    }
+    .info_box .buttons {
+        padding: 0 60px !important;
+    }
+    .quiz_box {
+        width: 350px !important;
+    }
+    .result_box {
+        width: 350px !important;
+    }
+}
+@media only screen and (max-width: 376px) {
+    .info_box {
+        width: 240px;
+    }
+    .info_box .buttons {
+        padding: 0 10px !important;
+    }
+    .quiz_box {
+        width: 250px !important;
+    }
+    .result_box {
+        width: 250px !important;
+    }
+    .result_box .buttons button {
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+}
+
 .info_box .info-title{
     height: 60px;
     width: 100%;

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Sign In</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -78,8 +80,8 @@
     <style>
          #scrollToTopButton{
 position: fixed;
-bottom: 15px;
-right: 10px;
+bottom: 40px;
+right: 25px;
 font-size: 25px;
 z-index: 99;
 width: 50px;
@@ -412,6 +414,35 @@ color: white;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 450px) {
+  .login {
+    width: 300px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .login {
+    width: 240px;
+    padding: 10px;
+  }
+  input[type="submit"] {
+    width: 220px;
+  }
+  .abcRioButton {
+  width: 220px !important;
+  }
+  .abcRioButtonIcon {
+    padding: 15px 5px !important;
+  }
+  .abcRioButtonContents {
+    font-size: 12px !important;
+  }
+  .help a {
+      margin-left: 60% !important;
+  }
+}
+
     </style>
     <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>

@@ -11,12 +11,14 @@
 <html>
   <head>
     <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <!------------------------Scroll to top button------------------------------------------------>
 <style>
   #scrollToTopButton{
     position: fixed;
-    bottom: 15px;
-    right: 10px;
+    bottom: 40px;
+    right: 25px;
     font-size: 25px;
     z-index: 99;
     width: 50px;
@@ -330,6 +332,26 @@ color:red;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px) {
+  .login, .aftersubmit {
+    width: 300px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login, .aftersubmit {
+    width: 240px;
+    padding: 10px;
+  }
+  input[type="submit"] {
+    width: 220px;
+  }
+  .help a {
+    margin-left: 0% !important;
+  }
 }
     </style>
     <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
