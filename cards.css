@@ -7,17 +7,17 @@
   perspective: 1000px;
   cursor: pointer;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 298px) {
   .flip-card_i{
     width: 200px;
-    height: 300px;
+    height: 400px;
   }
   .flip-card-back_i{
     width: 200px !important;
-    height: 300px !important;
+    height: 400px !important;
   }
   .flip-card_i img {
-    height: 300px !important;
+    height: 400px !important;
     width: 200px !important;
   }
   .flip-card-back_i h1 {

@@ -116,9 +116,14 @@ background-color: #2c2f30;
   position: relative;
   background-color: transparent;
   width: 200px;
-  height: 280px;
+  height: 350px;
   perspective: 1000px;
   cursor: pointer;
+}
+
+.flip-card_i img {
+  width: 200px !important;
+  height: 350px !important;
 }
 .flip-card-inner_i {
   position: relative;
@@ -150,7 +155,7 @@ background-color: #2c2f30;
 
 .flip-card-back_i {
   width: 200px;
-  height: 280px;
+  height: 350px;
   background-image: linear-gradient(black,#8B0000);
   color: white;
   transform: rotateY(180deg);
@@ -230,6 +235,24 @@ background-color: #2c2f30;
 
 .container {
   text-align: center;
+}
+
+@media only screen and (max-width: 298px) {
+  .flip-card_i{
+    width: 200px;
+    height: 350px;
+  }
+  .flip-card-back_i{
+    width: 200px !important;
+    height: 350px !important;
+  }
+  .flip-card_i img {
+    height: 350px !important;
+    width: 200px !important;
+  }
+  .flip-card-back_i h1 {
+    font-size: 32px;
+  }
 }
     </style>
 </head>
