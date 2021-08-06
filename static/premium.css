@@ -183,7 +183,7 @@ body {
   transform:scale(0);
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
    .wrapper{
         grid-template-columns: repeat(2,1fr);
     } 
@@ -193,31 +193,90 @@ body {
    .wrapper{
         grid-template-columns: 1fr;
     } 
-}
+} */
 .box1{
  
   box-shadow: 2px 2px 6px white;
   display:inline-block;
-  width:32%;
+  width:300px;
   margin: 5px 11px 5px 0px;
 }
 .box2{
     
     box-shadow: 2px 2px 6px white;
     display:inline-block;
-    width:32%;
+    width:300px;
     margin: 5px 11px 5px 0px;
   }
   .box3{
     
     box-shadow: 2px 2px 6px white;
     display:inline-block;
-    width:32%;
+    width:300px;
     margin: 5px 11px 5px 0px;
   }
   .no-gutters{
-      width:1107px;
+      width: 1000px;
       margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  @media only screen and (max-width:991px) {
+    .box1 {
+      width: 350px;
+    }
+    .box2 {
+      width: 350px;
+    }
+    .box3 {
+      width: 350px;
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .box1 {
+      margin: 30px 100px 30px 80px;
+    }
+    .box2 {
+      margin: 30px 100px 30px 80px;
+    }
+    .box3 {
+      margin: 30px 100px 30px 80px;
+    }
+  }
+  @media only screen and (max-width:496px) {
+    .box1 {
+      margin: 20px 60px;
+    }
+    .box2 {
+      margin: 20px 60px;
+    }
+    .box3 {
+      margin: 20px 60px;
+    }
+    .no-gutters {
+      width: 250px;
+    }
+  }
+  @media only screen and (max-width: 396px) {
+    .box1 {
+      margin: 20px;
+    }
+    .box2 {
+      margin: 20px;
+    }
+    .box3 {
+      margin: 20px;
+    }
+  }
+  @media only screen and (max-width: 296px) {
+    .box1 {
+      margin: 20px 0;
+    }
+    .box2 {
+      margin: 20px 0;
+    }
+    .box3 {
+      margin: 20px 0;
+    }
   }
   .gbtn{
       color:white;
@@ -262,9 +321,10 @@ body {
   .featured:hover{
     box-shadow: 3px 3px 5px #FD1C03;
     border: 3px solid red;
-    height: 485px;
-    width: 362px;
-    transform: translateY(-1rem);
+    /* height: 485px; */
+    /* width: 362px; */
+    transform: scale(1.05);
+    /* transform: translateY(-1rem); */
     transition: .5s
   }
   .gbtn:hover{
