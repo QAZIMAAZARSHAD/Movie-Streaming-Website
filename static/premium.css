@@ -307,6 +307,9 @@ body {
       text-decoration: none !important;
       color: white;
   }
+  .section-title{
+    background-color: none;
+  }
   .section-title h3{
       margin-top: 45px;
   }
@@ -402,6 +405,7 @@ body {
 #premiumcards{
     background-color: none;
     width:1107px;
+    
 }
 @media screen and (max-width: 1203px){
     #premiumcards{
@@ -470,7 +474,7 @@ body {
         height:1700px;
     }
     .featured{
-        margin-left: 20px;
+       
         height:450px;
         margin-top: 20px;
     }
