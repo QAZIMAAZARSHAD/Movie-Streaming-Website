@@ -3,7 +3,9 @@
     padding:0;
     box-sizing: border-box;
   }
-
+  .nav-link.b:hover{
+    color: #7bdf1d;
+  }
 .preloader {
     position: absolute;
     top: 0;

@@ -53,6 +53,16 @@
 .container {
   text-align: center;
 }
+#navbarNav.nav-item.nav-link a:hover{
+  color: red;
+}
+.nav-link:hover{
+  color: red;
+}
+
+#header-nav .nav-link a:hover{
+  color: red;
+}
 </style>
 <script>
   setTimeout(function () {
@@ -90,27 +100,27 @@
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link " href="movies.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link " href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'" >Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kids.html">Kids</a>
+              <a class="nav-link" href="kids.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Kids</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.html">TV</a>
+              <a class="nav-link" href="tv.html"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">TV</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="premium.html">Premium</a>
+              <a class="nav-link" href="premium.html"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Premium</a>
             </li>
       
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="contactus.html"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Contact Us</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
@@ -139,7 +149,7 @@
             </li>
             <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Logout</button>
               </li>
             </div>
           </ul>
