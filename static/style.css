@@ -147,6 +147,9 @@ section div:nth-child(6) img {
 }
 
 }
+.nav-link.b:hover{
+  color: #7bdf1d;
+}
 #nav:hover {
   background-color: #e60e23 !important;
 }
@@ -155,6 +158,9 @@ section div:nth-child(6) img {
 }
 .nav-item {
   flex-wrap: wrap;
+}
+.nav-item:hover{
+  color: #7bdf1d;
 }
 .menu li a:hover {
   color: red !important;
