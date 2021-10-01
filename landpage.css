@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
   }
   .nav-link.b:hover{
     color: #7bdf1d;
@@ -45,6 +46,7 @@
     font-size: 1.2rem;
   }
   .text-container h1 {
+    font-weight: 300;
     color: #fff;
     font-size: 3rem;
   }
