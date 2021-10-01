@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
-
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
 summary {
     font-size: 1.25rem;
     font-weight: 600;

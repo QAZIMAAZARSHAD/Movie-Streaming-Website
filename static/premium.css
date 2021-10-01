@@ -14,6 +14,7 @@ body{
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616) ),url(https://blog-content.ixigo.com/wp-content/uploads/2020/04/Bollyquiz2.jpeg) no-repeat center center fixed;
     background-size: cover; 
+    font-family: 'Ubuntu', sans-serif;
 }
 .wrapper{
     display: grid;
