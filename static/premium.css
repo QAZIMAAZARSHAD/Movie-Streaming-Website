@@ -14,6 +14,7 @@ body{
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616) ),url(https://blog-content.ixigo.com/wp-content/uploads/2020/04/Bollyquiz2.jpeg) no-repeat center center fixed;
     background-size: cover; 
+    font-family: 'Ubuntu', sans-serif;
 }
 .wrapper{
     display: grid;
@@ -187,7 +188,7 @@ body {
   transform:scale(0);
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
    .wrapper{
         grid-template-columns: repeat(2,1fr);
     } 
@@ -197,7 +198,7 @@ body {
    .wrapper{
         grid-template-columns: 1fr;
     } 
-}
+} */
 .box1{
  
   box-shadow: 2px 2px 6px white;
@@ -206,9 +207,9 @@ body {
   margin: 5px 11px 5px 0px;
 }
 .box2{
-      
     box-shadow: 2px 2px 6px white;
     display:inline-block;
+    width:93%;
     width:93%;
     margin: 5px 11px 5px 0px;
   }
@@ -216,12 +217,85 @@ body {
     
     box-shadow: 2px 2px 6px white;
     display:inline-block;
+
     width:93%;
     margin: 5px 11px 5px 0px;
   }
   .no-gutters{
      
+
+
+    width:93%;
+    margin: 5px 11px 5px 0px;
+  }
+  .no-gutters{
+     
+    width:300px;
+    margin: 5px 11px 5px 0px;
+  }
+  .no-gutters{
+      width: 1000px;
+
       margin-top: 50px;
+      margin-bottom: 50px;
+  }
+  @media only screen and (max-width:991px) {
+    .box1 {
+      width: 350px;
+    }
+    .box2 {
+      width: 350px;
+    }
+    .box3 {
+      width: 350px;
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .box1 {
+      margin: 30px 100px 30px 80px;
+    }
+    .box2 {
+      margin: 30px 100px 30px 80px;
+    }
+    .box3 {
+      margin: 30px 100px 30px 80px;
+    }
+  }
+  @media only screen and (max-width:496px) {
+    .box1 {
+      margin: 20px 60px;
+    }
+    .box2 {
+      margin: 20px 60px;
+    }
+    .box3 {
+      margin: 20px 60px;
+    }
+    .no-gutters {
+      width: 250px;
+    }
+  }
+  @media only screen and (max-width: 396px) {
+    .box1 {
+      margin: 20px;
+    }
+    .box2 {
+      margin: 20px;
+    }
+    .box3 {
+      margin: 20px;
+    }
+  }
+  @media only screen and (max-width: 296px) {
+    .box1 {
+      margin: 20px 0;
+    }
+    .box2 {
+      margin: 20px 0;
+    }
+    .box3 {
+      margin: 20px 0;
+    }
   }
   .gbtn{
       color:white;
@@ -238,6 +312,9 @@ body {
   a:hover {
       text-decoration: none !important;
       color: white;
+  }
+  .section-title{
+    background-color: none;
   }
   .section-title h3{
       margin-top: 45px;
@@ -270,7 +347,13 @@ body {
     border: 3px solid red;
     height: 485px;
     transform: scale(1.1);
-  }
+    /* height: 485px; */
+    /* width: 362px; */
+    transform: scale(1.05);
+    /* transform: translateY(-1rem); */
+    transition: .5s
+
+}
   .gbtn:hover{
     color:red;
     background-color: white;
@@ -329,6 +412,7 @@ body {
 #premiumcards{
     background-color: none;
     width:1107px;
+
 }
 @media screen and (max-width: 1203px){
     #premiumcards{
@@ -397,6 +481,7 @@ body {
         height:1700px;
     }
     .featured{
+
         margin-left: 20px;
         height:450px;
         margin-top: 20px;
@@ -557,4 +642,7 @@ body {
         margin-left: 10px;
         margin-right:10px;
     }
+
+}
+
 }

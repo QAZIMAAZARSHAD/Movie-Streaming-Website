@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ApnaTheatre</title>
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="./static/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style-min.css">
+  <link rel="stylesheet" href="cards.css">
+
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .newsImg{
+        width: 200px;
+        height: 275px;
+        margin-left: 6px;
+    }
+    .singleNewsComponent{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+    .desc{
+        margin: 8px;
+        font-size: 16px;
+    }
+    .newsTitle{
+        color: white;
+    }
+    #scrollToTopButton {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+#scrollToTopButton:hover,i:hover {
+    background-color: white;
+    color: red;
+  }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+              height="24"></a>
+          <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="web-series.html">Web Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kids.html">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tv.html">TV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="premium.html">Premium</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              <li>
+                <!-- Genre dropdown starts-->
+                <div>
+                  <div class="dropdown" style="position: relative; disPlay: inline-block; padding-top: 5px; padding-left: 15px;">
+                      <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                          Genres
+                      </button>
+                      <div class="dropdown-content" style="color: white;">
+                          <a href="popular.html">Popular</a>
+                          <a href="crime.html">Crime</a>
+                          <a href="suspense.html">Suspense & Thriller</a>
+                          <a href="action.html">Action</a>
+                          <a href="fantasy.html">Sci-Fi & Fantasy</a>
+                          <a href="documentary.html">Documentary</a>
+                          <a href="horror.html">Horror</a>
+                          <a href="drama.html">Drama</a>
+                          <a href="war.html">War & Politics</a>
+                          <a href="comedy.html">Comedy</a>
+                          <a href="romance.html">Romance</a>
+                          <a href="anime.html">Anime</a>
+                        </div>
+                  </div>
+                </div>
+                <!-- Genre dropdown ends-->
+              </li>
+              <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                <li>
+                  <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                </li>
+              </div>
+            </ul>
+            <form id="searchForm" class="d-flex">
+              <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        </nav>
+        <div class="maincontainer">
+            <h2>COMING SOON</h2>
+            <hr>
+            <div class="container">
+                <div id="movies" class="row"></div>
+            </div>
+            <hr>
+            <div class="newsContentWrapper">
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/LOVE Victor.jpg" alt="">
+                    <div class="descContainer">
+                        <h4 class="newsTitle" >Love, Victor is coming back at ApnaTheatre.</h4>
+                        <p class="desc">
+
+                            The Disney-backed streamer has renewed the coming-of-age comedy and Love, Simon offshoot for a third season. The news comes a month and a half after the series starring Michael Cimino returned for its second season.
+                            
+                            ApnaTheatre, like other streamers, does not release traditional viewership data. Still, the series from This Is Us co-showrunners Isaac Aptaker and Elizabeth Berger — who wrote the screenplay for Love, Simon — has maintained a strong audience reaction. Season two has a 100 percent rating among critics and 92 percent score with viewers on RottenTomatoes.com. The LGBTQ-themed series focuses on Victor (Cimino) starting his junior year in high school and navigating his coming out with being a star athlete. Rachel Hilson, Anthony Turpel, Bebe Wood, Mason Gooding, George Sear, Isabella Ferreira, Mateo Fernandez, James Martinez and Ana Ortiz round out the cast.
+    
+    The series hails from 20th Television, where Aptaker and Berger are under an overall deal. The duo have the final season of NBC’s This Is Us in the works and are also showrunning ApnaTheatre's How I Met Your Father, starring Hilary Duff.
+    
+    Love, Victor is part of a roster of scripted originals at ApnaTheatre that also includes Dollface, The Great, PEN15, Ramy, Shrill, Woke and such upcoming series as Dopesick, The Dropout, Nine Perfect Strangers and Only Murders in the Building, among scores more as the streamer continues to bulk up to compete for subscribers and eyeballs in the streaming wars</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/The_Suicide_Squad_official_poster.jpeg" alt="">
+                    <div class="descContainer">
+                        <h4>The Suicide Squad cast, release date, trailer and everything you need to know</h4>
+                        <p class="desc">The reviews are in, and The Suicide Squad will be here very soon to wipe away any lingering bad memories of the 2016 movie, which was confusingly called Suicide Squad.
+
+                            James Gunn's DC reboot and sort-of sequel to that critically-derided first movie was completed in February 2021, and it's now just a case of waiting to see what is one of the most-anticipated movies of the year.
+                            
+                            Why? Because Gunn has revealed he was allowed to make "every single choice" and Warner Bros let him: "They gave very few notes – they were usually good and minor and I took them if I wanted to and didn't if I didn't want to. Warners was creatively amazing."
+                            A creatively-free Gunn is a very exciting prospect when it comes to DC's collection of anti-heroes, so we can expect the same magic he showed with both Guardians of the Galaxy movies – only it's lots more violent.
+    
+                            Gunn has also not been constricted in following on from the first movie: "Um, it's its own thing. It does not contradict the first movie, I don't think. It might in some small ways… I don't know..."
+                            
+                            But who cares about continuity when what Gunn has crafted looks so much fun? The movie combines new characters with returning favourites like Margot Robbie's Harley Quinn and Viola Davis's Amanda Waller.
+                            
+                            But who are those new characters and what can we expect from Gunn's take on the DC anti-hero squad? Here's everything you need to know about The Suicide Squad.
+                            Gunn revealed the stellar cast for The Suicide Squad in September 2019, including the returning Margot Robbie, Jai Courtney, Joel Kinnaman and Viola Davis as Harley Quinn, Captain Boomerang, Rick Flag and Amanda Waller respectively.</p>
+                    </div>
+                    </div>
+                   
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="/Images/Shershaah.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>Sidharth Malhotra: 'Hope Shershaah inspires the youth, the way Vikram Batra did'</h4>
+                    <p class="desc">Sidharth Malhotra has said that he hopes his upcoming ApnaTheatre Video film, Shershaah, inspires the youth just the way Captain Vikram Batra did. In an interview with Hindustan Times, Sidharth talked about playing the Kargil war hero, his first impression of Vikram and more. Remembering the 1999 Kargil war, Sidharth Malhotra said, "When the Kargil war was actually happening in 1999, I was 13 or 14 and I vaguely remember the interviews on television. The iconic Vikram Batra interview when he said 'Yeh Dil Maange More'. It was a surreal experience, after so many years, to come and shoot this film. At that time, it was difficult to comprehend what I was watching on television. Now, after so many years....to see up close, and in detail, what the army does. The sacrifices they make, the difficulties they face, the life they lead for us to have this kind of freedom. I have immense respect for the armed forces." The actor also talked about getting to know Param Vir Chakra receipient Vikram Batra. "I have seen both sides of him, met his friends and family. The way they talk about him, how endearing he was. He wanted to experience so many things and was so full of life. But he chose to give up all of it for his duty. Just to do his duty, till his last breath. That takes a different mind set, a different kind of training. The Indian army is one of the best armies in the world. Vikram Batra's heroic actions took the legacy further, and we hope with Shershaah, the legacy lives further on. Hopefully the film inspires many other youth like he did."</p>
+                </div>
+                </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/kota.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>Kota Factory season 2: TVF’s Kota Factory moves to ApnaTheatre. Here’s everything we know about the second season.</h4>
+                        <p class="desc">Kota Factory is one of the top-rated Indian web series on IMDb. Ever since the conclusion of the first season, the fans are eagerly waiting for updates on the second season of the show. Well, there is big news for the fans out there. The web series is indeed coming with its next season and there is big news for the fans out there. The show produced by TVF is moving to ApnaTheatre for the coming season. Streaming giant ApnaTheatre on Mar 3, 2021, announced its complete slate for 2021 and surprised everyone as Kota Factory was there in the list of 41 titles announced. Now that it is confirmed that the second season is coming in 2021, the excitement of the fans has no bounds. As we get ready, here is everything you need to know about Kota Factory season 2. Now it is confirmed that season 2 is coming in 2021. Though ApnaTheatre hasn’t announced the exact release date, I believe that season two would release in the second quarter of 2021. Well, TVF has just concluded the first season of Aspirants which is also set in the education universe. So, the VOD platform would consider at least a 3-4 months gap. Well, you have no need to worry, we will update this post as soon as ApnaTheatre announces the release date.
+
+                            The first season of Kota Factory is available on TVF Play and YouTube. With an IMBb rating of 9.2, it is one of the top-rated Indian web shows. We recommend you watch it if you haven’t yet.</p>
+                    </div>
+                    </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/family_man.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>The Family Man season 3 story is ready: Manoj Bajpayee hints at how long fans will have to wait</h4>
+                        <p class="desc">Manoj Bajpayee has hinted at how long fans of The Family Man might have to wait for the third season. Season two of the spy series premiered recently on ApnaTheatreVideo. The final scene of The Family Man season two teased what the third season could possibly have in store for fans. It has since been confirmed that the upcoming season will be set during the coronavirus pandemic, and now, star Manoj Bajpayee has provided an estimated timeline about just how long fans might have to wait. Season two of The Family Man debuted on ApnaTheatre Video on June 4 and has been received enthusiastically by fans and critics. It ends with a tease about season three, and the conflict at its centre, which seems to have a China connection. In an interview with Bollywood Bubble, Manoj, who plays secret agent Srikant Tiwari in the show, said that there is no writers room in place currently, as a lockdown is in effect. "Everyone is locked up. Let the world open, let this country open fully. And when they start working... I'm very sure they will be taking it forward with Amazon. When it is greenlit they will start turning the story into a screenplay, because the story is with them, that is ready."</p>
+                    </div>
+                    </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/mirzapur.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>Mirzapur Season 3 Release Date, Cast, Plot, and Everything We Know</h4>
+                        <p class="desc">It is officially announced that Mirzapur Season 3 will come.  
+                            The web series Mirzapur became the most-watched web series. After this, Mirzapur Season 3 was announced. Mirzapur Season 2 was ended with large suspense, and it will be revealed in the upcoming Mirzapur Season 3. In Mirzapur Season 2, in the end, we have seen that Golu and Guddu have shot Munna Tripathi. Munna Tripathi was in the lead role of the web series Mirzapur. Sharad Shukla has saved the life of Kaleen Bhaiya. He did it because of some reason. Maybe Sharad Shukla and Kaleen Bhaiya will unite together and make the team kill Golu and Guddu.
+
+                            Kaleen Bhaiya will take revenge from Golu and Guddu because they have killed their son. Mirzapur Season 3 will include more violence compared to Mirzapur Season 2 and 1.
+                            
+                            We have seen that the last fight was happened because of Beena. She gave the location and planned to kill Munna and Kaleen Bhaiya, and on the other side, Maqbool has killed Satyanand Tripathi, aka Bauji.
+                            
+                            So, there will be one team of Sharad Shukla and Kaleen Bhaiya, and on the opposite, Beena, Golu, and Guddu. So, we expect that there will be the biggest fight ever in the web series Mirzapur Season 3. Mirzapur Season 3 will be released somewhere in 2022. The release date is not announced yet. If we talk about the cast of Mirzapur Season 3, we can say that almost all the characters who are alive at the end of Mirzapur Season 2 will return in Season 3.
+
+                            The cast and characters of Mirzapur Season 3 will include Pankaj Tripathi as Akhandanand “Kaleen Bhaiya” Tripathi, Ali Fazal as Govind “Guddu” Pandit, Shahnawaz Pradhan as Parshuram Gupta, Rajesh Tailang as Ramakant Pandit, Sheeba Chadda as Vasudha Pandit, Shweta Tripathi as Gajgamini “Golu” Gupta, Rasika Dugal as Beena Tripathi, Harshita Gaur as Dimpy Pandit, Shaji Chaudhary as Maqbool Khan, Anjum Sharma as Sharad Shukla, Pramod Pathak as J. P. Yadav, Isha Talwar as Madhuri Yadav Tripathi, Shernavaz Jijina as Shabnam, and Lilliput as Devdett ‘Dadda’ Tyagi.  
+                            We expect that the series Mirzapur Season 3 will be released in late 2021 or early 2022. There is no official update about the release date of Mirzapur Season 3. The exact release date of Mirzapur Season 3 will soon reveal.</p> 
+                    </div>
+                    </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/Rudra.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>Ajay Devgn drops motion poster of debut web series Rudra, remake of Idris Elba's Luther</h4>
+                        <p class="desc">Ajay Devgn is all set for his digital debut with Disney+Hotstar VIP's Rudra - The Edge of Darkness. The actor dropped the motion poster of the crime series today (April 20). Rudra is the remake of British psychological crime drama, Luther, starring Idris Elba. Ajay Devgn took to Twitter to share the motion poster of Rudra - The Edge of Darkness. He captioned it, "Happy to announce the crime thriller of the year Hotstar Specials 'Rudra - The Edge Of Darkness'. This one’s going to be ‘killer’ @DisneyplusHSVIP Winking face #DebutDobara #Rudra @ApplauseSocial @BBCStudiosIndia @nairsameer (sic)." Speaking about his digital debut, Aja Devgn said in a statement, "My attempt has always been to tell unique stories and work with good talent. The idea is to raise the bar of entertainment in India. The digital world excites me, and I am looking forward to working with Applause and BBC to bring this series to life on Disney+ Hotstar VIP." He further added, "Rudra - The Edge of Darkness is a compelling and highly intriguing story and I can't wait to begin this new journey! Playing a cop on screen is not new to me, but this time the character is more intense, complex and dark. What drew me most to his persona, is that he is possibly the greyest character you may come across in recent times." The Hotstar Specials series will soon go into production. It will be shot across Mumbai. The crime-drama will be produced by Applause Entertainment in association with BBC Studios India.</p> 
+                    </div>
+                    </div>
+                <hr>
+                <div class="singleNewsComponent">
+                    <img class="newsImg" src="./Images/fast and furious 9.jpg" alt="">
+                    <div class="descContainer">
+                        <h4>Fast & Furious 9 India Release Date Delayed to August 19</h4>
+                        <p class="desc">Fast & Furious 9's India release date has been delayed by two weeks, Universal Pictures announced on Wednesday afternoon. The latest chapter in The Fast Saga is now due Thursday, August 19 in Indian cinemas, instead of the earlier Thursday, August 5 date. The new August 19 release date for Fast & Furious 9 comes as part of a two-month slate announcement from NBCUniversal, the parent company of Universal Pictures. Alongside, we have Oscar-winning Promising Young Woman on August 6, M. Night Shyamalan's Old on August 13, Bob Odenkirk-led Nobody and animated sequel The Croods: A New Age on August 27, animated sequel The Boss Baby: Family Business on September 10, and the dystopian follow-up The Forever Purge on September 17.
+
+                            All of these seven Universal Pictures titles have already been released in theatres globally. The Croods: A New Age released all the way back in November last year, and Promising Young Woman came out last Christmas in the US. Nobody released on March 26 in the US — it was slated to premiere in India on April 9, but it was pulled due to COVID-19. Fast & Furious 9 released June 25 in the US. Following a 45-day theatrical window, F9 is expected in early August on video-on-demand in the US, which could hurt its India box office chances even more. Both The Forever Purge and The Boss Baby: Family Business released July 2 in the US, with the latter also on streaming service Peacock. Old is the latest title here, having premiered July 23 in American cinemas.</p> 
+                    </div>
+                    </div>
+                <hr>
+            </div>
+            <footer class="footer">
+              <hr class="footer-hr">
+              <div class="footer-content">
+                <div class="footer-left">
+                  <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+                      height="24"></a>
+                  <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+                </div>
+                <div class="footer-middle">
+                  <h2 class="footer-heading">Follow Us</h2>
+                  <ul class="footer-middle-list icons">
+                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f facebook" style="color:red"></i></a>
+                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
+                        class="fab fa-twitter twitter" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
+                        class="fab fa-linkedin linkedin" style="color:red"></i></a>
+                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram instagram" style="color:red"></i></a>
+                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
+                        class="fab fa-github github" style="color:red"></i></a>
+                  </ul>
+                </div>
+                <div class="footer-middle">
+                  <h2 class="footer-heading">Services</h2>
+                  <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
+                    <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
+                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
+                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+                  </ul>
+                </div>
+               <div class="footer-middle">
+                        <h2 class="footer-heading">Try Our App</h2>
+                        <ul class="footer-middle-list icons">
+                            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
+                            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                        </ul>
+                    </div>
+                <div class="footer-right">
+                  <p class="footer-links">
+                  <h2 class="footer-heading">Contact Us</h2>
+                  <p class="footer-bottom-tagline">Feel free to contact us.</p>
+                  <a class="footer-contact-button" href="contactus.html">Contact</a>
+                  </p>
+                </div>
+              </div>
+              <hr class="footer-hr">
+              <div class="footer-copyright">
+                <p>Copyright &copy; and &reg; Since
+                  <script>
+                    document.write(new Date().getFullYear())
+                  </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
+                </p>
+              </div>
+            </footer>
+        
+            <!----------------------scroll back to top button-->
+            <button id="scrollToTopButton" title="Go to top">
+              <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </button>
+            <script>
+              $(document).ready(function () {
+                var scrollTopButton = document.getElementById("scrollToTopButton");
+                window.onscroll = function () { scrollFunction() };
+        
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    scrollTopButton.style.display = "block";
+                  } else {
+                    scrollTopButton.style.display = "none";
+                  }
+                }
+        
+                $("#scrollToTopButton").click(function () {
+                  $('html ,body').animate({ scrollTop: 0 }, 800)
+                });
+              });
+            </script>
+        
+            <!-- footer scripts -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+            <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="js/main-min.js"></script>
+        
+            <script>
+              jQuery('#waterdrop').raindrops({
+                color: '#292c2f',
+                canvasHeight: 150,
+                density: 0.1,
+                frequency: 20
+              });
+            </script>
+            <script>
+              function logout(){
+                window.location.replace("login.html");
+              }
+
+
+              </script>
+            <!-- bootsstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+              crossorigin="anonymous"></script>
+            <script src="./static/script.js"></script>
+        </body>
+        
+        </html>
+        
+</body>
+</html>
