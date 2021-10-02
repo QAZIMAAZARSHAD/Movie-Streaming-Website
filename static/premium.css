@@ -207,18 +207,22 @@ body {
   margin: 5px 11px 5px 0px;
 }
 .box2{
-      
     box-shadow: 2px 2px 6px white;
     display:inline-block;
-
     width:93%;
-
     margin: 5px 11px 5px 0px;
   }
   .box3{
     
     box-shadow: 2px 2px 6px white;
     display:inline-block;
+
+    width:93%;
+    margin: 5px 11px 5px 0px;
+  }
+  .no-gutters{
+     
+
 
     width:93%;
     margin: 5px 11px 5px 0px;
@@ -347,7 +351,8 @@ body {
     transform: scale(1.05);
     /* transform: translateY(-1rem); */
     transition: .5s
-  }
+
+}
   .gbtn:hover{
     color:red;
     background-color: white;
@@ -406,7 +411,7 @@ body {
 #premiumcards{
     background-color: none;
     width:1107px;
-    
+
 }
 @media screen and (max-width: 1203px){
     #premiumcards{
@@ -475,12 +480,12 @@ body {
         height:1700px;
     }
     .featured{
-       
+        margin-left: 20px;
         height:450px;
         margin-top: 20px;
     }
     .column{
-       height: 500px;
+        height: 500px;
         margin-left: 10px;
         margin-right:10px;
     }
@@ -496,7 +501,6 @@ body {
         height:1600px;
     }
     .featured{
-        
         margin-left: 20px;
         height:450px;
     }
@@ -635,4 +639,7 @@ body {
         margin-left: 10px;
         margin-right:10px;
     }
+
+}
+
 }

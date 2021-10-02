@@ -7,6 +7,7 @@
   .nav-link.b:hover{
     color: #7bdf1d;
   }
+
 .preloader {
     position: absolute;
     top: 0;
@@ -16,7 +17,7 @@
     width: 100%;
     height: 100vh;
     z-index: 99999999;
-    background: url('Loader.webp'); /* your icon gif file path */
+    background: url('loaderLogo.webp'); /* your icon gif file path */
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
