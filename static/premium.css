@@ -210,7 +210,6 @@ body {
     box-shadow: 2px 2px 6px white;
     display:inline-block;
     width:93%;
-    width:93%;
     margin: 5px 11px 5px 0px;
   }
   .box3{
@@ -481,13 +480,12 @@ body {
         height:1700px;
     }
     .featured{
-
         margin-left: 20px;
         height:450px;
         margin-top: 20px;
     }
     .column{
-       height: 500px;
+        height: 500px;
         margin-left: 10px;
         margin-right:10px;
     }
@@ -503,7 +501,6 @@ body {
         height:1600px;
     }
     .featured{
-        
         margin-left: 20px;
         height:450px;
     }
