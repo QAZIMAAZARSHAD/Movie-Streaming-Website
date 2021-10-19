@@ -11,7 +11,7 @@
 
   }
   .menu li a:hover {
-    color: red !important;
+    color: #0ace00 !important;
     opacity: 0.5;
   }
 
@@ -19,7 +19,11 @@
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
+  .poster {
+    box-shadow: 0 0 10px #0ace00 !important;
+
+  }
   img {
     -webkit-user-drag: none;
     -moz-user-drag: none;
@@ -41,7 +45,7 @@
   }
 
   .movie_info {
-    color: red;
+    color: #0ace00;
   }
 
   .movie_info i {
@@ -55,7 +59,7 @@
   }
 
   .section-title {
-    color: red;
+    color: #0ace00;
     font-size: 25px;
     margin-bottom: 40px;
   }
@@ -76,10 +80,10 @@
 
   ::-webkit-scrollbar-track {
   border: 5px solid #2c2f30;
-  background-color: red;
+  background-color: #0ace00;
   }
   ::-webkit-scrollbar-thumb:hover {
-  background-color: red !important;
+  background-color: #0ace00 !important;
   }
   ::-webkit-scrollbar-track:hover {
   background-color: white;
@@ -239,7 +243,7 @@
 }
 
 .dropdown-content a:hover {
-background-color: red;
+background-color: #0ace00;
 color: white;
 text-decoration: none;
 }

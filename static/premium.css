@@ -298,7 +298,7 @@ body {
   }
   .gbtn{
       color:white;
-      background-color: red;
+      background-color: #0ace00;
       height: 53px;
       width: 192px;
      margin: auto;
@@ -343,7 +343,7 @@ body {
   }
   .featured:hover{
     box-shadow: 3px 3px 5px #FD1C03;
-    border: 3px solid red;
+    border: 3px solid #0ace00;
     height: 485px;
     transform: scale(1.1);
     /* height: 485px; */
@@ -354,9 +354,9 @@ body {
 
 }
   .gbtn:hover{
-    color:red;
+    color:#0ace00;
     background-color: white;
-    border:2px solid red;
+    border:2px solid #0ace00;
   }
   .btn1{
     border-radius: 6px;
@@ -367,7 +367,7 @@ body {
     font-size: 20px !important;
   }
   .btn1:hover{
-      color:red !important;
+      color:#0ace00 !important;
       background-color: white !important;
       border:3px solid red !important;
       font-weight: 600;
@@ -385,7 +385,7 @@ body {
   }
   .section-title ul li{
     content: "\2022";  
-    color: red;
+    color: #0ace00;
   }
   .devices li{
     content: "\2022";  

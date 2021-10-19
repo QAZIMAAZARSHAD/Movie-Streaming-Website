@@ -50,7 +50,7 @@ body{
 }
 .start_btn :hover{
     color:black;
-    background-color: red;
+    background-color: #0ace00;
 }
 
 .info_box{
@@ -320,7 +320,7 @@ footer button{
 
 footer button:hover{
     color:black;
-    background-color: red;
+    background-color: #0ace00;
 }
 
 footer button.show{
@@ -393,7 +393,7 @@ footer button.show{
 
 .buttons button.restart:hover{
     color:black;
-    background-color: red;
+    background-color: #0ace00;
 }
 
 .buttons button.quit{
@@ -403,5 +403,5 @@ footer button.show{
 
 .buttons button.quit:hover{
     color: black;
-    background-color:red;
+    background-color:#0ace00;
 }
