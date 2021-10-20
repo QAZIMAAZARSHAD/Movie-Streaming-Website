@@ -1,6 +1,10 @@
 *{
   font-family: 'Ubuntu', sans-serif;
 }
+.poster, .movie_card {
+  box-shadow: 0 0 10px red !important;
+
+}
 
 .flip-card_i{
   position: relative;
@@ -15,6 +19,9 @@
     width: 200px;
     height: 400px;
   }
+  
+
+
   .flip-card-back_i{
     width: 200px !important;
     height: 400px !important;
