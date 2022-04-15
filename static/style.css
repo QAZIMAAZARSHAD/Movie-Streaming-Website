@@ -911,3 +911,7 @@ nav a, label{
 footer a, footer p{
   color: #e60e23!important;
 }
+
+h1,h2,h3{
+  color:red!important;
+}
