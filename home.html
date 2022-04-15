@@ -23,7 +23,8 @@
 
   <link rel="stylesheet" href="static/bootstrap.min.css">
   <link rel="stylesheet" href="static/style-min.css">
-  <link rel="stylesheet" href="cards.css">
+  <link id ="style2" rel="stylesheet" href="cards.css">
+  <link class="style1" rel="stylesheet" href="./static/light-theme.css">
 
 </head>
 
@@ -99,7 +100,7 @@
   <div class="scroll-bar">
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
@@ -153,21 +154,36 @@
                         <a href="romance.html">Romance</a>
                         <a href="anime.html">Anime</a>
                       </div>
+                      
                 </div>
+                
               </div>
+              
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style=" display: flex;flex-wrap: wrap;align-items: center; padding-top: 5px; padding-left: 15px;">
               <li>
                 <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Logout</button>
               </li>
+           
             </div>
+           <div style="display: flex;flex-wrap:wrap;align-items:center;margin: 0px 5px;">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <i class="fas fa-moon"></i>
+              <i class='fas fa-sun'></i>
+             
+              
+              <div class='ball'>
+            </label>
+          </div>
           </ul>
-          <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
-          </form>
-        </div>
+         
+             <form id="searchForm" class="d-flex">
+               <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+               <button class="btn btn-danger" type="submit">Search</button>
+             </form>
+
       </div>
       </nav>
 
@@ -2993,6 +3009,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>
