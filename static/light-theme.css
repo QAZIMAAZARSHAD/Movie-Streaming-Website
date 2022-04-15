@@ -55,10 +55,15 @@ body.light {
     color: yellow;
   }
 
-  h1,h3,a,p{
+  a,p{
       color: #000!important;
   }
 
   marquee,label,.dropdown-content{
       background-color: #fff;
   }
+
+h1,h3{
+  color:red!important;
+}
+
