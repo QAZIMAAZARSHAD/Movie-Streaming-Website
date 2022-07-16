@@ -162,19 +162,19 @@ git push -u origin <your_branch_name>
 <img width=50% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif">
 </p>
 <a href="https://hacktoberfest.digitalocean.com/">
-<img width=35% src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg">
+<img width=30% src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg">
 </p>
      
 ## Code of Conduct
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/CODE_OF_CONDUCT.md">
-<img width=50% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+<img width=55% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 <h5 align="center"><b>Click to read</b></a>
   
 ## License 
 <p align="center">
 <a href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website/blob/master/LICENSE">
-<img width=50% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
+<img width=55% src="https://media0.giphy.com/media/3ornjXbo3cjqh2BIyY/200.gif"></p>
 <h5 align="center"><b>MIT License</b></a>  
   
 ## Contributors
