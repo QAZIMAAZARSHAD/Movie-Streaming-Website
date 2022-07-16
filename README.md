@@ -162,7 +162,7 @@ git push -u origin <your_branch_name>
 <img width=50% src="https://raw.githubusercontent.com/smv1999/CompetitiveProgrammingQuestionBank/master/images/devincept.gif">
 </p>
 <a href="https://hacktoberfest.digitalocean.com/">
-<img width=35% align="center" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg">
+<img width=35% src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg">
 </p>
      
 ## Code of Conduct
