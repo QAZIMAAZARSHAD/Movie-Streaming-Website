@@ -3,9 +3,11 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ApnaTheatre.com</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaTheatre | TV</title>
+  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
 
     <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +23,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="webStyle.css">
     <link rel="stylesheet" href="static/bootstrap.min.css">
     <link rel="stylesheet" href="static/style-min.css">
     <link rel="stylesheet" href="cards.css">
+    
 
 
 <!------------------------Scroll to top button------------------------------------------------>
@@ -32,6 +36,31 @@
     box-shadow: 0 0 10px red !important;
   
   }
+
+  body{
+    font-size: 1rem !important;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .card-title{
+    text-align: left;
+  }
+
+  .flim{
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  .slide{
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .row{
+    padding-left: 50px !important;;
+  }
+
     #scrollToTopButton{
   position:fixed;
   bottom: 40px;
@@ -183,7 +212,7 @@ background-color: #2c2f30;
     </style>
 </head>
 
-<body>
+<body style="background-color:black;" color="height:auto;">
     <div class="scroll-bar">
 
        <!-- navbar starts -->
@@ -262,57 +291,90 @@ background-color: #2c2f30;
   
           <!-- navbar ends -->
 
-        <div class="maincontainer">
-            <h2>TV SHOWS</h2>
-            <hr>
-            <div class="container">
-                <div id="movies" class="row"></div>
-            </div>
-            <hr>
+          <div class="main-content">
 
-
-
-            <div class="container" id="TV shows">
-
-                <div class="poster">
-                    <div class="flip-card_i">
-                      <div class="flip-card-inner_i">
-                        <div class="flip-card-front_i">
-                            <img src="./Images/anupama2.jpg" alt="Avatar" style="width:250px;height:360px;">
-                        </div>
-                        <div class="flip-card-back_i">
-                          <h1>Anupama</h1>
-                          <div class="btnContainer">
-                            <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
-                            <button class="btn_i b2_i"  title="Minutes" style="color:white">294<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">4.8</button>
-                          </div>
-                            
-                          </span>
-                          <br />
-                          <br />
-                        </p>
-          
-                          <p class="para_i" style="margin-top: -36px;">Anupamaa, who parts with her ambitions and goals in a bid to raise her family, feels dejected when she fails to get any credit for her sacrifices and trials. She then decides to live on her own terms.</p>
-
-                           
-                              <button class="trailer_i" type="submit" value="" onclick="openWin()">▶Trailer</button>
-                    <script type="text/javascript">
-                      function openWin(){
-                        window.open("https://www.imdb.com/video/vi4272078361?ref_=ttvi_vi_imdb_1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
-                      }
-                    </script>
-                          <br><br>
-                          <button class="btn_i b4_i">▶Play</button>
-                        </div>
-                          <div class="flim">
-                              <b>Anupama</b>
-                              <br>
-                              IMDb - 4.8
-                          </div>
-                      </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/anupama2.jpg" height="400" class="d-block w-100" alt="...">
                     </div>
-                  </div> 
+                    <div class="carousel-item">
+                        <img src="./Images/yeh rishta.jpg" height="400" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/gum hai kisi.jpg" height="400" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/bigboss.jpg" height="400" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/fear.jpg" height="400" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+              <div class="row poster">
+                <!-- <div class="container"> -->
+                  <div id="movies" class="row"></div>
+                <!-- </div> -->
+                  <div class="row">
+                    <h3 class="section-title text-center">Popular</h3>
+                  </div>
+                  
+                  <div class="col">
+                    <div class="poster">
+                      <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                          <div class="flip-card-front_i">
+                              <img src="./Images/anupama2.jpg" alt="Avatar" style="width:250px;height:360px;">
+                          </div>
+                          <div class="flip-card-back_i">
+                            <h1>Anupama</h1>
+                            <div class="btnContainer">
+                              <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
+                              <button class="btn_i b2_i"  title="Minutes" style="color:white">294<button>
+                              <button class="btn_i b1_i"  title="IMDb" style="color:white">8.9</button>
+                            </div>
+                              
+                            </span>
+                            <br />
+                            <br />
+                          </p>
+            
+                            <p class="para_i" style="margin-top: -36px;">Anupamaa, who parts with her ambitions and goals in a bid to raise her family, feels dejected when she fails to get any credit for her sacrifices and trials. She then decides to live on her own terms.</p>
+
+                            
+                                <button class="trailer_i" type="submit" value="" onclick="openWin()">▶Trailer</button>
+                      <script type="text/javascript">
+                        function openWin(){
+                          window.open("https://www.imdb.com/video/vi4272078361?ref_=ttvi_vi_imdb_1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                        }
+                      </script>
+                            <br><br>
+                            <button class="btn_i b4_i">▶Play</button>
+                          </div>
+                          <div class="flim">
+                              <h5 class="card-title">Family Man</h5>
+                              <span class="movie_info">2019</span>
+                              <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.5 / 10</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -324,7 +386,7 @@ background-color: #2c2f30;
                           <div class="btnContainer">
                             <button class="btn_i b3_i"  title="Year" style="color:white">2009</button>
                             <button class="btn_i b2_i"  title="Minutes" style="color:white">3543<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">2.7</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
                         </div>  
                         </span>
                           <br />
@@ -344,13 +406,15 @@ background-color: #2c2f30;
           
                         </div>
                           <div class="flim">
-                              <b>Yeh Rishta Kya kehlata hai</b>
-                              <br>
-                              IMDb - 2.7
-                          </div>
+                            <h5 class="card-title">Yeh Rishta Kya kehlata hai</h5>
+                            <span class="movie_info">2019</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.2 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -362,7 +426,7 @@ background-color: #2c2f30;
                           <div class="btnContainer">
                             <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
                             <button class="btn_i b2_i"  title="Minutes" style="color:white">224<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.9</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.2</button>
                         </div>
                           </span>
                           <br />
@@ -381,13 +445,15 @@ background-color: #2c2f30;
           
                         </div>
                           <div class="flim">
-                              <b>Ghum hai kisikey pyaar mein</b>
-                              <br>
-                              IMDb - 5.9
-                          </div>
+                            <h5 class="card-title">Ghum hai kisikey pyaar mein</h5>
+                            <span class="movie_info">2018</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb - 9.2 / 10</span>
+                        </div>
                       </div>
                     </div>
-                  </div> 
+                  </div>
+                  </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -399,7 +465,7 @@ background-color: #2c2f30;
                           <div class="btnContainer">
                             <button class="btn_i b3_i"  title="Year" style="color:white">2006</button>
                             <button class="btn_i b2_i"  title="Minutes" style="color:white">1360<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">3.9</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
                         </div>
                           </span>
                           <br />
@@ -419,51 +485,61 @@ background-color: #2c2f30;
           
                         </div>
                           <div class="flim">
-                              <b>Big Boss</b>
-                              <br>
-                              IMDb - 3.9
-                          </div>
+                            <h5 class="card-title">Big Boss</h5>
+                            <span class="movie_info">2020</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.0 / 10</span>
+                        </div>
                       </div>
-                    </div>
                   </div> 
-                  <div class="poster">
-                    <div class="flip-card_i">
-                      <div class="flip-card-inner_i">
-                        <div class="flip-card-front_i">
-                            <img src="./Images/fear.jpg" alt="Avatar" style="width:250px;height:360px;">
-                        </div>
-                        <div class="flip-card-back_i">
-                          <h1>Fear Files</h1>
-                          <div class="btnContainer">
-                            <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                            <button class="btn_i b2_i"  title="Minutes" style="color:white">456<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5.8</button>
-                        </div>
-                          </span>
-                          <br />
-                          <br />
-                        </p>
-          
-                          <p class="para_i"  style="margin-top: -36px;">A series of tales of the supernatural inspired by real life incidents. Moving beyond ghosts and exploring all paranormal phenomenon.</p>
-          
-                              <button class="trailer_i" type="submit" value="" onclick="openWin4()">▶Trailer</button>
-                              <script type="text/javascript">
-                                function openWin4(){
-                                  window.open("https://www.imdb.com/title/tt7666252/?ref_=ttep_ep1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
-                                }
-                              </script><br><br>
-                            <button class="btn_i b4_i">▶Play</button>
-          
-          
-                        </div>
-                          <div class="flim">
-                              <b>Fear Files</b>
-                              <br>
-                              IMDb - 5.8
+                </div>
+                </div>
+                </div>
+              </br>
+                <div class="row poster">
+                  <div class="row">
+                    <h3 class="section-title text-center">Top Picks For You</h3>
+                </div>
+                  <div class="col">
+                    <div class="poster">
+                      <div class="flip-card_i">
+                        <div class="flip-card-inner_i">
+                          <div class="flip-card-front_i">
+                              <img src="./Images/fear.jpg" alt="Avatar" style="width:250px;height:360px;">
                           </div>
+                          <div class="flip-card-back_i">
+                            <h1>Fear Files</h1>
+                            <div class="btnContainer">
+                              <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
+                              <button class="btn_i b2_i"  title="Minutes" style="color:white">456<button>
+                              <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                          </div>
+                            </span>
+                            <br />
+                            <br />
+                          </p>
+            
+                            <p class="para_i"  style="margin-top: -36px;">A series of tales of the supernatural inspired by real life incidents. Moving beyond ghosts and exploring all paranormal phenomenon.</p>
+            
+                                <button class="trailer_i" type="submit" value="" onclick="openWin4()">▶Trailer</button>
+                                <script type="text/javascript">
+                                  function openWin4(){
+                                    window.open("https://www.imdb.com/title/tt7666252/?ref_=ttep_ep1","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
+                                  }
+                                </script><br><br>
+                              <button class="btn_i b4_i">▶Play</button>
+            
+            
+                          </div>
+                            <div class="flim">
+                              <h5 class="card-title">Fear Files</h5>
+                              <span class="movie_info">2021</span>
+                              <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.3 / 10</span>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div> 
+                    </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -498,14 +574,17 @@ background-color: #2c2f30;
                                 }
                               </script>
                         </div>
+                        
                           <div class="flim">
-                              <b>Crime Patrol</b>
-                              <br>
-                              IMDb - 8
-                          </div>
+                            <h5 class="card-title">Crime Patrol</h5>
+                            <span class="movie_info">2020</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -538,13 +617,15 @@ background-color: #2c2f30;
           
                         </div>
                           <div class="flim">
-                              <b>Shaurya Aur Anokhi Ki Kahan</b>
-                              <br>
-                              IMDb - 9.1
-                          </div>
+                            <h5 class="card-title">Shaurya Aur Anokhi Ki Kahan</h5>
+                            <span class="movie_info">2020</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.1 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -579,14 +660,23 @@ background-color: #2c2f30;
                                 }
                               </script>
                         </div>
+
                           <div class="flim">
-                              <b>Kaun Banega Crorepati</b>
-                              <br>
-                              IMDb - 8.3
-                          </div>
+                            <h5 class="card-title">Kaun Banega Crorepati</h5>
+                            <span class="movie_info">2020</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.3 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+              </div>
+            </br>
+              <div class="row poster">
+                <div class="row">
+                  <h3 class="section-title text-center">Featured</h3>
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -598,7 +688,7 @@ background-color: #2c2f30;
                           <div class="btnContainer">
                             <button class="btn_i b3_i"  title="Year" style="color:white">2004</button>
                             <button class="btn_i b2_i"  title="Minutes" style="color:white">317<button>
-                            <button class="btn_i b1_i"  title="IMDb" style="color:white">5</button>
+                            <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
                         </div>
                         </span>
                           <br />
@@ -617,14 +707,17 @@ background-color: #2c2f30;
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
+
                           <div class="flim">
-                              <b>Indian Idol</b>
-                              <br>
-                              IMDb - 5
-                          </div>
+                            <h5 class="card-title">Indian Idol</h5>
+                            <span class="movie_info">2019</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 9.5 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -660,13 +753,15 @@ background-color: #2c2f30;
                               </script>
                         </div>
                           <div class="flim">
-                              <b>Tarak Mehta Ka Ooltah Chasma</b>
-                              <br>
-                              IMDb - 8.2
-                          </div>
+                            <h5 class="card-title">Tarak Mehta Ka Ooltah Chasma</h5>
+                            <span class="movie_info">2022</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.2 / 10</span>
+                        </div>
                       </div>
                     </div>
                   </div> 
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -702,13 +797,15 @@ background-color: #2c2f30;
                               </script>
                         </div>
                           <div class="flim">
-                              <b>Satyamev Jayate</b>
-                              <br>
-                              IMDb - 8.6
-                          </div>
+                            <h5 class="card-title">Satyamev Jayate</h5>
+                            <span class="movie_info">2021</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.6 / 10</span>
+                        </div>
                       </div>
                     </div>
-                  </div> 
+                  </div>
+                </div>
+                <div class="col">
                   <div class="poster">
                     <div class="flip-card_i">
                       <div class="flip-card-inner_i">
@@ -738,19 +835,21 @@ background-color: #2c2f30;
                             <button class="btn_i b4_i">▶Play</button>
           
                         </div>
+
                           <div class="flim">
-                              <b>24:India</b>
-                              <br>
-                              IMDb - 8.2
-                          </div>
+                            <h5 class="card-title">24:India</h5>
+                            <span class="movie_info">2021</span>
+                            <span class="movie_info_rating"><i class="fas fa-star"></i>IMDb 8.2 / 10</span>
+                        </div>
                       </div>
                     </div>
-                  </div> 
+                  </div>
+                </div>
+
               
 
 
 
-            </div>
 
         </div>
     </div>
@@ -860,5 +959,4 @@ background-color: #2c2f30;
 
 
 </html>
-
 
