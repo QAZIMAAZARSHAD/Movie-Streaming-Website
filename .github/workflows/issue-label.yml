@@ -41,4 +41,3 @@ jobs:
       uses: codacy/codacy-coverage-reporter-action@v1
       with:
         api-token: HnqYlhC9ryJT0jcJbduZ
-        coverage-reports: cobertura.xml
