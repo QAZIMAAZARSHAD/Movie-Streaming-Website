@@ -23,7 +23,8 @@
 
   <link rel="stylesheet" href="static/bootstrap.min.css">
   <link rel="stylesheet" href="static/style-min.css">
-  <link rel="stylesheet" href="cards.css">
+  <link id ="style2" rel="stylesheet" href="cards.css">
+  <link class="style1" rel="stylesheet" href="./static/light-theme.css">
 
 </head>
 
@@ -31,7 +32,7 @@
 <style>
   .poster {
     box-shadow: 0 0 15px red !important;
-  
+
   }
   #scrollToTopButton {
     position: fixed;
@@ -78,18 +79,18 @@
   setTimeout(function () {
     $('.section').fadeToggle();
   }, 4000);
-  
+
 </script>
 
 <body>
-  
+
 
 
 
   <div class="scroll-bar">
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav" style="background-color: black;">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
             height="24"></a>
@@ -97,7 +98,7 @@
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item ">
@@ -118,7 +119,7 @@
             <li class="nav-item">
               <a class="nav-link" href="premium.html"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Premium</a>
             </li>
-      
+
             <li class="nav-item">
               <a class="nav-link" href="contactus.html"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Contact Us</a>
             </li>
@@ -129,7 +130,7 @@
                     <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
+                    <div class="dropdown-content">
                         <a href="popular.html">Popular</a>
                         <a href="crime.html">Crime</a>
                         <a href="suspense.html">Suspense & Thriller</a>
@@ -147,11 +148,21 @@
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-              <li>
-                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Logout</button>
-              </li>
-            </div>
+          <div style=" display: flex;flex-wrap: wrap;align-items: center; padding-top: 5px; padding-left: 15px;">
+            <li>
+              <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Logout</button>
+            </li>
+          </div>
+          <div style="display: flex;flex-wrap:wrap;align-items:center;margin: 0px 5px;">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <i class="fas fa-moon"></i>
+              <i class='fas fa-sun'></i>
+
+
+              <div class='ball'>
+            </label>
+          </div>
           </ul>
           <form id="searchForm" class="d-flex">
             <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
@@ -166,7 +177,7 @@
 
     <marquee>Welcome To <i>ApnaTheatre</i>.com<sup>&reg;</sup></marquee>
     <label class="online">Stream Latest Movies Now!</label>
-    
+
 
 
     <div class="buddy">
@@ -249,9 +260,9 @@
 
 
     </div>
-    
 
-        
+
+
     <div class="maincontainer">
 
       <h2>Movies</h2>
@@ -259,7 +270,7 @@
       <div class="container">
           <div id="movies" class="row"></div>
       </div>
-      
+
       <div class="container" id="Movies">
         <h3>Hollywood</h3>
         <hr>
@@ -282,7 +293,7 @@
                 <p class="para_i">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</p>
 
                   <!--<form action="https://youtu.be/YoHD9XEInc0&t=17s"> -->
-                      
+
                       <button class="trailer_i" type="submit" value="" onclick="openWin()">▶Trailer</button>
                         <script type="text/javascript">
                           function openWin(){
@@ -306,7 +317,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -326,7 +337,7 @@
 
                 <p class="para_i">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.</p>
 
-                  
+
                     <button class="trailer_i" type="submit" value="" onclick="openWin1()">▶Trailer</button>
                     <script type="text/javascript">
                       function openWin1(){
@@ -344,7 +355,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -380,7 +391,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -416,7 +427,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -436,7 +447,7 @@
 
                 <p class="para_i">Viktor Navorski gets stranded at an airport when a war rages in his country. He is forced by the officials to stay at the airport until his original identity is confirmed.</p>
 
-                 
+
                     <button class="trailer_i" type="submit" value="" onclick="openWin4()">▶Trailer</button>
                     <script type="text/javascript">
                       function openWin4(){
@@ -458,7 +469,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -478,7 +489,7 @@
 
                 <p class="para_i">Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.</p>
 
-                 
+
                     <button class="trailer_i" type="submit" value="" onclick="openWin5()">▶Trailer</button>
                     <script type="text/javascript">
                       function openWin5(){
@@ -495,7 +506,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -531,7 +542,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -567,7 +578,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -603,7 +614,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -630,7 +641,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin9()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin9(){
                       window.open("https://youtu.be/MoLEo-HUGOk","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -644,7 +655,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -663,7 +674,7 @@
               </p>
 
                 <p class="para_i">Paul, the head guard of a prison, meets an inmate, John, an African American who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift.</p>
-                      
+
                     <button class="trailer_i" type="submit" value="" onclick="openWin10()">▶Trailer</button>
                     <script type="text/javascript">
                       function openWin10(){
@@ -680,7 +691,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
           <div class="flip-card_i">
@@ -707,7 +718,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin11()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin11(){
                       window.open("https://youtu.be/It9-pm9JOSk","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -721,7 +732,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
 
 <div class="container" id="Movies">
@@ -752,7 +763,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin12()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin12(){
                       window.open("https://youtu.be/uBI1iMhl25w","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -787,7 +798,7 @@
 
                 <p class="para_i">Kabir Khan, a former hockey star, is tainted as someone who betrayed his country. However, he begins coaching the Indian women's national hockey team to prove his loyalty to the nation.</p>
 
-                 
+
                     <button class="trailer_i" type="submit" value="" onclick="openWin13()">▶Trailer</button>
                     <script type="text/javascript">
                       function openWin13(){
@@ -804,7 +815,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
         <div class="poster">
@@ -841,7 +852,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="poster">
             <div class="flip-card_i">
@@ -868,7 +879,7 @@
                         }
                       </script><br><br>
                     <button class="btn_i b4_i" onclick="openMovieWin15()">▶Play</button>
-                    
+
                     <script type="text/javascript">
                         function openMovieWin15(){
                           window.open("https://youtu.be/pmnnlAUDOfk","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -882,7 +893,7 @@
                   </div>
               </div>
             </div>
-          </div> 
+          </div>
 
            <div class="poster">
             <div class="flip-card_i">
@@ -909,7 +920,7 @@
                         }
                       </script><br><br>
                     <button class="btn_i b4_i" onclick="openMovieWin16()">▶Play</button>
-                    
+
                     <script type="text/javascript">
                         function openMovieWin16(){
                           window.open("https://youtu.be/E00892hmVZM","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -923,7 +934,7 @@
                   </div>
               </div>
             </div>
-          </div> 
+          </div>
 
            <div class="poster">
               <div class="flip-card_i">
@@ -950,7 +961,7 @@
                         }
                       </script><br><br>
                       <button class="btn_i b4_i" onclick="openMovieWin17()">▶Play</button>
-                      
+
                       <script type="text/javascript">
                         function openMovieWin17(){
                           window.open("https://youtu.be/udCFbqXjrZE","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -992,7 +1003,7 @@
                           }
                         </script><br><br>
                       <button class="btn_i b4_i" onclick="openMovieWin18()">▶Play</button>
-                      
+
                       <script type="text/javascript">
                         function openMovieWin18(){
                           window.open("https://youtu.be/9qOhi4UyR5Y","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1034,7 +1045,7 @@
                           }
                         </script><br><br>
                       <button class="btn_i b4_i" onclick="openMovieWin19()">▶Play</button>
-                      
+
                       <script type="text/javascript">
                         function openMovieWin19(){
                           window.open("https://youtu.be/dz3uCM-MrGY","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1077,7 +1088,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin20()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin20(){
                       window.open("https://youtu.be/tYrlXcloVLc","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1119,7 +1130,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin21()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin21(){
                       window.open("https://youtu.be/ubqm_GpRVXc","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1133,7 +1144,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
 
@@ -1162,7 +1173,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin22()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin22(){
                       window.open("https://youtu.be/H0OMXwKrGs8","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1170,7 +1181,7 @@
                   </script>
               </div>
                 <div class="flim">
-                    <b>Munna Bhai MBBS</b>      
+                    <b>Munna Bhai MBBS</b>
                     <br>
                     IMDb - 8.1
                 </div>
@@ -1206,7 +1217,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin23()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin23(){
                       window.open("https://youtu.be/ULEQb_l-N08","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1220,7 +1231,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
     </div>
@@ -1874,7 +1885,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin41()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin41(){
                       window.open("https://youtube.com/playlist?list=PLTB0eCoUXErb7pV0Sj1hXWrxerSZX1qgh","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1916,7 +1927,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin42()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin42(){
                       window.open("https://youtube.com/playlist?list=PLTB0eCoUXErY_KvRNKOERQtYSDPjOb8jw","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -1957,7 +1968,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin43()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin43(){
                       window.open("https://youtube.com/playlist?list=PLTB0eCoUXErabI_K3mUcdiYM72o4CkWZC","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2128,7 +2139,7 @@
                 <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
                 <button class="btn_i b1_i"  title="IMDb" style="color:white">9.5</button>
               </span>
-              <br />    
+              <br />
               <br />
             </p>
 
@@ -2321,7 +2332,7 @@
                     }
                   </script><br><br>
                 <button class="btn_i b4_i">▶Play</button>
- 
+
             </div>
               <div class="flim">
                   <b>Panchayat</b>
@@ -2335,14 +2346,14 @@
   </div>
   <!---third block -->
 
-  
 
-       
-               
-      
-            
-         
-       
+
+
+
+
+
+
+
 
 
       <h2>Kids</h2>
@@ -2526,7 +2537,7 @@
                     }
                   </script><br><br>
                 <button class="btn_i b4_i" onclick="openMovieWin58()">▶Play</button>
-                
+
                 <script type="text/javascript">
                     function openMovieWin58(){
                       window.open("https://youtu.be/dg_8nMat9Sg","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2562,7 +2573,7 @@
                   <button class="btn_i b2_i"  title="Minutes" style="color:white">37<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
                 </div>
-                  
+
                 </span>
                 <br />
                 <br />
@@ -2577,7 +2588,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin59()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin59(){
                       window.open("https://youtube.com/playlist?list=PL-a03JNHCnK0C_b8HD4fFPAghY5_S_HbN","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2591,7 +2602,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2604,7 +2615,7 @@
                   <button class="btn_i b3_i"  title="Year" style="color:white">2002</button>
                   <button class="btn_i b2_i"  title="Minutes" style="color:white">220<button>
                   <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
-              </div>  
+              </div>
               </span>
                 <br />
                 <br />
@@ -2619,7 +2630,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin60()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin60(){
                       window.open("https://youtube.com/playlist?list=PL2iQPHlA1BhwSqGx1cDcIKKvnX_AeWsLE","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2633,7 +2644,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2661,7 +2672,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin61()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin61(){
                       window.open("https://youtube.com/playlist?list=PLfg7Ir-59iSu5TCvGDAMersYJnQnQgJAX","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2675,7 +2686,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2703,7 +2714,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin62()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin62(){
                       window.open("https://youtube.com/playlist?list=PLSr6HUR2kQtOFs0cNCidkTQRs04yEhPsE","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2717,7 +2728,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2744,7 +2755,7 @@
                       }
                     </script><br><br>
                   <button class="btn_i b4_i" onclick="openMovieWin63()">▶Play</button>
-                  
+
                   <script type="text/javascript">
                     function openMovieWin63(){
                       window.open("https://youtube.com/playlist?list=PLwLSw1_eDZl2XdtLhB9NG2Ch050jWFm9G","_blank","top=100,left=250,height=400,width=600,channelmode=yes,fullscreen=yes,menubar=no,toolbar=no,location=no,status=no,scrollbars=no,noopener=no");
@@ -2758,7 +2769,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2795,7 +2806,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2832,7 +2843,7 @@
                 </div>
             </div>
           </div>
-        </div> 
+        </div>
         <div class="poster">
           <div class="flip-card_i">
             <div class="flip-card-inner_i">
@@ -2869,8 +2880,8 @@
                 </div>
             </div>
           </div>
-        </div> 
-      </div> 
+        </div>
+      </div>
     <div id="waterdrop"></div>
 
     <!-------------------------------Footer-------------------------------->
@@ -2983,6 +2994,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"></script>
     <script src="./static/script.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>

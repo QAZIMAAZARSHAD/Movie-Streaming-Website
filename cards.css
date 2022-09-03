@@ -19,7 +19,7 @@
     width: 200px;
     height: 400px;
   }
-  
+
 
 
   .flip-card-back_i{
@@ -72,7 +72,7 @@ h1{
     margin-right: 5px;
   }
   .b4_i{
-    
+
     margin-bottom: 2px;;
     width: 90px;
     height: 35px;
@@ -80,7 +80,7 @@ h1{
     border:none;
     border:solid 2px white;
     border-radius: 5px;
-    background-color: #e7e7e7; 
+    background-color: #e7e7e7;
     color: black;
     font-size: 1em;
   }
@@ -92,7 +92,7 @@ h1{
    border:none;
    border:solid 2px white;
    border-radius: 5px;
-   background-color: #e7e7e7; 
+   background-color: #e7e7e7;
    color: black;
    font-size: 1em;
 
@@ -129,4 +129,12 @@ h1{
   background-image: linear-gradient(black,#8B0000);
   color: white;
   transform: rotateY(180deg);
+}
+
+#header-nav{
+    background-color: black!important;
+}
+
+.dropdown-content{
+    background-color:black!important;
 }

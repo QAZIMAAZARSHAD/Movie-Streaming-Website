@@ -39,14 +39,14 @@ body {
     color: white;
     font-size: 15px;
     margin-left: 10px;
-  } 
+  }
 }
 @media only screen and (min-width: 1036px) and (max-width: 1132px) {
   #header-nav .nav-link {
     color: white;
     font-size: 15px;
     margin-left: 10px;
-  } 
+  }
   #searchText{
     width: 120px;
   }
@@ -61,7 +61,7 @@ body {
     color: white;
     font-size: 14px;
     margin-left: 10px;
-  } 
+  }
 
 #searchText{
   width: 100px;
@@ -674,7 +674,6 @@ background-color: #2c2f30;
 }
 .footer-contact-button {
   font-size: 20px;
-  background-color: red;
   color: black;
   padding: 10px;
   border: none;
@@ -698,7 +697,6 @@ background-color: #2c2f30;
   margin-top: 20px;
   font-size: 18px;
 }
-
 /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
 
 /***************** Media Queries *********************/
@@ -786,4 +784,58 @@ background-color: #2c2f30;
 background-color: red;
 color: white;
 text-decoration: none;
+}
+
+/*Light Dark Theme*/
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:rgb(187, 176, 176);
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+nav a, label{
+  color: white!important
+}
+
+footer a, footer p{
+  color: #e60e23!important;
+}
+
+h1,h2,h3,h5,h4,h6{
+  color:red!important;
 }
