@@ -1,0 +1,19 @@
+{
+  "name": "movie-streaming-website",
+  "version": "1.0.0",
+  "description": "Are you a movie maniac, who loves to binge-watch awesome movies & series? If Yes, then you have come to the right place. <p align=\"center\"><img src=\"https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif\" width = 70%></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeTheDeveloper/Movie-Streaming-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZeTheDeveloper/Movie-Streaming-Website/issues"
+  },
+  "homepage": "https://github.com/ZeTheDeveloper/Movie-Streaming-Website#readme"
+}
