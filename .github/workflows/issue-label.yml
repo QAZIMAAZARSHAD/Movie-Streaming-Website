@@ -1,17 +1,22 @@
-name: Default
+name: CI for Movie Streaming 
 
-on: [push]
+on: [push] #during push events
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # build on ubuntu latest, ubuntu kernel good enough for building different development project, therefore always used as base OS
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v1 #like commit changes
     - name: Label Syncer
-      uses: micnncim/action-label-syncer@v1.3.0
+      uses: micnncim/action-label-syncer@v1.3.0 #installtion of this library
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ github.repository }}
       with:
         manifest: .github/labels.json
         prune: false
+        
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
