@@ -16,9 +16,18 @@ jobs:
         manifest: .github/labels.json
         prune: false
         
-    - name: HTML5Validator
-      uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+#     - name: HTML5Validator
+#       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+#       with:
+#         root: /
+#         blacklist: invalid
+#         css: true
+
+
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v3.0.0
+      env:
+        CC_TEST_REPORTER_ID: <code_climate_reporter_id>
       with:
-        root: /
-        blacklist: invalid
-        css: true
+        coverageCommand: npm run coverage
+        debug: true
