@@ -9,7 +9,7 @@ Everyone loves to watch their favorite shows with friends and some snacks. But t
 So, what else do you need?🤔.
 <p align="center"><img src="https://media.tenor.com/images/1498a68342ec3e96a8773995f59dfc39/tenor.gif" width = 70%></p>
 
-Here is the answer: An awesome movie streaming website of yours that has all your favorites at one place! 
+Here is the answer: An awesome movie streaming website of yours that has all your favorites in one place! 
 <p align="center"><img src="https://www.system-concepts.com/wp-content/uploads/2020/02/excited-minions-gif.gif" width = 70%></p>
 
 We already have Netflix, Amazon Prime, and Hotstar but they might get expensive sometimes. So what should we do? You must be wondering that making our own movie website might take time or require some web development knowledge, and after all of that will you still get something really cool?
