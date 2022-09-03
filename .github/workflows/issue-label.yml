@@ -16,7 +16,9 @@ jobs:
         manifest: .github/labels.json
         prune: false
         
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
+    - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action@v7
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        root: /
+        blacklist: invalid
+        css: true
