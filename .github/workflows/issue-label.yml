@@ -29,5 +29,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: <code_climate_reporter_id>
       with:
-        coverageCommand: npm run coverage
+        coverageCommand: yarn run coverage
         debug: true
