@@ -35,3 +35,10 @@ jobs:
         major_threshold: 1
         critical_threshold: 0
         blocker_threshold: 0
+        
+    - uses: actions/checkout@v2
+    - name: Run codacy-coverage-reporter
+      uses: codacy/codacy-coverage-reporter-action@v1
+      with:
+        api-token: HnqYlhC9ryJT0jcJbduZ
+        coverage-reports: cobertura.xml
