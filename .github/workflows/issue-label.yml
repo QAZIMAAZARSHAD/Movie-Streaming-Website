@@ -10,14 +10,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
         
-    # - name: Run Code Climate
-    #   uses: erzz/codeclimate-standalone@v0.0.4
-    #   with:
-    #     info_threshold: 10
-    #     minor_threshold: 5
-    #     major_threshold: 1
-    #     critical_threshold: 0
-    #     blocker_threshold: 0
+    - name: Run Code Climate
+      uses: erzz/codeclimate-standalone@v0.0.4
+      with:
+        info_threshold: 10
+        minor_threshold: 5
+        major_threshold: 1
+        critical_threshold: 0
+        blocker_threshold: 0
     
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
