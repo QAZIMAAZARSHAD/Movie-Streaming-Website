@@ -23,5 +23,6 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
       with:
         root: /
+        config: ./config/HTML5_Validator.yaml
         blacklist: invalid
         log_level: debug
