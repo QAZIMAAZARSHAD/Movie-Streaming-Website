@@ -1,17 +1,37 @@
-name: Default
+name: CI for Movie Streaming 
 
-on: [push]
+on: [push] #during push events
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # build on ubuntu latest, ubuntu kernel good enough for building different development project, therefore always used as base OS
     steps:
-    - uses: actions/checkout@v1
-    - name: Label Syncer
-      uses: micnncim/action-label-syncer@v1.3.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
+#     - uses: actions/checkout@v1 #like commit changes
+#     - name: Label Syncer
+#       uses: micnncim/action-label-syncer@v1.3.0 #installtion of this library
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         GITHUB_REPOSITORY: ${{ github.repository }}
+#       with:
+#         manifest: .github/labels.json
+#         prune: false
+        
+#     - name: HTML5Validator
+#       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+#       with:
+#         root: /
+#         blacklist: invalid
+#         css: true
+
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run Code Climate
+      uses: erzz/codeclimate-standalone@v0.0.4
       with:
-        manifest: .github/labels.json
-        prune: false
+        info_threshold: 10
+        minor_threshold: 5
+        major_threshold: 1
+        critical_threshold: 0
+        blocker_threshold: 0
