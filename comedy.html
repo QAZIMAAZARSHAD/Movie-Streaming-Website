@@ -23,42 +23,43 @@
     <link rel="stylesheet" href="static/style-min.css">
     <link rel="stylesheet" href="cards.css">
 
+    <style>
+      #scrollToTopButton{
+    position:fixed;
+    bottom: 40px;
+    right: 25px;
+    font-size: 25px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    color:black;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    border-radius: 50%;
+    }
+    #scrollToTopButton:hover, i:hover {
+    background-color:white;
+    color:red;
+    }
+    #nav:hover
+    {
+      background-color:#e60e23!important;
+    
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    </style>
+
 </head>
 
 
 <!------------------------Scroll to top button------------------------------------------------>
-<style>
-  #scrollToTopButton{
-position:fixed;
-bottom: 40px;
-right: 25px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color:red;
-color:black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-}
-#scrollToTopButton:hover, i:hover {
-background-color:white;
-color:red;
-}
-#nav:hover
-{
-  background-color:#e60e23!important;
-
-}
-
-.container {
-  text-align: center;
-}
-
-</style>
 
 <body>
     <div class="scroll-bar">
@@ -69,9 +70,9 @@ color:red;
           <div class="container-fluid">
             <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
                 height="24"></a>
-            <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+            <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+              <span class="navbar-toggler-icon" style="background-color:#696969;"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -122,11 +123,13 @@ color:red;
                   </div>
                   <!-- Genre dropdown ends-->
                 </li>
-                <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                  <li>
-                    <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
-                  </li>
-                </div>
+                <li>
+                  <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                    <li>
+                      <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                    </li>
+                  </div>
+                </li>
               </ul>
               <form id="searchForm" class="d-flex">
                 <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
@@ -157,10 +160,10 @@ color:red;
                           <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
                           <button class="btn_i b2_i"  title="Seasons" style="color:white">10</button>
                           <button class="btn_i b1_i"  title="IMDb" style="color:white">8.9</button>
-                        </span>
+                        
                         <br />
                         <br />
-                      </p>
+             
 
                         <p class="para_i">Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.</p>
 
@@ -196,10 +199,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">12</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-                          </span>
+                  
                           <br />
                           <br />
-                        </p>
+          
 
                           <p class="para_i">The lives of four socially awkward friends, Leonard, Sheldon, Howard and Raj, take a wild turn when they meet the beautiful and free-spirited Penny.</p>
 
@@ -234,10 +237,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">4</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">9.2</button>
-                          </span>
+                    
                           <br />
                           <br />
-                        </p>
+                  
 
                           <p class="para_i">After having been missing for nearly 20 years, Rick Sanchez suddenly arrives at daughter Beth's doorstep to move in with her and her family.</p>
 
@@ -276,7 +279,7 @@ color:red;
                           </span>
                           <br />
                           <br />
-                        </p>
+                
 
                           <p class="para_i">The lives of Raju, Shyam and Baburao change completely when they get cheated by a fraudster. Now, they must find another way to repay the loan they took from a dreaded gangster.</p>
 
@@ -317,10 +320,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2016</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
-                          </span>
+                      
                           <br />
                           <br />
-                        </p>
+               
 
                           <p class="para_i">The series revolves around Four Bachelor Flatmates who in every episode will deal with a specific daily life bachelor related problem.</p>
 
@@ -359,10 +362,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2003</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">2h36m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
-                          </span>
+                     
                           <br />
                           <br />
-                        </p>
+           
 
                           <p class="para_i">Munna is a goon who sets out to fulfil his father's dream of becoming a doctor. With some help from his ally, Circuit, he enrols himself in a medical college and drives Dr Asthana up the wall.</p>
 
@@ -397,10 +400,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">1h41m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">5.3</button>
-                          </span>
+                 
                           <br />
                           <br />
-                        </p>
+  
 
                           <p class="para_i">A legendary rivalry reemerges when Jerry moves into New York City's finest hotel on the eve of the wedding of the century, forcing the desperate event planner to hire Tom to get rid of him. 
                               As mayhem ensues, the escalating cat-and-mouse battle soon threatens to destroy her career, the wedding, and possibly the hotel itself.</p>
@@ -437,10 +440,10 @@ color:red;
                             <button class="btn_i b3_i"  title="Year" style="color:white">2020</button>
                             <button class="btn_i b2_i"  title="Seasons" style="color:white">2h16m</button>
                             <button class="btn_i b1_i"  title="IMDb" style="color:white">6.8</button>
-                          </span>
+                
                           <br />
                           <br />
-                        </p>
+     
 
                           <p class="para_i">Montu is a lazy physical training instructor who does the bare minimum to stay employed. However, a new teacher threatens to take his job and the woman he loves.</p>
 
@@ -518,7 +521,7 @@ color:red;
                           </span>
                           <br />
                           <br />
-                        </p>
+   
 
                           <p class="para_i">TVF Tripling is an Indian web series created by The Viral Fever. It was developed by Sameer Saxena and written by Akarsh Khurana and Sumeet Vyas.</p>
 
@@ -556,7 +559,7 @@ color:red;
                           </span>
                           <br />
                           <br />
-                        </p>
+             
 
                           <p class="para_i">Ray Holt, an eccentric commanding officer, and his diverse and quirky team of odd detectives solve crimes in Brooklyn, New York City.</p>
 
@@ -598,11 +601,11 @@ color:red;
             <div class="footer-middle">
                 <h2 class="footer-heading">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                    <li><a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a></li>
+                    <li><a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a></li>
+                    <li><a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a></li>
+                    <li><a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a></li>
+                    <li><a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a></li>
                 </ul>
             </div>
             <div class="footer-middle">
