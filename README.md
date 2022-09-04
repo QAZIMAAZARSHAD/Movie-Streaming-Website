@@ -1,4 +1,4 @@
-# Movie Streaming Websiteaaaaa  🎬
+# Movie Streaming Website  🎬
 
 Are you a movie maniac, who loves to binge-watch awesome movies & series? If Yes, then you have come to the right place.
 <p align="center"><img src="https://noelalanaleon.files.wordpress.com/2015/06/tyrion-29.gif" width = 70%></p>
