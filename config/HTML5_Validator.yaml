@@ -1,0 +1,3 @@
+root: /
+ignore_re:
+  - /usr/local/lib/python3.10/idlelib/help.html
