@@ -163,7 +163,7 @@ function showResult(){
 }
 
 function getMovie{
-    
+       
 }
 
 function startTimer(time){
