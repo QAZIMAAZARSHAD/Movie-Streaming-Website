@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="static/style-min.css">
   <link rel="stylesheet" href="cards.css">
 
-</head>
+
 <style>
     body{
         background-color: black;
@@ -69,14 +69,15 @@
     color: red;
   }
 </style>
+</head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
               height="24"></a>
-          <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+          <button id="nav" class="navbar-toggler" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+            <span class="navbar-toggler-icon" style="background-color:#A9A9A9;"></span>
           </button>
           
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -128,11 +129,9 @@
                 </div>
                 <!-- Genre dropdown ends-->
               </li>
-              <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                <li>
+                <li style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
                   <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
                 </li>
-              </div>
             </ul>
             <form id="searchForm" class="d-flex">
               <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
@@ -150,7 +149,7 @@
             <hr>
             <div class="newsContentWrapper">
                 <div class="singleNewsComponent">
-                    <img class="newsImg" src="./Images/LOVE Victor.jpg" alt="">
+                    <img class="newsImg" src="./Images/LOVE_Victor.jpg" alt="">
                     <div class="descContainer">
                         <h4 class="newsTitle" >Love, Victor is coming back at ApnaTheatre.</h4>
                         <p class="desc">
@@ -240,7 +239,7 @@
                     </div>
                 <hr>
                 <div class="singleNewsComponent">
-                    <img class="newsImg" src="./Images/fast and furious 9.jpg" alt="">
+                    <img class="newsImg" src="./Images/fast_and_furious_9.jpg" alt="">
                     <div class="descContainer">
                         <h4>Fast & Furious 9 India Release Date Delayed to August 19</h4>
                         <p class="desc">Fast & Furious 9's India release date has been delayed by two weeks, Universal Pictures announced on Wednesday afternoon. The latest chapter in The Fast Saga is now due Thursday, August 19 in Indian cinemas, instead of the earlier Thursday, August 5 date. The new August 19 release date for Fast & Furious 9 comes as part of a two-month slate announcement from NBCUniversal, the parent company of Universal Pictures. Alongside, we have Oscar-winning Promising Young Woman on August 6, M. Night Shyamalan's Old on August 13, Bob Odenkirk-led Nobody and animated sequel The Croods: A New Age on August 27, animated sequel The Boss Baby: Family Business on September 10, and the dystopian follow-up The Forever Purge on September 17.
@@ -260,7 +259,7 @@
                 </div>
                 <div class="footer-middle">
                   <h2 class="footer-heading">Follow Us</h2>
-                  <ul class="footer-middle-list icons">
+                  <div class="footer-middle-list icons">
                     <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
                         class="fab fa-facebook-f facebook" style="color:red"></i></a>
                     <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
@@ -271,7 +270,7 @@
                         class="fab fa-instagram instagram" style="color:red"></i></a>
                     <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
                         class="fab fa-github github" style="color:red"></i></a>
-                  </ul>
+                    </div>
                 </div>
                 <div class="footer-middle">
                   <h2 class="footer-heading">Services</h2>
@@ -286,17 +285,17 @@
                 </div>
                <div class="footer-middle">
                         <h2 class="footer-heading">Try Our App</h2>
-                        <ul class="footer-middle-list icons">
+                        <div class="footer-middle-list icons">
                             <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
                             <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-                        </ul>
+                        </div>
                     </div>
                 <div class="footer-right">
-                  <p class="footer-links">
+                  <div class="footer-links">
                   <h2 class="footer-heading">Contact Us</h2>
                   <p class="footer-bottom-tagline">Feel free to contact us.</p>
                   <a class="footer-contact-button" href="contactus.html">Contact</a>
-                  </p>
+                  </div>
                 </div>
               </div>
               <hr class="footer-hr">
@@ -361,9 +360,7 @@
               integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
               crossorigin="anonymous"></script>
             <script src="./static/script.js"></script>
+            </div>
         </body>
         
         </html>
-        
-</body>
-</html>
