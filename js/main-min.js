@@ -12,6 +12,8 @@ function getMovies(t) {
     .catch((t) => {});
 }
 
+function getMovie()
+
 function movieSelected(t) {
   return (
     sessionStorage.setItem("movieID", t),
