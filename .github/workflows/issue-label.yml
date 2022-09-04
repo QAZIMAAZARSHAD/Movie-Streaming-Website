@@ -25,4 +25,4 @@ jobs:
         root: /
         config: ./config/HTML5_Validator.yaml
         blacklist: invalid
-        log_level: debug
+        # log_level: debug
