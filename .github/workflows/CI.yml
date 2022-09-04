@@ -26,3 +26,19 @@ jobs:
         config: ./config/HTML5_Validator.yaml
         blacklist: invalid
         # log_level: debug
+        
+    - name: Send mail
+      if: ${{ failure() }}
+      uses: dawidd6/action-send-mail@v3.6.1
+      with:
+        # mail server settings
+        server_address: smtp.gmail.com
+        server_port: 465
+        # email subject
+        subject: ${{ github.job }} job of ${{ github.repository }} has fail
+        # email body as text
+        body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+        # comma-separated string, send email to
+        to: williamthetester0.1@gmail.com
+        # from email name
+        from: williamTheTester
