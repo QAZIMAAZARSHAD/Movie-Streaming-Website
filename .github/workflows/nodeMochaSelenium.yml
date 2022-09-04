@@ -29,10 +29,18 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Test & publish code coverage
-      uses: paambaati/codeclimate-action@v2.5.7
-      env:
-        CC_TEST_REPORTER_ID: 308728dfd9b9fd64e3a6dd28b7604b5199ea73e427a94fd535e55e54453ad054
+    - name: Send mail
+      if: ${{ failure() }}
+      uses: dawidd6/action-send-mail@v3.6.1
       with:
-        coverageCommand: npm run coverage
-        debug: true
+        # mail server settings
+        server_address: smtp.gmail.com
+        server_port: 465
+        # email subject
+        subject: ${{ github.job }} job of ${{ github.repository }} has fail
+        # email body as text
+        body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+        # comma-separated string, send email to
+        to: williamthetester0.1@gmail.com
+        # from email name
+        from: williamTheTester
