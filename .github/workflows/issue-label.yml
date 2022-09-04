@@ -35,11 +35,3 @@ jobs:
         major_threshold: 1
         critical_threshold: 0
         blocker_threshold: 0
-        
-    - name: Test & publish code coverage
-      uses: paambaati/codeclimate-action@v3.0.0
-      env:
-        CC_TEST_REPORTER_ID: 30e0f08b82063b5976fa972faaeda6c765cab919
-      with:
-        coverageCommand: npm run coverage
-        debug: true
