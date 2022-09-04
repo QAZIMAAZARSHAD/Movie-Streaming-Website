@@ -162,6 +162,10 @@ function showResult(){
     }
 }
 
+function startTimer(){}
+function startTimer(){}
+function startTimer(){}
+
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
