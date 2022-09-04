@@ -162,6 +162,10 @@ function showResult(){
     }
 }
 
+function getMovie{
+    
+}
+
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
