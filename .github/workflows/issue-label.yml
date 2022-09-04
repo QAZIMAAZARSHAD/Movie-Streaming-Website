@@ -6,7 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest # build on ubuntu latest, ubuntu kernel good enough for building different development project, therefore always used as base OS
     steps:
-#     
         
 #     - name: HTML5Validator
 #       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
