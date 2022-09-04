@@ -25,65 +25,66 @@
   <link rel="stylesheet" href="static/style-min.css">
   <link rel="stylesheet" href="cards.css">
 
+  <style>
+    .poster {
+      box-shadow: 0 0 15px red !important;
+  
+    }
+  
+    #scrollToTopButton {
+      position: fixed;
+      bottom: 40px;
+      right: 25px;
+      font-size: 25px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      color: black;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 6px;
+      border-radius: 50%;
+    }
+  
+    #scrollToTopButton:hover,
+    i:hover {
+      background-color: white;
+      color: red;
+    }
+  
+    .maincontainer h3 {
+      color: white;
+      text-align: center;
+    }
+  
+    .container {
+      text-align: center;
+    }
+  
+    #navbarNav.nav-item.nav-link a:hover {
+      color: red;
+    }
+  
+    .nav-link:hover {
+      color: red;
+    }
+  
+    #header-nav .nav-link a:hover {
+      color: red;
+    }
+  </style>
+  <script>
+    setTimeout(function () {
+      $('.section').fadeToggle();
+    }, 4000);
+  
+  </script>
 </head>
 
 <!------------------------Scroll to top button------------------------------------------------>
-<style>
-  .poster {
-    box-shadow: 0 0 15px red !important;
 
-  }
-
-  #scrollToTopButton {
-    position: fixed;
-    bottom: 40px;
-    right: 25px;
-    font-size: 25px;
-    z-index: 99;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    color: black;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 6px;
-    border-radius: 50%;
-  }
-
-  #scrollToTopButton:hover,
-  i:hover {
-    background-color: white;
-    color: red;
-  }
-
-  .maincontainer h3 {
-    color: white;
-    text-align: center;
-  }
-
-  .container {
-    text-align: center;
-  }
-
-  #navbarNav.nav-item.nav-link a:hover {
-    color: red;
-  }
-
-  .nav-link:hover {
-    color: red;
-  }
-
-  #header-nav .nav-link a:hover {
-    color: red;
-  }
-</style>
-<script>
-  setTimeout(function () {
-    $('.section').fadeToggle();
-  }, 4000);
-
-</script>
 
 <body>
 
