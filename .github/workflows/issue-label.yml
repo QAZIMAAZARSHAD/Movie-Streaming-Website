@@ -6,15 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest # build on ubuntu latest, ubuntu kernel good enough for building different development project, therefore always used as base OS
     steps:
-#     - uses: actions/checkout@v1 #like commit changes
-#     - name: Label Syncer
-#       uses: micnncim/action-label-syncer@v1.3.0 #installtion of this library
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         GITHUB_REPOSITORY: ${{ github.repository }}
-#       with:
-#         manifest: .github/labels.json
-#         prune: false
+#     
         
 #     - name: HTML5Validator
 #       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
