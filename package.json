@@ -13,7 +13,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "chromedriver": "latest",
+    "chromedriver": "^104.0.5112.79",
     "mocha": "latest",
     "mochawesome": "^7.1.3",
     "selenium-webdriver": "^4.4.0"
