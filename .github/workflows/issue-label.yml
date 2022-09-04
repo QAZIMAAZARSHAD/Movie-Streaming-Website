@@ -1,6 +1,6 @@
 name: CI for Movie Streaming 
 
-on: [push] #during push events
+on: [pull_request] #during push events
 
 jobs:
   build:
