@@ -22,6 +22,6 @@ jobs:
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
       with:
-        ignore: file:/usr/local/lib/python3.10/idlelib/help.html
+        ignore-re: file:/usr/local/lib/python3.10/idlelib/help.html
         root: /
         blacklist: invalid
