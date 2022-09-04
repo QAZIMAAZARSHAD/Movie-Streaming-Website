@@ -29,6 +29,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - uses: romeovs/lcov-reporter-action@v0.2.16
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v2.5.7
+      env:
+        CC_TEST_REPORTER_ID: 308728dfd9b9fd64e3a6dd28b7604b5199ea73e427a94fd535e55e54453ad054
       with:
-        lcov-file: ./coverage/lcov.info
+        coverageCommand: npm run coverage
+        debug: true
