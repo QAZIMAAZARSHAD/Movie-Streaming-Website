@@ -314,7 +314,7 @@ img:hover {
   text-align: left;
 }
 h3 {
-  font-variant: bold;
+  font-variant:normal;
   color: #fefefe;
 }
 
@@ -326,7 +326,7 @@ h3 {
 }
 
 .map-padd {
-  padding: 0 calc(var(--bs-gutter-x) / 2) 0 0;
+  padding: 10px;
 }
 iframe {
   height: 100%;
@@ -341,7 +341,7 @@ iframe {
     -webkit-transition: 0.2s flex-direction;
   }
   .map-padd {
-    padding: 0 calc(var(--bs-gutter-x) / 2);
+    padding: 10px;
   }
   iframe {
     height: 300px;
@@ -753,11 +753,6 @@ background-color: #2c2f30;
   visibility: hidden;
 }
 
-@media screen and (max-device-width: 821px) {
-  #fa-icon {
-    visibility: visible;
-  }
-}
 
 /* Genre dropdown */
 .dropdown:hover .dropdown-content {
