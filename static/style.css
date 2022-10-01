@@ -643,20 +643,35 @@ textarea.ng-valid {
 .footer-middle {
   text-align: center;
 }
-.icons {
-  margin-left: -30px;
+.social-media{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
 }
-.footer-links i {
-  font-size: 30px;
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
+._icon{
+  font-size:2rem;
+  border:0.5px solid black;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
 }
-.footer-middle a i:hover {
-  background-color: white;
-  padding: 5px;
-  border-radius: 50px;
-  color: red;
+@keyframes moveup{
+  from{ transform:translate(0,0);
+    
+  }
+  to{ transform:translate(0,-5px);
+  }
+}
+._icon:hover{
+  transform:translate(0,-5px);
+  animation-name:moveup;
+  animation-duration:0.8s;
+  box-shadow:1px 1px 10px 3px #ff1818;
+  border:0.5px solid white;
 }
 .footer-middle-list-item {
   list-style: none;
