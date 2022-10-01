@@ -671,7 +671,6 @@ textarea.ng-valid {
   animation-name:moveup;
   animation-duration:0.8s;
   box-shadow:1px 1px 10px 3px #ff1818;
-  border:0.5px solid white;
 }
 .footer-middle-list-item {
   list-style: none;
