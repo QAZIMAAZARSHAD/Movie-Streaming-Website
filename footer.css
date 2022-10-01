@@ -179,6 +179,39 @@
   border-radius:50px;
   color:red;
   }
+body{
+  background:black;
+}
+.social-media{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+._icon{
+  font-size:2rem;
+  border:0.5px solid black;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
+}
+@keyframes moveup{
+  from{ transform:translate(0,0);
+    
+  }
+  to{ transform:translate(0,-5px);
+  }
+}
+._icon:hover{
+  transform:translate(0,-5px);
+  animation-name:moveup;
+  animation-duration:0.8s;
+  box-shadow:1px 1px 10px 3px #ff1818;
+  border:0.5px solid white;
+}
   .footer-middle-list-item{
   list-style:none;
   font-size:15px;
