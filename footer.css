@@ -164,24 +164,7 @@
   .footer-left, .footer-right, .footer-middle{
   text-align:center;
   }
-  .icons{
-    margin-left:-30px;
-  }
-  .footer-links i{
-  font-size:30px;
-  width:40px;
-  height:40px;
-  margin-top:30px;
-  }
-  .footer-middle a i:hover{
-  background-color:white;
-  padding:5px;
-  border-radius:50px;
-  color:red;
-  }
-body{
-  background:black;
-}
+  
 .social-media{
   display:flex;
   align-items:center;
