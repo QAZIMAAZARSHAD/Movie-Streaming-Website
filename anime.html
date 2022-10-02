@@ -146,7 +146,23 @@
                 <a class="nav-link" href="contactus.html">Contact Us</a>
               </li>
               <li>
-                <!-- Genre dropdown starts-->
+               <ul class="nav">
+     <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+                  
+                  
+                  <!-- Genre dropdown starts-->
                 <div>
                   <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
                       <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
@@ -155,7 +171,7 @@
                       <div class="dropdown-content" style="color: white;">
                           <a href="popular.html">Popular</a>
                           <a href="crime.html">Crime</a>
-                          <a href="suspense.html">Suspense & Thriller</a>
+                          <a href="suspense.html"<I>Suspense & Thriller<I></a>
                           <a href="action.html">Action</a>
                           <a href="fantasy.html">Sci-Fi & Fantasy</a>
                           <a href="documentary.html">Documentary</a>
@@ -172,13 +188,14 @@
               </li>
               <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
                 <li>
-                  <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+               <button type="button" class="btn btn-primary btn-sm" onclick="logout()">Small button</button>
+               
                 </li>
               </div>
             </ul>
             <form id="searchForm" class="d-flex">
               <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Search</button>
+             <a class="btn btn-secondary " role="button" aria-disabled="true" type="search">Link</a>
             </form>
           </div>
         </div>
@@ -187,10 +204,10 @@
           <!-- navbar ends -->
 
         <div class="maincontainer">
-            <h2>ANIME</h2>
+            <h1>ANIME</h1>
             <hr>
             <div class="container">
-                <div id="movies" class="row"></div>
+                <div id="movies" class="row" class="container"></div>
             </div>
             <hr>
 
@@ -256,6 +273,19 @@
                           <br />
                         </p>
           
+                            <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+          <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">hollowoood</a></li>
+    <li><a class="dropdown-item" href="#">tollywoood action</a></li>
+    <li><a class="dropdown-item" href="#">kollwoood else here</a></li>
+  </ul>
+         </div> 
+                            
+                            
+                            
                           <p class="para_i"style="margin-top: -35px;">Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.</p>
           
                             
