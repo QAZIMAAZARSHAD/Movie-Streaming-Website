@@ -7,7 +7,9 @@
   .nav-link.b:hover{
     color: #7bdf1d;
   }
-
+  .bottom-text-container1{
+    cursor: pointer;
+  }
 .preloader {
     position: absolute;
     top: 0;
