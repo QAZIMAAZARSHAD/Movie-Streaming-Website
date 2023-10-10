@@ -12,7 +12,7 @@
   width: 250px;
   height: 360px;
   perspective: 1000px;
-  cursor: pointer;
+  cursor: default;
 }
 @media only screen and (max-width: 298px) {
   .flip-card_i{
@@ -130,3 +130,5 @@ h1{
   color: white;
   transform: rotateY(180deg);
 }
+
+
