@@ -181,7 +181,7 @@ img:hover {
   height: 100%;
   position: absolute;
   width: 15%;
-  z-index: 2;
+  z-index: -1;
 }
 
 .slider::before {

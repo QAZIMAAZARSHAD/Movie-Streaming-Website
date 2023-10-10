@@ -12,7 +12,7 @@
   width: 250px;
   height: 360px;
   perspective: 1000px;
-  cursor: pointer;
+  cursor: default;
 }
 @media only screen and (max-width: 298px) {
   .flip-card_i{
@@ -45,6 +45,7 @@ h1{
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: default;
 }
 
 .flip-card_i:hover .flip-card-inner_i {
@@ -129,4 +130,7 @@ h1{
   background-image: linear-gradient(black,#8B0000);
   color: white;
   transform: rotateY(180deg);
+  cursor: default;
 }
+
+
