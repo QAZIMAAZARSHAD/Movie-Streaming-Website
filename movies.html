@@ -61,10 +61,14 @@
 
 .nav-item :hover{
   margin-bottom: 10px;
-  /* background-color: aquamarine; */
-  border-bottom: 3px;
-  border-color: red;
-  border-bottom-style: solid;
+  
+  
+}
+#header-nav .navbar-nav .nav-item .nav-link:hover {
+  color: red;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition effect */
+  text-shadow: 0 0 10px red; /* Add glowing effect */
 }
 
     .logo {
