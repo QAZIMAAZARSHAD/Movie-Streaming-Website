@@ -17,7 +17,7 @@ body {
 #header-nav .nav-link {
   color: white;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 12px;
 }
 
 .navbar-nav {
@@ -279,6 +279,14 @@ img:hover {
 .contactForm {
   margin: 5px;
 }
+/*about us*/
+.box2 {
+  background: url("../Images/about.jfif")
+    no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
 /* Contact Us CSS starts*/
 .box {
   background: url("https://cdn.pixabay.com/photo/2017/09/17/08/39/curtain-2757815_960_720.png")
@@ -304,8 +312,10 @@ img:hover {
   border: none;
   margin: 0 auto;
 }
-.touch h2 {
-  padding-top: 20px;
+.touch h4 {
+  padding-top: 120px;
+  padding-left: 25%;
+  padding-right: 25%;
   text-align: center;
   color: #fefefe;
 }
