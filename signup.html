@@ -229,21 +229,33 @@ color:red;
           color: #bdc7c9;
       }
 
-      .new-members{
-          margin-bottom: 10px;
-          color: #bdc7c9;
+      .al_members{
+          margin: 12px 0px;
+          color: #a0a2a2;
+          padding: 0px 12px;
+          font-size:16.2px;
       }
-
+      .log-link{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      .log-link:hover{
+        text-decoration:underline;
+      }
+      .help{
+        text-align: right;
+      }
       .help a{
           text-decoration: none;
+          font-size: 16.5px;
       }
       .help a:hover{
           text-decoration: underline;
       }
-
       .protection{
           font-size: 0.8rem;
           color: #bdc7c9;
+          text-align: center;
       }
 
       .protection a{
@@ -412,18 +424,16 @@ color:red;
         /><i class="fa fa-fw fa-eye field-icon toggle-password2" id="togglePassword"></i>
       </div>
         <input class="signin-button" type="submit" value="Sign Up" />
-        <div class="remember-flex">
-            <div>
-
-            </div>
             <div class="help">
                 <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
             </div>
+            <div class="al_members" >
+                Already a Member? <a href="login.html" class="log-link">Sign in here</a>.
+            </div>
+        <div class="protection color_link help">
+          This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
         </div>
       </form>
-      <div class="protection color_link help" style="margin: 0px 30%;">
-        This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
-      </div>
       <span class="seperator"></span>
       <form style="opacity: 0;" class="aftersubmit" onsubmit="return FinalResults()" name="verificationform" autocomplete="off">
         <hr>
