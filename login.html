@@ -1,51 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Sign In</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
     <!-- Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Images/Logo/Title.jpeg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link href="./static/style.css" rel="stylesheet" type="text/css" />
     <script>
-
-      var emailerror = false;
-      var passworderror = false;
-      var strongPass = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})");
-      const mailformat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      var emailError = false;
+      var passwordError = false;
+      var strongPass = new RegExp(
+        "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})"
+      );
+      const mailFormat =
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
       function DisplayResults(e) {
-
         var email = document.forms["regform"]["email"].value;
         var password = document.forms["regform"]["password"].value;
 
         var error = document.getElementById("errormessage");
         if (email.length == 0) {
-          emailerror = true;
+          emailError = true;
           error.style.display = "block";
           error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
 							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
 						</svg><span class="error">Email should not be empty</span></p>`;
-        } else if(!mailformat.test(email)){
+        } else if (!mailFormat.test(email)) {
           error.style.display = "block";
           error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
               <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
             </svg><span class="error">Email address is invalid</span></p>`;
-        }
-        else if (!strongPass.test(password)) {
-          passworderror = true;
+        } else if (!strongPass.test(password)) {
+          passwordError = true;
           error.style.display = "block";
           error.innerHTML = `<p><svg class="svg-icon" viewBox="0 0 20 20">
 							<path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
@@ -53,7 +73,7 @@
         } else {
           swal({
             title: "Welcome back!",
-            text:  "Let the binge watch begin!!",
+            text: "Let the binge watch begin!!",
             type: "success",
           });
           setTimeout(function () {
@@ -68,15 +88,15 @@
         var error = document.getElementById("errormessage");
         var email = document.forms["regform"]["email"].value;
         var password = document.forms["regform"]["password"].value;
-        var confirmpassword = document.forms["regform"]["retypepassword"].value;
-        if (emailerror == true) {
+        var confirmPassword = document.forms["regform"]["retypepassword"].value;
+        if (emailError == true) {
           if (email.length > 0) {
-            emailerror = false;
+            emailError = false;
             error.style.display = "none";
           }
-        } else if (passworderror == true) {
+        } else if (passwordError == true) {
           if (password.length > 0) {
-            passworderror = true;
+            passwordError = true;
             error.style.display = "none";
           }
         }
@@ -84,28 +104,29 @@
     </script>
 
     <style>
-         #scrollToTopButton{
-position: fixed;
-bottom: 40px;
-right: 25px;
-font-size: 25px;
-z-index: 99;
-width: 50px;
-height: 50px;
-background-color: red;
-color: black;
-border: none;
-cursor: pointer;
-outline: none;
-padding: 6px;
-border-radius: 50%;
-box-shadow: 0 6px 10px 0px gray;
-}
+      #scrollToTopButton {
+        position: fixed;
+        bottom: 40px;
+        right: 25px;
+        font-size: 25px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        color: black;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 6px;
+        border-radius: 50%;
+        box-shadow: 0 6px 10px 0px gray;
+      }
 
-#scrollToTopButton:hover , i:hover {
-  color: red;
-  background-color: white;
-}
+      #scrollToTopButton:hover,
+      i:hover {
+        color: red;
+        background-color: white;
+      }
       h1 {
         margin: auto;
         width: max-content;
@@ -114,9 +135,9 @@ box-shadow: 0 6px 10px 0px gray;
       span {
         display: inline-block;
       }
-      .img-logo{
-          height: 94px;
-          margin-left: 45px;
+      .img-logo {
+        height: 94px;
+        margin-left: 45px;
       }
       .seperator {
         height: 12px;
@@ -146,7 +167,6 @@ box-shadow: 0 6px 10px 0px gray;
         width: 260px;
         background-color: red;
         font-weight: bold;
-
       }
       input[type="submit"]:hover {
         cursor: pointer;
@@ -157,13 +177,13 @@ box-shadow: 0 6px 10px 0px gray;
       body {
         margin: 0;
         padding: 0;
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85) ),url("Images/background3.png") no-repeat center center fixed;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+          url("Images/background3.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       .brand {
         margin-bottom: 13px;
@@ -190,213 +210,207 @@ box-shadow: 0 6px 10px 0px gray;
         margin-right: 0.5em;
         fill: lightgreen;
       }
-      .login{
-          margin: 0 auto;
-          width: 400px;
-          background-color: rgba(0, 0, 0, 0.6);
-          border-radius: 5px;
-          padding: 30px 70px 143px 70px;
-          margin-bottom: 12px;
+      .login {
+        margin: 0 auto;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 5px;
+        padding: 30px 70px 143px 70px;
+        margin-bottom: 12px;
       }
 
-      .login h1{
-          color: white;
-          padding-bottom: 10px;
+      .login h1 {
+        color: white;
+        padding-bottom: 10px;
       }
 
-      .bottom{
-          background-color: rgba(0, 0, 0, 0.35);
-          color: #bdc7c9;
+      .bottom {
+        background-color: rgba(0, 0, 0, 0.35);
+        color: #bdc7c9;
       }
 
-      .bottom-width{
-          max-width: 1000px;
-          padding:8px 20px ;
-          margin:auto;
+      .bottom-width {
+        max-width: 1000px;
+        padding: 8px 20px;
+        margin: auto;
       }
 
-      .bottom-flex{
-          display: flex;
-          flex-wrap: wrap;
-          padding: 15px 0 0 0;
-          justify-content:center;
+      .bottom-flex {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0 0 0;
+        justify-content: center;
       }
 
-      .bottom-flex li{
-          list-style: none;
-          margin:0px 10px;
+      .bottom-flex li {
+        list-style: none;
+        margin: 0px 10px;
       }
-      .bottom-flex li a{
-         font-size: 15px;
+      .bottom-flex li a {
+        font-size: 15px;
       }
-      .list-bottom{
-          /* width: 25%; */
-          margin-top: 10px;
-      }
-
-      .link-bottom{
-          text-decoration: none;
-          color: #bdc7c9;
-          font-size: 0.8rem;
+      .list-bottom {
+        /* width: 25%; */
+        margin-top: 10px;
       }
 
-      .link-bottom:hover{
-          text-decoration: underline;
-
-      }
-      .remember-flex{
-          display: flex;
-          justify-content: space-between;
-          margin-top: 10px;
-          font-size: 0.8rem;
+      .link-bottom {
+        text-decoration: none;
+        color: #bdc7c9;
+        font-size: 0.8rem;
       }
 
-      .color_text{
-          color: #bdc7c9;
+      .link-bottom:hover {
+        text-decoration: underline;
+      }
+      .remember-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 0.8rem;
       }
 
-      .color_link{
-          color: #bdc7c9;
+      .color_text {
+        color: #bdc7c9;
       }
 
-      .signup-link{
-          color: white;
-          margin-bottom: 25px;
-
-          text-decoration: none;
+      .color_link {
+        color: #bdc7c9;
       }
 
-      .signup-link:hover{
-          text-decoration: underline;
+      .signup-link {
+        color: white;
+        margin-bottom: 25px;
+
+        text-decoration: none;
       }
 
-      .face_icon{
-          color: #3b5998;
-          margin-right: 6px;
-          font-size: 20px;
-      }
-      .fa-eye::before {
-        margin-left: -15px;
-      }
-      .log_face{
-          text-decoration: none;
-          margin-left: 10px;
-          font-size: 0.8rem;
+      .signup-link:hover {
+        text-decoration: underline;
       }
 
-      .login-face{
-          /* margin: 100px -20px 30px -260px; */
-          text-align: center;
-          vertical-align: middle;
-          color: #bdc7c9;
+      .face_icon {
+        color: #3b5998;
+        margin-right: 6px;
+        font-size: 20px;
+      }
+      .log_face {
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 0.8rem;
       }
 
-      .new-members{
-          margin-bottom: 10px;
-
-          color: #bdc7c9;
-      }
-      .or{
-          margin-bottom: 5px;
-          text-align: center;
-          color: #bdc7c9;
+      .login-face {
+        /* margin: 100px -20px 30px -260px; */
+        text-align: center;
+        vertical-align: middle;
+        color: #bdc7c9;
       }
 
-      .help a{
-          text-decoration: none;
-          padding-top: 10%;
-          margin-left: 64%;
-          text-align: right;
-          
+      .new-members {
+        margin-bottom: 10px;
+
+        color: #bdc7c9;
       }
-      .help a:hover{
-          text-decoration: underline;
+      .or {
+        margin-bottom: 5px;
+        text-align: center;
+        color: #bdc7c9;
       }
 
-      .protection{
-          font-size: 0.8rem;
-          color: #bdc7c9;
+      .help a {
+        text-decoration: none;
+        padding-top: 10%;
+        margin-left: 64%;
+        text-align: right;
+      }
+      .help a:hover {
+        text-decoration: underline;
       }
 
-      .protection a{
-          text-decoration: none;
-          
+      .protection {
+        font-size: 0.8rem;
+        color: #bdc7c9;
       }
 
-      .protection a:hover{
-          text-decoration: underline;
+      .protection a {
+        text-decoration: none;
       }
 
-      .tel-link{
-          text-decoration: none;
-          color: #e1e5ea;
+      .protection a:hover {
+        text-decoration: underline;
       }
 
-      .tel-link:hover{
-          text-decoration: underline;
+      .tel-link {
+        text-decoration: none;
+        color: #e1e5ea;
       }
 
-      .select-language{
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHN0cm9rZT0id2hpdGUiICBwb2ludHM9IjQ3LjI1LDE1IDQ1LjE2NCwxMi45MTQgMjUsMzMuMDc4IDQuODM2LDEyLjkxNCAyLjc1LDE1IDI1LDM3LjI1ICIvPjwvc3ZnPg==");
-          background-size: 12px;
-          background-position-x: calc(100% - 7px);
-          background-position-y: calc(100% - 14px);
-          background-repeat: no-repeat;
-          background-color: #000;
-          color:#bdc7c9;
-          padding: 14px 20px 14px 14px;
-          margin: 30px 0 40px 0;
-          font-size: 0.9rem;
-          min-height: 40px;
-          border: 1px solid #333;
+      .tel-link:hover {
+        text-decoration: underline;
       }
 
-      .select-language option{
-          padding-left: 10px;
-      }
-      .input-text{
-          margin-bottom: 20px;
+      .select-language {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHN0cm9rZT0id2hpdGUiICBwb2ludHM9IjQ3LjI1LDE1IDQ1LjE2NCwxMi45MTQgMjUsMzMuMDc4IDQuODM2LDEyLjkxNCAyLjc1LDE1IDI1LDM3LjI1ICIvPjwvc3ZnPg==");
+        background-size: 12px;
+        background-position-x: calc(100% - 7px);
+        background-position-y: calc(100% - 14px);
+        background-repeat: no-repeat;
+        background-color: #000;
+        color: #bdc7c9;
+        padding: 14px 20px 14px 14px;
+        margin: 30px 0 40px 0;
+        font-size: 0.9rem;
+        min-height: 40px;
+        border: 1px solid #333;
       }
 
-      .input-text input{
-          width: 100%;
-          height: 45px;
-          background-color: #333;
-          color: white;
-          border-radius:5px;
-          border: none;
-          outline: transparent;
-          text-indent: 18px;
+      .select-language option {
+        padding-left: 10px;
+      }
+      .input-text {
+        margin-bottom: 20px;
+      }
+
+      .input-text input {
+        width: 100%;
+        height: 45px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        outline: transparent;
+        text-indent: 8px;
       }
 
       .input-text input::-webkit-input-placeholder {
-          font-size: 1rem;
-          color: #bdc7c9;
+        font-size: 1rem;
+        color: #bdc7c9;
       }
 
       .input-text input::-moz-placeholder {
-          font-size: 1rem;
-          color: #bdc7c9;
-          text-indent: 40px;
+        font-size: 1rem;
+        color: #bdc7c9;
+        text-indent: 40px;
       }
-      .learnmore a{
+      .learnmore a {
         padding: 2px;
         margin: 0px;
       }
-      .signin-button{
-          margin-top: 20px;
-          padding: 13px;
-          border-radius: 5px;
-          background-color: red;
-          color:white;
-          border:none;
-          font-weight: bold;
-          font-size: 1.05rem;
-          cursor: pointer;
+      .signin-button {
+        margin-top: 20px;
+        padding: 13px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-weight: bold;
+        font-size: 1.05rem;
+        cursor: pointer;
       }
-      .logo img{
+      .logo img {
         position: relative;
         top: 30px;
         left: 10px;
@@ -405,197 +419,212 @@ box-shadow: 0 6px 10px 0px gray;
         padding: 3px;
         margin: 0;
         padding: 0;
-}
-.field-icon{
-position: absolute;
-margin-left: -25px;
-margin-top: 15px;
-color: white;
-}
-.questions{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+      }
+      .field-icon {
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 15px;
+        color: white;
+      }
+      .field-icon:hover {
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .questions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
 
-@media only screen and (max-width: 450px) {
-  .login {
-    width: 300px;
-    padding: 15px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .login {
-    width: 240px;
-    padding: 10px;
-  }
-  input[type="submit"] {
-    width: 220px;
-  }
-  .abcRioButton {
-  width: 220px !important;
-  }
-  .abcRioButtonIcon {
-    padding: 15px 5px !important;
-  }
-  .abcRioButtonContents {
-    font-size: 12px !important;
-  }
-  .help a {
-      margin-left: 60% !important;
-  }
-}
-
+      @media only screen and (max-width: 450px) {
+        .login {
+          width: 300px;
+          padding: 15px;
+        }
+      }
+      @media only screen and (max-width: 350px) {
+        .login {
+          width: 240px;
+          padding: 10px;
+        }
+        input[type="submit"] {
+          width: 220px;
+        }
+        .abcRioButton {
+          width: 220px !important;
+        }
+        .abcRioButtonIcon {
+          padding: 15px 5px !important;
+        }
+        .abcRioButtonContents {
+          font-size: 12px !important;
+        }
+        .help a {
+          margin-left: 60% !important;
+        }
+      }
     </style>
-    <meta name="google-signin-client_id" content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com">
+    <meta
+      name="google-signin-client_id"
+      content="556331998780-jhmmulhgm2s2fgrqqln50vmtp1fh41vc.apps.googleusercontent.com"
+    />
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="logo">
-        <a href="home.html">
-            <img src="Images/TheaterLogoFinal.png" class="img-logo"/>
-        </a>
+      <a href="home.html">
+        <img src="Images/TheaterLogoFinal.png" class="img-logo" alt="Logo" />
+      </a>
     </div>
     <div class="login-div">
-      <form class="login" onsubmit="return DisplayResults()"
-      name="regform"
-      autocomplete="off">
+      <form
+        class="login"
+        onsubmit="return DisplayResults()"
+        name="regform"
+        autocomplete="off"
+      >
+        <h1 class="sign">Sign In</h1>
+        <div id="errormessage"></div>
+        <span class="seperator"></span>
 
-
-      <h1 class="sign">Sign In</h1>
-      <div id="errormessage"></div>
-      <span class="seperator"></span>
-
-  <div class="input-text">
-
-
-    <input
-      type="email"
-      name="email"
-      placeholder="Email"
-      oninput="change()"
-    />
-  </div>
-      <div class="input-text">
-
-        <input
-          id = "pass_signup"
-          type="password"
-          name="password"
-          placeholder="Password"
-          oninput="change()"
-        /><i class="fa fa-fw fa-eye field-icon toggle-password" id="togglePassword"></i>
-
-      </div>
+        <div class="input-text">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            oninput="change()"
+          />
+        </div>
+        <div class="input-text">
+          <input
+            id="pass_signup"
+            type="password"
+            name="password"
+            placeholder="Password"
+            oninput="change()"
+          /><i
+            class="fa fa-fw fa-eye field-icon toggle-password"
+            id="togglePassword"
+          ></i>
+        </div>
 
         <span class="seperator"></span>
         <input class="signin-button" type="submit" value="Sign In" />
         <div class="remember-flex">
-        <div> 
-              <div class="or">OR</div>
-              <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="258.5" data-height="50" data-longtitle="true"></div>
-        </div>
-          
+          <div>
+            <div class="or">OR</div>
+            <div
+              class="g-signin2"
+              data-onsuccess="onSignIn"
+              data-theme="dark"
+              data-width="258.5"
+              data-height="50"
+              data-longtitle="true"
+            ></div>
+          </div>
         </div>
         <div class="help">
-          <a class="color_text" href="https://www.google.com/gmail/">Need help?</a>
-      </div>
+          <a class="color_text" href="https://www.google.com/gmail/"
+            >Need help?</a
+          >
+        </div>
         <div class="login-face">
-        <br>
-        <div class="new-members">
-            New to Apna Theatre? <a href="signup.html" class="signup-link">Sign up now</a>.
+          <br />
+          <div class="new-members">
+            New to Apna Theatre?
+            <a href="signup.html" class="signup-link">Sign up now</a>.
+          </div>
+          <br />
+          <div class="protection color_link help">
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot.
+            <div class="learnmore"><a href="#">Learn more.</a></div>
+          </div>
         </div>
-        <br>
-        <div class="protection color_link help">
-            This page is protected by Google reCAPTCHA to ensure you're not a bot.
-           <div class="learnmore"> <a href="#">Learn more.</a></div>
-        </div>
-      </div>
       </form>
     </div>
 
-
-
-
     <div class="bottom">
-        <div class="bottom-width">
-          <div class ="questions">
-          <span>Questions? <br>Ask on : <a href="mailto: Apna_theatre@gmail.com" class="tel-link">Apna_theatre@gmail.com</a></span>   
-            <select class="fa select-language">
-              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
-              <option> &#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
+      <div class="bottom-width">
+        <div class="questions">
+          <span
+            >Questions? <br />Ask on :
+            <a href="mailto: Apna_theatre@gmail.com" class="tel-link"
+              >Apna_theatre@gmail.com</a
+            ></span
+          >
+          <select class="fa select-language">
+            <option>&#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+            <option>&#xf0ac; &nbsp;&nbsp;&nbsp;Hindi</option>
           </select>
-          </div>
-            
-            <div>
-                <ul class="bottom-flex">
-                    <li class="list-bottom">
-                        <a href="faq.html" class="link-bottom">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Help Center
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Terms of Use
-                        </a>
-                    </li>
-                    <li class="list-bottom">
-                        <a href="#" class="link-bottom">
-                            Privacy
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
         </div>
+
+        <div>
+          <ul class="bottom-flex">
+            <li class="list-bottom">
+              <a href="faq.html" class="link-bottom"> FAQ </a>
+            </li>
+            <li class="list-bottom">
+              <a href="#" class="link-bottom"> Help Center </a>
+            </li>
+            <li class="list-bottom">
+              <a href="#" class="link-bottom"> Terms of Use </a>
+            </li>
+            <li class="list-bottom">
+              <a href="#" class="link-bottom"> Privacy </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-      <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" style="font-weight: bolder;"></i>
+    <button id="scrollToTopButton" title="Go to top" class="ml-5">
+      <i
+        class="fa fa-angle-double-up"
+        aria-hidden="true"
+        style="font-weight: bolder"
+      ></i>
     </button>
     <script>
-    $(document).ready(function(){
-      var scrollTopButton = document.getElementById("scrollToTopButton");
-      window.onscroll = function () { scrollFunction() };
+      $(document).ready(function () {
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () {
+          scrollFunction();
+        };
 
-      function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.style.display = "block";
-      } else {
-        scrollTopButton.style.display = "none";
-      }
-    }
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            scrollTopButton.style.display = "block";
+          } else {
+            scrollTopButton.style.display = "none";
+          }
+        }
 
-    $("#scrollToTopButton").click(function(){
-    $('html ,body').animate({scrollTop : 0},800)
-    });
-    });
+        $("#scrollToTopButton").click(function () {
+          $("html ,body").animate({ scrollTop: 0 }, 800);
+        });
+      });
     </script>
     <script>
-    $(".toggle-password").click(function() {
-     $(this).toggleClass("fa-eye fa-eye-slash");
-     if ($("#pass_signup").attr("type") == "password") {
-      $("#pass_signup").attr("type", "text");
-     } else {
-       $("#pass_signup").attr("type", "password");
-     }
-    });
+      $(".toggle-password").click(function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        if ($("#pass_signup").attr("type") == "password") {
+          $("#pass_signup").attr("type", "text");
+        } else {
+          $("#pass_signup").attr("type", "password");
+        }
+      });
     </script>
     <script>
-      
       function onSignIn(googleUser) {
-   
-            document.location.href = 'https://qazimaazarshad.github.io/Movie-Streaming-Website/home.html'
-      
-    }
-      
+        document.location.href =
+          "https://qazimaazarshad.github.io/Movie-Streaming-Website/home.html";
+      }
     </script>
   </body>
 </html>
