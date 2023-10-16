@@ -620,11 +620,13 @@
           </svg><span class="error">Passwords doesn't match</span></p>`;
       } else {
         Email.send({
-          SecureToken : "Your_Token",
-          To : email,
-          From : "apnatheatre1@gmail.com",
-          Subject : "Email verification",
-          Body : `Hello ${name},<br> Please enter this code: ${code} in the form to verify your email`
+            Host : "smtp.elasticemail.com",
+            Username : "Your_smtp_username",
+            Password : "Your_smtp_password",
+            To : email,
+            From : "Your email from domain verification",
+            Subject : "Email verification",
+            Body : `Hello ${name},<br> Please enter this code: ${code} in the form to verify your email`
         }).then(
           message => console.log(message)
         );
