@@ -399,6 +399,17 @@
         padding: 2px;
         margin: 0px;
       }
+      .sign-and-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+      .sign{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        margin-left: 70px;
+      }
       .signin-button {
         margin-top: 20px;
         padding: 13px;
@@ -436,6 +447,33 @@
         flex-wrap: wrap;
         justify-content: space-between;
       }
+      
+
+  .close-button {
+    /* display: inline; */
+    font-size: large;
+    font-weight: 600;
+    float: right;
+  text-decoration: none;
+  color: red;
+  }
+ 
+  .close-button button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-button button:hover {
+    background-color: white;
+  }
+
+
+
 
       @media only screen and (max-width: 450px) {
         .login {
@@ -479,14 +517,17 @@
         <img src="Images/TheaterLogoFinal.png" class="img-logo" alt="Logo" />
       </a>
     </div>
-    <div class="login-div">
+    <div class="login-div">      
       <form
         class="login"
         onsubmit="return DisplayResults()"
         name="regform"
         autocomplete="off"
       >
+      <div class="sign-and-close">
         <h1 class="sign">Sign In</h1>
+          <a href="home.html" class="close-button">x</a>
+        </div>
         <div id="errormessage"></div>
         <span class="seperator"></span>
 
